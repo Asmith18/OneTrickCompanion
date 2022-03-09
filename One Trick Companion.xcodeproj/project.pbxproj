@@ -12,6 +12,7 @@
 		C2A15F8827D940F300FB6952 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2A15F8627D940F300FB6952 /* Main.storyboard */; };
 		C2A15F8A27D940F400FB6952 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2A15F8927D940F400FB6952 /* Assets.xcassets */; };
 		C2A15F8D27D940F400FB6952 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2A15F8B27D940F400FB6952 /* LaunchScreen.storyboard */; };
+		C2A15F9927D96EEE00FB6952 /* App.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2A15F9827D96EEE00FB6952 /* App.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C2A15F8927D940F400FB6952 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2A15F8C27D940F400FB6952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2A15F8E27D940F400FB6952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2A15F9827D96EEE00FB6952 /* App.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = App.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				C2A15F9427D9410C00FB6952 /* Resources */,
-				C2A15F8627D940F300FB6952 /* Main.storyboard */,
+				C2A15F9527D95E1700FB6952 /* Storyboards */,
 			);
 			path = "One Trick Companion";
 			sourceTree = "<group>";
@@ -70,6 +72,15 @@
 				C2A15F8E27D940F400FB6952 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		C2A15F9527D95E1700FB6952 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C2A15F8627D940F300FB6952 /* Main.storyboard */,
+				C2A15F9827D96EEE00FB6952 /* App.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +143,7 @@
 			files = (
 				C2A15F8D27D940F400FB6952 /* LaunchScreen.storyboard in Resources */,
 				C2A15F8A27D940F400FB6952 /* Assets.xcassets in Resources */,
+				C2A15F9927D96EEE00FB6952 /* App.storyboard in Resources */,
 				C2A15F8827D940F300FB6952 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
