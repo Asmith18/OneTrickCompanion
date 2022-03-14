@@ -14,4 +14,6 @@ struct GameMode: Decodable {
 struct GameModeData: Decodable {
     let displayName: String
     let displayIcon: String?
+    let duration: String
+    
 }
