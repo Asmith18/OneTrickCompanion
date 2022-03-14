@@ -9,8 +9,8 @@ import Foundation
 
 //MARK: - RIOT API
 
-struct leaderboard: Decodable {
-    let player: [LeaderboardData]
+struct Leaderboard: Decodable {
+    let players: [LeaderboardData]
     let actId: String
 }
 
