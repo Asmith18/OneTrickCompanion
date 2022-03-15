@@ -367,10 +367,10 @@
             </objects>
             <point key="canvasLocation" x="3334.7826086956525" y="-586.60714285714278"/>
         </scene>
-        <!--Maps Table View Controller-->
+        <!--Maps View Controller-->
         <scene sceneID="2JD-gn-J79">
             <objects>
-                <viewController id="F0J-vE-wTx" customClass="MapsTableViewController" customModule="One_Trick_Companion" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="F0J-vE-wTx" customClass="MapsViewController" customModule="One_Trick_Companion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pvw-nX-2yQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -452,6 +452,7 @@
                         <outlet property="coordinatesTextLabel" destination="N1G-a1-ehY" id="aX5-Jb-WyX"/>
                         <outlet property="mapImageView" destination="l6M-Kb-3PX" id="VjJ-Wl-OBC"/>
                         <outlet property="mapNameTextLabel" destination="ZOK-mz-LMu" id="dKK-WL-yxt"/>
+                        <outlet property="mapsTableView" destination="lsH-Yb-iyr" id="YSM-bT-fpJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eTb-Ca-4GN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -804,7 +805,7 @@
         <!--Leaderboards-->
         <scene sceneID="hRL-zg-TYx">
             <objects>
-                <viewController id="CZG-yu-LeF" customClass="LeaderboardTableViewController" customModule="One_Trick_Companion" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CZG-yu-LeF" customClass="LeaderboardViewController" customModule="One_Trick_Companion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5TR-R8-0Mz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -823,7 +824,7 @@
                                 <rect key="frame" x="0.0" y="81" width="414" height="732"/>
                                 <color key="backgroundColor" red="0.077009417120000007" green="0.12712782619999999" blue="0.17564612630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="leaderboardCell" rowHeight="61" id="7p6-P6-znw">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="leaderboardCell" rowHeight="61" id="7p6-P6-znw" customClass="LeaderboardTableViewCell" customModule="One_Trick_Companion" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="61"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7p6-P6-znw" id="9EK-DR-Y9D">
@@ -880,6 +881,12 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.077009417120000007" green="0.12712782619999999" blue="0.17564612630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="agentNameTextlabel" destination="C2f-f0-FbK" id="l6m-kI-4VZ"/>
+                                            <outlet property="leaderboardRankTextLabel" destination="Mwt-bW-bww" id="W7r-r8-sJU"/>
+                                            <outlet property="rankTextLabel" destination="x78-0I-Su1" id="Oja-8g-Y3y"/>
+                                            <outlet property="rankedRatingTextLabel" destination="S8c-yX-vJk" id="kxD-N1-BYO"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -899,7 +906,7 @@
                     <tabBarItem key="tabBarItem" title="Leaderboards" image="chart.line.uptrend.xyaxis.circle" catalog="system" selectedImage="chart.line.uptrend.xyaxis.circle.fill" id="IIZ-9O-HMc"/>
                     <connections>
                         <outlet property="leaderboardRankTextLabel" destination="Mwt-bW-bww" id="L3r-cj-3gf"/>
-                        <outlet property="leaderboardTableView" destination="t4i-7H-n0L" id="Ma3-er-cHx"/>
+                        <outlet property="leaderboardTableView" destination="t4i-7H-n0L" id="dIf-Rd-52X"/>
                         <outlet property="playerNameTextlabel" destination="C2f-f0-FbK" id="RNx-2k-Xxn"/>
                         <outlet property="rankTextLabel" destination="x78-0I-Su1" id="VcE-xG-wc7"/>
                         <outlet property="rankedRationTextLabel" destination="S8c-yX-vJk" id="6DH-ZR-ld9"/>
