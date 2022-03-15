@@ -9,8 +9,15 @@ import UIKit
 
 class LeaderboardTableViewController: UITableViewController {
     
+//MARK: - Outlets
+    @IBOutlet weak var leaderboardRankTextLabel: UILabel!
+    @IBOutlet weak var playerNameTextlabel: UILabel!
+    @IBOutlet weak var rankedRationTextLabel: UILabel!
+    @IBOutlet weak var rankTextLabel: UILabel!
+    
+//MARK: - Properties
     var leaderboard: Leaderboard
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -28,3 +35,4 @@ class LeaderboardTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     }
 }
+

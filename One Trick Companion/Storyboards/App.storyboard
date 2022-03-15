@@ -104,16 +104,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3GT-d4-VgZ">
-                                <rect key="frame" x="8" y="52" width="398" height="431.5"/>
+                                <rect key="frame" x="25" y="52" width="364" height="431.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contents" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gJ-nK-jih">
-                                        <rect key="frame" x="0.0" y="0.0" width="398" height="44.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="364" height="44.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTA-E0-Fjp">
-                                        <rect key="frame" x="0.0" y="64.5" width="398" height="44.5"/>
+                                        <rect key="frame" x="0.0" y="64.5" width="364" height="44.5"/>
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Maps">
@@ -125,7 +125,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTZ-oW-tUZ">
-                                        <rect key="frame" x="0.0" y="129" width="398" height="44.5"/>
+                                        <rect key="frame" x="0.0" y="129" width="364" height="44.5"/>
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Weapons">
@@ -137,7 +137,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Qg-55-JIc">
-                                        <rect key="frame" x="0.0" y="193.5" width="398" height="44.5"/>
+                                        <rect key="frame" x="0.0" y="193.5" width="364" height="44.5"/>
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Agents">
@@ -149,7 +149,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRT-Dg-CLM">
-                                        <rect key="frame" x="0.0" y="258" width="398" height="44.5"/>
+                                        <rect key="frame" x="0.0" y="258" width="364" height="44.5"/>
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Game Modes">
@@ -161,7 +161,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guf-Wp-vGG">
-                                        <rect key="frame" x="0.0" y="322.5" width="398" height="44.5"/>
+                                        <rect key="frame" x="0.0" y="322.5" width="364" height="44.5"/>
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Ranks">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
@@ -172,7 +172,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6d0-BJ-lYB">
-                                        <rect key="frame" x="0.0" y="387" width="398" height="44.5"/>
+                                        <rect key="frame" x="0.0" y="387" width="364" height="44.5"/>
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Sign Out">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
@@ -202,8 +202,8 @@
                             <constraint firstItem="8Xz-h8-E8p" firstAttribute="leading" secondItem="aXy-Ew-gzw" secondAttribute="leading" constant="75" id="1Fq-Oo-l4B"/>
                             <constraint firstItem="aXy-Ew-gzw" firstAttribute="trailing" secondItem="8Xz-h8-E8p" secondAttribute="trailing" constant="75" id="2Kw-RM-fjD"/>
                             <constraint firstItem="3GT-d4-VgZ" firstAttribute="top" secondItem="aXy-Ew-gzw" secondAttribute="top" constant="8" id="2b9-WQ-mmg"/>
-                            <constraint firstItem="3GT-d4-VgZ" firstAttribute="leading" secondItem="aXy-Ew-gzw" secondAttribute="leading" constant="8" id="CyT-jJ-P4Q"/>
-                            <constraint firstItem="aXy-Ew-gzw" firstAttribute="trailing" secondItem="3GT-d4-VgZ" secondAttribute="trailing" constant="8" id="Vb7-aJ-cAi"/>
+                            <constraint firstItem="3GT-d4-VgZ" firstAttribute="leading" secondItem="aXy-Ew-gzw" secondAttribute="leading" constant="25" id="CyT-jJ-P4Q"/>
+                            <constraint firstItem="aXy-Ew-gzw" firstAttribute="trailing" secondItem="3GT-d4-VgZ" secondAttribute="trailing" constant="25" id="Vb7-aJ-cAi"/>
                             <constraint firstItem="H65-dA-M7l" firstAttribute="bottom" secondItem="aXy-Ew-gzw" secondAttribute="bottom" id="XPJ-s5-whu"/>
                             <constraint firstItem="H65-dA-M7l" firstAttribute="leading" secondItem="aXy-Ew-gzw" secondAttribute="leading" constant="25" id="XVh-ja-dbv"/>
                             <constraint firstItem="8Xz-h8-E8p" firstAttribute="top" secondItem="3GT-d4-VgZ" secondAttribute="bottom" constant="15" id="iUy-fl-qSg"/>
@@ -385,7 +385,7 @@
                                 <rect key="frame" x="0.0" y="94" width="414" height="748"/>
                                 <color key="backgroundColor" red="0.077009417120000007" green="0.12712782619999999" blue="0.17564612630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mapsCell" rowHeight="145" id="LJB-oB-X2v">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mapsCell" rowHeight="145" id="LJB-oB-X2v" customClass="MapsTableViewCell" customModule="One_Trick_Companion" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="145"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LJB-oB-X2v" id="Uol-Ia-eXx">
@@ -424,6 +424,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.077009417120000007" green="0.12712782619999999" blue="0.17564612630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="maocoordinatesTextLabel" destination="N1G-a1-ehY" id="Hw7-ha-ffi"/>
+                                            <outlet property="mapImageView" destination="l6M-Kb-3PX" id="Vf3-ij-dvU"/>
+                                            <outlet property="mapnameTextLabel" destination="ZOK-mz-LMu" id="Enf-Qr-4T2"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -892,6 +897,13 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Leaderboards" image="chart.line.uptrend.xyaxis.circle" catalog="system" selectedImage="chart.line.uptrend.xyaxis.circle.fill" id="IIZ-9O-HMc"/>
+                    <connections>
+                        <outlet property="leaderboardRankTextLabel" destination="Mwt-bW-bww" id="L3r-cj-3gf"/>
+                        <outlet property="leaderboardTableView" destination="t4i-7H-n0L" id="Ma3-er-cHx"/>
+                        <outlet property="playerNameTextlabel" destination="C2f-f0-FbK" id="RNx-2k-Xxn"/>
+                        <outlet property="rankTextLabel" destination="x78-0I-Su1" id="VcE-xG-wc7"/>
+                        <outlet property="rankedRationTextLabel" destination="S8c-yX-vJk" id="6DH-ZR-ld9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Txm-dq-bt0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

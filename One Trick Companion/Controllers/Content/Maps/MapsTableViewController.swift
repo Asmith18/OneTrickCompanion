@@ -9,23 +9,22 @@ import UIKit
 
 class MapsTableViewController: UITableViewController {
     
-    //MARK: - Outlets
+    var mapData: [MapData] = []
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 0
+        return mapData.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "mapsCell", for: indexPath) 
+       guard let cell = tableView.dequeueReusableCell(withIdentifier: "mapsCell", for: indexPath) as? MapsTableViewCell else { return UITableViewCell() }
 
-        
-
+        let data = mapData[indexPath.row]
+        cell.updateViews(maps: data)
         return cell
     }
 }

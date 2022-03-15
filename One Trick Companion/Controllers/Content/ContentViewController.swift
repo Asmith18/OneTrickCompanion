@@ -16,17 +16,29 @@ class ContentViewController: UIViewController {
 
 //MARK: - Actions
     @IBAction func mapsbuttonTapped(_ sender: Any) {
+        
     }
+    
     @IBAction func weaponsButtonTapped(_ sender: Any) {
+        
     }
+    
     @IBAction func agentsButtonTapped(_ sender: Any) {
+        
     }
+    
     @IBAction func gameModesButtonTapped(_ sender: Any) {
+        
     }
+    
     @IBAction func ranksButtonTapped(_ sender: Any) {
+        
     }
+    
     @IBAction func signOutButtontapped(_ sender: Any) {
+        
     }
+    
     
     // MARK: - Navigation
 
