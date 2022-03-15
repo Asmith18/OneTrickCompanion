@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C29AE66C27E10293005CAD4E /* MapsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE66B27E10293005CAD4E /* MapsTableViewController.swift */; };
 		C2A15F8127D940F300FB6952 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A15F8027D940F300FB6952 /* AppDelegate.swift */; };
 		C2A15F8327D940F300FB6952 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A15F8227D940F300FB6952 /* SceneDelegate.swift */; };
 		C2A15F8827D940F300FB6952 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2A15F8627D940F300FB6952 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C29AE66B27E10293005CAD4E /* MapsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsTableViewController.swift; sourceTree = "<group>"; };
 		C2A15F7D27D940F300FB6952 /* One Trick Companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "One Trick Companion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2A15F8027D940F300FB6952 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2A15F8227D940F300FB6952 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +75,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C29AE66927E10262005CAD4E /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				C29AE66A27E10269005CAD4E /* Maps */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		C29AE66A27E10269005CAD4E /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				C29AE66B27E10293005CAD4E /* MapsTableViewController.swift */,
+			);
+			path = Maps;
+			sourceTree = "<group>";
+		};
 		C2A15F7427D940F300FB6952 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +160,7 @@
 		C2A15FC027DD2B4700FB6952 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C29AE66927E10262005CAD4E /* Content */,
 				C2A15FC327DFC83900FB6952 /* Leaderboard */,
 			);
 			path = Controllers;
@@ -253,6 +272,7 @@
 				C2A15F8127D940F300FB6952 /* AppDelegate.swift in Sources */,
 				C2A15FA827DD1F5C00FB6952 /* Seasons.swift in Sources */,
 				C2A15F9E27DD1CE700FB6952 /* Maps.swift in Sources */,
+				C29AE66C27E10293005CAD4E /* MapsTableViewController.swift in Sources */,
 				C2A15FA227DD1DF200FB6952 /* Weapons.swift in Sources */,
 				C2A15FA627DD1ED700FB6952 /* Ranks.swift in Sources */,
 				C2A15FA027DD1D7600FB6952 /* Skins.swift in Sources */,
