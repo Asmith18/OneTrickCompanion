@@ -459,10 +459,10 @@
             </objects>
             <point key="canvasLocation" x="1695.6521739130435" y="-2002.2321428571427"/>
         </scene>
-        <!--View Controller-->
+        <!--Weapons View Controller-->
         <scene sceneID="TOy-bN-dZd">
             <objects>
-                <viewController id="hKG-Bf-ITi" sceneMemberID="viewController">
+                <viewController id="hKG-Bf-ITi" customClass="WeaponsViewController" customModule="One_Trick_Companion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="moT-Km-Snb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
