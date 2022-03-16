@@ -323,25 +323,31 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="65" translatesAutoresizingMaskIntoConstraints="NO" id="8VC-sS-4Ru">
                                                     <rect key="frame" x="20" y="19" width="374" height="20.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Immortal 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOa-21-OGT">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Immortal 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOa-21-OGT">
                                                             <rect key="frame" x="0.0" y="0.0" width="80.5" height="20.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="80.5" id="Av3-1i-5AS"/>
+                                                            </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Immortal 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Zy-l2-sln">
-                                                            <rect key="frame" x="145.5" y="0.0" width="81.5" height="20.5"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Immortal 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Zy-l2-sln">
+                                                            <rect key="frame" x="145.5" y="0.0" width="83" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Immortal 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MhC-ww-ulL">
-                                                            <rect key="frame" x="292" y="0.0" width="82" height="20.5"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Immortal 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MhC-ww-ulL">
+                                                            <rect key="frame" x="293.5" y="0.0" width="80.5" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="4Zy-l2-sln" firstAttribute="centerX" secondItem="8VC-sS-4Ru" secondAttribute="centerX" id="PCI-85-QcG"/>
+                                                    </constraints>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="96" translatesAutoresizingMaskIntoConstraints="NO" id="iQR-FB-N9g">
                                                     <rect key="frame" x="13" y="56" width="389" height="64"/>
@@ -473,9 +479,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="ep8-M3-4b0"/>
                     <connections>
-                        <outlet property="coordinatesTextLabel" destination="N1G-a1-ehY" id="aX5-Jb-WyX"/>
-                        <outlet property="mapImageView" destination="l6M-Kb-3PX" id="VjJ-Wl-OBC"/>
-                        <outlet property="mapNameTextLabel" destination="ZOK-mz-LMu" id="dKK-WL-yxt"/>
                         <outlet property="mapsTableView" destination="lsH-Yb-iyr" id="YSM-bT-fpJ"/>
                     </connections>
                 </viewController>
@@ -709,7 +712,7 @@
                                     <color key="textShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="RaZzZz #1111" id="8a7-AM-kp8"/>
+                                    <navigationItem title="Profile" id="8a7-AM-kp8"/>
                                 </items>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3ji-X0-evp">
@@ -929,11 +932,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Leaderboards" image="chart.line.uptrend.xyaxis.circle" catalog="system" selectedImage="chart.line.uptrend.xyaxis.circle.fill" id="IIZ-9O-HMc"/>
                     <connections>
-                        <outlet property="leaderboardRankTextLabel" destination="Mwt-bW-bww" id="L3r-cj-3gf"/>
                         <outlet property="leaderboardTableView" destination="t4i-7H-n0L" id="dIf-Rd-52X"/>
-                        <outlet property="playerNameTextlabel" destination="C2f-f0-FbK" id="RNx-2k-Xxn"/>
-                        <outlet property="rankTextLabel" destination="x78-0I-Su1" id="VcE-xG-wc7"/>
-                        <outlet property="rankedRationTextLabel" destination="S8c-yX-vJk" id="6DH-ZR-ld9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Txm-dq-bt0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -943,7 +942,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="yHt-ps-M3J">
             <objects>
-                <tabBarController id="157-fD-At4" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="App" id="157-fD-At4" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="qTr-b8-a1a"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qjx-4J-LeZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
