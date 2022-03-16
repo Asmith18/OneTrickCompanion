@@ -15,12 +15,9 @@ class LeaderboardTableViewCell: UITableViewCell {
     @IBOutlet weak var rankedRatingTextLabel: UILabel!
     @IBOutlet weak var rankTextLabel: UILabel!
     
-    func updateViews() {
-        
+    func updateViews(leaderboard: LeaderboardData) {
+        leaderboardRankTextLabel.text = "\(leaderboard.leaderboardRank)"
+        agentNameTextlabel.text = leaderboard.gameName
+        rankedRatingTextLabel.text = "\(leaderboard.rankedRating)"
     }
-    
-    func fetchLeaderboard() {
-        
-    }
-    
 }
