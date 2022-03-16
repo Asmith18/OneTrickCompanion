@@ -13,7 +13,6 @@ class LeaderboardViewController: UIViewController {
     @IBOutlet weak var leaderboardTableView: UITableView!
     
     var viewModel: LeaderboardViewModel!
-    var players: [LeaderboardData] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,12 +24,12 @@ class LeaderboardViewController: UIViewController {
 
 extension LeaderboardViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return players.count
+        return viewModel.players.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "leaderboardCell", for: indexPath) as? LeaderboardTableViewCell else { return UITableViewCell() }
-        let result = players[indexPath.row]
+        let result = viewModel.players[indexPath.row]
         cell.updateViews(leaderboard: result)
         
         

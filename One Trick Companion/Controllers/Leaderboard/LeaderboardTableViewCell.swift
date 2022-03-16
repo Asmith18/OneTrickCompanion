@@ -16,8 +16,9 @@ class LeaderboardTableViewCell: UITableViewCell {
     @IBOutlet weak var rankTextLabel: UILabel!
     
     func updateViews(leaderboard: LeaderboardData) {
-        leaderboardRankTextLabel.text = "\(leaderboard.leaderboardRank)"
+        leaderboardRankTextLabel.text = "\(leaderboard.leaderboardRank ?? 0)"
         agentNameTextlabel.text = leaderboard.gameName
-        rankedRatingTextLabel.text = "\(leaderboard.rankedRating)"
+        rankedRatingTextLabel.text = "\(leaderboard.rankedRating ?? 0)"
+        rankTextLabel.text = "\(leaderboard.numberOfWins ?? 0)"
     }
 }

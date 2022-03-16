@@ -15,9 +15,10 @@ struct Leaderboard: Decodable {
 }
 
 struct LeaderboardData: Decodable {
-    let puuid: String
-    let gameName: String
-    let tagLine: String
-    let leaderboardRank: Int
-    let rankedRating: Int
+//    let puuid: String
+    let gameName: String?
+    let tagLine: String?
+    let leaderboardRank: Int?
+    let rankedRating: Int?
+    let numberOfWins: Int?
 }
