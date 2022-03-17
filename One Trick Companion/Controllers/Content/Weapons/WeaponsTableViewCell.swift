@@ -9,15 +9,13 @@ import UIKit
 
 class WeaponsTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
+//MARK: - Outlets
+    @IBOutlet weak var gunNameTextLabel: UILabel!
+    @IBOutlet weak var gunImageView: UIImageView!
+    @IBOutlet weak var fireRateTextLabel: UILabel!
+    @IBOutlet weak var magSizeTextLabel: UILabel!
+    @IBOutlet weak var fbaTextLabel: UILabel!
+    @IBOutlet weak var stat1TextLabel: UILabel!
+    @IBOutlet weak var stat2TextLabel: UILabel!
+    @IBOutlet weak var stat3TextLabel: UILabel!
 }

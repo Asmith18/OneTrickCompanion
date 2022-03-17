@@ -426,13 +426,13 @@
                                                     <rect key="frame" x="20" y="11" width="366" height="20.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ascent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOK-mz-LMu">
-                                                            <rect key="frame" x="0.0" y="0.0" width="59" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="53" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="45°26'BF'N,12°20'Q'E" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1G-a1-ehY">
-                                                            <rect key="frame" x="165" y="0.0" width="201" height="20.5"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1G-a1-ehY">
+                                                            <rect key="frame" x="159" y="0.0" width="207" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -504,7 +504,7 @@
                                 <rect key="frame" x="0.0" y="97" width="414" height="745"/>
                                 <color key="backgroundColor" red="0.077009417120000007" green="0.12712782619999999" blue="0.17564612630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="weaponCell" rowHeight="105" id="CEE-pV-iej">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="weaponCell" rowHeight="105" id="CEE-pV-iej" customClass="WeaponsTableViewCell" customModule="One_Trick_Companion" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="105"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CEE-pV-iej" id="S0J-44-puK">
@@ -592,6 +592,16 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.077009417120000007" green="0.12712782619999999" blue="0.17564612630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="fbaTextLabel" destination="Anv-ki-A5f" id="OIT-3z-IkJ"/>
+                                            <outlet property="fireRateTextLabel" destination="T2U-ZR-L0v" id="auC-QI-RU4"/>
+                                            <outlet property="gunImageView" destination="DKz-uv-4ID" id="BBN-Om-SH9"/>
+                                            <outlet property="gunNameTextLabel" destination="c9O-qR-SD9" id="4fJ-TY-AiI"/>
+                                            <outlet property="magSizeTextLabel" destination="OgV-Xs-4Ae" id="REg-cW-UUr"/>
+                                            <outlet property="stat1TextLabel" destination="TCg-Dl-FKm" id="93e-MA-NLw"/>
+                                            <outlet property="stat2TextLabel" destination="UwI-FY-ri7" id="K8a-5R-bgh"/>
+                                            <outlet property="stat3TextLabel" destination="h94-3W-mo6" id="Ulf-n6-4nC"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -609,6 +619,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="edo-nt-tu0"/>
+                    <connections>
+                        <outlet property="weaponTableView" destination="O7z-3G-J6W" id="Lvt-Js-eHm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U1m-jn-euc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

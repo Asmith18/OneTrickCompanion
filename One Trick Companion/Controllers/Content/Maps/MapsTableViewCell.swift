@@ -18,7 +18,7 @@ class MapsTableViewCell: UITableViewCell {
     
     func updateViews(maps: MapData) {
         mapnameTextLabel.text = maps.displayName
-        maocoordinatesTextLabel.text = maps.coordinates
+//        maocoordinatesTextLabel.text = maps.coordinates
         fetchImage(with: maps.listViewIcon)
     }
     
