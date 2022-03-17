@@ -21,6 +21,8 @@
 		C29AE68B27E24835005CAD4E /* ContentEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE68A27E24835005CAD4E /* ContentEndpoint.swift */; };
 		C29AE68D27E25795005CAD4E /* LeaderboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE68C27E25795005CAD4E /* LeaderboardViewModel.swift */; };
 		C29AE68F27E258CA005CAD4E /* LeaderboardDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE68E27E258CA005CAD4E /* LeaderboardDataProvider.swift */; };
+		C29AE69127E3A050005CAD4E /* MapsDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE69027E3A050005CAD4E /* MapsDataProvider.swift */; };
+		C29AE69327E3BB32005CAD4E /* mapImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE69227E3BB32005CAD4E /* mapImageView.swift */; };
 		C2A15F8127D940F300FB6952 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A15F8027D940F300FB6952 /* AppDelegate.swift */; };
 		C2A15F8327D940F300FB6952 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A15F8227D940F300FB6952 /* SceneDelegate.swift */; };
 		C2A15F8827D940F300FB6952 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2A15F8627D940F300FB6952 /* Main.storyboard */; };
@@ -61,6 +63,8 @@
 		C29AE68A27E24835005CAD4E /* ContentEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentEndpoint.swift; sourceTree = "<group>"; };
 		C29AE68C27E25795005CAD4E /* LeaderboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewModel.swift; sourceTree = "<group>"; };
 		C29AE68E27E258CA005CAD4E /* LeaderboardDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardDataProvider.swift; sourceTree = "<group>"; };
+		C29AE69027E3A050005CAD4E /* MapsDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsDataProvider.swift; sourceTree = "<group>"; };
+		C29AE69227E3BB32005CAD4E /* mapImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapImageView.swift; sourceTree = "<group>"; };
 		C2A15F7D27D940F300FB6952 /* One Trick Companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "One Trick Companion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2A15F8027D940F300FB6952 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2A15F8227D940F300FB6952 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +119,7 @@
 				C29AE67627E11BAC005CAD4E /* MapsViewController.swift */,
 				C29AE66F27E109AB005CAD4E /* MapsTableViewCell.swift */,
 				C29AE68327E24586005CAD4E /* MapsViewModel.swift */,
+				C29AE69027E3A050005CAD4E /* MapsDataProvider.swift */,
 			);
 			path = Maps;
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 				C29AE68627E245BF005CAD4E /* Network Error.swift */,
 				C29AE68827E245F3005CAD4E /* APIDataProvidable.swift */,
 				C29AE68A27E24835005CAD4E /* ContentEndpoint.swift */,
+				C29AE69227E3BB32005CAD4E /* mapImageView.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -326,6 +332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C29AE69327E3BB32005CAD4E /* mapImageView.swift in Sources */,
 				C29AE68F27E258CA005CAD4E /* LeaderboardDataProvider.swift in Sources */,
 				C2A15FA427DD1E8400FB6952 /* GameMode.swift in Sources */,
 				C2A15FAC27DD215100FB6952 /* Account.swift in Sources */,
@@ -333,6 +340,7 @@
 				C29AE67727E11BAC005CAD4E /* MapsViewController.swift in Sources */,
 				C29AE68127E162F8005CAD4E /* LoginViewController.swift in Sources */,
 				C29AE67027E109AB005CAD4E /* MapsTableViewCell.swift in Sources */,
+				C29AE69127E3A050005CAD4E /* MapsDataProvider.swift in Sources */,
 				C29AE68727E245BF005CAD4E /* Network Error.swift in Sources */,
 				C29AE67F27E11E5A005CAD4E /* WeaponsTableViewCell.swift in Sources */,
 				C29AE67D27E11E40005CAD4E /* WeaponsViewController.swift in Sources */,

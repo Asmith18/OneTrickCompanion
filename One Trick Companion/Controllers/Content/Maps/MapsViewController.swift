@@ -13,25 +13,24 @@ class MapsViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var mapsTableView: UITableView!
     
     //MARK: - Properties
-    var mapData: [MapData] = []
-    
-    
-    
+    var viewModel: MapsViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.mapsTableView.dataSource = self
         self.mapsTableView.delegate = self
+        viewModel = MapsViewModel(delegate: self)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return mapData.count
+        return viewModel.mapData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "mapsCell", for: indexPath) as? MapsTableViewCell else { return UITableViewCell() }
-        let result = mapData[indexPath.row]
+        let result = viewModel.mapData[indexPath.row]
         cell.updateViews(maps: result)
+        
         
         return cell
     }
@@ -41,5 +40,23 @@ class MapsViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
+    }
+}
+
+extension MapsViewController: MapsViewModelDelegate {
+    
+    func mapListHasData() {
+        DispatchQueue.main.async {
+            self.mapsTableView.reloadData()
+        }
+    }
+    
+    func encountered(_ error: Error) {
+        let alertController = UIAlertController(title: "Error", message: "\(error.localizedDescription)", preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(title: "Close", style: .cancel))
+                alertController.addAction(UIAlertAction(title: "Retry", style: .default, handler: { [weak self] _ in
+                    self?.viewModel.fetch()
+                }))
+                present(alertController, animated: true)
     }
 }

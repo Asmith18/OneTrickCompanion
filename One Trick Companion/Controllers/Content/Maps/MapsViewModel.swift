@@ -14,11 +14,28 @@ protocol MapsViewModelDelegate: AnyObject {
 
 class MapsViewModel {
     
+    var map: Map?
     var mapData: [MapData] = []
+    var dataProvider = MapsDataProvider()
     weak var delegate: MapsViewModelDelegate?
     
     init(delegate: MapsViewModelDelegate) {
         self.delegate = delegate
+        fetch()
+    }
+    
+    func fetch() {
+        dataProvider.fetch(from: .map) { result in
+            switch result {
+            case .success(let mapList):
+                self.mapData = mapList.data
+                self.delegate?.mapListHasData()
+            case .failure(let error):
+                print(error)
+                self.delegate?.encountered(error)
+                
+            }
+        }
     }
     
 }

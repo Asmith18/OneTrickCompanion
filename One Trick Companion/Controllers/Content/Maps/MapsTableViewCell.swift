@@ -12,17 +12,19 @@ class MapsTableViewCell: UITableViewCell {
 //MARK: - Outlets
     @IBOutlet weak var mapnameTextLabel: UILabel!
     @IBOutlet weak var maocoordinatesTextLabel: UILabel!
-    @IBOutlet weak var mapImageView: UIImageView!
+    @IBOutlet weak var mapImageView: MapImageView!
+    
+    var viewModel: MapsViewModel!
     
     func updateViews(maps: MapData) {
-        
-        self.mapnameTextLabel.text = maps.displayName
-        self.maocoordinatesTextLabel.text = maps.coordinates
-//        self.mapImageView.image = "\(maps.listViewIcon
+        mapnameTextLabel.text = maps.displayName
+        maocoordinatesTextLabel.text = maps.coordinates
+        fetchImage(with: maps.listViewIcon)
     }
     
-    func fetchImage(for maps: MapData) {
-        
+    func fetchImage(with urlString: String) {
+        guard let url = URL(string: urlString) else { return }
+        mapImageView.setImage(using: url)
     }
     
 }
