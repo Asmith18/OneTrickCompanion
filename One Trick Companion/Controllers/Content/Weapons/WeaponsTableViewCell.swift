@@ -24,9 +24,9 @@ class WeaponsTableViewCell: UITableViewCell {
     func updateViews(weapon: WeaponsData) {
         guard let weaponStats = weapon.weaponStats else { return }
         gunNameTextLabel.text = weapon.displayName
-        fireRateTextLabel.text = "\(weaponStats.fireRate)"
-        magSizeTextLabel.text = "\(weaponStats.magazineSize)"
-        fbaTextLabel.text = "\(weaponStats.firstBulletAccuracy)"
+        stat1TextLabel.text = "\(weaponStats.fireRate)"
+        stat2TextLabel.text = "\(weaponStats.magazineSize)"
+        stat3TextLabel.text  = "\(weaponStats.firstBulletAccuracy)"
         fetchImage(with: weapon.displayIcon)
     }
     
