@@ -22,8 +22,12 @@ class WeaponsTableViewCell: UITableViewCell {
     var viewModel: WeaponsViewModel!
     
     func updateViews(weapon: WeaponsData) {
+        guard let weaponStats = weapon.weaponStats else { return }
         gunNameTextLabel.text = weapon.displayName
-        fetchImage(with: weapon.displayIcon ?? "none")
+        fireRateTextLabel.text = "\(weaponStats.fireRate)"
+        magSizeTextLabel.text = "\(weaponStats.magazineSize)"
+        fbaTextLabel.text = "\(weaponStats.firstBulletAccuracy)"
+        fetchImage(with: weapon.displayIcon)
     }
     
     func fetchImage(with urlString: String) {

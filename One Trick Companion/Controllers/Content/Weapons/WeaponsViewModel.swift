@@ -26,13 +26,15 @@ class WeaponsViewModel {
     
     func fetch() {
         dataProvider.fetch(from: .weapon) { result in
-            switch result {
-            case .success(let weaponList):
-                self.weaponData = weaponList.data
-                self.delegate?.weaponListHasData()
-            case .failure(let error):
-                print(error)
-                self.delegate?.encountered(error)
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let weaponList):
+                    self.weaponData = weaponList.data
+                    self.delegate?.weaponListHasData()
+                case .failure(let error):
+                    print(error)
+                    self.delegate?.encountered(error)
+                }
             }
         }
     }

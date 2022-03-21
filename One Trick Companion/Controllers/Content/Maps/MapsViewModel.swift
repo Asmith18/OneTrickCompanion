@@ -26,14 +26,15 @@ class MapsViewModel {
     
     func fetch() {
         dataProvider.fetch(from: .map) { result in
-            switch result {
-            case .success(let mapList):
-                self.mapData = mapList.data
-                self.delegate?.mapListHasData()
-            case .failure(let error):
-                print(error)
-                self.delegate?.encountered(error)
-                
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let mapList):
+                    self.mapData = mapList.data
+                    self.delegate?.mapListHasData()
+                case .failure(let error):
+                    print(error)
+                    self.delegate?.encountered(error)
+                }
             }
         }
     }

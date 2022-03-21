@@ -31,7 +31,6 @@ class MapsViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let result = viewModel.mapData[indexPath.row]
         cell.updateViews(maps: result)
         
-        
         return cell
     }
 
@@ -39,16 +38,13 @@ class MapsViewController: UIViewController, UITableViewDataSource, UITableViewDe
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
     }
 }
 
 extension MapsViewController: MapsViewModelDelegate {
     
     func mapListHasData() {
-        DispatchQueue.main.async {
             self.mapsTableView.reloadData()
-        }
     }
     
     func encountered(_ error: Error) {

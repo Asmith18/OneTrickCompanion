@@ -40,17 +40,15 @@ class WeaponsViewController: UIViewController, UITableViewDelegate, UITableViewD
 extension WeaponsViewController: WeaponsViewModelDelegate {
     
     func weaponListHasData() {
-        DispatchQueue.main.async {
-            self.weaponTableView.reloadData()
-        }
+        self.weaponTableView.reloadData()
     }
     
     func encountered(_ error: Error) {
         let alertController = UIAlertController(title: "Error", message: "\(error.localizedDescription)", preferredStyle: .alert)
-                alertController.addAction(UIAlertAction(title: "Close", style: .cancel))
-                alertController.addAction(UIAlertAction(title: "Retry", style: .default, handler: { [weak self] _ in
-                    self?.viewModel.fetch()
-                }))
-                present(alertController, animated: true)
+            alertController.addAction(UIAlertAction(title: "Close", style: .cancel))
+            alertController.addAction(UIAlertAction(title: "Retry", style: .default, handler: { [weak self] _ in
+                self?.viewModel.fetch()
+            }))
+            present(alertController, animated: true)
     }
 }
