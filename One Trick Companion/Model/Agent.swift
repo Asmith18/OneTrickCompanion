@@ -13,25 +13,25 @@ struct Agent: Decodable {
 }
 
 struct AgentData: Decodable {
-    let displayName: String
+    let displayName: String?
     let displayIcon: String?
-    let displayIconSmall: String?
-    let role: AgentRole
+    let displayIconSmall: String
+    let role: AgentRole?
     let abilities: [AgentAbilities]
-    let description: String
-    let fullPortrait: String
-    let background: String
+    let description: String?
+    let fullPortrait: String?
+    let background: String?
 }
 
 struct AgentRole: Decodable {
     let displayName: String
     let displayIcon: String?
-    let description: String
+    let description: String?
 }
 
 struct AgentAbilities: Decodable {
-    let slot: String
-    let displayName: String
-    let description: String
+    let slot: String?
+    let displayName: String?
+    let description: String?
     let displayIcon: String?
 }
