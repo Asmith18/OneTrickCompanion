@@ -12,10 +12,11 @@ extension URL {
     static let leaderboardBaseURL = URL(string: "https://na.api.riotgames.com/val/ranked/v1/leaderboards/by-act/52e9749a-429b-7060-99fe-4595426a0cf7?size=200&startIndex=0&api_key=RGAPI-8f7cd289-790f-4da5-abfd-a860cc62cfe5")
     static let mapsBaseURL = URL(string: "https://valorant-api.com/v1/maps")
     static let weaponBaseURL = URL(string: "https://valorant-api.com/v1/weapons")
+    static let agentBaseURL = URL(string: "https://valorant-api.com/v1/agents")
 }
 
 enum ContentEndpoint {
-//    case agent
+    case agent
     case map
 //    case skins
     case weapon
@@ -27,6 +28,7 @@ enum ContentEndpoint {
         guard let leaderboardbaseUrl = URL.leaderboardBaseURL else { return nil }
         guard let mapsBaseUrl = URL.mapsBaseURL else { return nil }
         guard let weaponBaseUrl = URL.weaponBaseURL else { return nil }
+        guard let agentBaseUrl = URL.agentBaseURL else { return nil }
         
         switch self {
         case .leaderboard:
@@ -35,6 +37,8 @@ enum ContentEndpoint {
             return mapsBaseUrl
         case .weapon:
             return weaponBaseUrl
+        case .agent:
+            return agentBaseUrl
         }
     }
 }

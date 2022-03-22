@@ -635,10 +635,10 @@
             </objects>
             <point key="canvasLocation" x="3334.7826086956525" y="-2002.2321428571427"/>
         </scene>
-        <!--View Controller-->
+        <!--Agents View Controller-->
         <scene sceneID="hFH-xb-Pm3">
             <objects>
-                <viewController id="gSg-7g-CnQ" sceneMemberID="viewController">
+                <viewController id="gSg-7g-CnQ" customClass="AgentsViewController" customModule="One_Trick_Companion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xSi-Lo-apH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -647,44 +647,65 @@
                                 <rect key="frame" x="0.0" y="97" width="414" height="745"/>
                                 <color key="backgroundColor" red="0.077009417120000007" green="0.12712782619999999" blue="0.17564612630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="agentCell" rowHeight="132" id="H3b-gU-nkz">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="132"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="agentCell" rowHeight="133" id="H3b-gU-nkz" customClass="AgentTableViewCell" customModule="One_Trick_Companion" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="133"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="H3b-gU-nkz" id="4A7-vG-phr">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="132"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="133"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Raze" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6E-M9-Hsd">
-                                                    <rect key="frame" x="20" y="11" width="40" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Raze" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6E-M9-Hsd">
+                                                    <rect key="frame" x="8" y="8" width="398" height="31"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="displayiconsmall (1)" translatesAutoresizingMaskIntoConstraints="NO" id="Jk1-be-6Ui">
-                                                    <rect key="frame" x="20" y="40" width="76" height="76"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="displayiconsmall (1)" translatesAutoresizingMaskIntoConstraints="NO" id="Jk1-be-6Ui" customClass="MapImageView" customModule="One_Trick_Companion" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="47" width="75" height="75"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="Jk1-be-6Ui" secondAttribute="height" multiplier="1:1" id="7Qd-oj-n5k"/>
-                                                        <constraint firstAttribute="height" constant="76" id="L0p-3i-hIf"/>
+                                                        <constraint firstAttribute="height" constant="75" id="cd9-Y5-TOy"/>
+                                                        <constraint firstAttribute="width" constant="75" id="gZQ-WK-lND"/>
                                                     </constraints>
                                                 </imageView>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="displayicon (2)" translatesAutoresizingMaskIntoConstraints="NO" id="aC7-zS-N4W">
-                                                    <rect key="frame" x="355" y="56" width="39" height="44"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aC7-zS-N4W" customClass="MapImageView" customModule="One_Trick_Companion" customModuleProvider="target">
+                                                    <rect key="frame" x="348" y="40" width="58" height="82"/>
+                                                    <color key="backgroundColor" systemColor="systemMintColor"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="39" id="LtJ-dq-UB9"/>
+                                                        <constraint firstAttribute="width" secondItem="aC7-zS-N4W" secondAttribute="height" multiplier="1:1" id="98x-sL-Yt2"/>
+                                                        <constraint firstAttribute="width" constant="58" id="DpZ-Xh-w7n"/>
+                                                        <constraint firstAttribute="height" constant="82" id="icB-ye-Hck"/>
                                                     </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                            <integer key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="Jk1-be-6Ui" secondAttribute="bottom" constant="5" id="4Lw-vr-qzi"/>
-                                                <constraint firstItem="Jk1-be-6Ui" firstAttribute="leading" secondItem="4A7-vG-phr" secondAttribute="leadingMargin" id="8bH-YQ-poy"/>
-                                                <constraint firstItem="aC7-zS-N4W" firstAttribute="top" secondItem="4A7-vG-phr" secondAttribute="topMargin" constant="45" id="GKj-0N-I2X"/>
-                                                <constraint firstItem="Jk1-be-6Ui" firstAttribute="centerY" secondItem="aC7-zS-N4W" secondAttribute="centerY" id="PLM-Hz-3sx"/>
-                                                <constraint firstItem="aC7-zS-N4W" firstAttribute="trailing" secondItem="4A7-vG-phr" secondAttribute="trailingMargin" id="j6c-OF-WQq"/>
-                                                <constraint firstItem="Jk1-be-6Ui" firstAttribute="leading" secondItem="k6E-M9-Hsd" secondAttribute="leading" id="szk-XF-LIz"/>
-                                                <constraint firstItem="Jk1-be-6Ui" firstAttribute="top" secondItem="k6E-M9-Hsd" secondAttribute="bottom" constant="8" id="ydm-sT-Z1l"/>
+                                                <constraint firstItem="aC7-zS-N4W" firstAttribute="leading" secondItem="Jk1-be-6Ui" secondAttribute="trailing" constant="265" id="1hx-gV-lhQ"/>
+                                                <constraint firstItem="Jk1-be-6Ui" firstAttribute="top" secondItem="k6E-M9-Hsd" secondAttribute="bottom" constant="8" id="Axa-XE-FIo"/>
+                                                <constraint firstItem="aC7-zS-N4W" firstAttribute="top" secondItem="4A7-vG-phr" secondAttribute="top" constant="40" id="KNL-Qi-udx"/>
+                                                <constraint firstItem="Jk1-be-6Ui" firstAttribute="leading" secondItem="4A7-vG-phr" secondAttribute="leading" constant="8" id="NoP-mL-MHB"/>
+                                                <constraint firstAttribute="trailing" secondItem="k6E-M9-Hsd" secondAttribute="trailing" constant="8" id="Yil-s9-YzY"/>
+                                                <constraint firstAttribute="bottom" secondItem="aC7-zS-N4W" secondAttribute="bottom" constant="11" id="kxx-Kq-oI0"/>
+                                                <constraint firstItem="k6E-M9-Hsd" firstAttribute="leading" secondItem="4A7-vG-phr" secondAttribute="leading" constant="8" id="sn8-Pk-yOx"/>
+                                                <constraint firstItem="k6E-M9-Hsd" firstAttribute="top" secondItem="4A7-vG-phr" secondAttribute="top" constant="8" id="t8w-0B-imF"/>
+                                                <constraint firstAttribute="bottom" secondItem="Jk1-be-6Ui" secondAttribute="bottom" constant="11" id="wxB-EA-QYc"/>
+                                                <constraint firstAttribute="trailing" secondItem="aC7-zS-N4W" secondAttribute="trailing" constant="8" id="x8Y-dN-9S6"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.077009417120000007" green="0.12712782619999999" blue="0.17564612630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="agentImageView" destination="Jk1-be-6Ui" id="94Y-23-HiW"/>
+                                            <outlet property="agentNameTextLabel" destination="k6E-M9-Hsd" id="Gn1-3a-RwD"/>
+                                            <outlet property="roleImageView" destination="aC7-zS-N4W" id="0Se-4l-BFo"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -707,6 +728,9 @@
                             <constraint firstItem="j0K-1W-rmU" firstAttribute="trailing" secondItem="Ma9-sA-ghW" secondAttribute="trailing" constant="8" id="nMM-bG-XQ3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="agentTableView" destination="yNE-jr-DsR" id="0ke-2u-rbP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zPE-FZ-2aV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -992,7 +1016,6 @@
         <image name="book.circle.fill" catalog="system" width="128" height="121"/>
         <image name="chart.line.uptrend.xyaxis.circle" catalog="system" width="128" height="121"/>
         <image name="chart.line.uptrend.xyaxis.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="displayicon (2)" width="128" height="128"/>
         <image name="displayicon (3)" width="128" height="128"/>
         <image name="displayiconsmall (1)" width="256" height="256"/>
         <image name="listviewicon" width="456" height="100"/>
@@ -1003,6 +1026,9 @@
         <image name="smallicon" width="64" height="64"/>
         <image name="smallicon (1)" width="69" height="64"/>
         <image name="smallicon (2)" width="64" height="64"/>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
