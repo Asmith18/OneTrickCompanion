@@ -25,7 +25,7 @@ struct AgentData: Decodable {
 
 struct AgentRole: Decodable {
     let displayName: String
-    let displayIcon: String?
+    let displayIcon: String
     let description: String?
 }
 
