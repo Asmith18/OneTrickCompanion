@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AgentsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, AgentViewModelDelegate {
+class AgentsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
     
@@ -35,6 +35,14 @@ class AgentsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return cell
     }
     
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    }
+}
+
+extension AgentsViewController: AgentViewModelDelegate {
+    
     func agentListHasData() {
         DispatchQueue.main.async {
             self.agentTableView.reloadData()
@@ -43,14 +51,11 @@ class AgentsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func encountered(_ error: Error) {
         let alertController = UIAlertController(title: "Error", message: "\(error.localizedDescription)", preferredStyle: .alert)
-                alertController.addAction(UIAlertAction(title: "Close", style: .cancel))
-                alertController.addAction(UIAlertAction(title: "Retry", style: .default, handler: { [weak self] _ in
-                    self?.viewModel.fetch()
-                }))
-                present(alertController, animated: true)
-    }
-    
-    // MARK: - Navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        alertController.addAction(UIAlertAction(title: "Close", style: .cancel))
+        alertController.addAction(UIAlertAction(title: "Retry", style: .default, handler: { [weak self] _ in
+            self?.viewModel.fetch()
+        }))
+        present(alertController, animated: true)
     }
 }
+

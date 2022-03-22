@@ -23,11 +23,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F59D145D-C10B-4696-9374-B00857223DCA"
+            uuid = "719CE217-9524-47F2-AFA2-41E59199B1C7"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "One Trick Companion/Controllers/Content/Weapons/WeaponDataProvider.swift"
+            filePath = "One Trick Companion/Controllers/Content/Agents/AgentDataProvider.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "25"
@@ -39,11 +39,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "719CE217-9524-47F2-AFA2-41E59199B1C7"
+            uuid = "2B0830A9-3873-4210-8449-14B55F6369B1"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "One Trick Companion/Controllers/Content/Agents/AgentDataProvider.swift"
+            filePath = "One Trick Companion/Controllers/Content/GameMode/GameModeDataProvider.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "25"

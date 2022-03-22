@@ -1,18 +1,18 @@
 //
-//  AgentDataProvider.swift
+//  GameModeDataProvider.swift
 //  One Trick Companion
 //
-//  Created by adam smith on 3/21/22.
+//  Created by adam smith on 3/22/22.
 //
 
 import Foundation
 
-protocol AgentDataprovidable {
-    func fetch(from endpoint: ContentEndpoint, completion: @escaping (Result<Agent, NetworkError>) -> Void)
+protocol GameModeDataprovidable {
+    func fetch(from endpoint: ContentEndpoint, completion: @escaping (Result<GameMode, NetworkError>) -> Void)
 }
 
-struct AgentDataProvider: APIDataProvidable, AgentDataprovidable {
-    func fetch(from endpoint: ContentEndpoint, completion: @escaping (Result<Agent, NetworkError>) -> Void) {
+struct GameModeDataProvider: APIDataProvidable, GameModeDataprovidable {
+    func fetch(from endpoint: ContentEndpoint, completion: @escaping (Result<GameMode, NetworkError>) -> Void) {
         guard let url = endpoint.url else {
             completion(.failure(.badURL))
             return
@@ -22,8 +22,8 @@ struct AgentDataProvider: APIDataProvidable, AgentDataprovidable {
             case .success(let data):
                 let decoder = JSONDecoder()
                 do {
-                    let agent = try decoder.decode(Agent.self, from: data)
-                    completion(.success(agent))
+                    let leaderboard = try decoder.decode(GameMode.self, from: data)
+                    completion(.success(leaderboard))
                 } catch {
                     completion(.failure(.errorDecoding))
                 }

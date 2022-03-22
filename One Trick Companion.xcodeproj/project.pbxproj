@@ -29,6 +29,10 @@
 		C29AE69C27E9874F005CAD4E /* AgentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE69B27E9874F005CAD4E /* AgentTableViewCell.swift */; };
 		C29AE69E27E98A4B005CAD4E /* AgentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE69D27E98A4B005CAD4E /* AgentViewModel.swift */; };
 		C29AE6A027E98AB7005CAD4E /* AgentDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE69F27E98AB7005CAD4E /* AgentDataProvider.swift */; };
+		C29AE6A427EA003B005CAD4E /* GameModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE6A327EA003B005CAD4E /* GameModeViewController.swift */; };
+		C29AE6A627EA005F005CAD4E /* GameModeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE6A527EA005F005CAD4E /* GameModeTableViewCell.swift */; };
+		C29AE6A827EA0070005CAD4E /* GameModeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE6A727EA0070005CAD4E /* GameModeViewModel.swift */; };
+		C29AE6AA27EA0080005CAD4E /* GameModeDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE6A927EA0080005CAD4E /* GameModeDataProvider.swift */; };
 		C2A15F8127D940F300FB6952 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A15F8027D940F300FB6952 /* AppDelegate.swift */; };
 		C2A15F8327D940F300FB6952 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A15F8227D940F300FB6952 /* SceneDelegate.swift */; };
 		C2A15F8827D940F300FB6952 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2A15F8627D940F300FB6952 /* Main.storyboard */; };
@@ -77,6 +81,10 @@
 		C29AE69B27E9874F005CAD4E /* AgentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentTableViewCell.swift; sourceTree = "<group>"; };
 		C29AE69D27E98A4B005CAD4E /* AgentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentViewModel.swift; sourceTree = "<group>"; };
 		C29AE69F27E98AB7005CAD4E /* AgentDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDataProvider.swift; sourceTree = "<group>"; };
+		C29AE6A327EA003B005CAD4E /* GameModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeViewController.swift; sourceTree = "<group>"; };
+		C29AE6A527EA005F005CAD4E /* GameModeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeTableViewCell.swift; sourceTree = "<group>"; };
+		C29AE6A727EA0070005CAD4E /* GameModeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeViewModel.swift; sourceTree = "<group>"; };
+		C29AE6A927EA0080005CAD4E /* GameModeDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeDataProvider.swift; sourceTree = "<group>"; };
 		C2A15F7D27D940F300FB6952 /* One Trick Companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "One Trick Companion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2A15F8027D940F300FB6952 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2A15F8227D940F300FB6952 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +130,7 @@
 				C29AE66A27E10269005CAD4E /* Maps */,
 				C29AE67127E11B11005CAD4E /* Weapons */,
 				C29AE69827E986C4005CAD4E /* Agents */,
+				C29AE6A227E9FFE6005CAD4E /* GameMode */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -176,6 +185,17 @@
 				C29AE69F27E98AB7005CAD4E /* AgentDataProvider.swift */,
 			);
 			path = Agents;
+			sourceTree = "<group>";
+		};
+		C29AE6A227E9FFE6005CAD4E /* GameMode */ = {
+			isa = PBXGroup;
+			children = (
+				C29AE6A327EA003B005CAD4E /* GameModeViewController.swift */,
+				C29AE6A527EA005F005CAD4E /* GameModeTableViewCell.swift */,
+				C29AE6A727EA0070005CAD4E /* GameModeViewModel.swift */,
+				C29AE6A927EA0080005CAD4E /* GameModeDataProvider.swift */,
+			);
+			path = GameMode;
 			sourceTree = "<group>";
 		};
 		C2A15F7427D940F300FB6952 = {
@@ -359,12 +379,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C29AE69327E3BB32005CAD4E /* MapImageView.swift in Sources */,
+				C29AE6A827EA0070005CAD4E /* GameModeViewModel.swift in Sources */,
 				C29AE68F27E258CA005CAD4E /* LeaderboardDataProvider.swift in Sources */,
 				C2A15FA427DD1E8400FB6952 /* GameMode.swift in Sources */,
 				C2A15FAC27DD215100FB6952 /* Account.swift in Sources */,
 				C29AE69C27E9874F005CAD4E /* AgentTableViewCell.swift in Sources */,
 				C2A15F9C27DD1BB100FB6952 /* Agent.swift in Sources */,
 				C29AE67727E11BAC005CAD4E /* MapsViewController.swift in Sources */,
+				C29AE6A427EA003B005CAD4E /* GameModeViewController.swift in Sources */,
 				C29AE68127E162F8005CAD4E /* LoginViewController.swift in Sources */,
 				C29AE67027E109AB005CAD4E /* MapsTableViewCell.swift in Sources */,
 				C29AE69127E3A050005CAD4E /* MapsDataProvider.swift in Sources */,
@@ -388,7 +410,9 @@
 				C2A15FA027DD1D7600FB6952 /* Skins.swift in Sources */,
 				C2A15F8327D940F300FB6952 /* SceneDelegate.swift in Sources */,
 				C2A15FAA27DD1FCC00FB6952 /* Leaderboard.swift in Sources */,
+				C29AE6A627EA005F005CAD4E /* GameModeTableViewCell.swift in Sources */,
 				C29AE68D27E25795005CAD4E /* LeaderboardViewModel.swift in Sources */,
+				C29AE6AA27EA0080005CAD4E /* GameModeDataProvider.swift in Sources */,
 				C29AE67927E11CA0005CAD4E /* LeaderboardViewController.swift in Sources */,
 				C29AE6A027E98AB7005CAD4E /* AgentDataProvider.swift in Sources */,
 			);

@@ -22,8 +22,8 @@ struct WeaponDataProvider: APIDataProvidable, WeaponsDataprovidable {
             case .success(let data):
                 let decoder = JSONDecoder()
                 do {
-                    let leaderboard = try decoder.decode(Weapons.self, from: data)
-                    completion(.success(leaderboard))
+                    let weapon = try decoder.decode(Weapons.self, from: data)
+                    completion(.success(weapon))
                 } catch {
                     completion(.failure(.errorDecoding))
                 }
