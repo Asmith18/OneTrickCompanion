@@ -14,8 +14,6 @@ class AgentTableViewCell: UITableViewCell {
     @IBOutlet weak var agentImageView: MapImageView!
     @IBOutlet weak var roleImageView: MapImageView!
     
-    var viewModel: AgentViewModel!
-    var abilities: [AgentAbilities] = []
     
     func updateViews(agent: AgentData) {
         guard let agentRole = agent.role else { return }
