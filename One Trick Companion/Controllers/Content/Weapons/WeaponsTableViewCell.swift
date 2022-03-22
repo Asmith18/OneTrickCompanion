@@ -9,15 +9,29 @@ import UIKit
 
 class WeaponsTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+//MARK: - Outlets
+    @IBOutlet weak var gunNameTextLabel: UILabel!
+    @IBOutlet weak var gunImageView: MapImageView!
+    @IBOutlet weak var fireRateTextLabel: UILabel!
+    @IBOutlet weak var magSizeTextLabel: UILabel!
+    @IBOutlet weak var fbaTextLabel: UILabel!
+    @IBOutlet weak var stat1TextLabel: UILabel!
+    @IBOutlet weak var stat2TextLabel: UILabel!
+    @IBOutlet weak var stat3TextLabel: UILabel!
+    
+    var viewModel: WeaponsViewModel!
+    
+    func updateViews(weapon: WeaponsData) {
+        guard let weaponStats = weapon.weaponStats else { return }
+        gunNameTextLabel.text = weapon.displayName
+        stat1TextLabel.text = "\(weaponStats.fireRate)"
+        stat2TextLabel.text = "\(weaponStats.magazineSize)"
+        stat3TextLabel.text  = "\(weaponStats.firstBulletAccuracy)"
+        fetchImage(with: weapon.displayIcon)
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    func fetchImage(with urlString: String) {
+        guard let url = URL(string: urlString) else { return }
+        gunImageView.setImage(using: url)
     }
-
 }

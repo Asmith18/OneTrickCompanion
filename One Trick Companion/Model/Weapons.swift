@@ -13,12 +13,12 @@ struct Weapons: Decodable {
 
 struct WeaponsData: Decodable {
     let displayName: String
-    let displayIcon: String?
-    let weaponStats: [WeaponStats]
+    let displayIcon: String
+    let weaponStats: WeaponStats?
 }
 
 struct WeaponStats: Decodable {
-    let fireRate: Int
+    let fireRate: Double
     let magazineSize: Int
     let firstBulletAccuracy: Double
 }

@@ -22,7 +22,9 @@
 		C29AE68D27E25795005CAD4E /* LeaderboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE68C27E25795005CAD4E /* LeaderboardViewModel.swift */; };
 		C29AE68F27E258CA005CAD4E /* LeaderboardDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE68E27E258CA005CAD4E /* LeaderboardDataProvider.swift */; };
 		C29AE69127E3A050005CAD4E /* MapsDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE69027E3A050005CAD4E /* MapsDataProvider.swift */; };
-		C29AE69327E3BB32005CAD4E /* mapImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE69227E3BB32005CAD4E /* mapImageView.swift */; };
+		C29AE69327E3BB32005CAD4E /* MapImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE69227E3BB32005CAD4E /* MapImageView.swift */; };
+		C29AE69527E3D1DC005CAD4E /* WeaponsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE69427E3D1DC005CAD4E /* WeaponsViewModel.swift */; };
+		C29AE69727E3D2F7005CAD4E /* WeaponDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE69627E3D2F7005CAD4E /* WeaponDataProvider.swift */; };
 		C2A15F8127D940F300FB6952 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A15F8027D940F300FB6952 /* AppDelegate.swift */; };
 		C2A15F8327D940F300FB6952 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A15F8227D940F300FB6952 /* SceneDelegate.swift */; };
 		C2A15F8827D940F300FB6952 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2A15F8627D940F300FB6952 /* Main.storyboard */; };
@@ -64,7 +66,9 @@
 		C29AE68C27E25795005CAD4E /* LeaderboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewModel.swift; sourceTree = "<group>"; };
 		C29AE68E27E258CA005CAD4E /* LeaderboardDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardDataProvider.swift; sourceTree = "<group>"; };
 		C29AE69027E3A050005CAD4E /* MapsDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsDataProvider.swift; sourceTree = "<group>"; };
-		C29AE69227E3BB32005CAD4E /* mapImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapImageView.swift; sourceTree = "<group>"; };
+		C29AE69227E3BB32005CAD4E /* MapImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapImageView.swift; sourceTree = "<group>"; };
+		C29AE69427E3D1DC005CAD4E /* WeaponsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsViewModel.swift; sourceTree = "<group>"; };
+		C29AE69627E3D2F7005CAD4E /* WeaponDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponDataProvider.swift; sourceTree = "<group>"; };
 		C2A15F7D27D940F300FB6952 /* One Trick Companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "One Trick Companion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2A15F8027D940F300FB6952 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2A15F8227D940F300FB6952 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +133,8 @@
 			children = (
 				C29AE67C27E11E40005CAD4E /* WeaponsViewController.swift */,
 				C29AE67E27E11E5A005CAD4E /* WeaponsTableViewCell.swift */,
+				C29AE69427E3D1DC005CAD4E /* WeaponsViewModel.swift */,
+				C29AE69627E3D2F7005CAD4E /* WeaponDataProvider.swift */,
 			);
 			path = Weapons;
 			sourceTree = "<group>";
@@ -147,7 +153,7 @@
 				C29AE68627E245BF005CAD4E /* Network Error.swift */,
 				C29AE68827E245F3005CAD4E /* APIDataProvidable.swift */,
 				C29AE68A27E24835005CAD4E /* ContentEndpoint.swift */,
-				C29AE69227E3BB32005CAD4E /* mapImageView.swift */,
+				C29AE69227E3BB32005CAD4E /* MapImageView.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -332,7 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C29AE69327E3BB32005CAD4E /* mapImageView.swift in Sources */,
+				C29AE69327E3BB32005CAD4E /* MapImageView.swift in Sources */,
 				C29AE68F27E258CA005CAD4E /* LeaderboardDataProvider.swift in Sources */,
 				C2A15FA427DD1E8400FB6952 /* GameMode.swift in Sources */,
 				C2A15FAC27DD215100FB6952 /* Account.swift in Sources */,
@@ -350,10 +356,12 @@
 				C29AE68427E24586005CAD4E /* MapsViewModel.swift in Sources */,
 				C2A15F9E27DD1CE700FB6952 /* Maps.swift in Sources */,
 				C29AE68927E245F3005CAD4E /* APIDataProvidable.swift in Sources */,
+				C29AE69527E3D1DC005CAD4E /* WeaponsViewModel.swift in Sources */,
 				C29AE68B27E24835005CAD4E /* ContentEndpoint.swift in Sources */,
 				C29AE66E27E1047E005CAD4E /* ContentViewController.swift in Sources */,
 				C2A15FA227DD1DF200FB6952 /* Weapons.swift in Sources */,
 				C2A15FA627DD1ED700FB6952 /* Ranks.swift in Sources */,
+				C29AE69727E3D2F7005CAD4E /* WeaponDataProvider.swift in Sources */,
 				C2A15FA027DD1D7600FB6952 /* Skins.swift in Sources */,
 				C2A15F8327D940F300FB6952 /* SceneDelegate.swift in Sources */,
 				C2A15FAA27DD1FCC00FB6952 /* Leaderboard.swift in Sources */,
