@@ -9,7 +9,7 @@ import Foundation
 
 //MARK: - RIOT API
 
-struct account: Decodable {
+struct Account: Decodable {
     let puuid: String
     let gameName: String
     let tagLine: String

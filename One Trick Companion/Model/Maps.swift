@@ -9,10 +9,13 @@ import Foundation
 
 //MARK: - RIOT GAMES API
 struct Map: Decodable {
-    let maps: [MapData]
+    let data: [MapData]
 }
 
 struct MapData: Decodable {
-    let name: String
-    let id: String
+    let displayName: String
+    let uuid: String
+    let listViewIcon: String
+    let splash: String
+    let coordinates: String
 }
