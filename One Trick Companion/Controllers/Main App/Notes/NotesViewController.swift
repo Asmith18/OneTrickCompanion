@@ -25,11 +25,16 @@ class NotesViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return viewModel.agentData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableView.dequeueReusableCell(withIdentifier: "notesCell", for: indexPath)
+        let result = viewModel.agentData[indexPath.row]
+        cell.textLabel?.text = result.displayName
+        
+        
+        return cell
     }
 
     // MARK: - Navigation
@@ -44,7 +49,9 @@ class NotesViewController: UIViewController, UITableViewDelegate, UITableViewDat
 extension NotesViewController: NoteViewModelDelegate {
     
     func agentListHasData() {
-        notestableView.reloadData()
+        DispatchQueue.main.async {
+            self.notestableView.reloadData()            
+        }
     }
     
     func encountered(_ error: Error) {
