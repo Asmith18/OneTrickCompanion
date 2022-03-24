@@ -36,4 +36,8 @@ class NoteViewModel {
             }
         }
     }
+    
+    func saveAgent(agent: [AgentData]) {
+        
+    }
 }

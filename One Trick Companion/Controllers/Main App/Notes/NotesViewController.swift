@@ -21,7 +21,6 @@ class NotesViewController: UIViewController, UITableViewDelegate, UITableViewDat
         self.notestableView.delegate = self
         self.notestableView.dataSource = self
         viewModel = NoteViewModel(delegate: self)
-        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -38,11 +37,12 @@ class NotesViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
 
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        guard segue.identifier == "toMapSegue",
+              let mapTableViewController = segue.destination as? MapTableViewController,
+              let selectedRow = notestableView.indexPathForSelectedRow?.row else { return }
+        let agent = viewModel.agentData[selectedRow]
+        mapTableViewController.agentData = agent
     }
 }
 
@@ -50,7 +50,7 @@ extension NotesViewController: NoteViewModelDelegate {
     
     func agentListHasData() {
         DispatchQueue.main.async {
-            self.notestableView.reloadData()            
+            self.notestableView.reloadData()
         }
     }
     
