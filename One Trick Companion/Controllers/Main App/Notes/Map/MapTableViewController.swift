@@ -14,7 +14,12 @@ class MapTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        buildTableView()
         viewModel = MapViewModel(delegate: self)
+    }
+    
+    private func buildTableView() {
+        tableView.register(MapTableViewCell.nib(), forCellReuseIdentifier: MapTableViewCell.reuseId)
     }
 
     // MARK: - Table view data source
@@ -23,11 +28,15 @@ class MapTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "mapCell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: MapTableViewCell.reuseId, for: indexPath) as? MapTableViewCell else { return UITableViewCell() }
         let result = viewModel.mapData[indexPath.row]
-        cell.textLabel?.text = result.displayName
-    
+        cell.updateView(result)
+        
+        cell.needsUpdateConstraints()
         return cell
+    }
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UIScreen.main.bounds.width / 4
     }
 
     // MARK: - Navigation
@@ -38,7 +47,9 @@ class MapTableViewController: UITableViewController {
 extension MapTableViewController: MapViewModelDelegate {
     
     func mapListHasData() {
+        DispatchQueue.main.async {
             self.tableView.reloadData()
+        }
     }
     
     func encountered(_ error: Error) {

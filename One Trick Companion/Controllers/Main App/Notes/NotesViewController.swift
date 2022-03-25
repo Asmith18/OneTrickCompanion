@@ -18,9 +18,16 @@ class NotesViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupTableView()
+        viewModel = NoteViewModel(delegate: self)
+    }
+    
+    private func setupTableView() {
         self.notestableView.delegate = self
         self.notestableView.dataSource = self
-        viewModel = NoteViewModel(delegate: self)
+        self.notestableView.register(AgentTableViewCell.nib(), forCellReuseIdentifier: AgentTableViewCell.reuseID)
+        
+        self.notestableView.backgroundColor = UIColor(red: 19, green: 32, blue: 45, alpha: 1)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -28,12 +35,20 @@ class NotesViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "notesCell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: AgentTableViewCell.reuseID, for: indexPath) as? AgentTableViewCell else { return UITableViewCell() }
         let result = viewModel.agentData[indexPath.row]
-        cell.textLabel?.text = result.displayName
-        
-        
+        cell.updateViews(agent: result)
+        cell.selectionStyle = .none
+        cell.setNeedsUpdateConstraints() 
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "toMapSegue", sender: self)
     }
 
     // MARK: - Navigation

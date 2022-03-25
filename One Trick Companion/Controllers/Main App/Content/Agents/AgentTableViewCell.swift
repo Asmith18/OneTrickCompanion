@@ -11,25 +11,23 @@ class AgentTableViewCell: UITableViewCell {
 
     //MARK: - Outlets
     @IBOutlet weak var agentNameTextLabel: UILabel!
+    @IBOutlet weak var roleLabel: UILabel!
     @IBOutlet weak var agentImageView: MapImageView!
     @IBOutlet weak var roleImageView: MapImageView!
     
+    static let reuseID = "agentCell"
     
+    static func nib() -> UINib {
+        return UINib(nibName: "AgentTableViewCell", bundle: Bundle(for: self))
+    }
     func updateViews(agent: AgentData) {
         guard let agentRole = agent.role else { return }
         agentNameTextLabel.text = agent.displayName
-        fetchAgentImage(with: agent.displayIconSmall)
-        fetchRoleImage(with: agentRole.displayIcon)
+        roleLabel.text = agentRole.displayName
+        agentImageView.setImage(using: agent.displayIcon)
+        agentImageView.contentMode = .scaleAspectFit
+        agentImageView.layer.cornerRadius = agentImageView.frame.height / 2
+        roleImageView.setImage(using: agentRole.displayIcon)
+        roleImageView.contentMode = .scaleAspectFit
     }
-    
-    func fetchAgentImage(with urlString: String) {
-        guard let url = URL(string: urlString) else { return }
-        agentImageView.setImage(using: url)
-    }
-    
-    func fetchRoleImage (with urlString: String) {
-        guard let url = URL(string: urlString) else { return }
-        roleImageView.setImage(using: url)
-    }
-
 }

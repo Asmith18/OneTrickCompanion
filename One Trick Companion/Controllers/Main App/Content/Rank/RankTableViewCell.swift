@@ -23,24 +23,9 @@ class RankTableViewCell: UITableViewCell {
         rank1TextLabel.text = "\(rank.divisionName)\("1")"
         rank2TextLabel.text = "\(rank.divisionName)\("2")"
         rank3TextLabel.text = "\(rank.divisionName)\("3")"
-        fetchRank1(with: smallIcon)
-        fetchRank2(with: smallIcon)
-        fetchRank3(with: smallIcon)
-    }
-    
-    func fetchRank1(with urlString: String) {
-        guard let url = URL(string: urlString) else { return }
-        rank1ImageView.setImage(using: url)
-    }
-    
-    func fetchRank2(with urlString: String) {
-        guard let url = URL(string: urlString) else { return }
-        rank2ImageView.setImage(using: url)
-    }
-    
-    func fetchRank3(with urlString: String) {
-        guard let url = URL(string: urlString) else { return }
-        rank3imageView.setImage(using: url)
+        rank1ImageView.setImage(using: smallIcon)
+        rank2ImageView.setImage(using: smallIcon)
+        rank3imageView.setImage(using: smallIcon)
     }
 
 }

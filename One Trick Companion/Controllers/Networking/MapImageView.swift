@@ -9,7 +9,8 @@ import Foundation
 import UIKit
 
 class MapImageView: UIImageView, APIDataProvidable {
-    func setImage(using url: URL) {
+    func setImage(using url: String?) {
+        guard let url = URL(string: url ?? "") else { return }
         perform(URLRequest(url: url)) { [weak self] result in
             DispatchQueue.main.async {
                 guard let data = try? result.get() else { return }
