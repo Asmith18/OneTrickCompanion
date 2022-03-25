@@ -9,11 +9,12 @@ import Foundation
 import SwiftUI
 
 extension URL {
-    static let leaderboardBaseURL = URL(string: "https://na.api.riotgames.com/val/ranked/v1/leaderboards/by-act/52e9749a-429b-7060-99fe-4595426a0cf7?size=200&startIndex=0&api_key=RGAPI-8f7cd289-790f-4da5-abfd-a860cc62cfe5")
+    static let leaderboardBaseURL = URL(string: "https://na.api.riotgames.com/val/ranked/v1/leaderboards/by-act/52e9749a-429b-7060-99fe-4595426a0cf7?size=200&startIndex=0&api_key=RGAPI-bf471841-d37d-423b-b0fd-baf13a470ffd")
     static let mapsBaseURL = URL(string: "https://valorant-api.com/v1/maps")
     static let weaponBaseURL = URL(string: "https://valorant-api.com/v1/weapons")
     static let agentBaseURL = URL(string: "https://valorant-api.com/v1/agents")
     static let gameModeBaseURL = URL(string: "https://valorant-api.com/v1/gamemodes")
+    static let rankBaseURL = URL(string: "https://valorant-api.com/v1/competitivetiers")
 }
 
 enum ContentEndpoint {
@@ -22,7 +23,7 @@ enum ContentEndpoint {
 //    case skins
     case weapon
     case gamemode
-//    case ranks
+    case ranks
     case leaderboard
     
     var url: URL? {
@@ -31,6 +32,7 @@ enum ContentEndpoint {
         guard let weaponBaseUrl = URL.weaponBaseURL else { return nil }
         guard let agentBaseUrl = URL.agentBaseURL else { return nil }
         guard let gameModeBaseUrl = URL.gameModeBaseURL else { return nil }
+        guard let rankBaseUrl = URL.rankBaseURL else { return nil }
         
         switch self {
         case .leaderboard:
@@ -43,6 +45,8 @@ enum ContentEndpoint {
             return agentBaseUrl
         case .gamemode:
             return gameModeBaseUrl
+        case .ranks:
+            return rankBaseUrl
         }
     }
 }

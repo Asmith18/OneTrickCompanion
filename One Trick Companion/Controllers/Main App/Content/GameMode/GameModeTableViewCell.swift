@@ -19,12 +19,6 @@ class GameModeTableViewCell: UITableViewCell {
         guard let gameMode = mode.displayIcon else { return }
         nameTextLabel.text = mode.displayName
         lengthTextLabel.text = mode.duration
-        fetchImage(with: gameMode)
+        gameModeImageView.setImage(using: gameMode)
     }
-    
-    func fetchImage(with urlString: String) {
-        guard let url = URL(string: urlString) else { return }
-        gameModeImageView.setImage(using: url)
-    }
-
 }

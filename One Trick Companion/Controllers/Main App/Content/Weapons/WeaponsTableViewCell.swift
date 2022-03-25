@@ -27,11 +27,6 @@ class WeaponsTableViewCell: UITableViewCell {
         stat1TextLabel.text = "\(weaponStats.fireRate)"
         stat2TextLabel.text = "\(weaponStats.magazineSize)"
         stat3TextLabel.text  = "\(weaponStats.firstBulletAccuracy)"
-        fetchImage(with: weapon.displayIcon)
-    }
-    
-    func fetchImage(with urlString: String) {
-        guard let url = URL(string: urlString) else { return }
-        gunImageView.setImage(using: url)
+        gunImageView.setImage(using: weapon.displayIcon)
     }
 }

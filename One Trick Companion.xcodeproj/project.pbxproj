@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E0CAD1027ED1D00000AF833 /* MapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0CAD0E27ED1D00000AF833 /* MapTableViewCell.swift */; };
+		3E0CAD1127ED1D00000AF833 /* MapTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E0CAD0F27ED1D00000AF833 /* MapTableViewCell.xib */; };
+		3E0CAD1427ED1E3A000AF833 /* Valorant Font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E0CAD1327ED1E20000AF833 /* Valorant Font.ttf */; };
+		3E0CAD1627ED1FD3000AF833 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0CAD1527ED1FD3000AF833 /* GradientView.swift */; };
+		3E228ED127ECECF400671FA1 /* AgentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E228ECF27ECECF400671FA1 /* AgentTableViewCell.xib */; };
 		C29AE66E27E1047E005CAD4E /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE66D27E1047E005CAD4E /* ContentViewController.swift */; };
 		C29AE67027E109AB005CAD4E /* MapsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE66F27E109AB005CAD4E /* MapsTableViewCell.swift */; };
 		C29AE67727E11BAC005CAD4E /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE67627E11BAC005CAD4E /* MapsViewController.swift */; };
@@ -33,6 +38,18 @@
 		C29AE6A627EA005F005CAD4E /* GameModeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE6A527EA005F005CAD4E /* GameModeTableViewCell.swift */; };
 		C29AE6A827EA0070005CAD4E /* GameModeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE6A727EA0070005CAD4E /* GameModeViewModel.swift */; };
 		C29AE6AA27EA0080005CAD4E /* GameModeDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE6A927EA0080005CAD4E /* GameModeDataProvider.swift */; };
+		C29AE6AD27EA2A4A005CAD4E /* RankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE6AC27EA2A4A005CAD4E /* RankViewController.swift */; };
+		C29AE6AF27EA2A72005CAD4E /* RankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE6AE27EA2A72005CAD4E /* RankTableViewCell.swift */; };
+		C29AE6B127EA2F0F005CAD4E /* RankViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE6B027EA2F0F005CAD4E /* RankViewModel.swift */; };
+		C29AE6B327EA2F1C005CAD4E /* RankDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE6B227EA2F1C005CAD4E /* RankDataProvider.swift */; };
+		C29AE6B727EA3B1A005CAD4E /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE6B627EA3B1A005CAD4E /* NotesViewController.swift */; };
+		C29AE6BC27EA3C64005CAD4E /* MapTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE6BB27EA3C64005CAD4E /* MapTableViewController.swift */; };
+		C29AE6BE27EA9ADC005CAD4E /* NoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE6BD27EA9ADC005CAD4E /* NoteViewModel.swift */; };
+		C29AE6C027EA9B1D005CAD4E /* NoteDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE6BF27EA9B1D005CAD4E /* NoteDataProvider.swift */; };
+		C29AE6C227EAA029005CAD4E /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE6C127EAA029005CAD4E /* MapViewModel.swift */; };
+		C29AE6C427EAA053005CAD4E /* MapDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE6C327EAA053005CAD4E /* MapDataProvider.swift */; };
+		C29AE6C827EAA97A005CAD4E /* LineUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE6C727EAA97A005CAD4E /* LineUpViewController.swift */; };
+		C29AE6CA27EAAAC8005CAD4E /* LineUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE6C927EAAAC8005CAD4E /* LineUpViewModel.swift */; };
 		C2A15F8127D940F300FB6952 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A15F8027D940F300FB6952 /* AppDelegate.swift */; };
 		C2A15F8327D940F300FB6952 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A15F8227D940F300FB6952 /* SceneDelegate.swift */; };
 		C2A15F8827D940F300FB6952 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2A15F8627D940F300FB6952 /* Main.storyboard */; };
@@ -48,17 +65,14 @@
 		C2A15FA827DD1F5C00FB6952 /* Seasons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A15FA727DD1F5C00FB6952 /* Seasons.swift */; };
 		C2A15FAA27DD1FCC00FB6952 /* Leaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A15FA927DD1FCC00FB6952 /* Leaderboard.swift */; };
 		C2A15FAC27DD215100FB6952 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A15FAB27DD215100FB6952 /* Account.swift */; };
-		C2A15FB127DD261C00FB6952 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C2A15FB027DD261C00FB6952 /* FirebaseAuth */; };
-		C2A15FB327DD261C00FB6952 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = C2A15FB227DD261C00FB6952 /* FirebaseDatabase */; };
-		C2A15FB527DD261D00FB6952 /* FirebaseDatabaseSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = C2A15FB427DD261C00FB6952 /* FirebaseDatabaseSwift-Beta */; };
-		C2A15FB727DD261D00FB6952 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C2A15FB627DD261D00FB6952 /* FirebaseFirestore */; };
-		C2A15FB927DD261D00FB6952 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = C2A15FB827DD261D00FB6952 /* FirebaseFirestoreSwift-Beta */; };
-		C2A15FBB27DD261D00FB6952 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C2A15FBA27DD261D00FB6952 /* FirebaseStorage */; };
-		C2A15FBD27DD261D00FB6952 /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = C2A15FBC27DD261D00FB6952 /* FirebaseStorageSwift-Beta */; };
-		C2A15FBF27DD278F00FB6952 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C2A15FBE27DD278F00FB6952 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E0CAD0E27ED1D00000AF833 /* MapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTableViewCell.swift; sourceTree = "<group>"; };
+		3E0CAD0F27ED1D00000AF833 /* MapTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapTableViewCell.xib; sourceTree = "<group>"; };
+		3E0CAD1327ED1E20000AF833 /* Valorant Font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Valorant Font.ttf"; sourceTree = "<group>"; };
+		3E0CAD1527ED1FD3000AF833 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		3E228ECF27ECECF400671FA1 /* AgentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgentTableViewCell.xib; sourceTree = "<group>"; };
 		C29AE66D27E1047E005CAD4E /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		C29AE66F27E109AB005CAD4E /* MapsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsTableViewCell.swift; sourceTree = "<group>"; };
 		C29AE67627E11BAC005CAD4E /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
@@ -78,13 +92,25 @@
 		C29AE69427E3D1DC005CAD4E /* WeaponsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsViewModel.swift; sourceTree = "<group>"; };
 		C29AE69627E3D2F7005CAD4E /* WeaponDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponDataProvider.swift; sourceTree = "<group>"; };
 		C29AE69927E98717005CAD4E /* AgentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsViewController.swift; sourceTree = "<group>"; };
-		C29AE69B27E9874F005CAD4E /* AgentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentTableViewCell.swift; sourceTree = "<group>"; };
+		C29AE69B27E9874F005CAD4E /* AgentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AgentTableViewCell.swift; path = "../../Controllers/Main App/Content/Agents/AgentTableViewCell.swift"; sourceTree = "<group>"; };
 		C29AE69D27E98A4B005CAD4E /* AgentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentViewModel.swift; sourceTree = "<group>"; };
 		C29AE69F27E98AB7005CAD4E /* AgentDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDataProvider.swift; sourceTree = "<group>"; };
 		C29AE6A327EA003B005CAD4E /* GameModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeViewController.swift; sourceTree = "<group>"; };
 		C29AE6A527EA005F005CAD4E /* GameModeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeTableViewCell.swift; sourceTree = "<group>"; };
 		C29AE6A727EA0070005CAD4E /* GameModeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeViewModel.swift; sourceTree = "<group>"; };
 		C29AE6A927EA0080005CAD4E /* GameModeDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeDataProvider.swift; sourceTree = "<group>"; };
+		C29AE6AC27EA2A4A005CAD4E /* RankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankViewController.swift; sourceTree = "<group>"; };
+		C29AE6AE27EA2A72005CAD4E /* RankTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankTableViewCell.swift; sourceTree = "<group>"; };
+		C29AE6B027EA2F0F005CAD4E /* RankViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankViewModel.swift; sourceTree = "<group>"; };
+		C29AE6B227EA2F1C005CAD4E /* RankDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankDataProvider.swift; sourceTree = "<group>"; };
+		C29AE6B627EA3B1A005CAD4E /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		C29AE6BB27EA3C64005CAD4E /* MapTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTableViewController.swift; sourceTree = "<group>"; };
+		C29AE6BD27EA9ADC005CAD4E /* NoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewModel.swift; sourceTree = "<group>"; };
+		C29AE6BF27EA9B1D005CAD4E /* NoteDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDataProvider.swift; sourceTree = "<group>"; };
+		C29AE6C127EAA029005CAD4E /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		C29AE6C327EAA053005CAD4E /* MapDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDataProvider.swift; sourceTree = "<group>"; };
+		C29AE6C727EAA97A005CAD4E /* LineUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineUpViewController.swift; sourceTree = "<group>"; };
+		C29AE6C927EAAAC8005CAD4E /* LineUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineUpViewModel.swift; sourceTree = "<group>"; };
 		C2A15F7D27D940F300FB6952 /* One Trick Companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "One Trick Companion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2A15F8027D940F300FB6952 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2A15F8227D940F300FB6952 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,7 +128,6 @@
 		C2A15FA727DD1F5C00FB6952 /* Seasons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seasons.swift; sourceTree = "<group>"; };
 		C2A15FA927DD1FCC00FB6952 /* Leaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leaderboard.swift; sourceTree = "<group>"; };
 		C2A15FAB27DD215100FB6952 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
-		C2A15FBE27DD278F00FB6952 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,19 +135,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2A15FB527DD261D00FB6952 /* FirebaseDatabaseSwift-Beta in Frameworks */,
-				C2A15FB727DD261D00FB6952 /* FirebaseFirestore in Frameworks */,
-				C2A15FB927DD261D00FB6952 /* FirebaseFirestoreSwift-Beta in Frameworks */,
-				C2A15FB327DD261C00FB6952 /* FirebaseDatabase in Frameworks */,
-				C2A15FB127DD261C00FB6952 /* FirebaseAuth in Frameworks */,
-				C2A15FBD27DD261D00FB6952 /* FirebaseStorageSwift-Beta in Frameworks */,
-				C2A15FBB27DD261D00FB6952 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E0CAD0D27ED1CF1000AF833 /* Map Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3E0CAD0E27ED1D00000AF833 /* MapTableViewCell.swift */,
+				3E0CAD0F27ED1D00000AF833 /* MapTableViewCell.xib */,
+			);
+			path = "Map Cell";
+			sourceTree = "<group>";
+		};
+		3E0CAD1227ED1E0D000AF833 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3E0CAD1327ED1E20000AF833 /* Valorant Font.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		3E228ECD27ECEC9600671FA1 /* Reusable Views */ = {
+			isa = PBXGroup;
+			children = (
+				3E0CAD0D27ED1CF1000AF833 /* Map Cell */,
+				3E228ED227ECEE5B00671FA1 /* Agent Cell */,
+				3E0CAD1527ED1FD3000AF833 /* GradientView.swift */,
+			);
+			path = "Reusable Views";
+			sourceTree = "<group>";
+		};
+		3E228ED227ECEE5B00671FA1 /* Agent Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C29AE69B27E9874F005CAD4E /* AgentTableViewCell.swift */,
+				3E228ECF27ECECF400671FA1 /* AgentTableViewCell.xib */,
+			);
+			path = "Agent Cell";
+			sourceTree = "<group>";
+		};
 		C29AE66927E10262005CAD4E /* Content */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +185,7 @@
 				C29AE67127E11B11005CAD4E /* Weapons */,
 				C29AE69827E986C4005CAD4E /* Agents */,
 				C29AE6A227E9FFE6005CAD4E /* GameMode */,
+				C29AE6AB27EA2A14005CAD4E /* Rank */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -161,6 +216,9 @@
 			isa = PBXGroup;
 			children = (
 				C29AE68027E162F8005CAD4E /* LoginViewController.swift */,
+				C29AE66927E10262005CAD4E /* Content */,
+				C2A15FC327DFC83900FB6952 /* Leaderboard */,
+				C29AE6B527EA3AE4005CAD4E /* Notes */,
 			);
 			path = "Main App";
 			sourceTree = "<group>";
@@ -180,7 +238,6 @@
 			isa = PBXGroup;
 			children = (
 				C29AE69927E98717005CAD4E /* AgentsViewController.swift */,
-				C29AE69B27E9874F005CAD4E /* AgentTableViewCell.swift */,
 				C29AE69D27E98A4B005CAD4E /* AgentViewModel.swift */,
 				C29AE69F27E98AB7005CAD4E /* AgentDataProvider.swift */,
 			);
@@ -198,10 +255,51 @@
 			path = GameMode;
 			sourceTree = "<group>";
 		};
+		C29AE6AB27EA2A14005CAD4E /* Rank */ = {
+			isa = PBXGroup;
+			children = (
+				C29AE6AC27EA2A4A005CAD4E /* RankViewController.swift */,
+				C29AE6AE27EA2A72005CAD4E /* RankTableViewCell.swift */,
+				C29AE6B027EA2F0F005CAD4E /* RankViewModel.swift */,
+				C29AE6B227EA2F1C005CAD4E /* RankDataProvider.swift */,
+			);
+			path = Rank;
+			sourceTree = "<group>";
+		};
+		C29AE6B527EA3AE4005CAD4E /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				C29AE6B627EA3B1A005CAD4E /* NotesViewController.swift */,
+				C29AE6BD27EA9ADC005CAD4E /* NoteViewModel.swift */,
+				C29AE6BF27EA9B1D005CAD4E /* NoteDataProvider.swift */,
+				C29AE6BA27EA3C42005CAD4E /* Map */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+		C29AE6BA27EA3C42005CAD4E /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				C29AE6BB27EA3C64005CAD4E /* MapTableViewController.swift */,
+				C29AE6C127EAA029005CAD4E /* MapViewModel.swift */,
+				C29AE6C327EAA053005CAD4E /* MapDataProvider.swift */,
+				C29AE6C627EAA884005CAD4E /* LineUp */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		C29AE6C627EAA884005CAD4E /* LineUp */ = {
+			isa = PBXGroup;
+			children = (
+				C29AE6C727EAA97A005CAD4E /* LineUpViewController.swift */,
+				C29AE6C927EAAAC8005CAD4E /* LineUpViewModel.swift */,
+			);
+			path = LineUp;
+			sourceTree = "<group>";
+		};
 		C2A15F7427D940F300FB6952 = {
 			isa = PBXGroup;
 			children = (
-				C2A15FBE27DD278F00FB6952 /* GoogleService-Info.plist */,
 				C2A15F7F27D940F300FB6952 /* One Trick Companion */,
 				C2A15F7E27D940F300FB6952 /* Products */,
 			);
@@ -218,7 +316,7 @@
 		C2A15F7F27D940F300FB6952 /* One Trick Companion */ = {
 			isa = PBXGroup;
 			children = (
-				C2A15FC227DD2DAF00FB6952 /* Firebase */,
+				3E228ECD27ECEC9600671FA1 /* Reusable Views */,
 				C2A15F9A27DD1B9200FB6952 /* Model */,
 				C2A15FC027DD2B4700FB6952 /* Controllers */,
 				C2A15F9427D9410C00FB6952 /* Resources */,
@@ -230,6 +328,7 @@
 		C2A15F9427D9410C00FB6952 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3E0CAD1227ED1E0D000AF833 /* Fonts */,
 				C2A15F8027D940F300FB6952 /* AppDelegate.swift */,
 				C2A15F8227D940F300FB6952 /* SceneDelegate.swift */,
 				C2A15F8927D940F400FB6952 /* Assets.xcassets */,
@@ -269,17 +368,8 @@
 			children = (
 				C29AE68527E245B0005CAD4E /* Networking */,
 				C29AE68227E1630B005CAD4E /* Main App */,
-				C29AE66927E10262005CAD4E /* Content */,
-				C2A15FC327DFC83900FB6952 /* Leaderboard */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		C2A15FC227DD2DAF00FB6952 /* Firebase */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Firebase;
 			sourceTree = "<group>";
 		};
 		C2A15FC327DFC83900FB6952 /* Leaderboard */ = {
@@ -310,13 +400,6 @@
 			);
 			name = "One Trick Companion";
 			packageProductDependencies = (
-				C2A15FB027DD261C00FB6952 /* FirebaseAuth */,
-				C2A15FB227DD261C00FB6952 /* FirebaseDatabase */,
-				C2A15FB427DD261C00FB6952 /* FirebaseDatabaseSwift-Beta */,
-				C2A15FB627DD261D00FB6952 /* FirebaseFirestore */,
-				C2A15FB827DD261D00FB6952 /* FirebaseFirestoreSwift-Beta */,
-				C2A15FBA27DD261D00FB6952 /* FirebaseStorage */,
-				C2A15FBC27DD261D00FB6952 /* FirebaseStorageSwift-Beta */,
 			);
 			productName = "One Trick Companion";
 			productReference = C2A15F7D27D940F300FB6952 /* One Trick Companion.app */;
@@ -347,7 +430,6 @@
 			);
 			mainGroup = C2A15F7427D940F300FB6952;
 			packageReferences = (
-				C2A15FAF27DD261C00FB6952 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = C2A15F7E27D940F300FB6952 /* Products */;
 			projectDirPath = "";
@@ -363,10 +445,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E0CAD1427ED1E3A000AF833 /* Valorant Font.ttf in Resources */,
 				C2A15F8D27D940F400FB6952 /* LaunchScreen.storyboard in Resources */,
 				C2A15F8A27D940F400FB6952 /* Assets.xcassets in Resources */,
-				C2A15FBF27DD278F00FB6952 /* GoogleService-Info.plist in Resources */,
 				C2A15F9927D96EEE00FB6952 /* App.storyboard in Resources */,
+				3E228ED127ECECF400671FA1 /* AgentTableViewCell.xib in Resources */,
+				3E0CAD1127ED1D00000AF833 /* MapTableViewCell.xib in Resources */,
 				C2A15F8827D940F300FB6952 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,16 +462,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C29AE6C427EAA053005CAD4E /* MapDataProvider.swift in Sources */,
 				C29AE69327E3BB32005CAD4E /* MapImageView.swift in Sources */,
 				C29AE6A827EA0070005CAD4E /* GameModeViewModel.swift in Sources */,
 				C29AE68F27E258CA005CAD4E /* LeaderboardDataProvider.swift in Sources */,
 				C2A15FA427DD1E8400FB6952 /* GameMode.swift in Sources */,
+				3E0CAD1627ED1FD3000AF833 /* GradientView.swift in Sources */,
 				C2A15FAC27DD215100FB6952 /* Account.swift in Sources */,
+				3E0CAD1027ED1D00000AF833 /* MapTableViewCell.swift in Sources */,
 				C29AE69C27E9874F005CAD4E /* AgentTableViewCell.swift in Sources */,
+				C29AE6AD27EA2A4A005CAD4E /* RankViewController.swift in Sources */,
 				C2A15F9C27DD1BB100FB6952 /* Agent.swift in Sources */,
 				C29AE67727E11BAC005CAD4E /* MapsViewController.swift in Sources */,
 				C29AE6A427EA003B005CAD4E /* GameModeViewController.swift in Sources */,
 				C29AE68127E162F8005CAD4E /* LoginViewController.swift in Sources */,
+				C29AE6C227EAA029005CAD4E /* MapViewModel.swift in Sources */,
 				C29AE67027E109AB005CAD4E /* MapsTableViewCell.swift in Sources */,
 				C29AE69127E3A050005CAD4E /* MapsDataProvider.swift in Sources */,
 				C29AE69E27E98A4B005CAD4E /* AgentViewModel.swift in Sources */,
@@ -399,21 +488,30 @@
 				C2A15F8127D940F300FB6952 /* AppDelegate.swift in Sources */,
 				C2A15FA827DD1F5C00FB6952 /* Seasons.swift in Sources */,
 				C29AE68427E24586005CAD4E /* MapsViewModel.swift in Sources */,
+				C29AE6C027EA9B1D005CAD4E /* NoteDataProvider.swift in Sources */,
+				C29AE6B127EA2F0F005CAD4E /* RankViewModel.swift in Sources */,
 				C2A15F9E27DD1CE700FB6952 /* Maps.swift in Sources */,
+				C29AE6BE27EA9ADC005CAD4E /* NoteViewModel.swift in Sources */,
 				C29AE68927E245F3005CAD4E /* APIDataProvidable.swift in Sources */,
 				C29AE69527E3D1DC005CAD4E /* WeaponsViewModel.swift in Sources */,
 				C29AE68B27E24835005CAD4E /* ContentEndpoint.swift in Sources */,
 				C29AE66E27E1047E005CAD4E /* ContentViewController.swift in Sources */,
 				C2A15FA227DD1DF200FB6952 /* Weapons.swift in Sources */,
+				C29AE6C827EAA97A005CAD4E /* LineUpViewController.swift in Sources */,
 				C2A15FA627DD1ED700FB6952 /* Ranks.swift in Sources */,
 				C29AE69727E3D2F7005CAD4E /* WeaponDataProvider.swift in Sources */,
 				C2A15FA027DD1D7600FB6952 /* Skins.swift in Sources */,
 				C2A15F8327D940F300FB6952 /* SceneDelegate.swift in Sources */,
 				C2A15FAA27DD1FCC00FB6952 /* Leaderboard.swift in Sources */,
+				C29AE6BC27EA3C64005CAD4E /* MapTableViewController.swift in Sources */,
 				C29AE6A627EA005F005CAD4E /* GameModeTableViewCell.swift in Sources */,
+				C29AE6B327EA2F1C005CAD4E /* RankDataProvider.swift in Sources */,
 				C29AE68D27E25795005CAD4E /* LeaderboardViewModel.swift in Sources */,
+				C29AE6CA27EAAAC8005CAD4E /* LineUpViewModel.swift in Sources */,
 				C29AE6AA27EA0080005CAD4E /* GameModeDataProvider.swift in Sources */,
+				C29AE6B727EA3B1A005CAD4E /* NotesViewController.swift in Sources */,
 				C29AE67927E11CA0005CAD4E /* LeaderboardViewController.swift in Sources */,
+				C29AE6AF27EA2A72005CAD4E /* RankTableViewCell.swift in Sources */,
 				C29AE6A027E98AB7005CAD4E /* AgentDataProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -563,6 +661,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UCL5625TDG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "One Trick Companion/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -590,6 +689,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UCL5625TDG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "One Trick Companion/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -632,55 +732,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		C2A15FAF27DD261C00FB6952 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		C2A15FB027DD261C00FB6952 /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C2A15FAF27DD261C00FB6952 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAuth;
-		};
-		C2A15FB227DD261C00FB6952 /* FirebaseDatabase */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C2A15FAF27DD261C00FB6952 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseDatabase;
-		};
-		C2A15FB427DD261C00FB6952 /* FirebaseDatabaseSwift-Beta */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C2A15FAF27DD261C00FB6952 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseDatabaseSwift-Beta";
-		};
-		C2A15FB627DD261D00FB6952 /* FirebaseFirestore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C2A15FAF27DD261C00FB6952 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestore;
-		};
-		C2A15FB827DD261D00FB6952 /* FirebaseFirestoreSwift-Beta */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C2A15FAF27DD261C00FB6952 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseFirestoreSwift-Beta";
-		};
-		C2A15FBA27DD261D00FB6952 /* FirebaseStorage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C2A15FAF27DD261C00FB6952 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseStorage;
-		};
-		C2A15FBC27DD261D00FB6952 /* FirebaseStorageSwift-Beta */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C2A15FAF27DD261C00FB6952 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseStorageSwift-Beta";
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C2A15F7527D940F300FB6952 /* Project object */;
 }

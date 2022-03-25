@@ -18,12 +18,6 @@ class MapsTableViewCell: UITableViewCell {
     
     func updateViews(maps: MapData) {
         mapnameTextLabel.text = maps.displayName
-        fetchImage(with: maps.listViewIcon)
+        mapImageView.setImage(using: maps.listViewIcon)
     }
-    
-    func fetchImage(with urlString: String) {
-        guard let url = URL(string: urlString) else { return }
-        mapImageView.setImage(using: url)
-    }
-    
 }
