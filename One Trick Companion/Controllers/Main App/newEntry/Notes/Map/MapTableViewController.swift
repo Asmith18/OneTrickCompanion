@@ -14,6 +14,7 @@ class MapTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Select Map"
         buildTableView()
         viewModel = MapViewModel(delegate: self)
     }
@@ -50,6 +51,9 @@ class MapTableViewController: UITableViewController {
               let selectedRow = tableView.indexPathForSelectedRow?.row else { return }
         let map = viewModel.mapData[selectedRow]
         destination.mapData = map
+        guard let agentData = agentData else { return }
+        destination.agentData = agentData
+
     }
 }
 

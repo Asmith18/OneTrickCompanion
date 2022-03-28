@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+class LineUpViewModel {
+    
+    //MARK: - Properties
+    
+    
+    //MARK: - functions
+    
+    func updateLineup(agent: AgentData, map: MapData) {
+        
+    }
+}

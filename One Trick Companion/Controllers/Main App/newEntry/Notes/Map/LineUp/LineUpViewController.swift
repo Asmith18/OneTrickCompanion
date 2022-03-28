@@ -15,6 +15,7 @@ class LineUpViewController: UIViewController {
     @IBOutlet weak var instructionTextView: UITextView!
     
     var mapData: MapData?
+    var agentData: AgentData?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,9 @@ class LineUpViewController: UIViewController {
     
     //MARK: - Actions
     @IBAction func saveButtonTapped(_ sender: Any) {
+        
+    }
+    @IBAction func addImagesButtontapped(_ sender: Any) {
         
     }
 }

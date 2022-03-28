@@ -18,6 +18,7 @@ class NotesViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Select Agent"
         setupTableView()
         viewModel = NoteViewModel(delegate: self)
     }
