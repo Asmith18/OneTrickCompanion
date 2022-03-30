@@ -19,7 +19,7 @@ extension Lineup {
 
     @NSManaged public var title: String?
     @NSManaged public var date: Date?
-    @NSManaged public var agentImage: Data?
+    @NSManaged public var agentImage: String?
     @NSManaged public var mapName: String?
     @NSManaged public var instructions: String?
     @NSManaged public var overviewImages: NSOrderedSet?

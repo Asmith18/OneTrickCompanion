@@ -7,11 +7,11 @@
 
 import Foundation
 
-protocol NoteDataprovidable {
+protocol AgentListDataprovidable {
     func fetch(from endpoint: ContentEndpoint, completion: @escaping (Result<Agent, NetworkError>) -> Void)
 }
 
-struct NoteDataProvider: APIDataProvidable, NoteDataprovidable {
+struct AgentListDataProvider: APIDataProvidable, AgentListDataprovidable {
     func fetch(from endpoint: ContentEndpoint, completion: @escaping (Result<Agent, NetworkError>) -> Void) {
         guard let url = endpoint.url else {
             completion(.failure(.badURL))

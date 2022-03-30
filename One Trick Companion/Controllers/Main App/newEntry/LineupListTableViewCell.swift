@@ -7,18 +7,22 @@
 
 import UIKit
 
-class NewEntryTableViewCell: UITableViewCell {
+class LineupListTableViewCell: UITableViewCell {
 
+    var agentData: AgentData?
+    
   //MARK: - Outlets
     @IBOutlet weak var entryTitleTextLabel: UILabel!
-    @IBOutlet weak var agentImageView: UIImageView!
+    @IBOutlet weak var agentImageView: MapImageView!
     @IBOutlet weak var mapNameTextLabel: UILabel!
     
     func updateViews(lineup: Lineup) {
         entryTitleTextLabel.text = lineup.title
-//        agentImageView.image = lineup.agentImage
+        agentImageView.setImage(using: lineup.agentImage)
         mapNameTextLabel.text = lineup.mapName
     }
     
-//    fetch the agent image
+    func fetchImage() {
+        
+    }
 }

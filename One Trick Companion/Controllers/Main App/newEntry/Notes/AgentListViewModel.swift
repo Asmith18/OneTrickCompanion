@@ -7,19 +7,18 @@
 
 import Foundation
 
-protocol NoteViewModelDelegate: AnyObject {
+protocol AgentListViewModelDelegate: AnyObject {
     func agentListHasData()
     func encountered(_ error: Error)
 }
 
-class NoteViewModel {
+class AgentListViewModel {
     
-    var agent: Agent?
     var agentData: [AgentData] = []
     var dataProvider = AgentDataProvider()
-    weak var delegate: NoteViewModelDelegate?
+    weak var delegate: AgentListViewModelDelegate?
     
-    init(delegate: NoteViewModelDelegate) {
+    init(delegate: AgentListViewModelDelegate) {
         self.delegate = delegate
         fetch()
     }

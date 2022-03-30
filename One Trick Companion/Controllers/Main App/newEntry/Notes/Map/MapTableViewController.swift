@@ -10,13 +10,11 @@ import UIKit
 class MapTableViewController: UITableViewController {
     
     var viewModel: MapViewModel!
-    var agentData: AgentData?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Select Map"
         buildTableView()
-        viewModel = MapViewModel(delegate: self)
     }
     
     private func buildTableView() {
@@ -50,10 +48,8 @@ class MapTableViewController: UITableViewController {
               let destination = segue.destination as? LineUpViewController,
               let selectedRow = tableView.indexPathForSelectedRow?.row else { return }
         let map = viewModel.mapData[selectedRow]
-        destination.mapData = map
-        guard let agentData = agentData else { return }
-        destination.agentData = agentData
-
+        let lineupViewModel = LineUpViewModel(map: map, agent: viewModel.agentData, lineup: nil)
+        destination.viewModel = lineupViewModel
     }
 }
 

@@ -11,7 +11,7 @@ import UIKit
 
 extension Lineup {
     
-    convenience init(moc: NSManagedObjectContext = CoreDataStack.context, agentImage: Data = Data(), mapName: String = "", instructions: String = "", title: String, overviewImages: NSOrderedSet = [], date: Date = Date()) {
+    convenience init(moc: NSManagedObjectContext = CoreDataStack.context, agentImage: String = "", mapName: String = "", instructions: String = "", title: String, overviewImages: NSOrderedSet = [], date: Date = Date()) {
         self.init(context: moc)
         self.agentImage = agentImage
         self.mapName = mapName

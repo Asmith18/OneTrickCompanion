@@ -7,20 +7,20 @@
 
 import UIKit
 
-class NotesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class AgentListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
     
     //MARK: - Outlets
     @IBOutlet weak var notestableView: UITableView!
     
-    var viewModel: NoteViewModel!
+    var viewModel: AgentListViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Select Agent"
         setupTableView()
-        viewModel = NoteViewModel(delegate: self)
+        viewModel = AgentListViewModel(delegate: self)
     }
     
     private func setupTableView() {
@@ -58,11 +58,12 @@ class NotesViewController: UIViewController, UITableViewDelegate, UITableViewDat
               let destination = segue.destination as? MapTableViewController,
               let selectedRow = notestableView.indexPathForSelectedRow?.row else { return }
         let agent = viewModel.agentData[selectedRow]
-        destination.agentData = agent
+        let mapViewModel = MapViewModel(delegate: destination, agent: agent)
+        destination.viewModel = mapViewModel
     }
 }
 
-extension NotesViewController: NoteViewModelDelegate {
+extension AgentListViewController: AgentListViewModelDelegate {
     
     func agentListHasData() {
         DispatchQueue.main.async {

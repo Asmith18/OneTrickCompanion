@@ -14,13 +14,14 @@ protocol MapViewModelDelegate: AnyObject {
 
 class MapViewModel {
     
-    var map: Map?
+    var agentData: AgentData?
     var mapData: [MapData] = []
     var dataProvider = MapDataProvider()
     weak var delegate: MapViewModelDelegate?
     
-    init(delegate: MapViewModelDelegate) {
+    init(delegate: MapViewModelDelegate, agent: AgentData?) {
         self.delegate = delegate
+        self.agentData = agent
         fetch()
     }
     

@@ -9,6 +9,11 @@ import UIKit
 
 class LineUpTableViewCell: UITableViewCell {
 
+    //MARK: - Outputs
+    @IBOutlet weak var customImage: UIImageView!
     
-
+    
+    func updateViews() {
+        
+    }
 }

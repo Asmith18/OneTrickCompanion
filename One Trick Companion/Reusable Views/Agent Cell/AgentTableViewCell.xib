@@ -39,6 +39,7 @@
                     </imageView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ndb-r2-fue" customClass="MapImageView" customModule="One_Trick_Companion" customModuleProvider="target">
                         <rect key="frame" x="11" y="11" width="48" height="48"/>
+                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="Ndb-r2-fue" secondAttribute="height" multiplier="1:1" id="bLe-p6-Twj"/>
                         </constraints>
@@ -77,6 +78,9 @@
     </objects>
     <resources>
         <image name="chevron.compact.right" catalog="system" width="64" height="128"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

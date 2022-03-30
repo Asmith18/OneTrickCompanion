@@ -7,50 +7,46 @@
 
 import Foundation
 import CoreData
+import UIKit
+import SwiftUI
 
-protocol NewEntryViewModelDelegate: AnyObject {
+protocol LineupListViewModelDelegate: AnyObject {
     func LineupsHasData()
     func encounteredError(_ error: Error)
 }
 
-class NewEntryViewMdoel {
+class LineupListViewMdoel {
     
     private lazy var fetchRequest: NSFetchRequest<Lineup> = {
         let fetchRequest = NSFetchRequest<Lineup>(entityName: "Lineup")
         return fetchRequest
     }()
     var lineups: [Lineup] = []
-
-    weak var delegate: NewEntryViewModelDelegate?
     
-    init(delegate: NewEntryViewModelDelegate) {
+    weak var delegate: LineupListViewModelDelegate?
+    
+    init(delegate: LineupListViewModelDelegate) {
         self.delegate = delegate
         fetchLineup()
     }
     
-    func createLineup(title: String) {
-        Lineup(title: title)
-        saveLineup()
-        fetchLineup()
-    }
-    
-    func saveLineup() {
-        
-        do {
-            try CoreDataStack.context.save()
-        } catch {
-            print(error)
-        }
-    }
+//    func saveLineup() {
+//
+//        do {
+//            try CoreDataStack.context.save()
+//        } catch {
+//            print(error)
+//        }
+//    }
     
     func deleteLineup(lineup: Lineup) {
             try CoreDataStack.context.delete(lineup)
-            saveLineup()
             fetchLineup()
     }
     
     func fetchLineup() {
-        self.lineups = (try? CoreDataStack.context.fetch(fetchRequest)) ?? []
+        let lineups = (try? CoreDataStack.context.fetch(fetchRequest)) ?? []
+        self.lineups = lineups.reversed()
         self.delegate?.LineupsHasData()
     }
 }
