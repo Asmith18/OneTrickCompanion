@@ -10,6 +10,7 @@ import UIKit
 class LineUpViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
+    
     //MARK: - Outputs
     @IBOutlet weak var overviewTableView: UITableView!
     @IBOutlet weak var instructionTextView: UITextView!
@@ -28,7 +29,7 @@ class LineUpViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -48,6 +49,26 @@ class LineUpViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
     }
     @IBAction func addImagesButtontapped(_ sender: Any) {
+        let vc = UIImagePickerController()
+        vc.sourceType = .photoLibrary
+        vc.delegate = self
+        vc.allowsEditing = true
+        present(vc, animated: true)
+    }
+}
+
+extension LineUpViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
+        if let image = info[UIImagePickerController.InfoKey(rawValue: "UIImagePickerControllerEditedImage")] as? NSOrderedSet? {
+           viewModel?.lineup?.overviewImages = image
+        }
+        
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
     }
 }

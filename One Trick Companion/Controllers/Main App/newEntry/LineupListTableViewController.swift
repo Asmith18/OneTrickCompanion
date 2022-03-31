@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+import SwiftUI
 
 class LineupListTableViewController: UITableViewController {
     
@@ -15,7 +16,7 @@ class LineupListTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Line Ups"
+        title = "Line Up Larry"
         tableView.frame = view.bounds
         viewModel = LineupListViewMdoel(delegate: self)
     }
@@ -26,17 +27,6 @@ class LineupListTableViewController: UITableViewController {
         tableView.reloadData()
     }
     
-    @objc func didTapEdit() {
-        let sheet = UIAlertController(title: "Edit", message: nil, preferredStyle: .actionSheet)
-        
-        sheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-        sheet.addAction(UIAlertAction(title: "Edit", style: .default, handler: { _ in
-            
-        }))
-        present(sheet, animated: true)
-    }
-    
-
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -49,9 +39,6 @@ class LineupListTableViewController: UITableViewController {
         cell.updateViews(lineup: lineup)
         
         return cell
-    }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     }
 
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {

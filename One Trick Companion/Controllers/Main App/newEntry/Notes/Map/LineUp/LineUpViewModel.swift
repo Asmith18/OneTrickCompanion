@@ -6,6 +6,12 @@
 //
 
 import Foundation
+import UIKit
+
+protocol LineUpViewModelDelegate: AnyObject {
+    func overviewImagesHasdata()
+    func encountered(_ error: Error)
+}
 
 class LineUpViewModel {
     
@@ -13,6 +19,11 @@ class LineUpViewModel {
     var mapData: MapData?
     var agentData: AgentData?
     var lineup: Lineup?
+    weak var delegate: LineUpViewModelDelegate?
+    
+    init(delegate: LineUpViewModelDelegate) {
+        self.delegate = delegate
+    }
 
     
     init(map: MapData? = nil, agent: AgentData? = nil, lineup: Lineup? = nil) {
