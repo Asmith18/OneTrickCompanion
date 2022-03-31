@@ -5,8 +5,8 @@
         <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="instructions" optional="YES" attributeType="String"/>
         <attribute name="mapName" optional="YES" attributeType="String"/>
+        <attribute name="overviewImages" attributeType="Transformable"/>
         <attribute name="title" attributeType="String"/>
-        <relationship name="overviewImages" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Lineup"/>
     </entity>
     <elements>
         <element name="Lineup" positionX="-63" positionY="-18" width="128" height="119"/>

@@ -7,7 +7,6 @@
 
 import Foundation
 import UIKit
-
 protocol LineUpViewModelDelegate: AnyObject {
     func overviewImagesHasdata()
     func encountered(_ error: Error)
@@ -16,6 +15,7 @@ protocol LineUpViewModelDelegate: AnyObject {
 class LineUpViewModel {
     
     //MARK: - Properties
+    var tempArray: [UIImage] = []
     var mapData: MapData?
     var agentData: AgentData?
     var lineup: Lineup?
@@ -27,9 +27,11 @@ class LineUpViewModel {
 
     
     init(map: MapData? = nil, agent: AgentData? = nil, lineup: Lineup? = nil) {
+        
         self.mapData = map
         self.agentData = agent
         self.lineup = lineup
+        self.tempArray = lineup?.overviewImages.compactMap {  UIImage(data: $0 ) } ?? []
     }
     //MARK: - functions
     
@@ -37,8 +39,9 @@ class LineUpViewModel {
         if let lineup = lineup {
             lineup.instructions = instructions
             lineup.title = title
+            lineup.overviewImages = tempArray.compactMap {  $0.pngData() }
         } else {
-            self.lineup = Lineup(agentImage: agentData!.displayIconSmall, mapName: mapData!.displayName, instructions: instructions, title: title)
+            self.lineup = Lineup(agentImage: agentData!.displayIconSmall, mapName: mapData!.displayName, instructions: instructions, title: title, overviewImages: tempArray.compactMap {  $0.pngData() })
         }
         do {
             try CoreDataStack.context.save()

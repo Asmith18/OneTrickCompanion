@@ -30,15 +30,6 @@ class LineupListViewMdoel {
         fetchLineup()
     }
     
-//    func saveLineup() {
-//
-//        do {
-//            try CoreDataStack.context.save()
-//        } catch {
-//            print(error)
-//        }
-//    }
-    
     func deleteLineup(lineup: Lineup) {
             try CoreDataStack.context.delete(lineup)
             fetchLineup()
