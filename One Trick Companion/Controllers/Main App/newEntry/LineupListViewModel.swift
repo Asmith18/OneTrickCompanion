@@ -17,27 +17,26 @@ protocol LineupListViewModelDelegate: AnyObject {
 
 class LineupListViewMdoel {
     
+    
     private lazy var fetchRequest: NSFetchRequest<Lineup> = {
         let fetchRequest = NSFetchRequest<Lineup>(entityName: "Lineup")
         return fetchRequest
     }()
-    var lineups: [Lineup] = []
+    var fetchedResultsController: NSFetchedResultsController<Lineup>
     
-    weak var delegate: LineupListViewModelDelegate?
-    
-    init(delegate: LineupListViewModelDelegate) {
-        self.delegate = delegate
-        fetchLineup()
+    init() {
+        let request: NSFetchRequest<Lineup> = Lineup.fetchRequest()
+        request.sortDescriptors = [NSSortDescriptor(key: "date", ascending: false)]
+        let resultController: NSFetchedResultsController<Lineup> = NSFetchedResultsController(fetchRequest: request, managedObjectContext: CoreDataStack.context, sectionNameKeyPath: nil, cacheName: nil)
+        fetchedResultsController = resultController
+        do {
+            try fetchedResultsController.performFetch()
+        } catch {
+            print("failed to fetch data")
+        }
     }
     
     func deleteLineup(lineup: Lineup) {
-            try CoreDataStack.context.delete(lineup)
-            fetchLineup()
-    }
-    
-    func fetchLineup() {
-        let lineups = (try? CoreDataStack.context.fetch(fetchRequest)) ?? []
-        self.lineups = lineups.reversed()
-        self.delegate?.LineupsHasData()
+           CoreDataStack.context.delete(lineup)
     }
 }

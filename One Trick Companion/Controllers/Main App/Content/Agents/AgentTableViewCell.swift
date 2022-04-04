@@ -20,6 +20,14 @@ class AgentTableViewCell: UITableViewCell {
     static func nib() -> UINib {
         return UINib(nibName: "AgentTableViewCell", bundle: Bundle(for: self))
     }
+    
+    override func prepareForReuse() {
+        agentNameTextLabel.text = ""
+        roleLabel.text = ""
+        agentImageView.image = nil
+        roleImageView.image = nil
+    }
+    
     func updateViews(agent: AgentData) {
         guard let agentRole = agent.role else { return }
         agentNameTextLabel.text = agent.displayName
@@ -30,4 +38,6 @@ class AgentTableViewCell: UITableViewCell {
         roleImageView.setImage(using: agentRole.displayIcon)
         roleImageView.contentMode = .scaleAspectFit
     }
+    
+    
 }
