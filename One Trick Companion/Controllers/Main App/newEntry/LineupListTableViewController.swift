@@ -63,7 +63,6 @@ class LineupListTableViewController: UITableViewController {
             let viewModel = LineUpViewModel(map: nil, agent: nil, lineup: lineup)
             destination.viewModel = viewModel
         }
-        
     }
 }
 
