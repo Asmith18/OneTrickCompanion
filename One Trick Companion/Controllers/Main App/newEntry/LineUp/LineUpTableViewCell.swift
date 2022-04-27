@@ -13,7 +13,7 @@ class LineUpTableViewCell: UITableViewCell {
     @IBOutlet weak var customImage: UIImageView!
     
     
-    func updateViews() {
-        
+    func updateViews(image: UIImage) {
+        customImage.image = image
     }
 }

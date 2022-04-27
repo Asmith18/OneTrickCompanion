@@ -11,11 +11,17 @@ protocol AgentListDataprovidable {
     func fetch(from endpoint: ContentEndpoint, completion: @escaping (Result<Agent, NetworkError>) -> Void)
 }
 
-struct AgentListDataProvider: APIDataProvidable, AgentListDataprovidable {
+fileprivate var agentCache = NSCache<NSString, Agent>()
+
+class AgentListDataProvider: APIDataProvidable, AgentListDataprovidable {
+    
     func fetch(from endpoint: ContentEndpoint, completion: @escaping (Result<Agent, NetworkError>) -> Void) {
         guard let url = endpoint.url else {
             completion(.failure(.badURL))
             return
+        }
+        if let cacheAgent = agentCache.object(forKey: url.path as NSString) {
+            completion(.success(cacheAgent))
         }
         perform(URLRequest(url: url)) { result in
             switch result {
@@ -23,6 +29,7 @@ struct AgentListDataProvider: APIDataProvidable, AgentListDataprovidable {
                 let decoder = JSONDecoder()
                 do {
                     let agent = try decoder.decode(Agent.self, from: data)
+                    agentCache.setObject(agent, forKey: url.path as NSString)
                     completion(.success(agent))
                 } catch {
                     completion(.failure(.errorDecoding))

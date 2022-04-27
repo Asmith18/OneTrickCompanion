@@ -8,11 +8,28 @@
 import Foundation
 
 //MARK: - VALORANT-API.com
-struct Agent: Decodable {
+class Agent: Decodable {
+    
+    init(data: [AgentData]) {
+        self.data = data
+    }
+    
     let data: [AgentData]
 }
 
-struct AgentData: Decodable {
+class AgentData: Decodable {
+    
+    init(displayName: String?, displayIcon: String?, displayIconSmall: String, role: AgentRole?, abilities: [AgentAbilities], description: String?, fullPortrait: String?, background: String?) {
+        self.displayName = displayName
+        self.displayIcon = displayIcon
+        self.displayIconSmall = displayIconSmall
+        self.role = role
+        self.abilities = abilities
+        self.description = description
+        self.fullPortrait = fullPortrait
+        self.background = background
+    }
+    
     let displayName: String?
     let displayIcon: String?
     let displayIconSmall: String
@@ -23,13 +40,28 @@ struct AgentData: Decodable {
     let background: String?
 }
 
-struct AgentRole: Decodable {
+class AgentRole: Decodable {
+    
+    init(displayName: String, displayIcon: String, description: String?) {
+        self.displayName = displayName
+        self.displayIcon = displayIcon
+        self.description = description
+    }
+    
     let displayName: String
     let displayIcon: String
     let description: String?
 }
 
-struct AgentAbilities: Decodable {
+class AgentAbilities: Decodable {
+    
+    init(slot: String?, displayName: String?, description: String?, displayIcon: String?) {
+        self.slot = slot
+        self.displayName = displayName
+        self.description = description
+        self.displayIcon = displayIcon
+    }
+    
     let slot: String?
     let displayName: String?
     let description: String?

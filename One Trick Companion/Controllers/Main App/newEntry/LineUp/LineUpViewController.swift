@@ -10,15 +10,19 @@ import UIKit
 class LineUpViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
+    
     //MARK: - Outputs
     @IBOutlet weak var overviewTableView: UITableView!
     @IBOutlet weak var instructionTextView: UITextView!
     @IBOutlet weak var titleTextField: UITextField!
     
-    var viewModel: LineUpViewModel?
+    var viewModel: LineUpViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        self.overviewTableView.dataSource = self
+        self.overviewTableView.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -28,12 +32,13 @@ class LineUpViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return viewModel?.tempArray.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = overviewTableView.dequeueReusableCell(withIdentifier: "overviewCell", for: indexPath) as? LineUpTableViewCell else { return UITableViewCell() }
-        
+        let result = viewModel?.tempArray[indexPath.row]
+        cell.updateViews(image: result!)
         return cell
     }
     //MARK: - Actions
@@ -48,6 +53,29 @@ class LineUpViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
     }
     @IBAction func addImagesButtontapped(_ sender: Any) {
+        let vc = UIImagePickerController()
+        vc.sourceType = .photoLibrary
+        vc.delegate = self
+        vc.allowsEditing = true
+        present(vc, animated: true)
+    }
+}
+
+extension LineUpViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
+        if let image = info[UIImagePickerController.InfoKey(rawValue: "UIImagePickerControllerEditedImage")] as? UIImage {
+            viewModel?.tempArray.append(image)
+            DispatchQueue.main.async {
+                self.overviewTableView.reloadData()
+            }
+        }
+        
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
     }
 }

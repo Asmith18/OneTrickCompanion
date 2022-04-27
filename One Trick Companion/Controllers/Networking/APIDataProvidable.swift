@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 protocol APIDataProvidable {
     func perform(_ request: URLRequest, completion: @escaping (Result<Data, NetworkError>) -> Void)
 }
