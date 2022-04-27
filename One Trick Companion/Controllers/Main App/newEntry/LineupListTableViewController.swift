@@ -20,6 +20,7 @@ class LineupListTableViewController: UITableViewController {
         tableView.frame = view.bounds
         viewModel = LineupListViewMdoel()
         viewModel.fetchedResultsController.delegate = self
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -62,14 +63,14 @@ class LineupListTableViewController: UITableViewController {
     }
 }
 
-extension LineupListTableViewController: LineupListViewModelDelegate {
-
-    func LineupsHasData() {
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-        }
-    }
-}
+//extension LineupListTableViewController: LineupListViewModelDelegate {
+//
+//    func LineupsHasData() {
+//        DispatchQueue.main.async {
+//            self.tableView.reloadData()
+//        }
+//    }
+//}
 
 extension LineupListTableViewController: NSFetchedResultsControllerDelegate {
     // Conform to the NSFetchedResultsControllerDelegate
