@@ -17,6 +17,7 @@ class MapsViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.black]
         self.mapsTableView.dataSource = self
         self.mapsTableView.delegate = self
         viewModel = MapsViewModel(delegate: self)

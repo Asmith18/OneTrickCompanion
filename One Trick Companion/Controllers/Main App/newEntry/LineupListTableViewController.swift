@@ -16,6 +16,7 @@ class LineupListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Line Up Larry"
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.black]
         tableView.frame = view.bounds
         viewModel = LineupListViewMdoel()
         viewModel.fetchedResultsController.delegate = self

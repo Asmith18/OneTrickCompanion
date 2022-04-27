@@ -16,6 +16,7 @@ class WeaponsViewController: UIViewController, UITableViewDelegate, UITableViewD
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.black]
         self.weaponTableView.dataSource = self
         self.weaponTableView.delegate = self
         viewModel = WeaponsViewModel(delegate: self)

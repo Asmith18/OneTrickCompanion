@@ -18,9 +18,16 @@ class AgentsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupTableView()
+        viewModel = AgentViewModel(delegate: self)
+    }
+    
+    private func setupTableView() {
         self.agentTableView.dataSource = self
         self.agentTableView.delegate = self
-        viewModel = AgentViewModel(delegate: self)
+        self.agentTableView.register(AgentTableViewCell.nib(), forCellReuseIdentifier: AgentTableViewCell.reuseID)
+        
+        self.agentTableView.backgroundColor = UIColor(red: 19, green: 32, blue: 45, alpha: 1)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -28,11 +35,16 @@ class AgentsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "agentCell", for: indexPath) as? AgentTableViewCell else { return UITableViewCell() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: AgentTableViewCell.reuseID, for: indexPath) as? AgentTableViewCell else { return UITableViewCell() }
         let result = viewModel.agentData[indexPath.row]
         cell.updateViews(agent: result)
+        cell.selectionStyle = .none
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70
     }
 }
 

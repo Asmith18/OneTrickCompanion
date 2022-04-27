@@ -17,6 +17,7 @@ class GameModeViewController: UIViewController, UITableViewDelegate, UITableView
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.black]
         self.gameModeTableView.dataSource = self
         self.gameModeTableView.delegate = self
         viewModel = GameModeViewModel(delegate: self)
