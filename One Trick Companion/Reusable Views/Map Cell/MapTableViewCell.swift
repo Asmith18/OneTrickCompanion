@@ -15,8 +15,15 @@ class MapTableViewCell: UITableViewCell {
     @IBOutlet weak var coordLabel: UILabel!
     
     static let reuseId = "mapCell"
+    
     static func nib() -> UINib {
         return UINib(nibName: "MapTableViewCell", bundle: Bundle(for: self))
+    }
+    
+    override func prepareForReuse() {
+        backgroundImage.image = nil
+        nameLabel.text = ""
+        coordLabel.text = ""
     }
     
     func updateView(_ map: MapData) {

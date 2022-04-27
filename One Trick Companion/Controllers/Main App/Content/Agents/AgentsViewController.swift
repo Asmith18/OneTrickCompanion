@@ -18,6 +18,7 @@ class AgentsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.black]
         setupTableView()
         viewModel = AgentViewModel(delegate: self)
     }
