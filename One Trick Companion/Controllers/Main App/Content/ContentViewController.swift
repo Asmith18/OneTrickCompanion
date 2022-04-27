@@ -35,10 +35,6 @@ class ContentViewController: UIViewController {
         
     }
     
-    @IBAction func signOutButtontapped(_ sender: Any) {
-        
-    }
-    
     
     // MARK: - Navigation
 

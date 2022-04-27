@@ -21,6 +21,11 @@ class LineupListTableViewController: UITableViewController {
         viewModel.fetchedResultsController.delegate = self
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.tableView.reloadData()
+    }
+    
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -57,14 +62,11 @@ class LineupListTableViewController: UITableViewController {
 }
 
 extension LineupListTableViewController: LineupListViewModelDelegate {
-    
+
     func LineupsHasData() {
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
-    }
-    
-    func encounteredError(_ error: Error) {
     }
 }
 

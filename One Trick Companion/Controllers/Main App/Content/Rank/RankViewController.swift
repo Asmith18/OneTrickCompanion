@@ -44,7 +44,9 @@ class RankViewController: UIViewController, UITableViewDelegate, UITableViewData
 extension RankViewController: RankViewModelDelegate {
     
     func rankListHasData() {
-        rankTableView.reloadData()
+        DispatchQueue.main.async {
+            self.rankTableView.reloadData()
+        }
     }
     
     func encountered(_ error: Error) {

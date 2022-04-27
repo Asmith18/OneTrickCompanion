@@ -20,6 +20,7 @@ class LineUpViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         self.overviewTableView.dataSource = self
         self.overviewTableView.delegate = self
     }

@@ -21,8 +21,4 @@ class LineupListTableViewCell: UITableViewCell {
         agentImageView.setImage(using: lineup.agentImage)
         mapNameTextLabel.text = lineup.mapName
     }
-    
-    func fetchImage() {
-        
-    }
 }

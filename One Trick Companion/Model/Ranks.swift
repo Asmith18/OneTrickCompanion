@@ -12,7 +12,7 @@ struct Ranks: Decodable {
 }
 
 struct RanksData: Decodable {
-    let tier: Int
+    let tier: Int?
     let tierName: String?
     let divisionName: String?
     let smallIcon: String?

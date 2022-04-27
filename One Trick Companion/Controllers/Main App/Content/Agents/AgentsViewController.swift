@@ -34,11 +34,6 @@ class AgentsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         return cell
     }
-    
-    
-    // MARK: - Navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    }
 }
 
 extension AgentsViewController: AgentViewModelDelegate {

@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+
 protocol LineUpViewModelDelegate: AnyObject {
     func overviewImagesHasdata()
     func encountered(_ error: Error)
