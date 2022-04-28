@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class ContentViewController: UIViewController {
 
@@ -38,6 +39,12 @@ class ContentViewController: UIViewController {
     }
     
     @IBAction func termsAndConditionsButtonPressed(_ sender: Any) {
+        termsWebView()
     }
     
+    func termsWebView() {
+        guard let url = URL(string: "https://app.websitepolicies.com/policies/view/93tkg5qe") else { return }
+                let viewController = SFSafariViewController(url: url)
+        present(viewController, animated: true)
+    }
 }

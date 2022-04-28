@@ -159,7 +159,6 @@
         <!--Item-->
         <scene sceneID="iyo-oV-BmP">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dLU-uL-31l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="nQP-dT-zU7" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="pcV-9j-eDF"/>
                     <navigationItem key="navigationItem" id="mnF-jQ-YvV"/>
@@ -171,6 +170,7 @@
                         <segue destination="LYq-yH-2xv" kind="relationship" relationship="rootViewController" id="WkP-v7-MZN"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dLU-uL-31l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="772" y="-800"/>
         </scene>
@@ -366,22 +366,6 @@
             </objects>
             <point key="canvasLocation" x="713.04347826086962" y="843.75000000000011"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="PVo-X1-Z5V">
-            <objects>
-                <viewController id="Sbm-SX-Dil" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="tH4-mP-tOY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="J5R-Hz-5VK"/>
-                        <color key="backgroundColor" red="0.070861448339999994" green="0.1223484978" blue="0.1734896963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="LYD-X5-zyY"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ypP-63-QG5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3683" y="-1543"/>
-        </scene>
         <!--Content-->
         <scene sceneID="ghx-F4-7IX">
             <objects>
@@ -465,7 +449,6 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="termsAndConditionsButtonPressed:" destination="LYq-yH-2xv" eventType="touchUpInside" id="fC9-bw-O56"/>
-                                            <segue destination="Sbm-SX-Dil" kind="show" id="y3p-4t-iOL"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -587,7 +570,6 @@
         <!--Maps-->
         <scene sceneID="2JD-gn-J79">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eTb-Ca-4GN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="F0J-vE-wTx" customClass="MapsViewController" customModule="One_Trick_Companion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pvw-nX-2yQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
@@ -633,6 +615,7 @@
                         <outlet property="mapsTableView" destination="lsH-Yb-iyr" id="YSM-bT-fpJ"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eTb-Ca-4GN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5093" y="-800"/>
         </scene>
