@@ -17,9 +17,15 @@ class MapsViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.black]
+        viewModel = MapsViewModel(delegate: self)
+        buildTableView()
+    }
+    
+    private func buildTableView() {
         self.mapsTableView.dataSource = self
         self.mapsTableView.delegate = self
-        viewModel = MapsViewModel(delegate: self)
+        mapsTableView.register(MapTableViewCell.nib(), forCellReuseIdentifier: MapTableViewCell.reuseId)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -27,17 +33,15 @@ class MapsViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "mapsCell", for: indexPath) as? MapsTableViewCell else { return UITableViewCell() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: MapTableViewCell.reuseId, for: indexPath) as? MapTableViewCell else { return UITableViewCell() }
         let result = viewModel.mapData[indexPath.row]
-        cell.updateViews(maps: result)
+        cell.updateView(result)
         
         return cell
     }
-
-
-    // MARK: - Navigation
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
+     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UIScreen.main.bounds.width / 4
     }
 }
 

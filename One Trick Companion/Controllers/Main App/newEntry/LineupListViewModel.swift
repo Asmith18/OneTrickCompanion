@@ -34,6 +34,11 @@ class LineupListViewMdoel {
     }
     
     func deleteLineup(lineup: Lineup) {
-           CoreDataStack.context.delete(lineup)
+        CoreDataStack.context.delete(lineup)
+        do {
+           try CoreDataStack.context.save()
+        } catch {
+            print("failed to save data")
+        }
     }
 }

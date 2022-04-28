@@ -38,6 +38,4 @@ class AgentTableViewCell: UITableViewCell {
         roleImageView.setImage(using: agentRole.displayIcon)
         roleImageView.contentMode = .scaleAspectFit
     }
-    
-    
 }
