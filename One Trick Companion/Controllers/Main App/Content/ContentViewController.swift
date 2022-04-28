@@ -18,10 +18,6 @@ class ContentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
-        mapsbuttom.backgroundColor = UIColor.red
-        weaponsButton.backgroundColor = UIColor.red
-        agentsButton.backgroundColor = UIColor.red
-        gamemodeButton.backgroundColor = UIColor.red
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -30,18 +26,18 @@ class ContentViewController: UIViewController {
     
 //MARK: - Actions
     @IBAction func mapsbuttonTapped(_ sender: Any) {
-
     }
     
     @IBAction func weaponsButtonTapped(_ sender: Any) {
-        
     }
     
     @IBAction func agentsButtonTapped(_ sender: Any) {
-        
     }
     
     @IBAction func gameModesButtonTapped(_ sender: Any) {
-        
     }
+    
+    @IBAction func termsAndConditionsButtonPressed(_ sender: Any) {
+    }
+    
 }

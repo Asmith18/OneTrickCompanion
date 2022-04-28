@@ -366,6 +366,22 @@
             </objects>
             <point key="canvasLocation" x="713.04347826086962" y="843.75000000000011"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="PVo-X1-Z5V">
+            <objects>
+                <viewController id="Sbm-SX-Dil" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tH4-mP-tOY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="J5R-Hz-5VK"/>
+                        <color key="backgroundColor" red="0.070861448339999994" green="0.1223484978" blue="0.1734896963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LYD-X5-zyY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ypP-63-QG5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3683" y="-1543"/>
+        </scene>
         <!--Content-->
         <scene sceneID="ghx-F4-7IX">
             <objects>
@@ -375,7 +391,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="3GT-d4-VgZ">
-                                <rect key="frame" x="15" y="94" width="384" height="251"/>
+                                <rect key="frame" x="15" y="94" width="384" height="320"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTA-E0-Fjp">
                                         <rect key="frame" x="0.0" y="0.0" width="384" height="44"/>
@@ -433,8 +449,23 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="gameModesButtonTapped:" destination="LYq-yH-2xv" eventType="touchUpInside" id="QUo-0l-y89"/>
+                                            <action selector="gameModesButtonTapped:" destination="LYq-yH-2xv" eventType="touchUpInside" id="OCL-9a-LIW"/>
                                             <segue destination="bX4-c3-Z3F" kind="show" id="vDg-TK-B3Z"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZl-qw-lEx">
+                                        <rect key="frame" x="0.0" y="276" width="384" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Zc8-Lk-7Rk"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Terms and Conditions">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="termsAndConditionsButtonPressed:" destination="LYq-yH-2xv" eventType="touchUpInside" id="fC9-bw-O56"/>
+                                            <segue destination="Sbm-SX-Dil" kind="show" id="y3p-4t-iOL"/>
                                         </connections>
                                     </button>
                                 </subviews>
