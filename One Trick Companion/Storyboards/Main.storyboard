@@ -502,13 +502,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="More" image="book.circle" catalog="system" selectedImage="book.circle.fill" id="Ouc-tm-gE9"/>
-                    <navigationItem key="navigationItem" title="Content" id="bxp-9r-Dy9">
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="color" keyPath="navigation.title">
-                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Content" id="bxp-9r-Dy9"/>
                     <connections>
                         <outlet property="agentsButton" destination="4Qg-55-JIc" id="jt3-aK-ww2"/>
                         <outlet property="gamemodeButton" destination="rRT-Dg-CLM" id="9zT-G8-eRE"/>
