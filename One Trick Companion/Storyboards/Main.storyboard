@@ -375,7 +375,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="3GT-d4-VgZ">
-                                <rect key="frame" x="15" y="94" width="384" height="320"/>
+                                <rect key="frame" x="15" y="94" width="384" height="458"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTA-E0-Fjp">
                                         <rect key="frame" x="0.0" y="0.0" width="384" height="44"/>
@@ -437,8 +437,38 @@
                                             <segue destination="bX4-c3-Z3F" kind="show" id="vDg-TK-B3Z"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZl-qw-lEx">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raV-AW-qnb">
                                         <rect key="frame" x="0.0" y="276" width="384" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="fCg-cW-jgh"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="About">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="aboutButtonPressed:" destination="LYq-yH-2xv" eventType="touchUpInside" id="MaX-oS-H5T"/>
+                                            <segue destination="ZGL-eu-lkg" kind="show" id="pac-GE-vji"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRi-0k-1YG">
+                                        <rect key="frame" x="0.0" y="345" width="384" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="lqx-qH-rEi"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Acknowledgments">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="acknowledgmentsButtonPressed:" destination="LYq-yH-2xv" eventType="touchUpInside" id="N8p-G8-RIz"/>
+                                            <segue destination="8md-xX-ZIO" kind="show" id="dyC-P4-zjr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZl-qw-lEx">
+                                        <rect key="frame" x="0.0" y="414" width="384" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="Zc8-Lk-7Rk"/>
                                         </constraints>
@@ -472,7 +502,13 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="More" image="book.circle" catalog="system" selectedImage="book.circle.fill" id="Ouc-tm-gE9"/>
-                    <navigationItem key="navigationItem" title="Content" id="bxp-9r-Dy9"/>
+                    <navigationItem key="navigationItem" title="Content" id="bxp-9r-Dy9">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="navigation.title">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </navigationItem>
                     <connections>
                         <outlet property="agentsButton" destination="4Qg-55-JIc" id="jt3-aK-ww2"/>
                         <outlet property="gamemodeButton" destination="rRT-Dg-CLM" id="9zT-G8-eRE"/>
@@ -483,6 +519,93 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C4E-rF-0yb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2912" y="-800"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="aYc-Di-aro">
+            <objects>
+                <viewController id="ZGL-eu-lkg" customClass="AboutViewController" customModule="One_Trick_Companion" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pjB-ij-abz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6r9-z3-6TD">
+                                <rect key="frame" x="20" y="71" width="374" height="147"/>
+                                <color key="backgroundColor" red="0.070861448339999994" green="0.1223484978" blue="0.1734896963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="147" id="hhG-Sb-XAS"/>
+                                </constraints>
+                                <string key="text">Lineup Larry is an IOS app designed with the focus on helping out players of Valorant with their in game strats to help improve their gameplay. Developed by Adam Smith of Stateful Academy.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8M-qk-dhl">
+                                <rect key="frame" x="110" y="226" width="194" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="safari" catalog="system" title="Visit Stateful Academy" imagePadding="3"/>
+                                <connections>
+                                    <action selector="visitStatefulbuttonPressed:" destination="PHt-52-D0b" eventType="touchUpInside" id="RmH-9X-trD"/>
+                                    <action selector="visitStatefulbuttonPressed:" destination="ZGL-eu-lkg" eventType="touchUpInside" id="o87-hZ-r4T"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5hv-nL-sJt"/>
+                        <color key="backgroundColor" red="0.070861448339999994" green="0.1223484978" blue="0.1734896963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5hv-nL-sJt" firstAttribute="trailing" secondItem="6r9-z3-6TD" secondAttribute="trailing" constant="20" id="5d3-VA-XFq"/>
+                            <constraint firstItem="6r9-z3-6TD" firstAttribute="leading" secondItem="5hv-nL-sJt" secondAttribute="leading" constant="20" id="DCC-ma-uoo"/>
+                            <constraint firstItem="6r9-z3-6TD" firstAttribute="top" secondItem="5hv-nL-sJt" secondAttribute="top" constant="27" id="H1a-jV-xvS"/>
+                            <constraint firstItem="A8M-qk-dhl" firstAttribute="top" secondItem="6r9-z3-6TD" secondAttribute="bottom" constant="8" id="dki-pg-qDg"/>
+                            <constraint firstItem="A8M-qk-dhl" firstAttribute="centerX" secondItem="5hv-nL-sJt" secondAttribute="centerX" id="nZ0-lN-GPI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="About" id="kvG-Fx-RSt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FHl-vf-A8s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="PHt-52-D0b" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2911.594202898551" y="-1588.0434782608697"/>
+        </scene>
+        <!--Acknowledgments-->
+        <scene sceneID="Bus-Jl-F44">
+            <objects>
+                <viewController id="8md-xX-ZIO" customClass="AcknowledgmentsViewController" customModule="One_Trick_Companion" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BYT-ob-EdS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mdt-MG-5hZ">
+                                <rect key="frame" x="20" y="71" width="374" height="616"/>
+                                <color key="backgroundColor" red="0.070861448339999994" green="0.1223484978" blue="0.1734896963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Stateful Academy -
+statefulacademy.com
+
+App Icon Graphic Designer -
+Kyler Somvong
+
+API -
+This app is powered by Valorant-Api.com. You can find it here 
+https://valorant-api.com/
+</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DCM-zi-fSd"/>
+                        <color key="backgroundColor" red="0.070861448339999994" green="0.1223484978" blue="0.1734896963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DCM-zi-fSd" firstAttribute="trailing" secondItem="mdt-MG-5hZ" secondAttribute="trailing" constant="20" id="8H1-7y-Kmg"/>
+                            <constraint firstItem="mdt-MG-5hZ" firstAttribute="top" secondItem="DCM-zi-fSd" secondAttribute="top" constant="27" id="Hlm-yr-fWX"/>
+                            <constraint firstItem="mdt-MG-5hZ" firstAttribute="leading" secondItem="DCM-zi-fSd" secondAttribute="leading" constant="20" id="Sc1-PO-Klb"/>
+                            <constraint firstItem="mdt-MG-5hZ" firstAttribute="bottom" secondItem="DCM-zi-fSd" secondAttribute="bottom" id="bga-VH-QfP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Acknowledgments" id="qA3-hU-IUZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S24-yI-GUK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3723" y="-1213"/>
         </scene>
         <!--Game Modes-->
         <scene sceneID="GLL-u4-O8o">
@@ -865,6 +988,7 @@
         <image name="displayicon (3)" width="128" height="128"/>
         <image name="paperplane" catalog="system" width="128" height="118"/>
         <image name="paperplane.fill" catalog="system" width="128" height="118"/>
+        <image name="safari" catalog="system" width="128" height="121"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

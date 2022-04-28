@@ -12,6 +12,8 @@
 		3E0CAD1427ED1E3A000AF833 /* Valorant Font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E0CAD1327ED1E20000AF833 /* Valorant Font.ttf */; };
 		3E0CAD1627ED1FD3000AF833 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0CAD1527ED1FD3000AF833 /* GradientView.swift */; };
 		3E228ED127ECECF400671FA1 /* AgentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E228ECF27ECECF400671FA1 /* AgentTableViewCell.xib */; };
+		C21ED834281B343700BCEC26 /* AcknowledgmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21ED833281B343700BCEC26 /* AcknowledgmentsViewController.swift */; };
+		C21ED836281B359E00BCEC26 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21ED835281B359E00BCEC26 /* AboutViewController.swift */; };
 		C24FD71327EEA1150032EB0D /* OneTrick.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C24FD71127EEA1150032EB0D /* OneTrick.xcdatamodeld */; };
 		C24FD73A27EEA7C70032EB0D /* LineupListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24FD73927EEA7C70032EB0D /* LineupListTableViewController.swift */; };
 		C24FD74427EF804C0032EB0D /* LineupListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24FD74327EF804C0032EB0D /* LineupListTableViewCell.swift */; };
@@ -76,6 +78,8 @@
 		3E0CAD1327ED1E20000AF833 /* Valorant Font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Valorant Font.ttf"; sourceTree = "<group>"; };
 		3E0CAD1527ED1FD3000AF833 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		3E228ECF27ECECF400671FA1 /* AgentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgentTableViewCell.xib; sourceTree = "<group>"; };
+		C21ED833281B343700BCEC26 /* AcknowledgmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcknowledgmentsViewController.swift; sourceTree = "<group>"; };
+		C21ED835281B359E00BCEC26 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		C24FD71227EEA1150032EB0D /* OneTrick.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OneTrick.xcdatamodel; sourceTree = "<group>"; };
 		C24FD73927EEA7C70032EB0D /* LineupListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineupListTableViewController.swift; sourceTree = "<group>"; };
 		C24FD74327EF804C0032EB0D /* LineupListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineupListTableViewCell.swift; sourceTree = "<group>"; };
@@ -200,6 +204,8 @@
 			isa = PBXGroup;
 			children = (
 				C29AE66D27E1047E005CAD4E /* ContentViewController.swift */,
+				C21ED833281B343700BCEC26 /* AcknowledgmentsViewController.swift */,
+				C21ED835281B359E00BCEC26 /* AboutViewController.swift */,
 				C29AE66A27E10269005CAD4E /* Maps */,
 				C29AE67127E11B11005CAD4E /* Weapons */,
 				C29AE69827E986C4005CAD4E /* Agents */,
@@ -479,6 +485,7 @@
 				C2A15FAC27DD215100FB6952 /* Account.swift in Sources */,
 				3E0CAD1027ED1D00000AF833 /* MapTableViewCell.swift in Sources */,
 				C24FD75227F13DBB0032EB0D /* CoreDataStack.swift in Sources */,
+				C21ED836281B359E00BCEC26 /* AboutViewController.swift in Sources */,
 				C29AE69C27E9874F005CAD4E /* AgentTableViewCell.swift in Sources */,
 				C29AE6AD27EA2A4A005CAD4E /* RankViewController.swift in Sources */,
 				C2A15F9C27DD1BB100FB6952 /* Agent.swift in Sources */,
@@ -521,6 +528,7 @@
 				C29AE6B327EA2F1C005CAD4E /* RankDataProvider.swift in Sources */,
 				C29AE6CA27EAAAC8005CAD4E /* LineUpViewModel.swift in Sources */,
 				C29AE6AA27EA0080005CAD4E /* GameModeDataProvider.swift in Sources */,
+				C21ED834281B343700BCEC26 /* AcknowledgmentsViewController.swift in Sources */,
 				C29AE6B727EA3B1A005CAD4E /* AgentListViewController.swift in Sources */,
 				C29AE6AF27EA2A72005CAD4E /* RankTableViewCell.swift in Sources */,
 				C24FD75727F146820032EB0D /* Lineup+CoreDataClass.swift in Sources */,
