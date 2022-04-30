@@ -14,6 +14,7 @@ protocol GameModeViewModelDelegate: AnyObject {
 
 class GameModeViewModel {
     
+    var gamemode: GameMode?
     var gameModeData: [GameModeData] = []
     var dataProvider = GameModeDataProvider()
     weak var delegate: GameModeViewModelDelegate?
