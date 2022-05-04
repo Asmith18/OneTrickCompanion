@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="157-fD-At4">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -20,7 +21,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="ebC-Ul-bi5">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.067725174129999996" green="0.12407543510000001" blue="0.17221638559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="lineupCell" rowHeight="107" id="X16-eh-CQ2" customClass="LineupListTableViewCell" customModule="One_Trick_Companion" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.666666030883789" width="428" height="107"/>
@@ -139,7 +140,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QCj-bm-P01"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.067725174129999996" green="0.12407543510000001" blue="0.17221638559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Rek-Nd-e97" firstAttribute="top" secondItem="QCj-bm-P01" secondAttribute="top" id="C4i-Xe-o8o"/>
                             <constraint firstItem="Rek-Nd-e97" firstAttribute="bottom" secondItem="QCj-bm-P01" secondAttribute="bottom" id="dFT-jZ-m9P"/>
@@ -186,7 +187,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Yn1-z5-IgA">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.067725174129999996" green="0.12407543510000001" blue="0.17221638559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="h1f-Oi-1hf">
                                 <rect key="frame" x="0.0" y="44.666666030883789" width="428" height="43.666667938232422"/>
@@ -267,7 +268,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Add Images">
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                            <color key="baseBackgroundColor" red="0.93385845420000002" green="0.2959989905" blue="0.34328797459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="addImagesButtontapped:" destination="r6q-sg-Anv" eventType="touchUpInside" id="QSH-0m-IlK"/>
@@ -334,7 +335,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Z9J-D3-Lml"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.067725174129999996" green="0.12407543510000001" blue="0.17221638559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="afI-gQ-QD1" firstAttribute="leading" secondItem="Z9J-D3-Lml" secondAttribute="leading" id="3qi-nK-iw9"/>
                             <constraint firstAttribute="bottom" secondItem="RyG-PZ-6TK" secondAttribute="bottom" id="9Hq-K4-fP3"/>
@@ -382,15 +383,31 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="3GT-d4-VgZ">
                                 <rect key="frame" x="15" y="138" width="398" height="458"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTA-E0-Fjp">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Qg-55-JIc">
                                         <rect key="frame" x="0.0" y="0.0" width="398" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="iYk-3z-yw9"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Agents">
+                                            <fontDescription key="titleFontDescription" name="VALORANT-Regular" family="VALORANT" pointSize="18"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.93385845420000002" green="0.2959989905" blue="0.34328797459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="agentsButtonTapped:" destination="LYq-yH-2xv" eventType="touchUpInside" id="tKX-qt-hfT"/>
+                                            <segue destination="gSg-7g-CnQ" kind="show" id="x2d-EA-P16"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTA-E0-Fjp">
+                                        <rect key="frame" x="0.0" y="69" width="398" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="kYM-Yb-kgP"/>
                                         </constraints>
-                                        <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Maps">
                                             <fontDescription key="titleFontDescription" name="VALORANT-Regular" family="VALORANT" pointSize="18"/>
+                                            <color key="baseBackgroundColor" red="0.93385845420000002" green="0.2959989905" blue="0.34328797459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="mapsbuttonTapped:" destination="LYq-yH-2xv" eventType="touchUpInside" id="qQX-tn-tQ1"/>
@@ -398,33 +415,18 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTZ-oW-tUZ">
-                                        <rect key="frame" x="0.0" y="69" width="398" height="44"/>
+                                        <rect key="frame" x="0.0" y="138" width="398" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="cE9-lz-kEV"/>
                                         </constraints>
-                                        <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Weapons">
                                             <fontDescription key="titleFontDescription" name="VALORANT-Regular" family="VALORANT" pointSize="18"/>
+                                            <color key="baseBackgroundColor" red="0.93385845420000002" green="0.2959989905" blue="0.34328797459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="weaponsButtonTapped:" destination="LYq-yH-2xv" eventType="touchUpInside" id="Fvw-v4-FLU"/>
                                             <segue destination="hKG-Bf-ITi" kind="show" id="ydm-zb-qMH"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Qg-55-JIc">
-                                        <rect key="frame" x="0.0" y="138" width="398" height="44"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="44" id="iYk-3z-yw9"/>
-                                        </constraints>
-                                        <color key="tintColor" systemColor="systemRedColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Agents">
-                                            <fontDescription key="titleFontDescription" name="VALORANT-Regular" family="VALORANT" pointSize="18"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="agentsButtonTapped:" destination="LYq-yH-2xv" eventType="touchUpInside" id="tKX-qt-hfT"/>
-                                            <segue destination="gSg-7g-CnQ" kind="show" id="x2d-EA-P16"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRT-Dg-CLM">
@@ -432,10 +434,10 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="hho-at-Vi2"/>
                                         </constraints>
-                                        <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Game Modes">
                                             <fontDescription key="titleFontDescription" name="VALORANT-Regular" family="VALORANT" pointSize="18"/>
+                                            <color key="baseBackgroundColor" red="0.93385845420000002" green="0.2959989905" blue="0.34328797459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="gameModesButtonTapped:" destination="LYq-yH-2xv" eventType="touchUpInside" id="OCL-9a-LIW"/>
@@ -447,10 +449,10 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="fCg-cW-jgh"/>
                                         </constraints>
-                                        <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="About">
                                             <fontDescription key="titleFontDescription" name="VALORANT-Regular" family="VALORANT" pointSize="18"/>
+                                            <color key="baseBackgroundColor" red="0.93385845420000002" green="0.2959989905" blue="0.34328797459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="aboutButtonPressed:" destination="LYq-yH-2xv" eventType="touchUpInside" id="MaX-oS-H5T"/>
@@ -462,10 +464,10 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="lqx-qH-rEi"/>
                                         </constraints>
-                                        <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Acknowledgments">
                                             <fontDescription key="titleFontDescription" name="VALORANT-Regular" family="VALORANT" pointSize="18"/>
+                                            <color key="baseBackgroundColor" red="0.93385845420000002" green="0.2959989905" blue="0.34328797459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="acknowledgmentsButtonPressed:" destination="LYq-yH-2xv" eventType="touchUpInside" id="N8p-G8-RIz"/>
@@ -477,10 +479,10 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="Zc8-Lk-7Rk"/>
                                         </constraints>
-                                        <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Terms and Conditions">
                                             <fontDescription key="titleFontDescription" name="VALORANT-Regular" family="VALORANT" pointSize="18"/>
+                                            <color key="baseBackgroundColor" red="0.93385845420000002" green="0.2959989905" blue="0.34328797459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="termsAndConditionsButtonPressed:" destination="LYq-yH-2xv" eventType="touchUpInside" id="fC9-bw-O56"/>
@@ -506,7 +508,7 @@
                             <constraint firstItem="3GT-d4-VgZ" firstAttribute="centerX" secondItem="aXy-Ew-gzw" secondAttribute="centerX" id="u1Z-Q2-P3r"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="More" image="book.circle" catalog="system" selectedImage="book.circle.fill" id="Ouc-tm-gE9"/>
+                    <tabBarItem key="tabBarItem" title="Contents" image="bookmark.circle" catalog="system" selectedImage="bookmark.circle.fill" id="Ouc-tm-gE9"/>
                     <navigationItem key="navigationItem" title="Content" id="bxp-9r-Dy9"/>
                     <connections>
                         <outlet property="agentsButton" destination="4Qg-55-JIc" id="jt3-aK-ww2"/>
@@ -540,6 +542,7 @@
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8M-qk-dhl">
                                 <rect key="frame" x="117" y="270" width="194" height="31"/>
+                                <color key="tintColor" red="0.93385845420000002" green="0.2959989905" blue="0.34328797459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="safari" catalog="system" title="Visit Stateful Academy" imagePadding="3"/>
                                 <connections>
@@ -944,8 +947,9 @@ https://valorant-api.com/
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.93385845420000002" green="0.2959989905" blue="0.34328797459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" systemColor="systemRedColor"/>
+                        <color key="selectedImageTintColor" red="0.93385845420000002" green="0.2959989905" blue="0.34328797459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="5BG-4P-eZO" kind="relationship" relationship="viewControllers" id="feg-xT-rdm"/>
@@ -960,7 +964,7 @@ https://valorant-api.com/
         <scene sceneID="aIS-le-d8p">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5BG-4P-eZO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Notes" image="paperplane" catalog="system" selectedImage="paperplane.fill" id="vbB-tx-Wk3"/>
+                    <tabBarItem key="tabBarItem" title="Notes" image="plus.circle" catalog="system" selectedImage="plus.circle.fill" id="vbB-tx-Wk3"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="OUu-v7-rpe">
                         <rect key="frame" x="0.0" y="44" width="428" height="44"/>
@@ -982,20 +986,17 @@ https://valorant-api.com/
     <color key="tintColor" systemColor="systemRedColor"/>
     <resources>
         <image name="Jett" width="256" height="256"/>
-        <image name="book.circle" catalog="system" width="128" height="121"/>
-        <image name="book.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="bookmark.circle" catalog="system" width="128" height="121"/>
+        <image name="bookmark.circle.fill" catalog="system" width="128" height="121"/>
         <image name="displayicon (3)" width="128" height="128"/>
-        <image name="paperplane" catalog="system" width="128" height="118"/>
-        <image name="paperplane.fill" catalog="system" width="128" height="118"/>
+        <image name="plus.circle" catalog="system" width="128" height="121"/>
+        <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
         <image name="safari" catalog="system" width="128" height="121"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

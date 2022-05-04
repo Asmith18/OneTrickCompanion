@@ -23,6 +23,10 @@ class AgentListViewController: UIViewController, UITableViewDelegate, UITableVie
         viewModel = AgentListViewModel(delegate: self)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+    }
+    
     private func setupTableView() {
         self.notestableView.delegate = self
         self.notestableView.dataSource = self

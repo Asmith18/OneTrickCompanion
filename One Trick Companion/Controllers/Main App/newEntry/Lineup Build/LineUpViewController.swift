@@ -9,8 +9,6 @@ import UIKit
 
 class LineUpViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    
-    
     //MARK: - Outputs
     @IBOutlet weak var overviewTableView: UITableView!
     @IBOutlet weak var instructionTextView: UITextView!
@@ -30,6 +28,7 @@ class LineUpViewController: UIViewController, UITableViewDelegate, UITableViewDa
         super.viewWillAppear(animated)
         titleTextField.text = viewModel?.lineup?.title
         instructionTextView.text = viewModel?.lineup?.instructions
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -42,6 +41,7 @@ class LineUpViewController: UIViewController, UITableViewDelegate, UITableViewDa
         cell.updateViews(image: result!)
         return cell
     }
+    
     //MARK: - Actions
     @IBAction func saveButtonTapped(_ sender: Any) {
         guard let instructions = instructionTextView.text,

@@ -17,6 +17,10 @@ class MapTableViewController: UITableViewController {
         buildTableView()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+    }
+    
     private func buildTableView() {
         tableView.register(MapTableViewCell.nib(), forCellReuseIdentifier: MapTableViewCell.reuseId)
     }
