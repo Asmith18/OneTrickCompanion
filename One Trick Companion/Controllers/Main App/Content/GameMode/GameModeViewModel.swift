@@ -14,6 +14,7 @@ protocol GameModeViewModelDelegate: AnyObject {
 
 class GameModeViewModel {
     
+    var gamemode: GameMode?
     var gameModeData: [GameModeData] = []
     var dataProvider = GameModeDataProvider()
     weak var delegate: GameModeViewModelDelegate?
@@ -28,6 +29,7 @@ class GameModeViewModel {
             switch result {
             case .success(let gameModeList):
                 self.gameModeData = gameModeList.data
+                self.gameModeData.remove(at: 3)
                 self.delegate?.gameModeListHasData()
             case .failure(let error):
                 print(error)

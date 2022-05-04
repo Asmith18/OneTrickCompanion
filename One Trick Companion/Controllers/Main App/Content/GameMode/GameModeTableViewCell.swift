@@ -13,12 +13,12 @@ class GameModeTableViewCell: UITableViewCell {
     @IBOutlet weak var gameModeImageView: MapImageView!
     @IBOutlet weak var nameTextLabel: UILabel!
     @IBOutlet weak var lengthTextLabel: UILabel!
-    
+
     
     func updateViews(mode: GameModeData) {
-        guard let gameMode = mode.displayIcon else { return }
         nameTextLabel.text = mode.displayName
         lengthTextLabel.text = mode.duration
+        guard let gameMode = mode.displayIcon else { return }
         gameModeImageView.setImage(using: gameMode)
     }
 }

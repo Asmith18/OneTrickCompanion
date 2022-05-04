@@ -21,12 +21,20 @@ class WeaponsTableViewCell: UITableViewCell {
     
     var viewModel: WeaponsViewModel!
     
+    override func prepareForReuse() {
+        gunNameTextLabel.text = ""
+        gunImageView.image = nil
+        stat1TextLabel.text = "0"
+        stat2TextLabel.text = "0"
+        stat3TextLabel.text = "0"
+    }
+    
     func updateViews(weapon: WeaponsData) {
-        guard let weaponStats = weapon.weaponStats else { return }
+        gunImageView.setImage(using: weapon.displayIcon)
         gunNameTextLabel.text = weapon.displayName
+        guard let weaponStats = weapon.weaponStats else { return }
         stat1TextLabel.text = "\(weaponStats.fireRate)"
         stat2TextLabel.text = "\(weaponStats.magazineSize)"
         stat3TextLabel.text  = "\(weaponStats.firstBulletAccuracy)"
-        gunImageView.setImage(using: weapon.displayIcon)
     }
 }

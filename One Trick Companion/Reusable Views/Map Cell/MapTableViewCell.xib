@@ -21,7 +21,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="70.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="listviewicon" translatesAutoresizingMaskIntoConstraints="NO" id="qNF-Op-Mt3" customClass="MapImageView" customModule="One_Trick_Companion" customModuleProvider="target">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="listviewicon-1" translatesAutoresizingMaskIntoConstraints="NO" id="qNF-Op-Mt3" customClass="MapImageView" customModule="One_Trick_Companion" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="70.5"/>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4i5-25-koV" customClass="GradientView" customModule="One_Trick_Companion" customModuleProvider="target">
@@ -86,6 +86,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="listviewicon" width="456" height="100"/>
+        <image name="listviewicon-1" width="456" height="100"/>
     </resources>
 </document>

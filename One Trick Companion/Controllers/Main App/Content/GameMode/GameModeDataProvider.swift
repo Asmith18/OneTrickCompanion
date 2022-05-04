@@ -22,8 +22,8 @@ struct GameModeDataProvider: APIDataProvidable, GameModeDataprovidable {
             case .success(let data):
                 let decoder = JSONDecoder()
                 do {
-                    let leaderboard = try decoder.decode(GameMode.self, from: data)
-                    completion(.success(leaderboard))
+                    let gameMode = try decoder.decode(GameMode.self, from: data)
+                    completion(.success(gameMode))
                 } catch {
                     completion(.failure(.errorDecoding))
                 }

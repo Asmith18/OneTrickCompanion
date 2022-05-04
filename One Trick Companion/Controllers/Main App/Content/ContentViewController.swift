@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class ContentViewController: UIViewController {
 
@@ -17,10 +18,9 @@ class ContentViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
     }
     
@@ -38,6 +38,20 @@ class ContentViewController: UIViewController {
     }
     
     @IBAction func termsAndConditionsButtonPressed(_ sender: Any) {
+        termsWebView()
     }
     
+    @IBAction func acknowledgmentsButtonPressed(_ sender: Any) {
+    }
+    
+    @IBAction func aboutButtonPressed(_ sender: Any) {
+    }
+    
+    
+    
+    func termsWebView() {
+        guard let url = URL(string: "https://app.websitepolicies.com/policies/view/93tkg5qe") else { return }
+                let viewController = SFSafariViewController(url: url)
+        present(viewController, animated: true)
+    }
 }
