@@ -23,6 +23,19 @@ class AgentListViewController: UIViewController, UITableViewDelegate, UITableVie
         viewModel = AgentListViewModel(delegate: self)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.black]
+    }
+    
+//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//
+//        let magicalSafeAreaTop: CGFloat = 5
+//        let offset = scrollView.contentOffset.y + magicalSafeAreaTop
+//
+//        navigationController?.navigationBar.transform = .init(translationX: 0, y: min(0, -offset))
+//
+//    }
+    
     private func setupTableView() {
         self.notestableView.delegate = self
         self.notestableView.dataSource = self
