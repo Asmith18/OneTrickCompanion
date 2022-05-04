@@ -163,7 +163,7 @@
 		C29AE6C327EAA053005CAD4E /* MapDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDataProvider.swift; sourceTree = "<group>"; };
 		C29AE6C727EAA97A005CAD4E /* LineUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineUpViewController.swift; sourceTree = "<group>"; };
 		C29AE6C927EAAAC8005CAD4E /* LineUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineUpViewModel.swift; sourceTree = "<group>"; };
-		C2A15F7D27D940F300FB6952 /* One Trick Companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "One Trick Companion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2A15F7D27D940F300FB6952 /* Lineup Larry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lineup Larry.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2A15F8027D940F300FB6952 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2A15F8227D940F300FB6952 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C2A15F8927D940F400FB6952 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -430,7 +430,7 @@
 		C2A15F7427D940F300FB6952 = {
 			isa = PBXGroup;
 			children = (
-				C2A15F7F27D940F300FB6952 /* One Trick Companion */,
+				C2A15F7F27D940F300FB6952 /* Lineup Larry */,
 				C2A15F7E27D940F300FB6952 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -438,12 +438,12 @@
 		C2A15F7E27D940F300FB6952 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C2A15F7D27D940F300FB6952 /* One Trick Companion.app */,
+				C2A15F7D27D940F300FB6952 /* Lineup Larry.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C2A15F7F27D940F300FB6952 /* One Trick Companion */ = {
+		C2A15F7F27D940F300FB6952 /* Lineup Larry */ = {
 			isa = PBXGroup;
 			children = (
 				3E228ECD27ECEC9600671FA1 /* Reusable Views */,
@@ -452,7 +452,7 @@
 				C2A15F9427D9410C00FB6952 /* Resources */,
 				C2A15F9527D95E1700FB6952 /* Storyboards */,
 			);
-			path = "One Trick Companion";
+			path = "Lineup Larry";
 			sourceTree = "<group>";
 		};
 		C2A15F9427D9410C00FB6952 /* Resources */ = {
@@ -511,9 +511,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C2A15F7C27D940F300FB6952 /* One Trick Companion */ = {
+		C2A15F7C27D940F300FB6952 /* Lineup Larry */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C2A15F9127D940F400FB6952 /* Build configuration list for PBXNativeTarget "One Trick Companion" */;
+			buildConfigurationList = C2A15F9127D940F400FB6952 /* Build configuration list for PBXNativeTarget "Lineup Larry" */;
 			buildPhases = (
 				C2A15F7927D940F300FB6952 /* Sources */,
 				C2A15F7A27D940F300FB6952 /* Frameworks */,
@@ -523,11 +523,11 @@
 			);
 			dependencies = (
 			);
-			name = "One Trick Companion";
+			name = "Lineup Larry";
 			packageProductDependencies = (
 			);
 			productName = "One Trick Companion";
-			productReference = C2A15F7D27D940F300FB6952 /* One Trick Companion.app */;
+			productReference = C2A15F7D27D940F300FB6952 /* Lineup Larry.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -545,7 +545,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C2A15F7827D940F300FB6952 /* Build configuration list for PBXProject "One Trick Companion" */;
+			buildConfigurationList = C2A15F7827D940F300FB6952 /* Build configuration list for PBXProject "Lineup Larry" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -560,7 +560,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C2A15F7C27D940F300FB6952 /* One Trick Companion */,
+				C2A15F7C27D940F300FB6952 /* Lineup Larry */,
 			);
 		};
 /* End PBXProject section */
@@ -805,7 +805,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9DXP3CGV77;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "One Trick Companion/Resources/Info.plist";
+				INFOPLIST_FILE = "Lineup Larry/Resources/Info.plist";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please allow access.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -834,7 +834,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9DXP3CGV77;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "One Trick Companion/Resources/Info.plist";
+				INFOPLIST_FILE = "Lineup Larry/Resources/Info.plist";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please allow access.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -857,7 +857,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C2A15F7827D940F300FB6952 /* Build configuration list for PBXProject "One Trick Companion" */ = {
+		C2A15F7827D940F300FB6952 /* Build configuration list for PBXProject "Lineup Larry" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C2A15F8F27D940F400FB6952 /* Debug */,
@@ -866,7 +866,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C2A15F9127D940F400FB6952 /* Build configuration list for PBXNativeTarget "One Trick Companion" */ = {
+		C2A15F9127D940F400FB6952 /* Build configuration list for PBXNativeTarget "Lineup Larry" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C2A15F9227D940F400FB6952 /* Debug */,

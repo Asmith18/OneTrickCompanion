@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C2A15F7C27D940F300FB6952"
                BuildableName = "One Trick Companion.app"
-               BlueprintName = "One Trick Companion"
-               ReferencedContainer = "container:One Trick Companion.xcodeproj">
+               BlueprintName = "Lineup Larry"
+               ReferencedContainer = "container:Lineup Larry.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,8 +46,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C2A15F7C27D940F300FB6952"
             BuildableName = "One Trick Companion.app"
-            BlueprintName = "One Trick Companion"
-            ReferencedContainer = "container:One Trick Companion.xcodeproj">
+            BlueprintName = "Lineup Larry"
+            ReferencedContainer = "container:Lineup Larry.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C2A15F7C27D940F300FB6952"
             BuildableName = "One Trick Companion.app"
-            BlueprintName = "One Trick Companion"
-            ReferencedContainer = "container:One Trick Companion.xcodeproj">
+            BlueprintName = "Lineup Larry"
+            ReferencedContainer = "container:Lineup Larry.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -19,7 +19,6 @@ class LineupListTableViewController: UITableViewController {
         tableView.frame = view.bounds
         viewModel = LineupListViewMdoel()
         viewModel.fetchedResultsController.delegate = self
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
