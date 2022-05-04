@@ -21,7 +21,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="ebC-Ul-bi5">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.067725174129999996" green="0.12407543510000001" blue="0.17221638559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="lineupCell" rowHeight="107" id="X16-eh-CQ2" customClass="LineupListTableViewCell" customModule="One_Trick_Companion" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.666666030883789" width="428" height="107"/>
@@ -140,7 +140,8 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QCj-bm-P01"/>
-                        <color key="backgroundColor" red="0.067725174129999996" green="0.12407543510000001" blue="0.17221638559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.93385845420000002" green="0.2959989905" blue="0.34328797459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Rek-Nd-e97" firstAttribute="top" secondItem="QCj-bm-P01" secondAttribute="top" id="C4i-Xe-o8o"/>
                             <constraint firstItem="Rek-Nd-e97" firstAttribute="bottom" secondItem="QCj-bm-P01" secondAttribute="bottom" id="dFT-jZ-m9P"/>
@@ -187,7 +188,8 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Yn1-z5-IgA">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.067725174129999996" green="0.12407543510000001" blue="0.17221638559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.93385845420000002" green="0.2959989905" blue="0.34328797459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="h1f-Oi-1hf">
                                 <rect key="frame" x="0.0" y="44.666666030883789" width="428" height="43.666667938232422"/>
@@ -268,7 +270,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Add Images">
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <color key="baseBackgroundColor" red="0.93385845420000002" green="0.2959989905" blue="0.34328797459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="addImagesButtontapped:" destination="r6q-sg-Anv" eventType="touchUpInside" id="QSH-0m-IlK"/>
@@ -335,7 +337,8 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Z9J-D3-Lml"/>
-                        <color key="backgroundColor" red="0.067725174129999996" green="0.12407543510000001" blue="0.17221638559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.93385845420000002" green="0.2959989905" blue="0.34328797459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="afI-gQ-QD1" firstAttribute="leading" secondItem="Z9J-D3-Lml" secondAttribute="leading" id="3qi-nK-iw9"/>
                             <constraint firstAttribute="bottom" secondItem="RyG-PZ-6TK" secondAttribute="bottom" id="9Hq-K4-fP3"/>
@@ -350,7 +353,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Lineup" id="11K-dN-mdh">
-                        <barButtonItem key="rightBarButtonItem" width="13" style="done" systemItem="save" id="MJf-lK-bS4">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="MJf-lK-bS4">
                             <color key="tintColor" systemColor="systemRedColor"/>
                             <connections>
                                 <action selector="saveButtonTapped:" destination="r6q-sg-Anv" id="d4P-vV-jkV"/>
@@ -392,7 +395,7 @@
                                         <buttonConfiguration key="configuration" style="filled" title="Agents">
                                             <fontDescription key="titleFontDescription" name="VALORANT-Regular" family="VALORANT" pointSize="18"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <color key="baseBackgroundColor" red="0.93385845420000002" green="0.2959989905" blue="0.34328797459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="agentsButtonTapped:" destination="LYq-yH-2xv" eventType="touchUpInside" id="tKX-qt-hfT"/>
@@ -407,7 +410,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Maps">
                                             <fontDescription key="titleFontDescription" name="VALORANT-Regular" family="VALORANT" pointSize="18"/>
-                                            <color key="baseBackgroundColor" red="0.93385845420000002" green="0.2959989905" blue="0.34328797459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="mapsbuttonTapped:" destination="LYq-yH-2xv" eventType="touchUpInside" id="qQX-tn-tQ1"/>
@@ -422,7 +425,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Weapons">
                                             <fontDescription key="titleFontDescription" name="VALORANT-Regular" family="VALORANT" pointSize="18"/>
-                                            <color key="baseBackgroundColor" red="0.93385845420000002" green="0.2959989905" blue="0.34328797459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="weaponsButtonTapped:" destination="LYq-yH-2xv" eventType="touchUpInside" id="Fvw-v4-FLU"/>
@@ -437,7 +440,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Game Modes">
                                             <fontDescription key="titleFontDescription" name="VALORANT-Regular" family="VALORANT" pointSize="18"/>
-                                            <color key="baseBackgroundColor" red="0.93385845420000002" green="0.2959989905" blue="0.34328797459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="gameModesButtonTapped:" destination="LYq-yH-2xv" eventType="touchUpInside" id="OCL-9a-LIW"/>
@@ -452,7 +455,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="About">
                                             <fontDescription key="titleFontDescription" name="VALORANT-Regular" family="VALORANT" pointSize="18"/>
-                                            <color key="baseBackgroundColor" red="0.93385845420000002" green="0.2959989905" blue="0.34328797459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="aboutButtonPressed:" destination="LYq-yH-2xv" eventType="touchUpInside" id="MaX-oS-H5T"/>
@@ -467,7 +470,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Acknowledgments">
                                             <fontDescription key="titleFontDescription" name="VALORANT-Regular" family="VALORANT" pointSize="18"/>
-                                            <color key="baseBackgroundColor" red="0.93385845420000002" green="0.2959989905" blue="0.34328797459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="acknowledgmentsButtonPressed:" destination="LYq-yH-2xv" eventType="touchUpInside" id="N8p-G8-RIz"/>
@@ -482,7 +485,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Terms and Conditions">
                                             <fontDescription key="titleFontDescription" name="VALORANT-Regular" family="VALORANT" pointSize="18"/>
-                                            <color key="baseBackgroundColor" red="0.93385845420000002" green="0.2959989905" blue="0.34328797459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="termsAndConditionsButtonPressed:" destination="LYq-yH-2xv" eventType="touchUpInside" id="fC9-bw-O56"/>
@@ -542,7 +545,7 @@
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8M-qk-dhl">
                                 <rect key="frame" x="117" y="270" width="194" height="31"/>
-                                <color key="tintColor" red="0.93385845420000002" green="0.2959989905" blue="0.34328797459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="safari" catalog="system" title="Visit Stateful Academy" imagePadding="3"/>
                                 <connections>

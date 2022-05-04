@@ -28,7 +28,7 @@ class LineUpViewController: UIViewController, UITableViewDelegate, UITableViewDa
         super.viewWillAppear(animated)
         titleTextField.text = viewModel?.lineup?.title
         instructionTextView.text = viewModel?.lineup?.instructions
-        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.black]
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
