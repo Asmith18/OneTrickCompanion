@@ -398,7 +398,6 @@
                                             <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="agentsButtonTapped:" destination="LYq-yH-2xv" eventType="touchUpInside" id="tKX-qt-hfT"/>
                                             <segue destination="gSg-7g-CnQ" kind="show" id="x2d-EA-P16"/>
                                         </connections>
                                     </button>
@@ -413,7 +412,6 @@
                                             <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="mapsbuttonTapped:" destination="LYq-yH-2xv" eventType="touchUpInside" id="qQX-tn-tQ1"/>
                                             <segue destination="F0J-vE-wTx" kind="show" id="5hu-wa-fIH"/>
                                         </connections>
                                     </button>
@@ -428,7 +426,6 @@
                                             <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="weaponsButtonTapped:" destination="LYq-yH-2xv" eventType="touchUpInside" id="Fvw-v4-FLU"/>
                                             <segue destination="hKG-Bf-ITi" kind="show" id="ydm-zb-qMH"/>
                                         </connections>
                                     </button>
@@ -443,7 +440,6 @@
                                             <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="gameModesButtonTapped:" destination="LYq-yH-2xv" eventType="touchUpInside" id="OCL-9a-LIW"/>
                                             <segue destination="bX4-c3-Z3F" kind="show" id="vDg-TK-B3Z"/>
                                         </connections>
                                     </button>
@@ -458,7 +454,6 @@
                                             <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="aboutButtonPressed:" destination="LYq-yH-2xv" eventType="touchUpInside" id="MaX-oS-H5T"/>
                                             <segue destination="ZGL-eu-lkg" kind="show" id="pac-GE-vji"/>
                                         </connections>
                                     </button>
@@ -473,7 +468,6 @@
                                             <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="acknowledgmentsButtonPressed:" destination="LYq-yH-2xv" eventType="touchUpInside" id="N8p-G8-RIz"/>
                                             <segue destination="8md-xX-ZIO" kind="show" id="dyC-P4-zjr"/>
                                         </connections>
                                     </button>
@@ -522,7 +516,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C4E-rF-0yb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2912" y="-800"/>
+            <point key="canvasLocation" x="2910" y="-800"/>
         </scene>
         <!--About-->
         <scene sceneID="aYc-Di-aro">

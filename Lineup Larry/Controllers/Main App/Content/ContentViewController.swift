@@ -23,35 +23,13 @@ class ContentViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
     }
-    
 //MARK: - Actions
-    @IBAction func mapsbuttonTapped(_ sender: Any) {
-    }
-    
-    @IBAction func weaponsButtonTapped(_ sender: Any) {
-    }
-    
-    @IBAction func agentsButtonTapped(_ sender: Any) {
-    }
-    
-    @IBAction func gameModesButtonTapped(_ sender: Any) {
-    }
+
     
     @IBAction func termsAndConditionsButtonPressed(_ sender: Any) {
-        termsWebView()
-    }
-    
-    @IBAction func acknowledgmentsButtonPressed(_ sender: Any) {
-    }
-    
-    @IBAction func aboutButtonPressed(_ sender: Any) {
-    }
-    
-    
-    
-    func termsWebView() {
         guard let url = URL(string: "https://app.websitepolicies.com/policies/view/93tkg5qe") else { return }
                 let viewController = SFSafariViewController(url: url)
         present(viewController, animated: true)
     }
 }
+
