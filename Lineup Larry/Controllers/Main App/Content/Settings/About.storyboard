@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Valorant Font.ttf">
+            <string>VALORANT-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--About-->
+        <scene sceneID="aYc-Di-aro">
+            <objects>
+                <viewController storyboardIdentifier="UIViewController-ZGL-eu-lkg" id="ZGL-eu-lkg" customClass="AboutViewController" customModule="Lineup_Larry" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pjB-ij-abz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6r9-z3-6TD">
+                                <rect key="frame" x="20" y="74" width="388" height="147"/>
+                                <color key="backgroundColor" red="0.070861448339999994" green="0.1223484978" blue="0.1734896963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="147" id="hhG-Sb-XAS"/>
+                                </constraints>
+                                <string key="text">Lineup Larry is an IOS app designed with the focus on helping out players of Valorant with their in game strats to help improve their gameplay. Developed by Adam Smith of Stateful Academy.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="VALORANT-Regular" family="VALORANT" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8M-qk-dhl">
+                                <rect key="frame" x="102" y="229" width="224" height="34.333333333333314"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="safari" catalog="system" title="Visit Stateful Academy" imagePadding="3"/>
+                                <connections>
+                                    <action selector="visitStatefulbuttonPressed:" destination="PHt-52-D0b" eventType="touchUpInside" id="RmH-9X-trD"/>
+                                    <action selector="visitStatefulbuttonPressed:" destination="ZGL-eu-lkg" eventType="touchUpInside" id="o87-hZ-r4T"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5hv-nL-sJt"/>
+                        <color key="backgroundColor" red="0.070861448339999994" green="0.1223484978" blue="0.1734896963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5hv-nL-sJt" firstAttribute="trailing" secondItem="6r9-z3-6TD" secondAttribute="trailing" constant="20" id="5d3-VA-XFq"/>
+                            <constraint firstItem="6r9-z3-6TD" firstAttribute="leading" secondItem="5hv-nL-sJt" secondAttribute="leading" constant="20" id="DCC-ma-uoo"/>
+                            <constraint firstItem="6r9-z3-6TD" firstAttribute="top" secondItem="5hv-nL-sJt" secondAttribute="top" constant="27" id="H1a-jV-xvS"/>
+                            <constraint firstItem="A8M-qk-dhl" firstAttribute="top" secondItem="6r9-z3-6TD" secondAttribute="bottom" constant="8" id="dki-pg-qDg"/>
+                            <constraint firstItem="A8M-qk-dhl" firstAttribute="centerX" secondItem="5hv-nL-sJt" secondAttribute="centerX" id="nZ0-lN-GPI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="About" id="kvG-Fx-RSt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FHl-vf-A8s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="PHt-52-D0b" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="4871" y="-800"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" systemColor="systemRedColor"/>
+    <resources>
+        <image name="safari" catalog="system" width="128" height="123"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -12,6 +12,17 @@
 		3E0CAD1427ED1E3A000AF833 /* Valorant Font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E0CAD1327ED1E20000AF833 /* Valorant Font.ttf */; };
 		3E0CAD1627ED1FD3000AF833 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0CAD1527ED1FD3000AF833 /* GradientView.swift */; };
 		3E228ED127ECECF400671FA1 /* AgentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E228ECF27ECECF400671FA1 /* AgentTableViewCell.xib */; };
+		C2079F5829197E2A006BA81D /* LineupList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F5729197E2A006BA81D /* LineupList.storyboard */; };
+		C2079F5A29197E95006BA81D /* AgentList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F5929197E95006BA81D /* AgentList.storyboard */; };
+		C2079F5C29197EBA006BA81D /* MapsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F5B29197EBA006BA81D /* MapsList.storyboard */; };
+		C2079F5E29197ED0006BA81D /* LineupDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F5D29197ED0006BA81D /* LineupDetail.storyboard */; };
+		C2079F6029197F47006BA81D /* Contents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F5F29197F47006BA81D /* Contents.storyboard */; };
+		C2079F6229197F91006BA81D /* AgentContent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F6129197F91006BA81D /* AgentContent.storyboard */; };
+		C2079F6429197FA5006BA81D /* WeaponContent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F6329197FA5006BA81D /* WeaponContent.storyboard */; };
+		C2079F6629197FBA006BA81D /* GameModeContents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F6529197FBA006BA81D /* GameModeContents.storyboard */; };
+		C2079F6829197FCD006BA81D /* MapContent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F6729197FCD006BA81D /* MapContent.storyboard */; };
+		C2079F6A29197FEA006BA81D /* Acknowledgments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F6929197FEA006BA81D /* Acknowledgments.storyboard */; };
+		C2079F6C29197FF7006BA81D /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F6B29197FF7006BA81D /* About.storyboard */; };
 		C21ED834281B343700BCEC26 /* AcknowledgmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21ED833281B343700BCEC26 /* AcknowledgmentsViewController.swift */; };
 		C21ED836281B359E00BCEC26 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21ED835281B359E00BCEC26 /* AboutViewController.swift */; };
 		C23542E7282229C400FE6E59 /* 1024.png in Resources */ = {isa = PBXBuildFile; fileRef = C23542E6282229C400FE6E59 /* 1024.png */; };
@@ -98,6 +109,17 @@
 		3E0CAD1327ED1E20000AF833 /* Valorant Font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Valorant Font.ttf"; sourceTree = "<group>"; };
 		3E0CAD1527ED1FD3000AF833 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		3E228ECF27ECECF400671FA1 /* AgentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgentTableViewCell.xib; sourceTree = "<group>"; };
+		C2079F5729197E2A006BA81D /* LineupList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LineupList.storyboard; sourceTree = "<group>"; };
+		C2079F5929197E95006BA81D /* AgentList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AgentList.storyboard; sourceTree = "<group>"; };
+		C2079F5B29197EBA006BA81D /* MapsList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MapsList.storyboard; sourceTree = "<group>"; };
+		C2079F5D29197ED0006BA81D /* LineupDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LineupDetail.storyboard; sourceTree = "<group>"; };
+		C2079F5F29197F47006BA81D /* Contents.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Contents.storyboard; sourceTree = "<group>"; };
+		C2079F6129197F91006BA81D /* AgentContent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AgentContent.storyboard; sourceTree = "<group>"; };
+		C2079F6329197FA5006BA81D /* WeaponContent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WeaponContent.storyboard; sourceTree = "<group>"; };
+		C2079F6529197FBA006BA81D /* GameModeContents.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GameModeContents.storyboard; sourceTree = "<group>"; };
+		C2079F6729197FCD006BA81D /* MapContent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MapContent.storyboard; sourceTree = "<group>"; };
+		C2079F6929197FEA006BA81D /* Acknowledgments.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Acknowledgments.storyboard; sourceTree = "<group>"; };
+		C2079F6B29197FF7006BA81D /* About.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
 		C21ED833281B343700BCEC26 /* AcknowledgmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcknowledgmentsViewController.swift; sourceTree = "<group>"; };
 		C21ED835281B359E00BCEC26 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		C23542E6282229C400FE6E59 /* 1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1024.png; sourceTree = "<group>"; };
@@ -233,6 +255,8 @@
 			children = (
 				C21ED833281B343700BCEC26 /* AcknowledgmentsViewController.swift */,
 				C21ED835281B359E00BCEC26 /* AboutViewController.swift */,
+				C2079F6B29197FF7006BA81D /* About.storyboard */,
+				C2079F6929197FEA006BA81D /* Acknowledgments.storyboard */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -243,6 +267,7 @@
 				C24FD73927EEA7C70032EB0D /* LineupListTableViewController.swift */,
 				C24FD74327EF804C0032EB0D /* LineupListTableViewCell.swift */,
 				C24FD74F27F0D1A90032EB0D /* LineupListViewModel.swift */,
+				C2079F5729197E2A006BA81D /* LineupList.storyboard */,
 			);
 			path = "Lineup List";
 			sourceTree = "<group>";
@@ -325,6 +350,7 @@
 			isa = PBXGroup;
 			children = (
 				C29AE66D27E1047E005CAD4E /* ContentViewController.swift */,
+				C2079F5F29197F47006BA81D /* Contents.storyboard */,
 				C21ED838281B380000BCEC26 /* Settings */,
 				C29AE66A27E10269005CAD4E /* Maps */,
 				C29AE67127E11B11005CAD4E /* Weapons */,
@@ -341,6 +367,7 @@
 				C29AE66F27E109AB005CAD4E /* MapsTableViewCell.swift */,
 				C29AE68327E24586005CAD4E /* MapsViewModel.swift */,
 				C29AE69027E3A050005CAD4E /* MapsDataProvider.swift */,
+				C2079F6729197FCD006BA81D /* MapContent.storyboard */,
 			);
 			path = Maps;
 			sourceTree = "<group>";
@@ -352,6 +379,7 @@
 				C29AE67E27E11E5A005CAD4E /* WeaponsTableViewCell.swift */,
 				C29AE69427E3D1DC005CAD4E /* WeaponsViewModel.swift */,
 				C29AE69627E3D2F7005CAD4E /* WeaponDataProvider.swift */,
+				C2079F6329197FA5006BA81D /* WeaponContent.storyboard */,
 			);
 			path = Weapons;
 			sourceTree = "<group>";
@@ -382,6 +410,7 @@
 				C29AE69927E98717005CAD4E /* AgentsViewController.swift */,
 				C29AE69D27E98A4B005CAD4E /* AgentViewModel.swift */,
 				C29AE69F27E98AB7005CAD4E /* AgentDataProvider.swift */,
+				C2079F6129197F91006BA81D /* AgentContent.storyboard */,
 			);
 			path = Agents;
 			sourceTree = "<group>";
@@ -393,6 +422,7 @@
 				C29AE6A527EA005F005CAD4E /* GameModeTableViewCell.swift */,
 				C29AE6A727EA0070005CAD4E /* GameModeViewModel.swift */,
 				C29AE6A927EA0080005CAD4E /* GameModeDataProvider.swift */,
+				C2079F6529197FBA006BA81D /* GameModeContents.storyboard */,
 			);
 			path = GameMode;
 			sourceTree = "<group>";
@@ -403,6 +433,7 @@
 				C29AE6B627EA3B1A005CAD4E /* AgentListViewController.swift */,
 				C29AE6BD27EA9ADC005CAD4E /* AgentListViewModel.swift */,
 				C29AE6BF27EA9B1D005CAD4E /* AgentListDataProvider.swift */,
+				C2079F5929197E95006BA81D /* AgentList.storyboard */,
 			);
 			path = AgentList;
 			sourceTree = "<group>";
@@ -413,6 +444,7 @@
 				C29AE6BB27EA3C64005CAD4E /* MapTableViewController.swift */,
 				C29AE6C127EAA029005CAD4E /* MapViewModel.swift */,
 				C29AE6C327EAA053005CAD4E /* MapDataProvider.swift */,
+				C2079F5B29197EBA006BA81D /* MapsList.storyboard */,
 			);
 			path = MapList;
 			sourceTree = "<group>";
@@ -423,6 +455,7 @@
 				C29AE6C727EAA97A005CAD4E /* LineUpViewController.swift */,
 				C24FD74527EFA74A0032EB0D /* LineUpTableViewCell.swift */,
 				C29AE6C927EAAAC8005CAD4E /* LineUpViewModel.swift */,
+				C2079F5D29197ED0006BA81D /* LineupDetail.storyboard */,
 			);
 			path = "Lineup Build";
 			sourceTree = "<group>";
@@ -450,7 +483,6 @@
 				C2A15F9A27DD1B9200FB6952 /* Model */,
 				C2A15FC027DD2B4700FB6952 /* Controllers */,
 				C2A15F9427D9410C00FB6952 /* Resources */,
-				C2A15F9527D95E1700FB6952 /* Storyboards */,
 			);
 			path = "Lineup Larry";
 			sourceTree = "<group>";
@@ -465,18 +497,11 @@
 				C2A15F8227D940F300FB6952 /* SceneDelegate.swift */,
 				C2A15F8927D940F400FB6952 /* Assets.xcassets */,
 				C23542E6282229C400FE6E59 /* 1024.png */,
+				C2A15F9827D96EEE00FB6952 /* Main.storyboard */,
 				C2A15F8B27D940F400FB6952 /* LaunchScreen.storyboard */,
 				C2A15F8E27D940F400FB6952 /* Info.plist */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		C2A15F9527D95E1700FB6952 /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				C2A15F9827D96EEE00FB6952 /* Main.storyboard */,
-			);
-			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		C2A15F9A27DD1B9200FB6952 /* Model */ = {
@@ -571,11 +596,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E0CAD1427ED1E3A000AF833 /* Valorant Font.ttf in Resources */,
+				C2079F5C29197EBA006BA81D /* MapsList.storyboard in Resources */,
+				C2079F5E29197ED0006BA81D /* LineupDetail.storyboard in Resources */,
 				C2A15F8D27D940F400FB6952 /* LaunchScreen.storyboard in Resources */,
+				C2079F6229197F91006BA81D /* AgentContent.storyboard in Resources */,
+				C2079F6829197FCD006BA81D /* MapContent.storyboard in Resources */,
 				C2A15F8A27D940F400FB6952 /* Assets.xcassets in Resources */,
 				C23542E7282229C400FE6E59 /* 1024.png in Resources */,
 				C2A15F9927D96EEE00FB6952 /* Main.storyboard in Resources */,
+				C2079F5829197E2A006BA81D /* LineupList.storyboard in Resources */,
+				C2079F6029197F47006BA81D /* Contents.storyboard in Resources */,
+				C2079F6429197FA5006BA81D /* WeaponContent.storyboard in Resources */,
+				C2079F6629197FBA006BA81D /* GameModeContents.storyboard in Resources */,
 				3E228ED127ECECF400671FA1 /* AgentTableViewCell.xib in Resources */,
+				C2079F6C29197FF7006BA81D /* About.storyboard in Resources */,
+				C2079F5A29197E95006BA81D /* AgentList.storyboard in Resources */,
+				C2079F6A29197FEA006BA81D /* Acknowledgments.storyboard in Resources */,
 				3E0CAD1127ED1D00000AF833 /* MapTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -808,10 +844,12 @@
 				INFOPLIST_FILE = "Lineup Larry/Resources/Info.plist";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please allow access.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -838,10 +876,12 @@
 				INFOPLIST_FILE = "Lineup Larry/Resources/Info.plist";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please allow access.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

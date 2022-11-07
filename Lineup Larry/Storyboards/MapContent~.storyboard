@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="157-fD-At4">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Valorant Font.ttf">
+            <string>VALORANT-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="iyo-oV-BmP">
+            <objects>
+                <navigationController id="nQP-dT-zU7" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="pcV-9j-eDF"/>
+                    <navigationItem key="navigationItem" id="mnF-jQ-YvV"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tJD-pF-scA">
+                        <rect key="frame" x="0.0" y="47" width="428" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="s1z-UG-vkY" kind="relationship" relationship="rootViewController" id="WkP-v7-MZN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dLU-uL-31l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1965" y="-800"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="aYc-Di-aro">
+            <objects>
+                <viewController storyboardIdentifier="UIViewController-ZGL-eu-lkg" id="ZGL-eu-lkg" customClass="AboutViewController" customModule="Lineup_Larry" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pjB-ij-abz">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6r9-z3-6TD">
+                                <rect key="frame" x="20" y="74" width="388" height="147"/>
+                                <color key="backgroundColor" red="0.070861448339999994" green="0.1223484978" blue="0.1734896963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="147" id="hhG-Sb-XAS"/>
+                                </constraints>
+                                <string key="text">Lineup Larry is an IOS app designed with the focus on helping out players of Valorant with their in game strats to help improve their gameplay. Developed by Adam Smith of Stateful Academy.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="VALORANT-Regular" family="VALORANT" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8M-qk-dhl">
+                                <rect key="frame" x="102" y="229" width="224" height="34.333333333333314"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="safari" catalog="system" title="Visit Stateful Academy" imagePadding="3"/>
+                                <connections>
+                                    <action selector="visitStatefulbuttonPressed:" destination="PHt-52-D0b" eventType="touchUpInside" id="RmH-9X-trD"/>
+                                    <action selector="visitStatefulbuttonPressed:" destination="ZGL-eu-lkg" eventType="touchUpInside" id="o87-hZ-r4T"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5hv-nL-sJt"/>
+                        <color key="backgroundColor" red="0.070861448339999994" green="0.1223484978" blue="0.1734896963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5hv-nL-sJt" firstAttribute="trailing" secondItem="6r9-z3-6TD" secondAttribute="trailing" constant="20" id="5d3-VA-XFq"/>
+                            <constraint firstItem="6r9-z3-6TD" firstAttribute="leading" secondItem="5hv-nL-sJt" secondAttribute="leading" constant="20" id="DCC-ma-uoo"/>
+                            <constraint firstItem="6r9-z3-6TD" firstAttribute="top" secondItem="5hv-nL-sJt" secondAttribute="top" constant="27" id="H1a-jV-xvS"/>
+                            <constraint firstItem="A8M-qk-dhl" firstAttribute="top" secondItem="6r9-z3-6TD" secondAttribute="bottom" constant="8" id="dki-pg-qDg"/>
+                            <constraint firstItem="A8M-qk-dhl" firstAttribute="centerX" secondItem="5hv-nL-sJt" secondAttribute="centerX" id="nZ0-lN-GPI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="About" id="kvG-Fx-RSt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FHl-vf-A8s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="PHt-52-D0b" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="4871" y="-800"/>
+        </scene>
+        <!--Acknowledgments-->
+        <scene sceneID="Bus-Jl-F44">
+            <objects>
+                <viewController storyboardIdentifier="UIViewController-8md-xX-ZIO" id="8md-xX-ZIO" customClass="AcknowledgmentsViewController" customModule="Lineup_Larry" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BYT-ob-EdS">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mdt-MG-5hZ">
+                                <rect key="frame" x="20" y="74" width="388" height="818"/>
+                                <color key="backgroundColor" red="0.070861448339999994" green="0.1223484978" blue="0.1734896963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Stateful Academy -
+statefulacademy.com
+
+App Icon Graphic Designer -
+Kyler Somvong
+
+API -
+This app is powered by Valorant-Api.com. You can find it here 
+https://valorant-api.com/
+</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="VALORANT-Regular" family="VALORANT" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DCM-zi-fSd"/>
+                        <color key="backgroundColor" red="0.070861448339999994" green="0.1223484978" blue="0.1734896963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DCM-zi-fSd" firstAttribute="trailing" secondItem="mdt-MG-5hZ" secondAttribute="trailing" constant="20" id="8H1-7y-Kmg"/>
+                            <constraint firstItem="mdt-MG-5hZ" firstAttribute="top" secondItem="DCM-zi-fSd" secondAttribute="top" constant="27" id="Hlm-yr-fWX"/>
+                            <constraint firstItem="mdt-MG-5hZ" firstAttribute="leading" secondItem="DCM-zi-fSd" secondAttribute="leading" constant="20" id="Sc1-PO-Klb"/>
+                            <constraint firstItem="mdt-MG-5hZ" firstAttribute="bottom" secondItem="DCM-zi-fSd" secondAttribute="bottom" id="bga-VH-QfP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Acknowledgments" id="qA3-hU-IUZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S24-yI-GUK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4074" y="-449"/>
+        </scene>
+        <!--Maps-->
+        <scene sceneID="2JD-gn-J79">
+            <objects>
+                <viewController storyboardIdentifier="UIViewController-F0J-vE-wTx" id="F0J-vE-wTx" customClass="MapsViewController" customModule="Lineup_Larry" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pvw-nX-2yQ">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="lsH-Yb-iyr">
+                                <rect key="frame" x="0.0" y="47" width="428" height="879"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="VJi-er-NXt" rowHeight="74" style="IBUITableViewCellStyleDefault" id="LJB-oB-X2v" customClass="MapsTableViewCell" customModule="Lineup_Larry" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="428" height="74"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LJB-oB-X2v" id="Uol-Ia-eXx">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="74"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VJi-er-NXt">
+                                                    <rect key="frame" x="20" y="0.0" width="388" height="74"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="r0n-6H-GfL"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lsH-Yb-iyr" firstAttribute="top" secondItem="r0n-6H-GfL" secondAttribute="top" id="7Mf-3q-aJl"/>
+                            <constraint firstItem="lsH-Yb-iyr" firstAttribute="trailing" secondItem="r0n-6H-GfL" secondAttribute="trailing" id="iel-jZ-ogO"/>
+                            <constraint firstItem="lsH-Yb-iyr" firstAttribute="leading" secondItem="r0n-6H-GfL" secondAttribute="leading" id="lZl-Ul-Wtb"/>
+                            <constraint firstAttribute="bottom" secondItem="lsH-Yb-iyr" secondAttribute="bottom" id="nGX-sF-FFt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Maps" id="ep8-M3-4b0"/>
+                    <connections>
+                        <outlet property="mapsTableView" destination="lsH-Yb-iyr" id="YSM-bT-fpJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eTb-Ca-4GN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4074" y="-1142"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yHt-ps-M3J">
+            <objects>
+                <tabBarController storyboardIdentifier="App" id="157-fD-At4" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="qTr-b8-a1a"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qjx-4J-LeZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.93385845420000002" green="0.2959989905" blue="0.34328797459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.93385845420000002" green="0.2959989905" blue="0.34328797459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="5BG-4P-eZO" kind="relationship" relationship="viewControllers" id="feg-xT-rdm"/>
+                        <segue destination="nQP-dT-zU7" kind="relationship" relationship="viewControllers" id="QR7-Xa-kx1"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="28O-Ta-40R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-194" y="-799"/>
+        </scene>
+        <!--Notes-->
+        <scene sceneID="aIS-le-d8p">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5BG-4P-eZO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Notes" image="plus.circle" catalog="system" selectedImage="plus.circle.fill" id="vbB-tx-Wk3"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OUu-v7-rpe">
+                        <rect key="frame" x="0.0" y="47" width="428" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2en-p3-4Hz" kind="relationship" relationship="rootViewController" id="3Wz-GA-S37"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cvi-57-LCi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-195" y="98"/>
+        </scene>
+        <!--LineupList-->
+        <scene sceneID="m1X-mb-i9h">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LineupList" id="2en-p3-4Hz" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="htq-Ce-343"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="luU-tm-LXE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-823" y="820"/>
+        </scene>
+        <!--UIViewController-SUb-Gd-wUq-->
+        <scene sceneID="GwY-SY-pie">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="UIViewController-SUb-Gd-wUq" storyboardName="AgentList" referencedIdentifier="UIViewController-SUb-Gd-wUq" id="n1c-4Y-c7Q" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qIq-fs-glO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="231" y="820"/>
+        </scene>
+        <!--UITableViewController-jlH-VR-YdK-->
+        <scene sceneID="NYt-3X-QiR">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="UITableViewController-jlH-VR-YdK" storyboardName="MapsList" referencedIdentifier="UITableViewController-jlH-VR-YdK" id="uAH-eD-aGl" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4rt-mk-AIg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-823" y="1547"/>
+        </scene>
+        <!--UIViewController-r6q-sg-Anv-->
+        <scene sceneID="e3Q-Cb-z1a">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="UIViewController-r6q-sg-Anv" storyboardName="LineupDetail" referencedIdentifier="UIViewController-r6q-sg-Anv" id="9mb-tF-p81" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sN2-1r-khb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="227" y="1547"/>
+        </scene>
+        <!--Contents-->
+        <scene sceneID="yvN-Xn-4uk">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Contents" id="s1z-UG-vkY" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="zM5-Lm-cJg"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zO1-PW-GAl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2910" y="-800"/>
+        </scene>
+        <!--UIViewController-gSg-7g-CnQ-->
+        <scene sceneID="bAQ-Ac-fXK">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="UIViewController-gSg-7g-CnQ" storyboardName="AgentContent" referencedIdentifier="UIViewController-gSg-7g-CnQ" id="wNI-Wf-xsy" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="npM-qE-vwd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1723" y="395"/>
+        </scene>
+        <!--UIViewController-hKG-Bf-ITi-->
+        <scene sceneID="PgO-cG-Q0P">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="UIViewController-hKG-Bf-ITi" storyboardName="WeaponContent" referencedIdentifier="UIViewController-hKG-Bf-ITi" id="nkh-GV-g4F" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F7O-DF-Kd6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2909" y="395"/>
+        </scene>
+        <!--UIViewController-bX4-c3-Z3F-->
+        <scene sceneID="Ubi-17-W4b">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="UIViewController-bX4-c3-Z3F" storyboardName="GameModeContents" referencedIdentifier="UIViewController-bX4-c3-Z3F" id="jLT-vJ-u5b" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jld-Jp-nEs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4074" y="395"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" systemColor="systemRedColor"/>
+    <resources>
+        <image name="plus.circle" catalog="system" width="128" height="123"/>
+        <image name="plus.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="safari" catalog="system" width="128" height="123"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

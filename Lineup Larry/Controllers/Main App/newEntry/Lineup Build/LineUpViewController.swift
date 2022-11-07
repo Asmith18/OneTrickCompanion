@@ -27,8 +27,8 @@ class LineUpViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         titleTextField.text = viewModel?.lineup?.title
-        instructionTextView.text = viewModel?.lineup?.instructions
-        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.black]
+        instructionTextView.text = viewModel?.lineup?.instructions ?? "Description"
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -53,6 +53,7 @@ class LineUpViewController: UIViewController, UITableViewDelegate, UITableViewDa
             }
         }
     }
+    
     @IBAction func addImagesButtontapped(_ sender: Any) {
         let vc = UIImagePickerController()
         vc.sourceType = .photoLibrary
@@ -72,7 +73,6 @@ extension LineUpViewController: UIImagePickerControllerDelegate, UINavigationCon
                 self.overviewTableView.reloadData()
             }
         }
-        
         picker.dismiss(animated: true, completion: nil)
     }
     

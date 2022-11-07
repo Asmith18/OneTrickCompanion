@@ -24,24 +24,13 @@ class AgentListViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.black]
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
     }
-    
-//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-//
-//        let magicalSafeAreaTop: CGFloat = 5
-//        let offset = scrollView.contentOffset.y + magicalSafeAreaTop
-//
-//        navigationController?.navigationBar.transform = .init(translationX: 0, y: min(0, -offset))
-//
-//    }
     
     private func setupTableView() {
         self.notestableView.delegate = self
         self.notestableView.dataSource = self
         self.notestableView.register(AgentTableViewCell.nib(), forCellReuseIdentifier: AgentTableViewCell.reuseID)
-        
-        self.notestableView.backgroundColor = UIColor(red: 19, green: 32, blue: 45, alpha: 1)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

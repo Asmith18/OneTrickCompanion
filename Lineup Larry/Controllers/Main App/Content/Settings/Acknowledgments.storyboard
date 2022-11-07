@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Valorant Font.ttf">
+            <string>VALORANT-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Acknowledgments-->
+        <scene sceneID="Bus-Jl-F44">
+            <objects>
+                <viewController storyboardIdentifier="UIViewController-8md-xX-ZIO" id="8md-xX-ZIO" customClass="AcknowledgmentsViewController" customModule="Lineup_Larry" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BYT-ob-EdS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mdt-MG-5hZ">
+                                <rect key="frame" x="20" y="74" width="388" height="818"/>
+                                <color key="backgroundColor" red="0.070861448339999994" green="0.1223484978" blue="0.1734896963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Stateful Academy -
+statefulacademy.com
+
+App Icon Graphic Designer -
+Kyler Somvong
+
+API -
+This app is powered by Valorant-Api.com. You can find it here 
+https://valorant-api.com/
+</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="VALORANT-Regular" family="VALORANT" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DCM-zi-fSd"/>
+                        <color key="backgroundColor" red="0.070861448339999994" green="0.1223484978" blue="0.1734896963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DCM-zi-fSd" firstAttribute="trailing" secondItem="mdt-MG-5hZ" secondAttribute="trailing" constant="20" id="8H1-7y-Kmg"/>
+                            <constraint firstItem="mdt-MG-5hZ" firstAttribute="top" secondItem="DCM-zi-fSd" secondAttribute="top" constant="27" id="Hlm-yr-fWX"/>
+                            <constraint firstItem="mdt-MG-5hZ" firstAttribute="leading" secondItem="DCM-zi-fSd" secondAttribute="leading" constant="20" id="Sc1-PO-Klb"/>
+                            <constraint firstItem="mdt-MG-5hZ" firstAttribute="bottom" secondItem="DCM-zi-fSd" secondAttribute="bottom" id="bga-VH-QfP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Acknowledgments" id="qA3-hU-IUZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S24-yI-GUK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4074" y="-449"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" systemColor="systemRedColor"/>
+    <resources>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

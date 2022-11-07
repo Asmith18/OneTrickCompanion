@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LYq-yH-2xv">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Valorant Font.ttf">
+            <string>VALORANT-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Content-->
+        <scene sceneID="ghx-F4-7IX">
+            <objects>
+                <viewController id="LYq-yH-2xv" customClass="ContentViewController" customModule="Lineup_Larry" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TSo-xL-XHG">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="3GT-d4-VgZ">
+                                <rect key="frame" x="15" y="97" width="360" height="458"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Qg-55-JIc">
+                                        <rect key="frame" x="0.0" y="0.0" width="360" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="iYk-3z-yw9"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Agents">
+                                            <fontDescription key="titleFontDescription" name="VALORANT-Regular" family="VALORANT" pointSize="18"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="6HF-cV-8kS" kind="show" id="x2d-EA-P16"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTA-E0-Fjp">
+                                        <rect key="frame" x="0.0" y="69" width="360" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="kYM-Yb-kgP"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Maps">
+                                            <fontDescription key="titleFontDescription" name="VALORANT-Regular" family="VALORANT" pointSize="18"/>
+                                            <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="WtE-t2-LzW" kind="show" id="5hu-wa-fIH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTZ-oW-tUZ">
+                                        <rect key="frame" x="0.0" y="138" width="360" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="cE9-lz-kEV"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Weapons">
+                                            <fontDescription key="titleFontDescription" name="VALORANT-Regular" family="VALORANT" pointSize="18"/>
+                                            <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="TXs-Uy-kTV" kind="show" id="ydm-zb-qMH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRT-Dg-CLM">
+                                        <rect key="frame" x="0.0" y="207" width="360" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="hho-at-Vi2"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Game Modes">
+                                            <fontDescription key="titleFontDescription" name="VALORANT-Regular" family="VALORANT" pointSize="18"/>
+                                            <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="kDg-5f-ZxW" kind="show" id="vDg-TK-B3Z"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raV-AW-qnb">
+                                        <rect key="frame" x="0.0" y="276" width="360" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="fCg-cW-jgh"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="About">
+                                            <fontDescription key="titleFontDescription" name="VALORANT-Regular" family="VALORANT" pointSize="18"/>
+                                            <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="Rtt-he-UKL" kind="show" id="pac-GE-vji"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRi-0k-1YG">
+                                        <rect key="frame" x="0.0" y="345" width="360" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="lqx-qH-rEi"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Acknowledgments">
+                                            <fontDescription key="titleFontDescription" name="VALORANT-Regular" family="VALORANT" pointSize="18"/>
+                                            <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="nXc-hs-xNz" kind="show" id="dyC-P4-zjr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZl-qw-lEx">
+                                        <rect key="frame" x="0.0" y="414" width="360" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Zc8-Lk-7Rk"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Terms and Conditions">
+                                            <fontDescription key="titleFontDescription" name="VALORANT-Regular" family="VALORANT" pointSize="18"/>
+                                            <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="termsAndConditionsButtonPressed:" destination="LYq-yH-2xv" eventType="touchUpInside" id="fC9-bw-O56"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LineUp Larry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H65-dA-M7l">
+                                <rect key="frame" x="117.00000000000001" y="736.66666666666663" width="156.33333333333337" height="22"/>
+                                <fontDescription key="fontDescription" name="VALORANT-Regular" family="VALORANT" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aXy-Ew-gzw"/>
+                        <color key="backgroundColor" red="0.19562778110000001" green="0.19562778110000001" blue="0.19562778110000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="H65-dA-M7l" firstAttribute="centerX" secondItem="aXy-Ew-gzw" secondAttribute="centerX" id="38h-tu-fnx"/>
+                            <constraint firstItem="aXy-Ew-gzw" firstAttribute="bottom" secondItem="H65-dA-M7l" secondAttribute="bottom" constant="51.5" id="HCh-iz-pee"/>
+                            <constraint firstItem="3GT-d4-VgZ" firstAttribute="leading" secondItem="aXy-Ew-gzw" secondAttribute="leading" constant="15" id="K3f-Us-4cx"/>
+                            <constraint firstItem="aXy-Ew-gzw" firstAttribute="trailing" secondItem="3GT-d4-VgZ" secondAttribute="trailing" constant="15" id="R0R-RH-Sun"/>
+                            <constraint firstItem="3GT-d4-VgZ" firstAttribute="top" secondItem="aXy-Ew-gzw" secondAttribute="top" constant="50" id="qV5-Bn-o81"/>
+                            <constraint firstItem="3GT-d4-VgZ" firstAttribute="centerX" secondItem="aXy-Ew-gzw" secondAttribute="centerX" id="u1Z-Q2-P3r"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Contents" image="bookmark.circle" catalog="system" selectedImage="bookmark.circle.fill" id="Ouc-tm-gE9"/>
+                    <navigationItem key="navigationItem" title="Content" id="bxp-9r-Dy9"/>
+                    <connections>
+                        <outlet property="agentsButton" destination="4Qg-55-JIc" id="jt3-aK-ww2"/>
+                        <outlet property="gamemodeButton" destination="rRT-Dg-CLM" id="9zT-G8-eRE"/>
+                        <outlet property="mapsbuttom" destination="aTA-E0-Fjp" id="9eg-hY-4c5"/>
+                        <outlet property="weaponsButton" destination="JTZ-oW-tUZ" id="HaP-UM-2F6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C4E-rF-0yb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2910" y="-800"/>
+        </scene>
+        <!--UIViewController-gSg-7g-CnQ-->
+        <scene sceneID="5GG-qh-NLp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="UIViewController-gSg-7g-CnQ" id="6HF-cV-8kS" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hkd-nT-Pr3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1723" y="395"/>
+        </scene>
+        <!--UIViewController-F0J-vE-wTx-->
+        <scene sceneID="Twm-xL-PZF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="UIViewController-F0J-vE-wTx" id="WtE-t2-LzW" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7CV-UY-kUB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4074" y="-1142"/>
+        </scene>
+        <!--UIViewController-hKG-Bf-ITi-->
+        <scene sceneID="y9i-T8-Iyn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="UIViewController-hKG-Bf-ITi" id="TXs-Uy-kTV" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aAj-u6-T1p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2909" y="395"/>
+        </scene>
+        <!--UIViewController-bX4-c3-Z3F-->
+        <scene sceneID="8MG-Zm-gdR">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="UIViewController-bX4-c3-Z3F" id="kDg-5f-ZxW" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T1L-gg-12D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4074" y="395"/>
+        </scene>
+        <!--UIViewController-ZGL-eu-lkg-->
+        <scene sceneID="RKx-Qy-Fx0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="UIViewController-ZGL-eu-lkg" id="Rtt-he-UKL" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jNH-Sz-3rO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4871" y="-800"/>
+        </scene>
+        <!--UIViewController-8md-xX-ZIO-->
+        <scene sceneID="AfF-fg-Apn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="UIViewController-8md-xX-ZIO" id="nXc-hs-xNz" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w8E-Gd-kHf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4074" y="-449"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" systemColor="systemRedColor"/>
+    <resources>
+        <image name="bookmark.circle" catalog="system" width="128" height="123"/>
+        <image name="bookmark.circle.fill" catalog="system" width="128" height="123"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
