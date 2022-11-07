@@ -359,8 +359,8 @@
 		C29AE68227E1630B005CAD4E /* Main App */ = {
 			isa = PBXGroup;
 			children = (
-				C29AE66927E10262005CAD4E /* Content */,
 				C24FD73827EEA79B0032EB0D /* newEntry */,
+				C29AE66927E10262005CAD4E /* Content */,
 			);
 			path = "Main App";
 			sourceTree = "<group>";

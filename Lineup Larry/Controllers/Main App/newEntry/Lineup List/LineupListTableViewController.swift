@@ -7,7 +7,7 @@
 
 import UIKit
 import CoreData
-import SwiftUI
+
 
 class LineupListTableViewController: UITableViewController {
 
