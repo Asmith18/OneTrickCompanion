@@ -8,12 +8,12 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Contents-->
         <scene sceneID="iyo-oV-BmP">
             <objects>
                 <navigationController id="nQP-dT-zU7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="pcV-9j-eDF"/>
-                    <navigationItem key="navigationItem" id="mnF-jQ-YvV"/>
+                    <tabBarItem key="tabBarItem" title="Contents" image="bookmark" catalog="system" selectedImage="bookmark.fill" id="pcV-9j-eDF"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="mnF-jQ-YvV"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tJD-pF-scA">
                         <rect key="frame" x="0.0" y="47" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -48,14 +48,14 @@
             </objects>
             <point key="canvasLocation" x="-194" y="-799"/>
         </scene>
-        <!--Notes-->
+        <!--Lineups-->
         <scene sceneID="aIS-le-d8p">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5BG-4P-eZO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Notes" image="plus.circle" catalog="system" selectedImage="plus.circle.fill" id="vbB-tx-Wk3"/>
+                    <tabBarItem key="tabBarItem" title="Lineups" image="plus.circle" catalog="system" selectedImage="plus.circle.fill" id="vbB-tx-Wk3"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OUu-v7-rpe">
-                        <rect key="frame" x="0.0" y="47" width="428" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="OUu-v7-rpe">
+                        <rect key="frame" x="0.0" y="47" width="428" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -117,7 +117,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="UIViewController-gSg-7g-CnQ" storyboardName="AgentContent" referencedIdentifier="UIViewController-gSg-7g-CnQ" id="wNI-Wf-xsy" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="npM-qE-vwd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1661" y="-759"/>
+            <point key="canvasLocation" x="1620" y="-789"/>
         </scene>
         <!--UIViewController-hKG-Bf-ITi-->
         <scene sceneID="PgO-cG-Q0P">
@@ -125,7 +125,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="UIViewController-hKG-Bf-ITi" storyboardName="WeaponContent" referencedIdentifier="UIViewController-hKG-Bf-ITi" id="nkh-GV-g4F" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F7O-DF-Kd6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1646" y="-706"/>
+            <point key="canvasLocation" x="1618" y="-757"/>
         </scene>
         <!--UIViewController-bX4-c3-Z3F-->
         <scene sceneID="Ubi-17-W4b">
@@ -133,7 +133,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="UIViewController-bX4-c3-Z3F" storyboardName="GameModeContents" referencedIdentifier="UIViewController-bX4-c3-Z3F" id="jLT-vJ-u5b" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jld-Jp-nEs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1646" y="-649"/>
+            <point key="canvasLocation" x="1618" y="-720"/>
         </scene>
         <!--UIViewController-F0J-vE-wTx-->
         <scene sceneID="Mxq-Tj-BUq">
@@ -141,7 +141,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="UIViewController-F0J-vE-wTx" storyboardName="MapContent" referencedIdentifier="UIViewController-F0J-vE-wTx" id="RCZ-hc-Hod" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fic-Kh-c1x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1652" y="-950"/>
+            <point key="canvasLocation" x="1620" y="-881"/>
         </scene>
         <!--UIViewController-8md-xX-ZIO-->
         <scene sceneID="oG6-Pn-ZMG">
@@ -149,7 +149,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="UIViewController-8md-xX-ZIO" storyboardName="Acknowledgments" referencedIdentifier="UIViewController-8md-xX-ZIO" id="aUr-5i-QMQ" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SNF-RX-IkX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1660" y="-825"/>
+            <point key="canvasLocation" x="1619" y="-823"/>
         </scene>
         <!--UIViewController-ZGL-eu-lkg-->
         <scene sceneID="bJG-c8-Qdz">
@@ -157,11 +157,13 @@
                 <viewControllerPlaceholder storyboardIdentifier="UIViewController-ZGL-eu-lkg" storyboardName="About" referencedIdentifier="UIViewController-ZGL-eu-lkg" id="Yax-Ca-OC1" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kky-MT-8cB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1655" y="-886"/>
+            <point key="canvasLocation" x="1620" y="-853"/>
         </scene>
     </scenes>
     <color key="tintColor" systemColor="systemRedColor"/>
     <resources>
+        <image name="bookmark" catalog="system" width="110" height="128"/>
+        <image name="bookmark.fill" catalog="system" width="110" height="128"/>
         <image name="plus.circle" catalog="system" width="128" height="123"/>
         <image name="plus.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemRedColor">

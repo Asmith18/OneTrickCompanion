@@ -17,9 +17,14 @@ class MapsViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.black]
         viewModel = MapsViewModel(delegate: self)
         buildTableView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
     }
     
     private func buildTableView() {

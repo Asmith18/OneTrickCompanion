@@ -21,8 +21,11 @@ class GameModeViewController: UIViewController, UITableViewDelegate, UITableView
         self.gameModeTableView.delegate = self
         viewModel = GameModeViewModel(delegate: self)
     }
+    
     override func viewWillAppear(_ animated: Bool) {
-        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.black]
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

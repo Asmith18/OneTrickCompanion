@@ -144,8 +144,7 @@
                             <constraint firstItem="3GT-d4-VgZ" firstAttribute="centerX" secondItem="aXy-Ew-gzw" secondAttribute="centerX" id="u1Z-Q2-P3r"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Contents" image="bookmark.circle" catalog="system" selectedImage="bookmark.circle.fill" id="Ouc-tm-gE9"/>
-                    <navigationItem key="navigationItem" title="Content" id="bxp-9r-Dy9"/>
+                    <navigationItem key="navigationItem" title="Content" largeTitleDisplayMode="always" id="bxp-9r-Dy9"/>
                     <connections>
                         <outlet property="agentsButton" destination="4Qg-55-JIc" id="jt3-aK-ww2"/>
                         <outlet property="gamemodeButton" destination="rRT-Dg-CLM" id="9zT-G8-eRE"/>
@@ -155,12 +154,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C4E-rF-0yb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2910" y="-800"/>
+            <point key="canvasLocation" x="3838.4615384615381" y="-800.47393364928905"/>
         </scene>
         <!--UIViewController-gSg-7g-CnQ-->
         <scene sceneID="5GG-qh-NLp">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="UIViewController-gSg-7g-CnQ" id="6HF-cV-8kS" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="UIViewController-gSg-7g-CnQ" id="6HF-cV-8kS" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="txs-d8-esA"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hkd-nT-Pr3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1723" y="395"/>
@@ -168,15 +169,19 @@
         <!--UIViewController-F0J-vE-wTx-->
         <scene sceneID="Twm-xL-PZF">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="UIViewController-F0J-vE-wTx" id="WtE-t2-LzW" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="UIViewController-F0J-vE-wTx" id="WtE-t2-LzW" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Wkh-DS-I0e"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7CV-UY-kUB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4074" y="-1142"/>
+            <point key="canvasLocation" x="5002.3076923076924" y="-1142.4170616113743"/>
         </scene>
         <!--UIViewController-hKG-Bf-ITi-->
         <scene sceneID="y9i-T8-Iyn">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="UIViewController-hKG-Bf-ITi" id="TXs-Uy-kTV" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="UIViewController-hKG-Bf-ITi" id="TXs-Uy-kTV" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="HQY-GY-fxC"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aAj-u6-T1p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2909" y="395"/>
@@ -184,7 +189,9 @@
         <!--UIViewController-bX4-c3-Z3F-->
         <scene sceneID="8MG-Zm-gdR">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="UIViewController-bX4-c3-Z3F" id="kDg-5f-ZxW" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="UIViewController-bX4-c3-Z3F" id="kDg-5f-ZxW" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="OI4-oT-P1s"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T1L-gg-12D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4074" y="395"/>
@@ -192,15 +199,19 @@
         <!--UIViewController-ZGL-eu-lkg-->
         <scene sceneID="RKx-Qy-Fx0">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="UIViewController-ZGL-eu-lkg" id="Rtt-he-UKL" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="UIViewController-ZGL-eu-lkg" id="Rtt-he-UKL" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ejX-8S-WDO"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jNH-Sz-3rO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4871" y="-800"/>
+            <point key="canvasLocation" x="5799.2307692307686" y="-800.47393364928905"/>
         </scene>
         <!--UIViewController-8md-xX-ZIO-->
         <scene sceneID="AfF-fg-Apn">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="UIViewController-8md-xX-ZIO" id="nXc-hs-xNz" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="UIViewController-8md-xX-ZIO" id="nXc-hs-xNz" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Kef-Fx-eR5"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w8E-Gd-kHf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4074" y="-449"/>
@@ -208,8 +219,6 @@
     </scenes>
     <color key="tintColor" systemColor="systemRedColor"/>
     <resources>
-        <image name="bookmark.circle" catalog="system" width="128" height="123"/>
-        <image name="bookmark.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

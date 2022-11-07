@@ -18,7 +18,7 @@ class MapTableViewController: UITableViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
     }
     
     private func buildTableView() {

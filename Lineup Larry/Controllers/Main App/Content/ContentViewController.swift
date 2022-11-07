@@ -21,7 +21,9 @@ class ContentViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
     }
 //MARK: - Actions
 

@@ -24,7 +24,8 @@ class AgentListViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
     
     private func setupTableView() {

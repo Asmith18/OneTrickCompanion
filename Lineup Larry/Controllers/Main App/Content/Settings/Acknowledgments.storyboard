@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,12 +18,12 @@
             <objects>
                 <viewController storyboardIdentifier="UIViewController-8md-xX-ZIO" id="8md-xX-ZIO" customClass="AcknowledgmentsViewController" customModule="Lineup_Larry" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BYT-ob-EdS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mdt-MG-5hZ">
-                                <rect key="frame" x="20" y="74" width="388" height="818"/>
-                                <color key="backgroundColor" red="0.070861448339999994" green="0.1223484978" blue="0.1734896963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="20" y="74" width="350" height="736"/>
+                                <color key="backgroundColor" red="0.19562778110000001" green="0.19562778110000001" blue="0.19562778110000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">Stateful Academy -
 statefulacademy.com
 
@@ -38,7 +40,7 @@ https://valorant-api.com/
                             </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DCM-zi-fSd"/>
-                        <color key="backgroundColor" red="0.070861448339999994" green="0.1223484978" blue="0.1734896963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.19562778110000001" green="0.19562778110000001" blue="0.19562778110000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="DCM-zi-fSd" firstAttribute="trailing" secondItem="mdt-MG-5hZ" secondAttribute="trailing" constant="20" id="8H1-7y-Kmg"/>
                             <constraint firstItem="mdt-MG-5hZ" firstAttribute="top" secondItem="DCM-zi-fSd" secondAttribute="top" constant="27" id="Hlm-yr-fWX"/>

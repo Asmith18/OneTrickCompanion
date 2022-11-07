@@ -18,17 +18,20 @@ class AgentsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.black]
         setupTableView()
         viewModel = AgentViewModel(delegate: self)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
     }
     
     private func setupTableView() {
         self.agentTableView.dataSource = self
         self.agentTableView.delegate = self
         self.agentTableView.register(AgentTableViewCell.nib(), forCellReuseIdentifier: AgentTableViewCell.reuseID)
-        
-        self.agentTableView.backgroundColor = UIColor(red: 19, green: 32, blue: 45, alpha: 1)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
