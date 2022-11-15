@@ -12,64 +12,83 @@ class LineUpViewController: UIViewController {
     //MARK: - Outputs
     @IBOutlet weak var instructionTextView: UITextView!
     @IBOutlet weak var titleTextField: UITextField!
+    @IBOutlet weak var ImagesCollectionView: UICollectionView!
+    @IBOutlet weak var agentImageView: MapImageView!
     
     var viewModel: LineUpViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        ImagesCollectionView.dataSource = self
+        ImagesCollectionView.delegate = self
         navigationController?.navigationBar.barTintColor = UIColor.white
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        titleTextField.text = viewModel?.lineup?.title
-//        instructionTextView.text = viewModel?.lineup?.instructions ?? "Description"
+        updateUI()
+    }
+
+    func updateUI () {
+        guard let imageToSave = viewModel.lineup?.agentImage else { return }
+        agentImageView.setImage(using: imageToSave)
+        titleTextField.text = viewModel?.lineup?.title
+        instructionTextView.layer.cornerRadius = 10
+        ImagesCollectionView.layer.cornerRadius = 10
+        instructionTextView.text = viewModel?.lineup?.instructions ?? "Enter Here..."
+        agentImageView.layer.cornerRadius = agentImageView.frame.size.width / 2
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
     }
     
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return viewModel?.tempArray.count ?? 0
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        guard let cell = overviewTableView.dequeueReusableCell(withIdentifier: "overviewCell", for: indexPath) as? LineUpTableViewCell else { return UITableViewCell() }
-//        let result = viewModel?.tempArray[indexPath.row]
-//        cell.updateViews(image: result!)
-//        return cell
-//    }
-    
     //MARK: - Actions
     @IBAction func saveButtonTapped(_ sender: Any) {
-//        guard let instructions = instructionTextView.text,
-//              let title = titleTextField.text else { return }
-//        viewModel?.saveLineup(instructions: instructions, title: title)
-//        for viewController in navigationController!.viewControllers as Array {
-//            if viewController.isKind(of: LineupListTableViewController.self) {
-//                navigationController?.popToViewController(viewController, animated: true)
-//            }
-//        }
+        guard let instructions = instructionTextView.text,
+              let title = titleTextField.text else { return }
+        viewModel?.saveLineup(instructions: instructions, title: title)
+        for viewController in navigationController!.viewControllers as Array {
+            if viewController.isKind(of: LineupListTableViewController.self) {
+                navigationController?.popToViewController(viewController, animated: true)
+            }
+        }
     }
     
     @IBAction func addImagesButtontapped(_ sender: Any) {
-//        let vc = UIImagePickerController()
-//        vc.sourceType = .photoLibrary
-//        vc.delegate = self
-//        vc.allowsEditing = true
-//        present(vc, animated: true)
+        let vc = UIImagePickerController()
+        vc.sourceType = .photoLibrary
+        vc.delegate = self
+        vc.allowsEditing = true
+        present(vc, animated: true)
     }
 }
 
-extension LineUpViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+extension LineUpViewController: UICollectionViewDataSource, UICollectionViewDelegate, UINavigationControllerDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return viewModel?.tempArray.count ?? 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = ImagesCollectionView.dequeueReusableCell(withReuseIdentifier: "overviewCell", for: indexPath) as! LineupCollectionViewCell
+        let result = viewModel?.tempArray[indexPath.row]
+        cell.updateViews(image: result!)
+        return cell
+    }
+    
+    
+    
+}
+
+extension LineUpViewController: UIImagePickerControllerDelegate {
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
-//        if let image = info[UIImagePickerController.InfoKey(rawValue: "UIImagePickerControllerEditedImage")] as? UIImage {
-//            viewModel?.tempArray.append(image)
-//            DispatchQueue.main.async {
-//                self.overviewTableView.reloadData()
-//            }
-//        }
-//        picker.dismiss(animated: true, completion: nil)
+        if let image = info[UIImagePickerController.InfoKey(rawValue: "UIImagePickerControllerEditedImage")] as? UIImage {
+            viewModel?.tempArray.append(image)
+            DispatchQueue.main.async {
+                self.ImagesCollectionView.reloadData()
+            }
+        }
+        picker.dismiss(animated: true, completion: nil)
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
