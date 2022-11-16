@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Q72-FC-Nb9">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Detail-->
+        <!--Details-->
         <scene sceneID="g3T-Yw-g2o">
             <objects>
-                <viewController storyboardIdentifier="UIViewController-r6q-sg-Anv" id="lyd-wY-Ytx" customClass="LineUpViewController" customModule="Lineup_Larry" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LineupDetail" id="lyd-wY-Ytx" customClass="LineUpViewController" customModule="Lineup_Larry" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="p0o-5j-OnJ">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -134,7 +134,7 @@
                             <constraint firstItem="Xce-vB-weB" firstAttribute="top" secondItem="AMQ-eG-6WO" secondAttribute="top" constant="8" id="wuq-ZK-RLl"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Detail" largeTitleDisplayMode="always" id="5wK-41-FbN">
+                    <navigationItem key="navigationItem" title="Details" largeTitleDisplayMode="always" id="5wK-41-FbN">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="1tT-on-fpF">
                             <color key="tintColor" systemColor="systemRedColor"/>
                             <connections>

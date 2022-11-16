@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2wi-G1-78H">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2wi-G1-78H">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,7 +16,7 @@
         <!--Lineup List Table View Controller-->
         <scene sceneID="jVP-pS-qLN">
             <objects>
-                <tableViewController id="2wi-G1-78H" customClass="LineupListTableViewController" customModule="Lineup_Larry" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="LineupList" id="2wi-G1-78H" customClass="LineupListTableViewController" customModule="Lineup_Larry" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="ebC-Ul-bi5">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -90,7 +90,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="t7D-vt-vqI">
-                        <barButtonItem key="rightBarButtonItem" title="Add Lineup" style="plain" id="y2S-kT-TKT">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="y2S-kT-TKT">
                             <color key="tintColor" systemColor="systemRedColor"/>
                             <connections>
                                 <segue destination="xSe-ER-JtA" kind="show" id="2MG-di-E5C"/>
@@ -100,23 +100,27 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="utf-kf-inT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-823" y="820"/>
+            <point key="canvasLocation" x="1035.3846153846152" y="819.66824644549763"/>
         </scene>
-        <!--UIViewController-r6q-sg-Anv-->
+        <!--LineupDetail-->
         <scene sceneID="QN0-GU-xdU">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="UIViewController-r6q-sg-Anv" id="usB-jt-yao" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="LineupDetail" storyboardName="LineupDetail" referencedIdentifier="LineupDetail" id="usB-jt-yao" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Zvc-iu-y8g"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MhQ-Ql-L2d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="227" y="1547"/>
+            <point key="canvasLocation" x="1034" y="1196"/>
         </scene>
-        <!--UIViewController-SUb-Gd-wUq-->
+        <!--AgentList-->
         <scene sceneID="gtr-vC-P1h">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="UIViewController-SUb-Gd-wUq" id="xSe-ER-JtA" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="AgentList" storyboardName="AgentList" referencedIdentifier="AgentList" id="xSe-ER-JtA" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="FoA-M8-VbF"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iHi-x9-C2N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="231" y="820"/>
+            <point key="canvasLocation" x="1536" y="820"/>
         </scene>
     </scenes>
     <color key="tintColor" systemColor="systemRedColor"/>

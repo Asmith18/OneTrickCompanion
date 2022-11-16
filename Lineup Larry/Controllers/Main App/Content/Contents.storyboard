@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LYq-yH-2xv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LYq-yH-2xv">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,7 +17,7 @@
         <!--Content-->
         <scene sceneID="ghx-F4-7IX">
             <objects>
-                <viewController id="LYq-yH-2xv" customClass="ContentViewController" customModule="Lineup_Larry" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Contents" id="LYq-yH-2xv" customClass="ContentViewController" customModule="Lineup_Larry" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TSo-xL-XHG">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -156,65 +156,65 @@
             </objects>
             <point key="canvasLocation" x="3838.4615384615381" y="-800.47393364928905"/>
         </scene>
-        <!--UIViewController-gSg-7g-CnQ-->
+        <!--AgentContent-->
         <scene sceneID="5GG-qh-NLp">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="UIViewController-gSg-7g-CnQ" id="6HF-cV-8kS" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="AgentContent" storyboardName="AgentContent" referencedIdentifier="AgentContent" id="6HF-cV-8kS" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="txs-d8-esA"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hkd-nT-Pr3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1723" y="395"/>
+            <point key="canvasLocation" x="3522" y="-373"/>
         </scene>
-        <!--UIViewController-F0J-vE-wTx-->
+        <!--MapContent-->
         <scene sceneID="Twm-xL-PZF">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="UIViewController-F0J-vE-wTx" id="WtE-t2-LzW" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="MapContent" storyboardName="MapContent" referencedIdentifier="MapContent" id="WtE-t2-LzW" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Wkh-DS-I0e"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7CV-UY-kUB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5002.3076923076924" y="-1142.4170616113743"/>
+            <point key="canvasLocation" x="4376" y="-823"/>
         </scene>
-        <!--UIViewController-hKG-Bf-ITi-->
+        <!--WeaponContent-->
         <scene sceneID="y9i-T8-Iyn">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="UIViewController-hKG-Bf-ITi" id="TXs-Uy-kTV" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="WeaponContent" storyboardName="WeaponContent" referencedIdentifier="WeaponContent" id="TXs-Uy-kTV" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="HQY-GY-fxC"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aAj-u6-T1p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2909" y="395"/>
+            <point key="canvasLocation" x="3744" y="-373"/>
         </scene>
-        <!--UIViewController-bX4-c3-Z3F-->
+        <!--GameModeContents-->
         <scene sceneID="8MG-Zm-gdR">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="UIViewController-bX4-c3-Z3F" id="kDg-5f-ZxW" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="GameModeContents" storyboardName="GameModeContents" referencedIdentifier="GameModeContents" id="kDg-5f-ZxW" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="OI4-oT-P1s"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T1L-gg-12D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4074" y="395"/>
+            <point key="canvasLocation" x="3991" y="-373"/>
         </scene>
-        <!--UIViewController-ZGL-eu-lkg-->
+        <!--About-->
         <scene sceneID="RKx-Qy-Fx0">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="UIViewController-ZGL-eu-lkg" id="Rtt-he-UKL" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="About" storyboardName="About" referencedIdentifier="About" id="Rtt-he-UKL" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="ejX-8S-WDO"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jNH-Sz-3rO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5799.2307692307686" y="-800.47393364928905"/>
+            <point key="canvasLocation" x="4376" y="-786"/>
         </scene>
-        <!--UIViewController-8md-xX-ZIO-->
+        <!--Acknowledgments-->
         <scene sceneID="AfF-fg-Apn">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="UIViewController-8md-xX-ZIO" id="nXc-hs-xNz" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="Acknowledgments" storyboardName="Acknowledgments" referencedIdentifier="Acknowledgments" id="nXc-hs-xNz" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Kef-Fx-eR5"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w8E-Gd-kHf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4074" y="-449"/>
+            <point key="canvasLocation" x="4252" y="-373"/>
         </scene>
     </scenes>
     <color key="tintColor" systemColor="systemRedColor"/>

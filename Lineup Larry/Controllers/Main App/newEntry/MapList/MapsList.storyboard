@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Map Table View Controller-->
         <scene sceneID="ivx-nu-ubb">
             <objects>
-                <tableViewController storyboardIdentifier="UITableViewController-jlH-VR-YdK" id="jlH-VR-YdK" customClass="MapTableViewController" customModule="Lineup_Larry" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MapsList" clearsSelectionOnViewWillAppear="NO" id="jlH-VR-YdK" customClass="MapTableViewController" customModule="Lineup_Larry" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Yn1-z5-IgA">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,13 +41,13 @@
             </objects>
             <point key="canvasLocation" x="-823" y="1547"/>
         </scene>
-        <!--UIViewController-r6q-sg-Anv-->
+        <!--LineupDetail-->
         <scene sceneID="SaU-zq-Che">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="UIViewController-r6q-sg-Anv" storyboardName="Main" referencedIdentifier="UIViewController-r6q-sg-Anv" id="E9Y-5f-nTU" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="LineupDetail" storyboardName="LineupDetail" referencedIdentifier="LineupDetail" id="E9Y-5f-nTU" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zpy-PC-xlC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="227" y="1547"/>
+            <point key="canvasLocation" x="-332" y="1547"/>
         </scene>
     </scenes>
     <color key="tintColor" systemColor="systemRedColor"/>

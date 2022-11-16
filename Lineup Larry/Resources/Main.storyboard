@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="157-fD-At4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="157-fD-At4">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -70,91 +70,91 @@
         <!--LineupList-->
         <scene sceneID="m1X-mb-i9h">
             <objects>
-                <viewControllerPlaceholder storyboardName="LineupList" id="2en-p3-4Hz" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="LineupList" storyboardName="LineupList" referencedIdentifier="LineupList" id="2en-p3-4Hz" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="htq-Ce-343"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="luU-tm-LXE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-193" y="349"/>
         </scene>
-        <!--UIViewController-SUb-Gd-wUq-->
+        <!--AgentList-->
         <scene sceneID="GwY-SY-pie">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="UIViewController-SUb-Gd-wUq" storyboardName="AgentList" referencedIdentifier="UIViewController-SUb-Gd-wUq" id="n1c-4Y-c7Q" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="AgentList" storyboardName="AgentList" referencedIdentifier="AgentList" id="n1c-4Y-c7Q" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qIq-fs-glO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-194" y="405"/>
+            <point key="canvasLocation" x="-194" y="395"/>
         </scene>
-        <!--UITableViewController-jlH-VR-YdK-->
+        <!--MapsList-->
         <scene sceneID="NYt-3X-QiR">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="UITableViewController-jlH-VR-YdK" storyboardName="MapsList" referencedIdentifier="UITableViewController-jlH-VR-YdK" id="uAH-eD-aGl" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="MapsList" storyboardName="MapsList" referencedIdentifier="MapsList" id="uAH-eD-aGl" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4rt-mk-AIg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-181" y="503"/>
+            <point key="canvasLocation" x="-196" y="442"/>
         </scene>
-        <!--UIViewController-r6q-sg-Anv-->
+        <!--LineupDetail-->
         <scene sceneID="e3Q-Cb-z1a">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="UIViewController-r6q-sg-Anv" storyboardName="LineupDetail" referencedIdentifier="UIViewController-r6q-sg-Anv" id="9mb-tF-p81" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="LineupDetail" storyboardName="LineupDetail" referencedIdentifier="LineupDetail" id="9mb-tF-p81" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sN2-1r-khb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-194" y="577"/>
+            <point key="canvasLocation" x="-196" y="489"/>
         </scene>
         <!--Contents-->
         <scene sceneID="yvN-Xn-4uk">
             <objects>
-                <viewControllerPlaceholder storyboardName="Contents" id="s1z-UG-vkY" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="Contents" storyboardName="Contents" referencedIdentifier="Contents" id="s1z-UG-vkY" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="zM5-Lm-cJg"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zO1-PW-GAl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1378" y="-800"/>
         </scene>
-        <!--UIViewController-gSg-7g-CnQ-->
+        <!--AgentContent-->
         <scene sceneID="bAQ-Ac-fXK">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="UIViewController-gSg-7g-CnQ" storyboardName="AgentContent" referencedIdentifier="UIViewController-gSg-7g-CnQ" id="wNI-Wf-xsy" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="AgentContent" storyboardName="AgentContent" referencedIdentifier="AgentContent" id="wNI-Wf-xsy" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="npM-qE-vwd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1620" y="-789"/>
         </scene>
-        <!--UIViewController-hKG-Bf-ITi-->
+        <!--WeaponContent-->
         <scene sceneID="PgO-cG-Q0P">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="UIViewController-hKG-Bf-ITi" storyboardName="WeaponContent" referencedIdentifier="UIViewController-hKG-Bf-ITi" id="nkh-GV-g4F" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="WeaponContent" storyboardName="WeaponContent" referencedIdentifier="WeaponContent" id="nkh-GV-g4F" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F7O-DF-Kd6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1618" y="-757"/>
         </scene>
-        <!--UIViewController-bX4-c3-Z3F-->
+        <!--GameModeContents-->
         <scene sceneID="Ubi-17-W4b">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="UIViewController-bX4-c3-Z3F" storyboardName="GameModeContents" referencedIdentifier="UIViewController-bX4-c3-Z3F" id="jLT-vJ-u5b" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="GameModeContents" storyboardName="GameModeContents" referencedIdentifier="GameModeContents" id="jLT-vJ-u5b" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jld-Jp-nEs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1618" y="-720"/>
         </scene>
-        <!--UIViewController-F0J-vE-wTx-->
+        <!--MapContent-->
         <scene sceneID="Mxq-Tj-BUq">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="UIViewController-F0J-vE-wTx" storyboardName="MapContent" referencedIdentifier="UIViewController-F0J-vE-wTx" id="RCZ-hc-Hod" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="MapContent" storyboardName="MapContent" referencedIdentifier="MapContent" id="RCZ-hc-Hod" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fic-Kh-c1x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1620" y="-881"/>
         </scene>
-        <!--UIViewController-8md-xX-ZIO-->
+        <!--Acknowledgments-->
         <scene sceneID="oG6-Pn-ZMG">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="UIViewController-8md-xX-ZIO" storyboardName="Acknowledgments" referencedIdentifier="UIViewController-8md-xX-ZIO" id="aUr-5i-QMQ" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="Acknowledgments" storyboardName="Acknowledgments" referencedIdentifier="Acknowledgments" id="aUr-5i-QMQ" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SNF-RX-IkX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1619" y="-823"/>
         </scene>
-        <!--UIViewController-ZGL-eu-lkg-->
+        <!--About-->
         <scene sceneID="bJG-c8-Qdz">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="UIViewController-ZGL-eu-lkg" storyboardName="About" referencedIdentifier="UIViewController-ZGL-eu-lkg" id="Yax-Ca-OC1" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="About" storyboardName="About" referencedIdentifier="About" id="Yax-Ca-OC1" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kky-MT-8cB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1620" y="-853"/>

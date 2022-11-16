@@ -34,7 +34,7 @@ class AgentTableViewCell: UITableViewCell {
         roleLabel.text = agentRole.displayName
         agentImageView.setImage(using: agent.displayIcon)
         agentImageView.contentMode = .scaleAspectFit
-        agentImageView.layer.cornerRadius = agentImageView.frame.height / 2
+        agentImageView.layer.cornerRadius = agentImageView.frame.width / 2
         roleImageView.setImage(using: agentRole.displayIcon)
         roleImageView.contentMode = .scaleAspectFit
     }
