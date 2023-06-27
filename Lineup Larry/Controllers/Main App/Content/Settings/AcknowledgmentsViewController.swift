@@ -9,8 +9,12 @@ import UIKit
 
 class AcknowledgmentsViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        view.setNeedsLayout()
+        view.layoutSubviews()
+        
+        navigationController?.navigationBar.largeTitleTextAttributes = [
+            NSAttributedString.Key.foregroundColor: UIColor.white]
     }
 }

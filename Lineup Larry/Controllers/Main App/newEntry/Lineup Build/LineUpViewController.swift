@@ -43,11 +43,18 @@ class LineUpViewController: UIViewController {
     @IBAction func saveButtonTapped(_ sender: Any) {
         guard let instructions = instructionTextView.text,
               let title = titleTextField.text else { return }
+        
+        if title.isEmpty {
+            let alert = UIAlertController(title: "Error", message: "Please enter a title.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            present(alert, animated: true, completion: nil)
+            return
+        }
+        
         viewModel?.saveLineup(instructions: instructions, title: title)
-        for viewController in navigationController!.viewControllers as Array {
-            if viewController.isKind(of: LineupListTableViewController.self) {
-                navigationController?.popToViewController(viewController, animated: true)
-            }
+        
+        if let lineupListViewController = navigationController?.viewControllers.first(where: { $0 is LineupListTableViewController }) {
+            navigationController?.popToViewController(lineupListViewController, animated: true)
         }
     }
     
