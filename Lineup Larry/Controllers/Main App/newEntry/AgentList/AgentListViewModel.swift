@@ -15,6 +15,7 @@ protocol AgentListViewModelDelegate: AnyObject {
 class AgentListViewModel {
     
     var agentData: [AgentData] = []
+    var lineup: Lineup?
     var dataProvider = AgentDataProvider()
     weak var delegate: AgentListViewModelDelegate?
     

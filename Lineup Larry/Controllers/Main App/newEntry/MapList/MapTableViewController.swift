@@ -53,7 +53,8 @@ class MapTableViewController: UITableViewController {
               let destination = segue.destination as? LineUpViewController,
               let selectedRow = tableView.indexPathForSelectedRow?.row else { return }
         let map = viewModel.mapData[selectedRow]
-        let lineupViewModel = LineUpViewModel(map: map, agent: viewModel.agentData, lineup: nil)
+        let agent = viewModel.agentData
+        let lineupViewModel = LineUpViewModel(map: map, agent: agent, lineup: nil)
         destination.viewModel = lineupViewModel
     }
 }

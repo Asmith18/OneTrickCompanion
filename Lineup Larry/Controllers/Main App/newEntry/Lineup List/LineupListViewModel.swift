@@ -15,6 +15,8 @@ protocol LineupListViewModelDelegate: AnyObject {
 
 class LineupListViewMdoel {
     
+    var agent: AgentData?
+    
     private lazy var fetchRequest: NSFetchRequest<Lineup> = {
         let fetchRequest = NSFetchRequest<Lineup>(entityName: "Lineup")
         return fetchRequest

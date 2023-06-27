@@ -8,9 +8,6 @@
 import UIKit
 
 class AgentListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
-    
-    
     //MARK: - Outlets
     @IBOutlet weak var notestableView: UITableView!
     
@@ -67,7 +64,6 @@ class AgentListViewController: UIViewController, UITableViewDelegate, UITableVie
 }
 
 extension AgentListViewController: AgentListViewModelDelegate {
-    
     func agentListHasData() {
         DispatchQueue.main.async {
             self.notestableView.reloadData()

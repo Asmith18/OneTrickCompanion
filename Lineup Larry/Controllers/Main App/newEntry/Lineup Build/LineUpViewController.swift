@@ -26,18 +26,17 @@ class LineUpViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        updateUI()
+        setupDetailScreen()
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
     }
-
-    func updateUI () {
-        guard let imageToSave = viewModel.lineup?.agentImage else { return }
-        agentImageView.setImage(using: imageToSave)
-        titleTextField.text = viewModel?.lineup?.title
+    
+    func setupDetailScreen() {
+        instructionTextView.text = viewModel.lineup?.instructions ?? ""
+        titleTextField.text = viewModel.lineup?.title ?? ""
+        agentImageView.setImage(using: viewModel.lineup?.agentImage ?? viewModel.agent?.displayIconSmall)
         instructionTextView.layer.cornerRadius = 10
         ImagesCollectionView.layer.cornerRadius = 10
-        instructionTextView.text = viewModel?.lineup?.instructions ?? "Enter Here..."
         agentImageView.layer.cornerRadius = agentImageView.frame.size.width / 2
-        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
     }
     
     //MARK: - Actions
@@ -72,10 +71,7 @@ extension LineUpViewController: UICollectionViewDataSource, UICollectionViewDele
         let result = viewModel?.tempArray[indexPath.row]
         cell.updateViews(image: result!)
         return cell
-    }
-    
-    
-    
+    } 
 }
 
 extension LineUpViewController: UIImagePickerControllerDelegate {

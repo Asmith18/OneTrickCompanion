@@ -12,7 +12,7 @@
         <scene sceneID="iyo-oV-BmP">
             <objects>
                 <navigationController id="nQP-dT-zU7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Contents" image="bookmark" catalog="system" selectedImage="bookmark.fill" id="pcV-9j-eDF"/>
+                    <tabBarItem key="tabBarItem" title="Contents" image="bookmark" catalog="system" id="pcV-9j-eDF"/>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="mnF-jQ-YvV"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tJD-pF-scA">
                         <rect key="frame" x="0.0" y="47" width="428" height="44"/>
@@ -163,7 +163,6 @@
     <color key="tintColor" systemColor="systemRedColor"/>
     <resources>
         <image name="bookmark" catalog="system" width="110" height="128"/>
-        <image name="bookmark.fill" catalog="system" width="110" height="128"/>
         <image name="plus.circle" catalog="system" width="128" height="123"/>
         <image name="plus.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemRedColor">

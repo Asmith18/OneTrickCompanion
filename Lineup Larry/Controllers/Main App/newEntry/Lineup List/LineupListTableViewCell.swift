@@ -8,8 +8,6 @@
 import UIKit
 
 class LineupListTableViewCell: UITableViewCell {
-
-    var agentData: AgentData?
     
   //MARK: - Outlets
     @IBOutlet weak var entryTitleTextLabel: UILabel!
