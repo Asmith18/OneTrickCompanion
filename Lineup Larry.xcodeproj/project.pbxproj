@@ -11,7 +11,8 @@
 		3E0CAD1127ED1D00000AF833 /* MapTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E0CAD0F27ED1D00000AF833 /* MapTableViewCell.xib */; };
 		3E0CAD1427ED1E3A000AF833 /* Valorant Font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E0CAD1327ED1E20000AF833 /* Valorant Font.ttf */; };
 		3E0CAD1627ED1FD3000AF833 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0CAD1527ED1FD3000AF833 /* GradientView.swift */; };
-		3E228ED127ECECF400671FA1 /* AgentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E228ECF27ECECF400671FA1 /* AgentTableViewCell.xib */; };
+		C202391D2A4BAECD00FC72A0 /* AgentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C202391C2A4BAECC00FC72A0 /* AgentTableViewCell.xib */; };
+		C20239212A4BB2BF00FC72A0 /* AgentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20239202A4BB2BF00FC72A0 /* AgentTableViewCell.swift */; };
 		C2079F5829197E2A006BA81D /* LineupList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F5729197E2A006BA81D /* LineupList.storyboard */; };
 		C2079F5A29197E95006BA81D /* AgentList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F5929197E95006BA81D /* AgentList.storyboard */; };
 		C2079F5C29197EBA006BA81D /* MapsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F5B29197EBA006BA81D /* MapsList.storyboard */; };
@@ -72,7 +73,6 @@
 		C29AE69527E3D1DC005CAD4E /* WeaponsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE69427E3D1DC005CAD4E /* WeaponsViewModel.swift */; };
 		C29AE69727E3D2F7005CAD4E /* WeaponDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE69627E3D2F7005CAD4E /* WeaponDataProvider.swift */; };
 		C29AE69A27E98717005CAD4E /* AgentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE69927E98717005CAD4E /* AgentsViewController.swift */; };
-		C29AE69C27E9874F005CAD4E /* AgentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE69B27E9874F005CAD4E /* AgentTableViewCell.swift */; };
 		C29AE69E27E98A4B005CAD4E /* AgentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE69D27E98A4B005CAD4E /* AgentViewModel.swift */; };
 		C29AE6A027E98AB7005CAD4E /* AgentDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE69F27E98AB7005CAD4E /* AgentDataProvider.swift */; };
 		C29AE6A427EA003B005CAD4E /* GameModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE6A327EA003B005CAD4E /* GameModeViewController.swift */; };
@@ -104,7 +104,8 @@
 		3E0CAD0F27ED1D00000AF833 /* MapTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapTableViewCell.xib; sourceTree = "<group>"; };
 		3E0CAD1327ED1E20000AF833 /* Valorant Font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Valorant Font.ttf"; sourceTree = "<group>"; };
 		3E0CAD1527ED1FD3000AF833 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
-		3E228ECF27ECECF400671FA1 /* AgentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgentTableViewCell.xib; sourceTree = "<group>"; };
+		C202391C2A4BAECC00FC72A0 /* AgentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AgentTableViewCell.xib; path = ../../../../../../.Trash/AgentTableViewCell.xib; sourceTree = "<group>"; };
+		C20239202A4BB2BF00FC72A0 /* AgentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AgentTableViewCell.swift; path = "Lineup Larry/Main App/Content/Agents/AgentTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
 		C2079F5729197E2A006BA81D /* LineupList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LineupList.storyboard; sourceTree = "<group>"; };
 		C2079F5929197E95006BA81D /* AgentList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AgentList.storyboard; sourceTree = "<group>"; };
 		C2079F5B29197EBA006BA81D /* MapsList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MapsList.storyboard; sourceTree = "<group>"; };
@@ -166,7 +167,6 @@
 		C29AE69427E3D1DC005CAD4E /* WeaponsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsViewModel.swift; sourceTree = "<group>"; };
 		C29AE69627E3D2F7005CAD4E /* WeaponDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponDataProvider.swift; sourceTree = "<group>"; };
 		C29AE69927E98717005CAD4E /* AgentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsViewController.swift; sourceTree = "<group>"; };
-		C29AE69B27E9874F005CAD4E /* AgentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AgentTableViewCell.swift; path = "../../Controllers/Main App/Content/Agents/AgentTableViewCell.swift"; sourceTree = "<group>"; };
 		C29AE69D27E98A4B005CAD4E /* AgentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentViewModel.swift; sourceTree = "<group>"; };
 		C29AE69F27E98AB7005CAD4E /* AgentDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDataProvider.swift; sourceTree = "<group>"; };
 		C29AE6A327EA003B005CAD4E /* GameModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeViewController.swift; sourceTree = "<group>"; };
@@ -187,7 +187,7 @@
 		C2A15F8927D940F400FB6952 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2A15F8C27D940F400FB6952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2A15F8E27D940F400FB6952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C2A15F9827D96EEE00FB6952 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "../Controllers/Main App/Main.storyboard"; sourceTree = "<group>"; };
+		C2A15F9827D96EEE00FB6952 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "../Main App/Main.storyboard"; sourceTree = "<group>"; };
 		C2A15F9B27DD1BB100FB6952 /* Agent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agent.swift; sourceTree = "<group>"; };
 		C2A15F9D27DD1CE700FB6952 /* Maps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maps.swift; sourceTree = "<group>"; };
 		C2A15F9F27DD1D7600FB6952 /* Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skins.swift; sourceTree = "<group>"; };
@@ -236,8 +236,8 @@
 		3E228ED227ECEE5B00671FA1 /* Agent Cell */ = {
 			isa = PBXGroup;
 			children = (
-				C29AE69B27E9874F005CAD4E /* AgentTableViewCell.swift */,
-				3E228ECF27ECECF400671FA1 /* AgentTableViewCell.xib */,
+				C20239202A4BB2BF00FC72A0 /* AgentTableViewCell.swift */,
+				C202391C2A4BAECC00FC72A0 /* AgentTableViewCell.xib */,
 			);
 			path = "Agent Cell";
 			sourceTree = "<group>";
@@ -471,9 +471,10 @@
 		C2A15F7F27D940F300FB6952 /* Lineup Larry */ = {
 			isa = PBXGroup;
 			children = (
+				C29AE68527E245B0005CAD4E /* Networking */,
 				3E228ECD27ECEC9600671FA1 /* Reusable Views */,
 				C2A15F9A27DD1B9200FB6952 /* Model */,
-				C2A15FC027DD2B4700FB6952 /* Controllers */,
+				C29AE68227E1630B005CAD4E /* Main App */,
 				C2A15F9427D9410C00FB6952 /* Resources */,
 			);
 			path = "Lineup Larry";
@@ -510,15 +511,6 @@
 				C2A15FA327DD1E8400FB6952 /* GameMode.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		C2A15FC027DD2B4700FB6952 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				C29AE68527E245B0005CAD4E /* Networking */,
-				C29AE68227E1630B005CAD4E /* Main App */,
-			);
-			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -584,6 +576,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E0CAD1427ED1E3A000AF833 /* Valorant Font.ttf in Resources */,
+				C202391D2A4BAECD00FC72A0 /* AgentTableViewCell.xib in Resources */,
 				C2079F5C29197EBA006BA81D /* MapsList.storyboard in Resources */,
 				C2079F5E29197ED0006BA81D /* LineupDetail.storyboard in Resources */,
 				C2A15F8D27D940F400FB6952 /* LaunchScreen.storyboard in Resources */,
@@ -596,7 +589,6 @@
 				C2079F6029197F47006BA81D /* Contents.storyboard in Resources */,
 				C2079F6429197FA5006BA81D /* WeaponContent.storyboard in Resources */,
 				C2079F6629197FBA006BA81D /* GameModeContents.storyboard in Resources */,
-				3E228ED127ECECF400671FA1 /* AgentTableViewCell.xib in Resources */,
 				C2079F6C29197FF7006BA81D /* About.storyboard in Resources */,
 				C2079F5A29197E95006BA81D /* AgentList.storyboard in Resources */,
 				C2079F6A29197FEA006BA81D /* Acknowledgments.storyboard in Resources */,
@@ -623,7 +615,6 @@
 				3E0CAD1027ED1D00000AF833 /* MapTableViewCell.swift in Sources */,
 				C24FD75227F13DBB0032EB0D /* CoreDataStack.swift in Sources */,
 				C21ED836281B359E00BCEC26 /* AboutViewController.swift in Sources */,
-				C29AE69C27E9874F005CAD4E /* AgentTableViewCell.swift in Sources */,
 				C23543062822336200FE6E59 /* IQTextView.swift in Sources */,
 				C2A15F9C27DD1BB100FB6952 /* Agent.swift in Sources */,
 				C23543172822336200FE6E59 /* IQUIScrollView+Additions.swift in Sources */,
@@ -633,6 +624,7 @@
 				C29AE6C227EAA029005CAD4E /* MapViewModel.swift in Sources */,
 				C29AE67027E109AB005CAD4E /* MapsTableViewCell.swift in Sources */,
 				C23543072822336200FE6E59 /* IQKeyboardManager+Internal.swift in Sources */,
+				C20239212A4BB2BF00FC72A0 /* AgentTableViewCell.swift in Sources */,
 				C235430C2822336200FE6E59 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
 				C29AE69127E3A050005CAD4E /* MapsDataProvider.swift in Sources */,
 				C29AE69E27E98A4B005CAD4E /* AgentViewModel.swift in Sources */,
