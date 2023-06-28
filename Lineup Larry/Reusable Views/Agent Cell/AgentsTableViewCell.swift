@@ -1,19 +1,19 @@
 //
-//  AgentTableViewCell.swift
-//  One Trick Companion
+//  AgentsTableViewCell.swift
+//  Lineup Larry
 //
-//  Created by adam smith on 3/21/22.
+//  Created by Adam Smith on 6/28/23.
 //
 
 import UIKit
 
-class AgentTableViewCell: UITableViewCell {
+class AgentsTableViewCell: UITableViewCell {
 
     //MARK: - Outlets
     @IBOutlet weak var agentNameTextLabel: UILabel!
-    @IBOutlet weak var roleLabel: UILabel!
     @IBOutlet weak var agentImageView: MapImageView!
     @IBOutlet weak var roleImageView: MapImageView!
+    @IBOutlet weak var roleLabel: UILabel!
     
     static let reuseID = "agentCell"
     

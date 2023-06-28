@@ -9,8 +9,6 @@ import UIKit
 
 class AgentsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    
-    
 //MARK: - Outlets
     @IBOutlet weak var agentTableView: UITableView!
     
@@ -31,7 +29,7 @@ class AgentsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     private func setupTableView() {
         self.agentTableView.dataSource = self
         self.agentTableView.delegate = self
-        self.agentTableView.register(AgentTableViewCell.nib(), forCellReuseIdentifier: AgentTableViewCell.reuseID)
+        self.agentTableView.register(AgentsTableViewCell.nib(), forCellReuseIdentifier: AgentsTableViewCell.reuseID)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -39,7 +37,7 @@ class AgentsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: AgentTableViewCell.reuseID, for: indexPath) as? AgentTableViewCell else { return UITableViewCell() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: AgentsTableViewCell.reuseID, for: indexPath) as? AgentsTableViewCell else { return UITableViewCell() }
         let result = viewModel.agentData[indexPath.row]
         cell.updateViews(agent: result)
         cell.selectionStyle = .none

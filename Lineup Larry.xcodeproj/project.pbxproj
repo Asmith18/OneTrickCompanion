@@ -11,8 +11,8 @@
 		3E0CAD1127ED1D00000AF833 /* MapTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E0CAD0F27ED1D00000AF833 /* MapTableViewCell.xib */; };
 		3E0CAD1427ED1E3A000AF833 /* Valorant Font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E0CAD1327ED1E20000AF833 /* Valorant Font.ttf */; };
 		3E0CAD1627ED1FD3000AF833 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0CAD1527ED1FD3000AF833 /* GradientView.swift */; };
-		C202391D2A4BAECD00FC72A0 /* AgentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C202391C2A4BAECC00FC72A0 /* AgentTableViewCell.xib */; };
-		C20239212A4BB2BF00FC72A0 /* AgentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20239202A4BB2BF00FC72A0 /* AgentTableViewCell.swift */; };
+		C202392F2A4CC57A00FC72A0 /* AgentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C202392E2A4CC57A00FC72A0 /* AgentTableViewCell.xib */; };
+		C20239332A4CC5C300FC72A0 /* AgentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20239322A4CC5C300FC72A0 /* AgentsTableViewCell.swift */; };
 		C2079F5829197E2A006BA81D /* LineupList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F5729197E2A006BA81D /* LineupList.storyboard */; };
 		C2079F5A29197E95006BA81D /* AgentList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F5929197E95006BA81D /* AgentList.storyboard */; };
 		C2079F5C29197EBA006BA81D /* MapsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F5B29197EBA006BA81D /* MapsList.storyboard */; };
@@ -104,8 +104,8 @@
 		3E0CAD0F27ED1D00000AF833 /* MapTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapTableViewCell.xib; sourceTree = "<group>"; };
 		3E0CAD1327ED1E20000AF833 /* Valorant Font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Valorant Font.ttf"; sourceTree = "<group>"; };
 		3E0CAD1527ED1FD3000AF833 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
-		C202391C2A4BAECC00FC72A0 /* AgentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AgentTableViewCell.xib; path = ../../../../../../.Trash/AgentTableViewCell.xib; sourceTree = "<group>"; };
-		C20239202A4BB2BF00FC72A0 /* AgentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AgentTableViewCell.swift; path = "Lineup Larry/Main App/Content/Agents/AgentTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		C202392E2A4CC57A00FC72A0 /* AgentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AgentTableViewCell.xib; path = ../../../../../../.Trash/AgentTableViewCell.xib; sourceTree = "<group>"; };
+		C20239322A4CC5C300FC72A0 /* AgentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsTableViewCell.swift; sourceTree = "<group>"; };
 		C2079F5729197E2A006BA81D /* LineupList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LineupList.storyboard; sourceTree = "<group>"; };
 		C2079F5929197E95006BA81D /* AgentList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AgentList.storyboard; sourceTree = "<group>"; };
 		C2079F5B29197EBA006BA81D /* MapsList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MapsList.storyboard; sourceTree = "<group>"; };
@@ -226,20 +226,11 @@
 		3E228ECD27ECEC9600671FA1 /* Reusable Views */ = {
 			isa = PBXGroup;
 			children = (
+				C202392D2A4CC56700FC72A0 /* Agent Cell */,
 				3E0CAD0D27ED1CF1000AF833 /* Map Cell */,
-				3E228ED227ECEE5B00671FA1 /* Agent Cell */,
 				3E0CAD1527ED1FD3000AF833 /* GradientView.swift */,
 			);
 			path = "Reusable Views";
-			sourceTree = "<group>";
-		};
-		3E228ED227ECEE5B00671FA1 /* Agent Cell */ = {
-			isa = PBXGroup;
-			children = (
-				C20239202A4BB2BF00FC72A0 /* AgentTableViewCell.swift */,
-				C202391C2A4BAECC00FC72A0 /* AgentTableViewCell.xib */,
-			);
-			path = "Agent Cell";
 			sourceTree = "<group>";
 		};
 		C20239282A4C9C9F00FC72A0 /* About */ = {
@@ -258,6 +249,15 @@
 				C2079F6929197FEA006BA81D /* Acknowledgments.storyboard */,
 			);
 			path = Acknowledgements;
+			sourceTree = "<group>";
+		};
+		C202392D2A4CC56700FC72A0 /* Agent Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C202392E2A4CC57A00FC72A0 /* AgentTableViewCell.xib */,
+				C20239322A4CC5C300FC72A0 /* AgentsTableViewCell.swift */,
+			);
+			path = "Agent Cell";
 			sourceTree = "<group>";
 		};
 		C21ED838281B380000BCEC26 /* Settings */ = {
@@ -592,7 +592,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E0CAD1427ED1E3A000AF833 /* Valorant Font.ttf in Resources */,
-				C202391D2A4BAECD00FC72A0 /* AgentTableViewCell.xib in Resources */,
+				C202392F2A4CC57A00FC72A0 /* AgentTableViewCell.xib in Resources */,
 				C2079F5C29197EBA006BA81D /* MapsList.storyboard in Resources */,
 				C2079F5E29197ED0006BA81D /* LineupDetail.storyboard in Resources */,
 				C2A15F8D27D940F400FB6952 /* LaunchScreen.storyboard in Resources */,
@@ -640,7 +640,6 @@
 				C29AE6C227EAA029005CAD4E /* MapViewModel.swift in Sources */,
 				C29AE67027E109AB005CAD4E /* MapsTableViewCell.swift in Sources */,
 				C23543072822336200FE6E59 /* IQKeyboardManager+Internal.swift in Sources */,
-				C20239212A4BB2BF00FC72A0 /* AgentTableViewCell.swift in Sources */,
 				C235430C2822336200FE6E59 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
 				C29AE69127E3A050005CAD4E /* MapsDataProvider.swift in Sources */,
 				C29AE69E27E98A4B005CAD4E /* AgentViewModel.swift in Sources */,
@@ -661,6 +660,7 @@
 				C23543112822336200FE6E59 /* IQKeyboardManager+Position.swift in Sources */,
 				C29AE6BE27EA9ADC005CAD4E /* AgentListViewModel.swift in Sources */,
 				C29AE68927E245F3005CAD4E /* APIDataProvidable.swift in Sources */,
+				C20239332A4CC5C300FC72A0 /* AgentsTableViewCell.swift in Sources */,
 				C29AE69527E3D1DC005CAD4E /* WeaponsViewModel.swift in Sources */,
 				C24FD71327EEA1150032EB0D /* OneTrick.xcdatamodeld in Sources */,
 				C24FD73A27EEA7C70032EB0D /* LineupListTableViewController.swift in Sources */,
