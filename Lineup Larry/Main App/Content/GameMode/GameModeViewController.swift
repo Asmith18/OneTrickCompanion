@@ -36,7 +36,8 @@ class GameModeViewController: UIViewController, UITableViewDelegate, UITableView
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "gamemodeCell", for: indexPath) as? GameModeTableViewCell else { return UITableViewCell() }
         let result = viewModel.gameModeData[indexPath.row]
         cell.updateViews(mode: result)
-        
+        cell.selectionStyle = .none
+        cell.setNeedsUpdateConstraints() 
         return cell
     }
 }

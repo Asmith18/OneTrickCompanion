@@ -43,7 +43,8 @@ class LineupListTableViewController: UITableViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "lineupCell", for: indexPath) as? LineupListTableViewCell else { return UITableViewCell()}
         let lineup = viewModel.fetchedResultsController.object(at: indexPath)
         cell.updateViews(lineup: lineup)
-        
+        cell.selectionStyle = .none
+        cell.setNeedsUpdateConstraints() 
         return cell
     }
 

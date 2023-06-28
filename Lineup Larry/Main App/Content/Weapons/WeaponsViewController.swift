@@ -35,6 +35,8 @@ class WeaponsViewController: UIViewController, UITableViewDelegate, UITableViewD
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "weaponCell", for: indexPath) as? WeaponsTableViewCell else { return UITableViewCell() }
         let result = viewModel.weaponData[indexPath.row]
         cell.updateViews(weapon: result)
+        cell.selectionStyle = .none
+        cell.setNeedsUpdateConstraints() 
         return cell
     }
     

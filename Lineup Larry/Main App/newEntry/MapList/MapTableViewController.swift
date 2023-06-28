@@ -34,8 +34,8 @@ class MapTableViewController: UITableViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: MapTableViewCell.reuseId, for: indexPath) as? MapTableViewCell else { return UITableViewCell() }
         let result = viewModel.mapData[indexPath.row]
         cell.updateView(result)
-        
-        cell.needsUpdateConstraints()
+        cell.selectionStyle = .none
+        cell.setNeedsUpdateConstraints() 
         return cell
     }
     

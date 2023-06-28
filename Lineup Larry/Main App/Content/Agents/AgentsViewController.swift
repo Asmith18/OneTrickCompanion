@@ -43,7 +43,7 @@ class AgentsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let result = viewModel.agentData[indexPath.row]
         cell.updateViews(agent: result)
         cell.selectionStyle = .none
-        
+        cell.setNeedsUpdateConstraints()
         return cell
     }
     
