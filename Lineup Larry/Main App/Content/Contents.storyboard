@@ -121,7 +121,7 @@
                                             <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="termsAndConditionsButtonPressed:" destination="LYq-yH-2xv" eventType="touchUpInside" id="fC9-bw-O56"/>
+                                            <action selector="termsAndConditionsButtonPressed:" destination="LYq-yH-2xv" eventType="touchUpInside" id="o8V-2z-7Td"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -174,7 +174,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7CV-UY-kUB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5303.8461538461534" y="-823.2227488151658"/>
+            <point key="canvasLocation" x="5522" y="-821"/>
         </scene>
         <!--WeaponContent-->
         <scene sceneID="y9i-T8-Iyn">
@@ -204,7 +204,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jNH-Sz-3rO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5303.8461538461534" y="-786.25592417061603"/>
+            <point key="canvasLocation" x="5502" y="-787"/>
         </scene>
         <!--Acknowledgments-->
         <scene sceneID="AfF-fg-Apn">

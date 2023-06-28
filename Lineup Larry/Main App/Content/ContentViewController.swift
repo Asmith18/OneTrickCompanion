@@ -30,7 +30,7 @@ class ContentViewController: UIViewController {
 
     
     @IBAction func termsAndConditionsButtonPressed(_ sender: Any) {
-        guard let url = URL(string: "https://app.websitepolicies.com/policies/view/93tkg5qe") else { return }
+        guard let url = URL(string: "https://www.termsfeed.com/live/8f3ca374-a82c-4d9e-a487-c5c35fd6e49a") else { return }
                 let viewController = SFSafariViewController(url: url)
         present(viewController, animated: true)
     }

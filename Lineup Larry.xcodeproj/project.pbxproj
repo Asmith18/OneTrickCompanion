@@ -242,13 +242,29 @@
 			path = "Agent Cell";
 			sourceTree = "<group>";
 		};
-		C21ED838281B380000BCEC26 /* Settings */ = {
+		C20239282A4C9C9F00FC72A0 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				C21ED835281B359E00BCEC26 /* AboutViewController.swift */,
+				C2079F6B29197FF7006BA81D /* About.storyboard */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		C20239292A4C9CAF00FC72A0 /* Acknowledgements */ = {
 			isa = PBXGroup;
 			children = (
 				C21ED833281B343700BCEC26 /* AcknowledgmentsViewController.swift */,
-				C21ED835281B359E00BCEC26 /* AboutViewController.swift */,
-				C2079F6B29197FF7006BA81D /* About.storyboard */,
 				C2079F6929197FEA006BA81D /* Acknowledgments.storyboard */,
+			);
+			path = Acknowledgements;
+			sourceTree = "<group>";
+		};
+		C21ED838281B380000BCEC26 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C20239282A4C9C9F00FC72A0 /* About */,
+				C20239292A4C9CAF00FC72A0 /* Acknowledgements */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
