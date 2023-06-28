@@ -13,9 +13,9 @@ struct Map: Decodable {
 }
 
 struct MapData: Decodable {
-    let displayName: String
-    let uuid: String
-    let listViewIcon: String
-    let splash: String
-    let coordinates: String
+    let displayName: String?
+    let uuid: String?
+    let listViewIcon: String?
+    let splash: String?
+    let coordinates: String?
 }
