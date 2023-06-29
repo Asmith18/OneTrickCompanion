@@ -13,11 +13,11 @@ class MapsViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var mapsTableView: UITableView!
     
     //MARK: - Properties
-    var viewModel: MapsViewModel!
+    var viewModel: MapViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel = MapsViewModel(delegate: self)
+        viewModel = MapViewModel(delegate: self)
         buildTableView()
     }
     
@@ -51,7 +51,7 @@ class MapsViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
 }
 
-extension MapsViewController: MapsViewModelDelegate {
+extension MapsViewController: MapViewModelDelegate {
     
     func mapListHasData() {
             self.mapsTableView.reloadData()

@@ -19,7 +19,7 @@ class MapViewModel {
     var dataProvider = MapDataProvider()
     weak var delegate: MapViewModelDelegate?
     
-    init(delegate: MapViewModelDelegate, agent: AgentData?) {
+    init(delegate: MapViewModelDelegate, agent: AgentData? = nil) {
         self.delegate = delegate
         self.agentData = agent
         fetch()
