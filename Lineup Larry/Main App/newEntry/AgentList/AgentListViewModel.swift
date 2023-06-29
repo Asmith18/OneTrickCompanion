@@ -16,7 +16,7 @@ class AgentListViewModel {
     
     var agentData: [AgentData] = []
     var lineup: Lineup?
-    var dataProvider = AgentDataProvider()
+    var dataProvider = AgentListDataProvider()
     weak var delegate: AgentListViewModelDelegate?
     
     init(delegate: AgentListViewModelDelegate) {

@@ -75,31 +75,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="luU-tm-LXE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-193" y="349"/>
-        </scene>
-        <!--AgentList-->
-        <scene sceneID="GwY-SY-pie">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="AgentList" storyboardName="AgentList" referencedIdentifier="AgentList" id="n1c-4Y-c7Q" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qIq-fs-glO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-194" y="395"/>
-        </scene>
-        <!--MapsList-->
-        <scene sceneID="NYt-3X-QiR">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="MapsList" storyboardName="MapsList" referencedIdentifier="MapsList" id="uAH-eD-aGl" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4rt-mk-AIg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-196" y="442"/>
-        </scene>
-        <!--LineupDetail-->
-        <scene sceneID="e3Q-Cb-z1a">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="LineupDetail" storyboardName="LineupDetail" referencedIdentifier="LineupDetail" id="9mb-tF-p81" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sN2-1r-khb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-196" y="489"/>
+            <point key="canvasLocation" x="-194" y="345"/>
         </scene>
         <!--Contents-->
         <scene sceneID="yvN-Xn-4uk">
@@ -110,54 +86,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zO1-PW-GAl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1378" y="-800"/>
-        </scene>
-        <!--AgentContent-->
-        <scene sceneID="bAQ-Ac-fXK">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="AgentContent" storyboardName="AgentContent" referencedIdentifier="AgentContent" id="wNI-Wf-xsy" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="npM-qE-vwd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1620" y="-789"/>
-        </scene>
-        <!--WeaponContent-->
-        <scene sceneID="PgO-cG-Q0P">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="WeaponContent" storyboardName="WeaponContent" referencedIdentifier="WeaponContent" id="nkh-GV-g4F" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="F7O-DF-Kd6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1618" y="-757"/>
-        </scene>
-        <!--GameModeContents-->
-        <scene sceneID="Ubi-17-W4b">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="GameModeContents" storyboardName="GameModeContents" referencedIdentifier="GameModeContents" id="jLT-vJ-u5b" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Jld-Jp-nEs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1618" y="-720"/>
-        </scene>
-        <!--MapContent-->
-        <scene sceneID="Mxq-Tj-BUq">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="MapContent" storyboardName="MapContent" referencedIdentifier="MapContent" id="RCZ-hc-Hod" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Fic-Kh-c1x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1620" y="-881"/>
-        </scene>
-        <!--Acknowledgments-->
-        <scene sceneID="oG6-Pn-ZMG">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Acknowledgments" storyboardName="Acknowledgments" referencedIdentifier="Acknowledgments" id="aUr-5i-QMQ" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SNF-RX-IkX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1619" y="-823"/>
-        </scene>
-        <!--About-->
-        <scene sceneID="bJG-c8-Qdz">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="About" storyboardName="About" referencedIdentifier="About" id="Yax-Ca-OC1" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Kky-MT-8cB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1620" y="-853"/>
         </scene>
     </scenes>
     <color key="tintColor" systemColor="systemRedColor"/>

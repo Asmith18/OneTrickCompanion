@@ -8,6 +8,7 @@
 import UIKit
 
 class AgentListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
     //MARK: - Outlets
     @IBOutlet weak var notestableView: UITableView!
     

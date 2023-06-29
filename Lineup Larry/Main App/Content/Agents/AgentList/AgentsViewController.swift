@@ -12,12 +12,12 @@ class AgentsViewController: UIViewController, UITableViewDelegate, UITableViewDa
 //MARK: - Outlets
     @IBOutlet weak var agentTableView: UITableView!
     
-    var viewModel: AgentViewModel!
+    var viewModel: AgentListViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
-        viewModel = AgentViewModel(delegate: self)
+        viewModel = AgentListViewModel(delegate: self)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -48,10 +48,20 @@ class AgentsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "toDetailsSegue", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == "toDetailsSegue",
+              let destination = segue.destination as? AgentDetailsViewController,
+              let selectedRow = agentTableView.indexPathForSelectedRow?.row else { return }
+        let agent = viewModel.agentData[selectedRow]
+    }
 }
 
-extension AgentsViewController: AgentViewModelDelegate {
-    
+extension AgentsViewController: AgentListViewModelDelegate {
     func agentListHasData() {
         DispatchQueue.main.async {
             self.agentTableView.reloadData()
@@ -67,4 +77,5 @@ extension AgentsViewController: AgentViewModelDelegate {
         present(alertController, animated: true)
     }
 }
+
 

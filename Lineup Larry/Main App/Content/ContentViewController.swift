@@ -10,14 +10,27 @@ import SafariServices
 
 class ContentViewController: UIViewController {
 
-    //MARK: - outlets
-    @IBOutlet weak var mapsbuttom: UIButton!
-    @IBOutlet weak var weaponsButton: UIButton!
-    @IBOutlet weak var agentsButton: UIButton!
-    @IBOutlet weak var gamemodeButton: UIButton!
+    @IBOutlet weak var agentView: UIView!
+    @IBOutlet weak var mapView: UIView!
+    @IBOutlet weak var weaponView: UIView!
+    @IBOutlet weak var gameModeView: UIView!
+    @IBOutlet weak var aboutView: UIView!
+    @IBOutlet weak var akView: UIView!
+    @IBOutlet weak var tosView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
+    }
+    
+    func setupView() {
+        agentView.layer.cornerRadius = 12
+        mapView.layer.cornerRadius = 12
+        weaponView.layer.cornerRadius = 12
+        gameModeView.layer.cornerRadius = 12
+        aboutView.layer.cornerRadius = 12
+        akView.layer.cornerRadius = 12
+        tosView.layer.cornerRadius = 12
     }
     
     override func viewWillAppear(_ animated: Bool) {
