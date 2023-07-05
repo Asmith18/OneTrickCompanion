@@ -1,27 +1,28 @@
 //
-//  NoteViewModel.swift
-//  One Trick Companion
+//  AgentDetailsViewModel.swift
+//  Lineup Larry
 //
-//  Created by adam smith on 3/22/22.
+//  Created by Adam Smith on 7/5/23.
 //
 
 import Foundation
-
-protocol AgentListViewModelDelegate: AnyObject {
-    func agentListHasData()
+protocol AgentDetailsViewModelDelegate: AnyObject {
+    func abilitiesHasData()
     func encountered(_ error: Error)
 }
 
-class AgentListViewModel {
+class AgentDetailsViewModel {
     
-    var abilities: [AgentAbilities] = []
+    var agent: AgentData?
     var agentData: [AgentData] = []
-    var lineup: Lineup?
+    var ability: AgentAbilities?
+    var abilities: [AgentAbilities] = []
     var dataProvider = AgentListDataProvider()
-    weak var delegate: AgentListViewModelDelegate?
+    weak var delegate: AgentDetailsViewModelDelegate?
     
-    init(delegate: AgentListViewModelDelegate) {
+    init(delegate: AgentDetailsViewModelDelegate, agent: AgentData?) {
         self.delegate = delegate
+        self.agent = agent
         fetch()
     }
     
@@ -30,10 +31,9 @@ class AgentListViewModel {
             switch result {
             case .success(let agent):
                 self.agentData = agent.data
-                self.delegate?.agentListHasData()
+                self.delegate?.abilitiesHasData()
             case .failure(let error):
                 print(error)
-                self.delegate?.encountered(error)
             }
         }
     }

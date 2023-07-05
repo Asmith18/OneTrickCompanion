@@ -42,7 +42,7 @@ class LineUpViewModel {
             lineup.overviewImages = tempArray.compactMap {  $0.pngData() }
             lineup.agentImage = lineup.agentImage
         } else {
-            self.lineup = Lineup(agentImage: agent!.displayIconSmall, mapName: mapData!.displayName ?? "", instructions: instructions, title: title, overviewImages: tempArray.compactMap {  $0.pngData() })
+            self.lineup = Lineup(agentImage: agent!.displayIconSmall!, mapName: mapData!.displayName ?? "", instructions: instructions, title: title, overviewImages: tempArray.compactMap {  $0.pngData() })
         }
         do {
             try CoreDataStack.context.save()

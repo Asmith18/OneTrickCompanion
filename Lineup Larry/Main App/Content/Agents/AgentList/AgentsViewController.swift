@@ -58,6 +58,9 @@ class AgentsViewController: UIViewController, UITableViewDelegate, UITableViewDa
               let destination = segue.destination as? AgentDetailsViewController,
               let selectedRow = agentTableView.indexPathForSelectedRow?.row else { return }
         let agent = viewModel.agentData[selectedRow]
+        let abilities = viewModel.abilities
+        let detailsViewModel = AgentDetailsViewModel(delegate: destination, agent: agent)
+        destination.viewModel = detailsViewModel
     }
 }
 
