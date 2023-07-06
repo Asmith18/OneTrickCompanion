@@ -50,7 +50,7 @@ class AgentsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "toDetailsSegue", sender: self)
+            performSegue(withIdentifier: "toDetailsSegue", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -58,7 +58,6 @@ class AgentsViewController: UIViewController, UITableViewDelegate, UITableViewDa
               let destination = segue.destination as? AgentDetailsViewController,
               let selectedRow = agentTableView.indexPathForSelectedRow?.row else { return }
         let agent = viewModel.agentData[selectedRow]
-        let abilities = viewModel.abilities
         let detailsViewModel = AgentDetailsViewModel(delegate: destination, agent: agent)
         destination.viewModel = detailsViewModel
     }

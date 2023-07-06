@@ -14,23 +14,19 @@ protocol AgentDetailsViewModelDelegate: AnyObject {
 class AgentDetailsViewModel {
     
     var agent: AgentData?
-    var agentData: [AgentData] = []
-    var ability: AgentAbilities?
-    var abilities: [AgentAbilities] = []
     var dataProvider = AgentListDataProvider()
     weak var delegate: AgentDetailsViewModelDelegate?
     
     init(delegate: AgentDetailsViewModelDelegate, agent: AgentData?) {
         self.delegate = delegate
         self.agent = agent
-        fetch()
     }
     
     func fetch() {
         dataProvider.fetch(from: .agent) { result in
             switch result {
             case .success(let agent):
-                self.agentData = agent.data
+                self.agent = agent.data[0]
                 self.delegate?.abilitiesHasData()
             case .failure(let error):
                 print(error)

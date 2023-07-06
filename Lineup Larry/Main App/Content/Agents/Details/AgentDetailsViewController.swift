@@ -13,13 +13,13 @@ class AgentDetailsViewController: UIViewController, UITableViewDelegate, UITable
     var viewModel: AgentDetailsViewModel!
     
     @IBOutlet weak var agentImageView: MapImageView!
-    @IBOutlet weak var agenNameLabel: UILabel!
     @IBOutlet weak var abillitiesTableView: UITableView!
     @IBOutlet weak var detailsTextView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.prefersLargeTitles = false
+        navigationController?.navigationBar.prefersLargeTitles = true
+        title = viewModel.agent?.displayName
         abillitiesTableView.dataSource = self
         abillitiesTableView.delegate = self
         updateViews()
@@ -28,19 +28,25 @@ class AgentDetailsViewController: UIViewController, UITableViewDelegate, UITable
     func updateViews() {
         guard let agent = viewModel.agent else { return }
         agentImageView.setImage(using: agent.fullPortrait)
-        agenNameLabel.text = agent.displayName
         detailsTextView.text = agent.description
+        detailsTextView.isEditable = false
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.abilities.count
+        return viewModel.agent?.abilities.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "abilities", for: indexPath) as? AgentAbilitiesTableViewCell else { return UITableViewCell() }
-        let result = viewModel.abilities[indexPath.row]
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "abilities", for: indexPath) as? AgentAbilitiesTableViewCell,
+              let result = viewModel.agent?.abilities[indexPath.row] else { return UITableViewCell() }
         cell.updateViews(ability: result)
+        cell.selectionStyle = .none
+        cell.setNeedsUpdateConstraints()
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70
     }
 }
 
