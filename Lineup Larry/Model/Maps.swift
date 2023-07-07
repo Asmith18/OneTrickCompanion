@@ -18,6 +18,7 @@ class Map: Decodable {
 
 class MapData: Decodable {
     let displayName: String?
+    let displayIcon: String?
     let uuid: String?
     let listViewIcon: String?
     let splash: String?
@@ -25,6 +26,7 @@ class MapData: Decodable {
     
     enum CodingKeys: CodingKey {
         case displayName
+        case displayIcon
         case uuid
         case listViewIcon
         case splash
@@ -34,6 +36,7 @@ class MapData: Decodable {
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.displayName = try container.decodeIfPresent(String.self, forKey: .displayName)
+        self.displayIcon = try container.decodeIfPresent(String.self, forKey: .displayIcon)
         self.uuid = try container.decodeIfPresent(String.self, forKey: .uuid)
         self.listViewIcon = try container.decodeIfPresent(String.self, forKey: .listViewIcon)
         self.splash = try container.decodeIfPresent(String.self, forKey: .splash)

@@ -98,6 +98,7 @@
 		C2A15FA227DD1DF200FB6952 /* Weapons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A15FA127DD1DF200FB6952 /* Weapons.swift */; };
 		C2A15FA427DD1E8400FB6952 /* GameMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A15FA327DD1E8400FB6952 /* GameMode.swift */; };
 		C2B4917A2A4DF8D200EB5EB4 /* AgentDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B491792A4DF8D200EB5EB4 /* AgentDetailsViewController.swift */; };
+		C2FA76982A58872500F41912 /* MapDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2FA76972A58872500F41912 /* MapDetails.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -195,6 +196,7 @@
 		C2A15FA127DD1DF200FB6952 /* Weapons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapons.swift; sourceTree = "<group>"; };
 		C2A15FA327DD1E8400FB6952 /* GameMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMode.swift; sourceTree = "<group>"; };
 		C2B491792A4DF8D200EB5EB4 /* AgentDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDetailsViewController.swift; sourceTree = "<group>"; };
+		C2FA76972A58872500F41912 /* MapDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapDetails.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -384,10 +386,8 @@
 		C29AE66A27E10269005CAD4E /* Maps */ = {
 			isa = PBXGroup;
 			children = (
-				C29AE67627E11BAC005CAD4E /* MapsViewController.swift */,
-				C29AE68327E24586005CAD4E /* MapsViewModel.swift */,
-				C29AE69027E3A050005CAD4E /* MapsDataProvider.swift */,
-				C2079F6729197FCD006BA81D /* MapContent.storyboard */,
+				C2FA76952A5886FF00F41912 /* MapList */,
+				C2FA76962A58871000F41912 /* MapDetails */,
 			);
 			path = Maps;
 			sourceTree = "<group>";
@@ -548,6 +548,25 @@
 			path = AgentList;
 			sourceTree = "<group>";
 		};
+		C2FA76952A5886FF00F41912 /* MapList */ = {
+			isa = PBXGroup;
+			children = (
+				C29AE67627E11BAC005CAD4E /* MapsViewController.swift */,
+				C29AE68327E24586005CAD4E /* MapsViewModel.swift */,
+				C29AE69027E3A050005CAD4E /* MapsDataProvider.swift */,
+				C2079F6729197FCD006BA81D /* MapContent.storyboard */,
+			);
+			path = MapList;
+			sourceTree = "<group>";
+		};
+		C2FA76962A58871000F41912 /* MapDetails */ = {
+			isa = PBXGroup;
+			children = (
+				C2FA76972A58872500F41912 /* MapDetails.storyboard */,
+			);
+			path = MapDetails;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -626,6 +645,7 @@
 				C2079F6629197FBA006BA81D /* GameModeContents.storyboard in Resources */,
 				C2079F6C29197FF7006BA81D /* About.storyboard in Resources */,
 				C2079F5A29197E95006BA81D /* AgentList.storyboard in Resources */,
+				C2FA76982A58872500F41912 /* MapDetails.storyboard in Resources */,
 				C2079F6A29197FEA006BA81D /* Acknowledgments.storyboard in Resources */,
 				C20239362A4CCC9400FC72A0 /* AgentDetails.storyboard in Resources */,
 				3E0CAD1127ED1D00000AF833 /* MapTableViewCell.xib in Resources */,

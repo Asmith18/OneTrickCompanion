@@ -14,11 +14,13 @@ class LineUpViewController: UIViewController {
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var ImagesCollectionView: UICollectionView!
     @IBOutlet weak var agentImageView: MapImageView!
+    @IBOutlet weak var textFieldView: UIView!
     
     var viewModel: LineUpViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Lineup"
         ImagesCollectionView.dataSource = self
         ImagesCollectionView.delegate = self
         navigationController?.navigationBar.barTintColor = UIColor.white
@@ -31,6 +33,7 @@ class LineUpViewController: UIViewController {
     }
     
     func setupDetailScreen() {
+        textFieldView.layer.cornerRadius = 12
         instructionTextView.text = viewModel.lineup?.instructions ?? ""
         titleTextField.text = viewModel.lineup?.title ?? ""
         agentImageView.setImage(using: viewModel.lineup?.agentImage ?? viewModel.agent?.displayIconSmall)
@@ -78,7 +81,7 @@ extension LineUpViewController: UICollectionViewDataSource, UICollectionViewDele
         let result = viewModel?.tempArray[indexPath.row]
         cell.updateViews(image: result!)
         return cell
-    } 
+    }
 }
 
 extension LineUpViewController: UIImagePickerControllerDelegate {
