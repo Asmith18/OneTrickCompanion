@@ -33,10 +33,10 @@ class LineUpViewController: UIViewController {
     }
     
     func setupDetailScreen() {
-        textFieldView.layer.cornerRadius = 12
         instructionTextView.text = viewModel.lineup?.instructions ?? ""
         titleTextField.text = viewModel.lineup?.title ?? ""
         agentImageView.setImage(using: viewModel.lineup?.agentImage ?? viewModel.agent?.displayIconSmall)
+        textFieldView.layer.cornerRadius = 12
         instructionTextView.layer.cornerRadius = 10
         ImagesCollectionView.layer.cornerRadius = 10
         agentImageView.layer.cornerRadius = agentImageView.frame.size.width / 2
@@ -56,7 +56,7 @@ class LineUpViewController: UIViewController {
         
         viewModel?.saveLineup(instructions: instructions, title: title)
         
-        if let lineupListViewController = navigationController?.viewControllers.first(where: { $0 is LineupListTableViewController }) {
+        if let lineupListViewController = navigationController?.viewControllers.first(where: { $0 is LineupListViewController }) {
             navigationController?.popToViewController(lineupListViewController, animated: true)
         }
     }
@@ -99,5 +99,17 @@ extension LineUpViewController: UIImagePickerControllerDelegate {
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
+    }
+}
+
+extension LineUpViewController: LineUpViewModelDelegate {
+    func overviewImagesHasdata() {
+        DispatchQueue.main.async {
+            self.ImagesCollectionView.reloadData()
+        }
+    }
+    
+    func encountered(_ error: Error) {
+        print(error)
     }
 }

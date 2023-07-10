@@ -51,8 +51,6 @@
 		C235431B2822336200FE6E59 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23543042822336200FE6E59 /* IQNSArray+Sort.swift */; };
 		C235431C2822336200FE6E59 /* IQKeyboardManager+UITextFieldViewNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23543052822336200FE6E59 /* IQKeyboardManager+UITextFieldViewNotification.swift */; };
 		C24FD71327EEA1150032EB0D /* OneTrick.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C24FD71127EEA1150032EB0D /* OneTrick.xcdatamodeld */; };
-		C24FD73A27EEA7C70032EB0D /* LineupListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24FD73927EEA7C70032EB0D /* LineupListTableViewController.swift */; };
-		C24FD74427EF804C0032EB0D /* LineupListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24FD74327EF804C0032EB0D /* LineupListTableViewCell.swift */; };
 		C24FD75027F0D1A90032EB0D /* LineupListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24FD74F27F0D1A90032EB0D /* LineupListViewModel.swift */; };
 		C24FD75227F13DBB0032EB0D /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24FD75127F13DBB0032EB0D /* CoreDataStack.swift */; };
 		C24FD75427F13F5D0032EB0D /* Lineup+Convienence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24FD75327F13F5D0032EB0D /* Lineup+Convienence.swift */; };
@@ -99,6 +97,8 @@
 		C2A15FA427DD1E8400FB6952 /* GameMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A15FA327DD1E8400FB6952 /* GameMode.swift */; };
 		C2B4917A2A4DF8D200EB5EB4 /* AgentDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B491792A4DF8D200EB5EB4 /* AgentDetailsViewController.swift */; };
 		C2FA76982A58872500F41912 /* MapDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2FA76972A58872500F41912 /* MapDetails.storyboard */; };
+		C2FA769A2A58AD4B00F41912 /* LineupListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FA76992A58AD4B00F41912 /* LineupListViewController.swift */; };
+		C2FA769C2A58AF2800F41912 /* LineupListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FA769B2A58AF2800F41912 /* LineupListCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -147,8 +147,6 @@
 		C23543042822336200FE6E59 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQNSArray+Sort.swift"; sourceTree = "<group>"; };
 		C23543052822336200FE6E59 /* IQKeyboardManager+UITextFieldViewNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQKeyboardManager+UITextFieldViewNotification.swift"; sourceTree = "<group>"; };
 		C24FD71227EEA1150032EB0D /* OneTrick.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OneTrick.xcdatamodel; sourceTree = "<group>"; };
-		C24FD73927EEA7C70032EB0D /* LineupListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineupListTableViewController.swift; sourceTree = "<group>"; };
-		C24FD74327EF804C0032EB0D /* LineupListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineupListTableViewCell.swift; sourceTree = "<group>"; };
 		C24FD74F27F0D1A90032EB0D /* LineupListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineupListViewModel.swift; sourceTree = "<group>"; };
 		C24FD75127F13DBB0032EB0D /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		C24FD75327F13F5D0032EB0D /* Lineup+Convienence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lineup+Convienence.swift"; sourceTree = "<group>"; };
@@ -197,6 +195,8 @@
 		C2A15FA327DD1E8400FB6952 /* GameMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMode.swift; sourceTree = "<group>"; };
 		C2B491792A4DF8D200EB5EB4 /* AgentDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDetailsViewController.swift; sourceTree = "<group>"; };
 		C2FA76972A58872500F41912 /* MapDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapDetails.storyboard; sourceTree = "<group>"; };
+		C2FA76992A58AD4B00F41912 /* LineupListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineupListViewController.swift; sourceTree = "<group>"; };
+		C2FA769B2A58AF2800F41912 /* LineupListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineupListCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,8 +287,8 @@
 		C21ED839281B385300BCEC26 /* Lineup List */ = {
 			isa = PBXGroup;
 			children = (
-				C24FD73927EEA7C70032EB0D /* LineupListTableViewController.swift */,
-				C24FD74327EF804C0032EB0D /* LineupListTableViewCell.swift */,
+				C2FA76992A58AD4B00F41912 /* LineupListViewController.swift */,
+				C2FA769B2A58AF2800F41912 /* LineupListCollectionViewCell.swift */,
 				C24FD74F27F0D1A90032EB0D /* LineupListViewModel.swift */,
 				C2079F5729197E2A006BA81D /* LineupList.storyboard */,
 			);
@@ -672,9 +672,11 @@
 				3E0CAD1027ED1D00000AF833 /* MapTableViewCell.swift in Sources */,
 				C24FD75227F13DBB0032EB0D /* CoreDataStack.swift in Sources */,
 				C21ED836281B359E00BCEC26 /* AboutViewController.swift in Sources */,
+				C2FA769A2A58AD4B00F41912 /* LineupListViewController.swift in Sources */,
 				C23543062822336200FE6E59 /* IQTextView.swift in Sources */,
 				C2A15F9C27DD1BB100FB6952 /* Agent.swift in Sources */,
 				C23543172822336200FE6E59 /* IQUIScrollView+Additions.swift in Sources */,
+				C2FA769C2A58AF2800F41912 /* LineupListCollectionViewCell.swift in Sources */,
 				C29AE67727E11BAC005CAD4E /* MapsViewController.swift in Sources */,
 				C29AE6A427EA003B005CAD4E /* GameModeViewController.swift in Sources */,
 				C235430D2822336200FE6E59 /* IQInvocation.swift in Sources */,
@@ -702,7 +704,6 @@
 				C20239332A4CC5C300FC72A0 /* AgentsTableViewCell.swift in Sources */,
 				C29AE69527E3D1DC005CAD4E /* WeaponsViewModel.swift in Sources */,
 				C24FD71327EEA1150032EB0D /* OneTrick.xcdatamodeld in Sources */,
-				C24FD73A27EEA7C70032EB0D /* LineupListTableViewController.swift in Sources */,
 				C23543152822336200FE6E59 /* IQKeyboardManager+OrientationNotification.swift in Sources */,
 				C235431A2822336200FE6E59 /* IQUIView+Hierarchy.swift in Sources */,
 				C23543132822336200FE6E59 /* IQKeyboardManager.swift in Sources */,
@@ -720,7 +721,6 @@
 				C25356D82923FACF00D68A79 /* LineupCollectionViewCell.swift in Sources */,
 				C23543082822336200FE6E59 /* IQPreviousNextView.swift in Sources */,
 				C2A15F8327D940F300FB6952 /* SceneDelegate.swift in Sources */,
-				C24FD74427EF804C0032EB0D /* LineupListTableViewCell.swift in Sources */,
 				C29AE6BC27EA3C64005CAD4E /* MapTableViewController.swift in Sources */,
 				C29AE6A627EA005F005CAD4E /* GameModeTableViewCell.swift in Sources */,
 				C29AE6CA27EAAAC8005CAD4E /* LineUpViewModel.swift in Sources */,

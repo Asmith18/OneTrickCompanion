@@ -56,7 +56,7 @@ class MapTableViewController: UITableViewController {
               let selectedRow = tableView.indexPathForSelectedRow?.row else { return }
         let map = viewModel.mapData[selectedRow]
         let agent = viewModel.agentData
-        let lineupViewModel = LineUpViewModel(map: map, agent: agent, lineup: nil)
+        let lineupViewModel = LineUpViewModel(delegate: destination ,map: map, agent: agent, lineup: nil)
         destination.viewModel = lineupViewModel
     }
 }

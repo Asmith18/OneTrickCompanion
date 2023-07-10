@@ -54,7 +54,9 @@ class MapsViewController: UIViewController, UITableViewDataSource, UITableViewDe
 extension MapsViewController: MapViewModelDelegate {
     
     func mapListHasData() {
+        DispatchQueue.main.async {
             self.mapsTableView.reloadData()
+        }
     }
     
     func encountered(_ error: Error) {
