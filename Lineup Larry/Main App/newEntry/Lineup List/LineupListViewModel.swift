@@ -13,7 +13,7 @@ protocol LineupListViewModelDelegate: AnyObject {
     func LineupsHasData()
 }
 
-class LineupListViewMdoel {
+class LineupListViewModel {
     
     var agent: AgentData?
     

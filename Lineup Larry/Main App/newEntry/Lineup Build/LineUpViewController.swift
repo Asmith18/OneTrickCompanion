@@ -56,7 +56,7 @@ class LineUpViewController: UIViewController {
         
         viewModel?.saveLineup(instructions: instructions, title: title)
         
-        if let lineupListViewController = navigationController?.viewControllers.first(where: { $0 is LineupListViewController }) {
+        if let lineupListViewController = navigationController?.viewControllers.first(where: { $0 is LineupListTableViewController }) {
             navigationController?.popToViewController(lineupListViewController, animated: true)
         }
     }

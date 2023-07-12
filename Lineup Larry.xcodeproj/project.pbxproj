@@ -57,6 +57,9 @@
 		C24FD75727F146820032EB0D /* Lineup+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24FD75527F146820032EB0D /* Lineup+CoreDataClass.swift */; };
 		C24FD75827F146820032EB0D /* Lineup+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24FD75627F146820032EB0D /* Lineup+CoreDataProperties.swift */; };
 		C25356D82923FACF00D68A79 /* LineupCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25356D72923FACF00D68A79 /* LineupCollectionViewCell.swift */; };
+		C25738EE2A5DFDAA0083320C /* UserImagesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25738ED2A5DFDAA0083320C /* UserImagesCollectionViewCell.swift */; };
+		C25738F02A5E0A6C0083320C /* LineupListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25738EF2A5E0A6C0083320C /* LineupListTableViewCell.swift */; };
+		C25738F22A5E0A760083320C /* LineupListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25738F12A5E0A760083320C /* LineupListTableViewController.swift */; };
 		C289F1852A55CCFE007BF6F2 /* AgentDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C289F1842A55CCFE007BF6F2 /* AgentDetailsViewModel.swift */; };
 		C289F1892A55D4C6007BF6F2 /* AgentAbilitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C289F1882A55D4C6007BF6F2 /* AgentAbilitiesTableViewCell.swift */; };
 		C289F18D2A560C68007BF6F2 /* AgentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C289F18C2A560C68007BF6F2 /* AgentTableViewCell.xib */; };
@@ -97,8 +100,6 @@
 		C2A15FA427DD1E8400FB6952 /* GameMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A15FA327DD1E8400FB6952 /* GameMode.swift */; };
 		C2B4917A2A4DF8D200EB5EB4 /* AgentDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B491792A4DF8D200EB5EB4 /* AgentDetailsViewController.swift */; };
 		C2FA76982A58872500F41912 /* MapDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2FA76972A58872500F41912 /* MapDetails.storyboard */; };
-		C2FA769A2A58AD4B00F41912 /* LineupListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FA76992A58AD4B00F41912 /* LineupListViewController.swift */; };
-		C2FA769C2A58AF2800F41912 /* LineupListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FA769B2A58AF2800F41912 /* LineupListCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -153,6 +154,9 @@
 		C24FD75527F146820032EB0D /* Lineup+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lineup+CoreDataClass.swift"; sourceTree = "<group>"; };
 		C24FD75627F146820032EB0D /* Lineup+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lineup+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C25356D72923FACF00D68A79 /* LineupCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineupCollectionViewCell.swift; sourceTree = "<group>"; };
+		C25738ED2A5DFDAA0083320C /* UserImagesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImagesCollectionViewCell.swift; sourceTree = "<group>"; };
+		C25738EF2A5E0A6C0083320C /* LineupListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LineupListTableViewCell.swift; path = ../../../../../../../.Trash/LineupListTableViewCell.swift; sourceTree = "<group>"; };
+		C25738F12A5E0A760083320C /* LineupListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LineupListTableViewController.swift; path = ../../../../../../../.Trash/LineupListTableViewController.swift; sourceTree = "<group>"; };
 		C289F1842A55CCFE007BF6F2 /* AgentDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDetailsViewModel.swift; sourceTree = "<group>"; };
 		C289F1882A55D4C6007BF6F2 /* AgentAbilitiesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentAbilitiesTableViewCell.swift; sourceTree = "<group>"; };
 		C289F18C2A560C68007BF6F2 /* AgentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgentTableViewCell.xib; sourceTree = "<group>"; };
@@ -195,8 +199,6 @@
 		C2A15FA327DD1E8400FB6952 /* GameMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMode.swift; sourceTree = "<group>"; };
 		C2B491792A4DF8D200EB5EB4 /* AgentDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDetailsViewController.swift; sourceTree = "<group>"; };
 		C2FA76972A58872500F41912 /* MapDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapDetails.storyboard; sourceTree = "<group>"; };
-		C2FA76992A58AD4B00F41912 /* LineupListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineupListViewController.swift; sourceTree = "<group>"; };
-		C2FA769B2A58AF2800F41912 /* LineupListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineupListCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,8 +289,9 @@
 		C21ED839281B385300BCEC26 /* Lineup List */ = {
 			isa = PBXGroup;
 			children = (
-				C2FA76992A58AD4B00F41912 /* LineupListViewController.swift */,
-				C2FA769B2A58AF2800F41912 /* LineupListCollectionViewCell.swift */,
+				C25738F12A5E0A760083320C /* LineupListTableViewController.swift */,
+				C25738EF2A5E0A6C0083320C /* LineupListTableViewCell.swift */,
+				C25738ED2A5DFDAA0083320C /* UserImagesCollectionViewCell.swift */,
 				C24FD74F27F0D1A90032EB0D /* LineupListViewModel.swift */,
 				C2079F5729197E2A006BA81D /* LineupList.storyboard */,
 			);
@@ -672,15 +675,15 @@
 				3E0CAD1027ED1D00000AF833 /* MapTableViewCell.swift in Sources */,
 				C24FD75227F13DBB0032EB0D /* CoreDataStack.swift in Sources */,
 				C21ED836281B359E00BCEC26 /* AboutViewController.swift in Sources */,
-				C2FA769A2A58AD4B00F41912 /* LineupListViewController.swift in Sources */,
 				C23543062822336200FE6E59 /* IQTextView.swift in Sources */,
 				C2A15F9C27DD1BB100FB6952 /* Agent.swift in Sources */,
 				C23543172822336200FE6E59 /* IQUIScrollView+Additions.swift in Sources */,
-				C2FA769C2A58AF2800F41912 /* LineupListCollectionViewCell.swift in Sources */,
 				C29AE67727E11BAC005CAD4E /* MapsViewController.swift in Sources */,
 				C29AE6A427EA003B005CAD4E /* GameModeViewController.swift in Sources */,
 				C235430D2822336200FE6E59 /* IQInvocation.swift in Sources */,
 				C29AE6C227EAA029005CAD4E /* MapViewModel.swift in Sources */,
+				C25738F02A5E0A6C0083320C /* LineupListTableViewCell.swift in Sources */,
+				C25738F22A5E0A760083320C /* LineupListTableViewController.swift in Sources */,
 				C23543072822336200FE6E59 /* IQKeyboardManager+Internal.swift in Sources */,
 				C235430C2822336200FE6E59 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
 				C29AE69127E3A050005CAD4E /* MapsDataProvider.swift in Sources */,
@@ -695,6 +698,7 @@
 				C235430F2822336200FE6E59 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
 				C29AE68427E24586005CAD4E /* MapsViewModel.swift in Sources */,
 				C29AE6C027EA9B1D005CAD4E /* AgentListDataProvider.swift in Sources */,
+				C25738EE2A5DFDAA0083320C /* UserImagesCollectionViewCell.swift in Sources */,
 				C235430E2822336200FE6E59 /* IQKeyboardManager+UIKeyboardNotification.swift in Sources */,
 				C24FD75427F13F5D0032EB0D /* Lineup+Convienence.swift in Sources */,
 				C2A15F9E27DD1CE700FB6952 /* Maps.swift in Sources */,

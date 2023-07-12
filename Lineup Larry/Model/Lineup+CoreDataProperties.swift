@@ -22,7 +22,7 @@ extension Lineup {
     @NSManaged public var agentImage: String?
     @NSManaged public var mapName: String?
     @NSManaged public var instructions: String?
-    @NSManaged public var overviewImages: [Data]
+    @NSManaged public var overviewImages: [Data]?
 
 }
 
