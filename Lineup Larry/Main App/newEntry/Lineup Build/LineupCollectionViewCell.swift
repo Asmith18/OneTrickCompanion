@@ -13,6 +13,5 @@ class LineupCollectionViewCell: UICollectionViewCell {
     
     func updateViews(image: UIImage) {
         lineupImageView?.image = image
-        lineupImageView?.layer.cornerRadius = 10
     }
 }

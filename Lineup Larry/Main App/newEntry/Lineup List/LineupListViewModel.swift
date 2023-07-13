@@ -9,10 +9,6 @@ import Foundation
 import CoreData
 import UIKit
 
-protocol LineupListViewModelDelegate: AnyObject {
-    func LineupsHasData()
-}
-
 class LineupListViewModel {
     
     var agent: AgentData?
