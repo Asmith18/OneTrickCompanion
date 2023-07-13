@@ -22,7 +22,7 @@ extension Lineup {
     @NSManaged public var agentImage: String?
     @NSManaged public var mapName: String?
     @NSManaged public var instructions: String?
-    @NSManaged public var overviewImages: [Data]?
+    @NSManaged public var overviewImages: [Data]
 
 }
 
@@ -48,10 +48,10 @@ extension Lineup {
     @NSManaged public func replaceOverviewImages(at indexes: NSIndexSet, with values: [Lineup])
 
     @objc(addOverviewImagesObject:)
-    @NSManaged public func addToOverviewImages(_ value: Lineup)
+    @NSManaged public func addToOverviewImages(_ value: Data)
 
     @objc(removeOverviewImagesObject:)
-    @NSManaged public func removeFromOverviewImages(_ value: Lineup)
+    @NSManaged public func removeFromOverviewImages(_ value: Data)
 
     @objc(addOverviewImages:)
     @NSManaged public func addToOverviewImages(_ values: NSOrderedSet)

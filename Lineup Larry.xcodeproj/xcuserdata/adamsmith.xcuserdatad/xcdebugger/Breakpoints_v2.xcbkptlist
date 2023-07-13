@@ -215,16 +215,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "81ECCB80-65EE-4F64-BB15-9431CB3E6859"
+            uuid = "6D66BD63-63D2-4676-B316-D3382611D44F"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Lineup Larry/Main App/newEntry/Lineup List/UserImagesCollectionViewCell.swift"
+            filePath = "../../../.Trash/LineupListTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "updateViews(image:)"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

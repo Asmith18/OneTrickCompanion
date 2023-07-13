@@ -73,13 +73,13 @@ class LineUpViewController: UIViewController {
 extension LineUpViewController: UICollectionViewDataSource, UICollectionViewDelegate, UINavigationControllerDelegate {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return viewModel?.tempArray.count ?? 0
-    }
+            return viewModel.tempArray.count
+        }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = ImagesCollectionView.dequeueReusableCell(withReuseIdentifier: "overviewCell", for: indexPath) as! LineupCollectionViewCell
-        let result = viewModel?.tempArray[indexPath.row]
-        cell.updateViews(image: result!)
+        let image = viewModel.tempArray[indexPath.row]
+        cell.updateViews(image: image)
         return cell
     }
 }

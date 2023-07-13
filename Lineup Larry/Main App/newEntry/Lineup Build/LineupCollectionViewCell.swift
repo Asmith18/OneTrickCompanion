@@ -12,7 +12,7 @@ class LineupCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var lineupImageView: UIImageView!
     
     func updateViews(image: UIImage) {
-        lineupImageView.image = image
-        lineupImageView.layer.cornerRadius = 10
+        lineupImageView?.image = image
+        lineupImageView?.layer.cornerRadius = 10
     }
 }
