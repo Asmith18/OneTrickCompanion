@@ -20,9 +20,13 @@ class LineUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Lineup"
+        title = "Create Lineup"
         ImagesCollectionView.dataSource = self
         ImagesCollectionView.delegate = self
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        ImagesCollectionView.collectionViewLayout = layout
+        ImagesCollectionView.showsHorizontalScrollIndicator = false
         navigationController?.navigationBar.barTintColor = UIColor.white
     }
     
@@ -70,17 +74,30 @@ class LineUpViewController: UIViewController {
     }
 }
 
-extension LineUpViewController: UICollectionViewDataSource, UICollectionViewDelegate, UINavigationControllerDelegate {
+extension LineUpViewController: UICollectionViewDataSource, UICollectionViewDelegate, UINavigationControllerDelegate, UICollectionViewDelegateFlowLayout, UIScrollViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-            return viewModel.tempArray.count
-        }
+        return viewModel.tempArray.count
+    }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = ImagesCollectionView.dequeueReusableCell(withReuseIdentifier: "overviewCell", for: indexPath) as! LineupCollectionViewCell
         let image = viewModel.tempArray[indexPath.row]
         cell.updateViews(image: image)
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let screenWidth = ImagesCollectionView.bounds.width
+        let cellHeight = ImagesCollectionView.bounds.height
+        return CGSize(width: screenWidth, height: cellHeight)
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
     }
 }
 

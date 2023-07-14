@@ -58,8 +58,8 @@
 		C24FD75827F146820032EB0D /* Lineup+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24FD75627F146820032EB0D /* Lineup+CoreDataProperties.swift */; };
 		C25356D82923FACF00D68A79 /* LineupCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25356D72923FACF00D68A79 /* LineupCollectionViewCell.swift */; };
 		C25738EE2A5DFDAA0083320C /* UserImagesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25738ED2A5DFDAA0083320C /* UserImagesCollectionViewCell.swift */; };
-		C25738F02A5E0A6C0083320C /* LineupListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25738EF2A5E0A6C0083320C /* LineupListTableViewCell.swift */; };
-		C25738F22A5E0A760083320C /* LineupListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25738F12A5E0A760083320C /* LineupListTableViewController.swift */; };
+		C260C0CE2A61AA670074D7E4 /* LineupListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C260C0CD2A61AA660074D7E4 /* LineupListTableViewController.swift */; };
+		C260C0D02A61AA880074D7E4 /* LineupListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C260C0CF2A61AA880074D7E4 /* LineupListTableViewCell.swift */; };
 		C289F1852A55CCFE007BF6F2 /* AgentDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C289F1842A55CCFE007BF6F2 /* AgentDetailsViewModel.swift */; };
 		C289F1892A55D4C6007BF6F2 /* AgentAbilitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C289F1882A55D4C6007BF6F2 /* AgentAbilitiesTableViewCell.swift */; };
 		C289F18D2A560C68007BF6F2 /* AgentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C289F18C2A560C68007BF6F2 /* AgentTableViewCell.xib */; };
@@ -155,8 +155,8 @@
 		C24FD75627F146820032EB0D /* Lineup+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lineup+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C25356D72923FACF00D68A79 /* LineupCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineupCollectionViewCell.swift; sourceTree = "<group>"; };
 		C25738ED2A5DFDAA0083320C /* UserImagesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImagesCollectionViewCell.swift; sourceTree = "<group>"; };
-		C25738EF2A5E0A6C0083320C /* LineupListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LineupListTableViewCell.swift; path = ../../../../../../../.Trash/LineupListTableViewCell.swift; sourceTree = "<group>"; };
-		C25738F12A5E0A760083320C /* LineupListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LineupListTableViewController.swift; path = ../../../../../../../.Trash/LineupListTableViewController.swift; sourceTree = "<group>"; };
+		C260C0CD2A61AA660074D7E4 /* LineupListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LineupListTableViewController.swift; path = ../../../../../../../.Trash/LineupListTableViewController.swift; sourceTree = "<group>"; };
+		C260C0CF2A61AA880074D7E4 /* LineupListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LineupListTableViewCell.swift; path = ../../../../../../../.Trash/LineupListTableViewCell.swift; sourceTree = "<group>"; };
 		C289F1842A55CCFE007BF6F2 /* AgentDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDetailsViewModel.swift; sourceTree = "<group>"; };
 		C289F1882A55D4C6007BF6F2 /* AgentAbilitiesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentAbilitiesTableViewCell.swift; sourceTree = "<group>"; };
 		C289F18C2A560C68007BF6F2 /* AgentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgentTableViewCell.xib; sourceTree = "<group>"; };
@@ -289,8 +289,8 @@
 		C21ED839281B385300BCEC26 /* Lineup List */ = {
 			isa = PBXGroup;
 			children = (
-				C25738F12A5E0A760083320C /* LineupListTableViewController.swift */,
-				C25738EF2A5E0A6C0083320C /* LineupListTableViewCell.swift */,
+				C260C0CD2A61AA660074D7E4 /* LineupListTableViewController.swift */,
+				C260C0CF2A61AA880074D7E4 /* LineupListTableViewCell.swift */,
 				C25738ED2A5DFDAA0083320C /* UserImagesCollectionViewCell.swift */,
 				C24FD74F27F0D1A90032EB0D /* LineupListViewModel.swift */,
 				C2079F5729197E2A006BA81D /* LineupList.storyboard */,
@@ -682,9 +682,8 @@
 				C29AE6A427EA003B005CAD4E /* GameModeViewController.swift in Sources */,
 				C235430D2822336200FE6E59 /* IQInvocation.swift in Sources */,
 				C29AE6C227EAA029005CAD4E /* MapViewModel.swift in Sources */,
-				C25738F02A5E0A6C0083320C /* LineupListTableViewCell.swift in Sources */,
-				C25738F22A5E0A760083320C /* LineupListTableViewController.swift in Sources */,
 				C23543072822336200FE6E59 /* IQKeyboardManager+Internal.swift in Sources */,
+				C260C0D02A61AA880074D7E4 /* LineupListTableViewCell.swift in Sources */,
 				C235430C2822336200FE6E59 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
 				C29AE69127E3A050005CAD4E /* MapsDataProvider.swift in Sources */,
 				C235431B2822336200FE6E59 /* IQNSArray+Sort.swift in Sources */,
@@ -722,6 +721,7 @@
 				C29AE69727E3D2F7005CAD4E /* WeaponDataProvider.swift in Sources */,
 				C235430A2822336200FE6E59 /* IQBarButtonItem.swift in Sources */,
 				C2A15FA027DD1D7600FB6952 /* Skins.swift in Sources */,
+				C260C0CE2A61AA670074D7E4 /* LineupListTableViewController.swift in Sources */,
 				C25356D82923FACF00D68A79 /* LineupCollectionViewCell.swift in Sources */,
 				C23543082822336200FE6E59 /* IQPreviousNextView.swift in Sources */,
 				C2A15F8327D940F300FB6952 /* SceneDelegate.swift in Sources */,
