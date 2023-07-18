@@ -33,6 +33,7 @@ class LineUpViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setupDetailScreen()
+        navigationController?.navigationBar.barTintColor = UIColor(red: 50/255, green: 50/255, blue: 50/255, alpha: 0)
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
     }
     
@@ -41,8 +42,9 @@ class LineUpViewController: UIViewController {
         titleTextField.text = viewModel.lineup?.title ?? ""
         agentImageView.setImage(using: viewModel.lineup?.agentImage ?? viewModel.agent?.displayIconSmall)
         textFieldView.layer.cornerRadius = 12
-        instructionTextView.layer.cornerRadius = 10
-        ImagesCollectionView.layer.cornerRadius = 10
+        titleTextField.clipsToBounds = true
+        instructionTextView.layer.cornerRadius = 12
+        ImagesCollectionView.layer.cornerRadius = 12
         agentImageView.layer.cornerRadius = agentImageView.frame.size.width / 2
     }
     

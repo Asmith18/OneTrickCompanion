@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LYq-yH-2xv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22138.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LYq-yH-2xv">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22113"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,19 +22,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="DqW-k0-Lx6">
-                                <rect key="frame" x="16" y="47" width="358" height="470"/>
+                                <rect key="frame" x="16" y="47" width="358" height="273.33333333333331"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="POV-p9-Ry0" userLabel="AgentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="358" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="53.333333333333336"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agents" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhg-lI-peZ">
-                                                <rect key="frame" x="15" y="15" width="328" height="20"/>
+                                                <rect key="frame" x="15" y="14.999999999999998" width="328" height="23.333333333333329"/>
                                                 <fontDescription key="fontDescription" name="VALORANT-Regular" family="VALORANT" pointSize="20"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJa-zH-6H4">
-                                                <rect key="frame" x="0.0" y="0.0" width="358" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="358" height="53.333333333333336"/>
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
@@ -57,16 +57,16 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3CG-Pl-nba" userLabel="MapView">
-                                        <rect key="frame" x="0.0" y="70" width="358" height="50"/>
+                                        <rect key="frame" x="0.0" y="73.333333333333329" width="358" height="53.333333333333329"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maps" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DwI-ev-WhJ">
-                                                <rect key="frame" x="15" y="15" width="328" height="20"/>
+                                                <rect key="frame" x="15" y="15.000000000000012" width="328" height="23.333333333333329"/>
                                                 <fontDescription key="fontDescription" name="VALORANT-Regular" family="VALORANT" pointSize="20"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQF-OD-4RW">
-                                                <rect key="frame" x="0.0" y="0.0" width="358" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="358" height="53.333333333333336"/>
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
@@ -89,16 +89,16 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G5U-Id-WVK" userLabel="WeaponView">
-                                        <rect key="frame" x="0.0" y="140" width="358" height="50"/>
+                                        <rect key="frame" x="0.0" y="146.66666666666666" width="358" height="53.333333333333343"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weapons" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dc1-Rd-8IO">
-                                                <rect key="frame" x="15" y="15" width="328" height="20"/>
+                                                <rect key="frame" x="15" y="14.999999999999998" width="328" height="23.333333333333329"/>
                                                 <fontDescription key="fontDescription" name="VALORANT-Regular" family="VALORANT" pointSize="20"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ykj-L4-PHe">
-                                                <rect key="frame" x="0.0" y="0.0" width="358" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="358" height="53.333333333333336"/>
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
@@ -120,113 +120,17 @@
                                             <constraint firstAttribute="bottom" secondItem="Dc1-Rd-8IO" secondAttribute="bottom" constant="15" id="xJH-3n-tNf"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x7c-Ln-blz" userLabel="GameModeView">
-                                        <rect key="frame" x="0.0" y="210" width="358" height="50"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Modes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhu-g1-1bN">
-                                                <rect key="frame" x="15" y="15" width="328" height="20"/>
-                                                <fontDescription key="fontDescription" name="VALORANT-Regular" family="VALORANT" pointSize="20"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zCT-w3-BVV">
-                                                <rect key="frame" x="0.0" y="0.0" width="358" height="50"/>
-                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain"/>
-                                                <connections>
-                                                    <segue destination="kDg-5f-ZxW" kind="show" id="o08-yl-Byr"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" red="1" green="0.22987544539999999" blue="0.1861986518" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="zCT-w3-BVV" secondAttribute="trailing" id="5pK-UT-mOc"/>
-                                            <constraint firstItem="zCT-w3-BVV" firstAttribute="leading" secondItem="x7c-Ln-blz" secondAttribute="leading" id="CNQ-dj-NCq"/>
-                                            <constraint firstItem="zCT-w3-BVV" firstAttribute="top" secondItem="x7c-Ln-blz" secondAttribute="top" id="CSJ-W4-mwY"/>
-                                            <constraint firstItem="lhu-g1-1bN" firstAttribute="leading" secondItem="x7c-Ln-blz" secondAttribute="leading" constant="15" id="VeG-rw-BeY"/>
-                                            <constraint firstAttribute="bottom" secondItem="zCT-w3-BVV" secondAttribute="bottom" id="Xtf-iZ-pbo"/>
-                                            <constraint firstAttribute="bottom" secondItem="lhu-g1-1bN" secondAttribute="bottom" constant="15" id="nVv-Hr-cX3"/>
-                                            <constraint firstItem="lhu-g1-1bN" firstAttribute="top" secondItem="x7c-Ln-blz" secondAttribute="top" constant="15" id="sIY-gh-GFa"/>
-                                            <constraint firstAttribute="trailing" secondItem="lhu-g1-1bN" secondAttribute="trailing" constant="15" id="tsc-vr-CzW"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iyG-Nb-sdh" userLabel="AboutView">
-                                        <rect key="frame" x="0.0" y="280" width="358" height="50"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMr-Rc-I3W">
-                                                <rect key="frame" x="15" y="15" width="328" height="20"/>
-                                                <fontDescription key="fontDescription" name="VALORANT-Regular" family="VALORANT" pointSize="20"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcW-c8-P3r">
-                                                <rect key="frame" x="0.0" y="0.0" width="358" height="50"/>
-                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain"/>
-                                                <connections>
-                                                    <segue destination="Rtt-he-UKL" kind="show" id="wSr-0o-K7f"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" red="1" green="0.22987544539999999" blue="0.1861986518" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="dMr-Rc-I3W" secondAttribute="bottom" constant="15" id="6rY-Cm-bf6"/>
-                                            <constraint firstItem="dMr-Rc-I3W" firstAttribute="top" secondItem="iyG-Nb-sdh" secondAttribute="top" constant="15" id="AfW-dS-LXh"/>
-                                            <constraint firstAttribute="trailing" secondItem="xcW-c8-P3r" secondAttribute="trailing" id="WqN-bt-ioY"/>
-                                            <constraint firstItem="xcW-c8-P3r" firstAttribute="top" secondItem="iyG-Nb-sdh" secondAttribute="top" id="c09-UA-w1z"/>
-                                            <constraint firstAttribute="bottom" secondItem="xcW-c8-P3r" secondAttribute="bottom" id="mzU-jd-DH8"/>
-                                            <constraint firstItem="xcW-c8-P3r" firstAttribute="leading" secondItem="iyG-Nb-sdh" secondAttribute="leading" id="qkL-ko-Her"/>
-                                            <constraint firstAttribute="trailing" secondItem="dMr-Rc-I3W" secondAttribute="trailing" constant="15" id="xzH-7w-70X"/>
-                                            <constraint firstItem="dMr-Rc-I3W" firstAttribute="leading" secondItem="iyG-Nb-sdh" secondAttribute="leading" constant="15" id="yRm-Vv-npa"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QK6-F8-Wov" userLabel="AcknowledgmentsView">
-                                        <rect key="frame" x="0.0" y="350" width="358" height="50"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acknowledgments" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubp-hy-AMF">
-                                                <rect key="frame" x="15" y="15" width="328" height="20"/>
-                                                <fontDescription key="fontDescription" name="VALORANT-Regular" family="VALORANT" pointSize="20"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I36-u6-iEA">
-                                                <rect key="frame" x="0.0" y="0.0" width="358" height="50"/>
-                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain"/>
-                                                <connections>
-                                                    <segue destination="nXc-hs-xNz" kind="show" id="oC8-PV-fbc"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" red="1" green="0.22987544539999999" blue="0.1861986518" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="I36-u6-iEA" firstAttribute="top" secondItem="QK6-F8-Wov" secondAttribute="top" id="4YD-jG-eXf"/>
-                                            <constraint firstAttribute="trailing" secondItem="ubp-hy-AMF" secondAttribute="trailing" constant="15" id="672-CI-oLI"/>
-                                            <constraint firstAttribute="trailing" secondItem="I36-u6-iEA" secondAttribute="trailing" id="Kjc-Yx-Pgw"/>
-                                            <constraint firstAttribute="bottom" secondItem="ubp-hy-AMF" secondAttribute="bottom" constant="15" id="Mra-TD-goe"/>
-                                            <constraint firstAttribute="bottom" secondItem="I36-u6-iEA" secondAttribute="bottom" id="Wle-Vi-eG6"/>
-                                            <constraint firstItem="ubp-hy-AMF" firstAttribute="leading" secondItem="QK6-F8-Wov" secondAttribute="leading" constant="15" id="YJG-dV-Tot"/>
-                                            <constraint firstItem="ubp-hy-AMF" firstAttribute="top" secondItem="QK6-F8-Wov" secondAttribute="top" constant="15" id="jfs-bV-R3k"/>
-                                            <constraint firstItem="I36-u6-iEA" firstAttribute="leading" secondItem="QK6-F8-Wov" secondAttribute="leading" id="lvK-Sk-mfm"/>
-                                        </constraints>
-                                    </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Xr-pI-hcQ" userLabel="TOSView">
-                                        <rect key="frame" x="0.0" y="420" width="358" height="50"/>
+                                        <rect key="frame" x="0.0" y="220" width="358" height="53.333333333333314"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms and Conditions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUK-Il-aWH">
-                                                <rect key="frame" x="15" y="15" width="328" height="20"/>
+                                                <rect key="frame" x="15" y="14.999999999999998" width="328" height="23.333333333333329"/>
                                                 <fontDescription key="fontDescription" name="VALORANT-Regular" family="VALORANT" pointSize="20"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ejd-wu-zBQ">
-                                                <rect key="frame" x="0.0" y="0.0" width="358" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="358" height="53.333333333333336"/>
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
@@ -261,10 +165,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Content" largeTitleDisplayMode="always" id="bxp-9r-Dy9"/>
                     <connections>
-                        <outlet property="aboutView" destination="iyG-Nb-sdh" id="31V-yz-GUK"/>
                         <outlet property="agentView" destination="POV-p9-Ry0" id="XNe-pG-ugl"/>
-                        <outlet property="akView" destination="QK6-F8-Wov" id="7bb-Ms-vNW"/>
-                        <outlet property="gameModeView" destination="x7c-Ln-blz" id="eah-N5-2YK"/>
                         <outlet property="mapView" destination="3CG-Pl-nba" id="VbM-SO-slq"/>
                         <outlet property="tosView" destination="1Xr-pI-hcQ" id="TbT-Fo-hao"/>
                         <outlet property="weaponView" destination="G5U-Id-WVK" id="JhR-tn-Ep2"/>
@@ -292,7 +193,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7CV-UY-kUB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5408" y="-818"/>
+            <point key="canvasLocation" x="5345" y="-800"/>
         </scene>
         <!--WeaponContent-->
         <scene sceneID="y9i-T8-Iyn">
@@ -304,41 +205,11 @@
             </objects>
             <point key="canvasLocation" x="3744" y="-373"/>
         </scene>
-        <!--GameModeContents-->
-        <scene sceneID="8MG-Zm-gdR">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="GameModeContents" storyboardName="GameModeContents" referencedIdentifier="GameModeContents" id="kDg-5f-ZxW" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="OI4-oT-P1s"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="T1L-gg-12D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3991" y="-373"/>
-        </scene>
-        <!--About-->
-        <scene sceneID="RKx-Qy-Fx0">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="About" storyboardName="About" referencedIdentifier="About" id="Rtt-he-UKL" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="ejX-8S-WDO"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jNH-Sz-3rO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5408" y="-783"/>
-        </scene>
-        <!--Acknowledgments-->
-        <scene sceneID="AfF-fg-Apn">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Acknowledgments" storyboardName="Acknowledgments" referencedIdentifier="Acknowledgments" id="nXc-hs-xNz" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="Kef-Fx-eR5"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="w8E-Gd-kHf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4252" y="-373"/>
-        </scene>
     </scenes>
     <color key="tintColor" systemColor="systemRedColor"/>
     <resources>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

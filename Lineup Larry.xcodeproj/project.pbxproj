@@ -20,12 +20,9 @@
 		C2079F6029197F47006BA81D /* Contents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F5F29197F47006BA81D /* Contents.storyboard */; };
 		C2079F6229197F91006BA81D /* AgentContent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F6129197F91006BA81D /* AgentContent.storyboard */; };
 		C2079F6429197FA5006BA81D /* WeaponContent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F6329197FA5006BA81D /* WeaponContent.storyboard */; };
-		C2079F6629197FBA006BA81D /* GameModeContents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F6529197FBA006BA81D /* GameModeContents.storyboard */; };
 		C2079F6829197FCD006BA81D /* MapContent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F6729197FCD006BA81D /* MapContent.storyboard */; };
 		C2079F6A29197FEA006BA81D /* Acknowledgments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F6929197FEA006BA81D /* Acknowledgments.storyboard */; };
-		C2079F6C29197FF7006BA81D /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F6B29197FF7006BA81D /* About.storyboard */; };
 		C21ED834281B343700BCEC26 /* AcknowledgmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21ED833281B343700BCEC26 /* AcknowledgmentsViewController.swift */; };
-		C21ED836281B359E00BCEC26 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21ED835281B359E00BCEC26 /* AboutViewController.swift */; };
 		C23542E7282229C400FE6E59 /* 1024.png in Resources */ = {isa = PBXBuildFile; fileRef = C23542E6282229C400FE6E59 /* 1024.png */; };
 		C23543062822336200FE6E59 /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23542EB2822336200FE6E59 /* IQTextView.swift */; };
 		C23543072822336200FE6E59 /* IQKeyboardManager+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23542EC2822336200FE6E59 /* IQKeyboardManager+Internal.swift */; };
@@ -76,10 +73,6 @@
 		C29AE69527E3D1DC005CAD4E /* WeaponsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE69427E3D1DC005CAD4E /* WeaponsViewModel.swift */; };
 		C29AE69727E3D2F7005CAD4E /* WeaponDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE69627E3D2F7005CAD4E /* WeaponDataProvider.swift */; };
 		C29AE69A27E98717005CAD4E /* AgentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE69927E98717005CAD4E /* AgentsViewController.swift */; };
-		C29AE6A427EA003B005CAD4E /* GameModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE6A327EA003B005CAD4E /* GameModeViewController.swift */; };
-		C29AE6A627EA005F005CAD4E /* GameModeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE6A527EA005F005CAD4E /* GameModeTableViewCell.swift */; };
-		C29AE6A827EA0070005CAD4E /* GameModeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE6A727EA0070005CAD4E /* GameModeViewModel.swift */; };
-		C29AE6AA27EA0080005CAD4E /* GameModeDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE6A927EA0080005CAD4E /* GameModeDataProvider.swift */; };
 		C29AE6B727EA3B1A005CAD4E /* AgentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE6B627EA3B1A005CAD4E /* AgentListViewController.swift */; };
 		C29AE6BC27EA3C64005CAD4E /* MapTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE6BB27EA3C64005CAD4E /* MapTableViewController.swift */; };
 		C29AE6BE27EA9ADC005CAD4E /* AgentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE6BD27EA9ADC005CAD4E /* AgentListViewModel.swift */; };
@@ -116,12 +109,9 @@
 		C2079F5F29197F47006BA81D /* Contents.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Contents.storyboard; sourceTree = "<group>"; };
 		C2079F6129197F91006BA81D /* AgentContent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AgentContent.storyboard; sourceTree = "<group>"; };
 		C2079F6329197FA5006BA81D /* WeaponContent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WeaponContent.storyboard; sourceTree = "<group>"; };
-		C2079F6529197FBA006BA81D /* GameModeContents.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GameModeContents.storyboard; sourceTree = "<group>"; };
 		C2079F6729197FCD006BA81D /* MapContent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MapContent.storyboard; sourceTree = "<group>"; };
 		C2079F6929197FEA006BA81D /* Acknowledgments.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Acknowledgments.storyboard; sourceTree = "<group>"; };
-		C2079F6B29197FF7006BA81D /* About.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
 		C21ED833281B343700BCEC26 /* AcknowledgmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcknowledgmentsViewController.swift; sourceTree = "<group>"; };
-		C21ED835281B359E00BCEC26 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		C23542E6282229C400FE6E59 /* 1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1024.png; sourceTree = "<group>"; };
 		C23542EB2822336200FE6E59 /* IQTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTextView.swift; sourceTree = "<group>"; };
 		C23542EC2822336200FE6E59 /* IQKeyboardManager+Internal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQKeyboardManager+Internal.swift"; sourceTree = "<group>"; };
@@ -173,10 +163,6 @@
 		C29AE69427E3D1DC005CAD4E /* WeaponsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsViewModel.swift; sourceTree = "<group>"; };
 		C29AE69627E3D2F7005CAD4E /* WeaponDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponDataProvider.swift; sourceTree = "<group>"; };
 		C29AE69927E98717005CAD4E /* AgentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsViewController.swift; sourceTree = "<group>"; };
-		C29AE6A327EA003B005CAD4E /* GameModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeViewController.swift; sourceTree = "<group>"; };
-		C29AE6A527EA005F005CAD4E /* GameModeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeTableViewCell.swift; sourceTree = "<group>"; };
-		C29AE6A727EA0070005CAD4E /* GameModeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeViewModel.swift; sourceTree = "<group>"; };
-		C29AE6A927EA0080005CAD4E /* GameModeDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeDataProvider.swift; sourceTree = "<group>"; };
 		C29AE6B627EA3B1A005CAD4E /* AgentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentListViewController.swift; sourceTree = "<group>"; };
 		C29AE6BB27EA3C64005CAD4E /* MapTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTableViewController.swift; sourceTree = "<group>"; };
 		C29AE6BD27EA9ADC005CAD4E /* AgentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentListViewModel.swift; sourceTree = "<group>"; };
@@ -239,15 +225,6 @@
 			path = "Reusable Views";
 			sourceTree = "<group>";
 		};
-		C20239282A4C9C9F00FC72A0 /* About */ = {
-			isa = PBXGroup;
-			children = (
-				C21ED835281B359E00BCEC26 /* AboutViewController.swift */,
-				C2079F6B29197FF7006BA81D /* About.storyboard */,
-			);
-			path = About;
-			sourceTree = "<group>";
-		};
 		C20239292A4C9CAF00FC72A0 /* Acknowledgements */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,7 +257,6 @@
 		C21ED838281B380000BCEC26 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				C20239282A4C9C9F00FC72A0 /* About */,
 				C20239292A4C9CAF00FC72A0 /* Acknowledgements */,
 			);
 			path = Settings;
@@ -380,7 +356,6 @@
 				C29AE69827E986C4005CAD4E /* Agents */,
 				C29AE66A27E10269005CAD4E /* Maps */,
 				C29AE67127E11B11005CAD4E /* Weapons */,
-				C29AE6A227E9FFE6005CAD4E /* GameMode */,
 				C21ED838281B380000BCEC26 /* Settings */,
 			);
 			path = Content;
@@ -434,18 +409,6 @@
 				C20239342A4CCC6500FC72A0 /* Details */,
 			);
 			path = Agents;
-			sourceTree = "<group>";
-		};
-		C29AE6A227E9FFE6005CAD4E /* GameMode */ = {
-			isa = PBXGroup;
-			children = (
-				C29AE6A327EA003B005CAD4E /* GameModeViewController.swift */,
-				C29AE6A527EA005F005CAD4E /* GameModeTableViewCell.swift */,
-				C29AE6A727EA0070005CAD4E /* GameModeViewModel.swift */,
-				C29AE6A927EA0080005CAD4E /* GameModeDataProvider.swift */,
-				C2079F6529197FBA006BA81D /* GameModeContents.storyboard */,
-			);
-			path = GameMode;
 			sourceTree = "<group>";
 		};
 		C29AE6B527EA3AE4005CAD4E /* AgentList */ = {
@@ -645,8 +608,6 @@
 				C2079F5829197E2A006BA81D /* LineupList.storyboard in Resources */,
 				C2079F6029197F47006BA81D /* Contents.storyboard in Resources */,
 				C2079F6429197FA5006BA81D /* WeaponContent.storyboard in Resources */,
-				C2079F6629197FBA006BA81D /* GameModeContents.storyboard in Resources */,
-				C2079F6C29197FF7006BA81D /* About.storyboard in Resources */,
 				C2079F5A29197E95006BA81D /* AgentList.storyboard in Resources */,
 				C2FA76982A58872500F41912 /* MapDetails.storyboard in Resources */,
 				C2079F6A29197FEA006BA81D /* Acknowledgments.storyboard in Resources */,
@@ -666,7 +627,6 @@
 				C2B4917A2A4DF8D200EB5EB4 /* AgentDetailsViewController.swift in Sources */,
 				C29AE69327E3BB32005CAD4E /* MapImageView.swift in Sources */,
 				C23543122822336200FE6E59 /* IQKeyboardReturnKeyHandler.swift in Sources */,
-				C29AE6A827EA0070005CAD4E /* GameModeViewModel.swift in Sources */,
 				C23543162822336200FE6E59 /* IQKeyboardManager+Toolbar.swift in Sources */,
 				C24FD75027F0D1A90032EB0D /* LineupListViewModel.swift in Sources */,
 				C2A15FA427DD1E8400FB6952 /* GameMode.swift in Sources */,
@@ -674,12 +634,10 @@
 				C23543142822336200FE6E59 /* IQKeyboardManager+Debug.swift in Sources */,
 				3E0CAD1027ED1D00000AF833 /* MapTableViewCell.swift in Sources */,
 				C24FD75227F13DBB0032EB0D /* CoreDataStack.swift in Sources */,
-				C21ED836281B359E00BCEC26 /* AboutViewController.swift in Sources */,
 				C23543062822336200FE6E59 /* IQTextView.swift in Sources */,
 				C2A15F9C27DD1BB100FB6952 /* Agent.swift in Sources */,
 				C23543172822336200FE6E59 /* IQUIScrollView+Additions.swift in Sources */,
 				C29AE67727E11BAC005CAD4E /* MapsViewController.swift in Sources */,
-				C29AE6A427EA003B005CAD4E /* GameModeViewController.swift in Sources */,
 				C235430D2822336200FE6E59 /* IQInvocation.swift in Sources */,
 				C29AE6C227EAA029005CAD4E /* MapViewModel.swift in Sources */,
 				C23543072822336200FE6E59 /* IQKeyboardManager+Internal.swift in Sources */,
@@ -726,10 +684,8 @@
 				C23543082822336200FE6E59 /* IQPreviousNextView.swift in Sources */,
 				C2A15F8327D940F300FB6952 /* SceneDelegate.swift in Sources */,
 				C29AE6BC27EA3C64005CAD4E /* MapTableViewController.swift in Sources */,
-				C29AE6A627EA005F005CAD4E /* GameModeTableViewCell.swift in Sources */,
 				C29AE6CA27EAAAC8005CAD4E /* LineUpViewModel.swift in Sources */,
 				C23543192822336200FE6E59 /* IQUITextFieldView+Additions.swift in Sources */,
-				C29AE6AA27EA0080005CAD4E /* GameModeDataProvider.swift in Sources */,
 				C21ED834281B343700BCEC26 /* AcknowledgmentsViewController.swift in Sources */,
 				C289F1892A55D4C6007BF6F2 /* AgentAbilitiesTableViewCell.swift in Sources */,
 				C23543102822336200FE6E59 /* IQKeyboardManagerConstants.swift in Sources */,
