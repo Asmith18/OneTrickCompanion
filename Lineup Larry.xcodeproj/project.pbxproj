@@ -21,8 +21,6 @@
 		C2079F6229197F91006BA81D /* AgentContent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F6129197F91006BA81D /* AgentContent.storyboard */; };
 		C2079F6429197FA5006BA81D /* WeaponContent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F6329197FA5006BA81D /* WeaponContent.storyboard */; };
 		C2079F6829197FCD006BA81D /* MapContent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F6729197FCD006BA81D /* MapContent.storyboard */; };
-		C2079F6A29197FEA006BA81D /* Acknowledgments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F6929197FEA006BA81D /* Acknowledgments.storyboard */; };
-		C21ED834281B343700BCEC26 /* AcknowledgmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21ED833281B343700BCEC26 /* AcknowledgmentsViewController.swift */; };
 		C23542E7282229C400FE6E59 /* 1024.png in Resources */ = {isa = PBXBuildFile; fileRef = C23542E6282229C400FE6E59 /* 1024.png */; };
 		C23543062822336200FE6E59 /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23542EB2822336200FE6E59 /* IQTextView.swift */; };
 		C23543072822336200FE6E59 /* IQKeyboardManager+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23542EC2822336200FE6E59 /* IQKeyboardManager+Internal.swift */; };
@@ -90,7 +88,6 @@
 		C2A15F9E27DD1CE700FB6952 /* Maps.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A15F9D27DD1CE700FB6952 /* Maps.swift */; };
 		C2A15FA027DD1D7600FB6952 /* Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A15F9F27DD1D7600FB6952 /* Skins.swift */; };
 		C2A15FA227DD1DF200FB6952 /* Weapons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A15FA127DD1DF200FB6952 /* Weapons.swift */; };
-		C2A15FA427DD1E8400FB6952 /* GameMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A15FA327DD1E8400FB6952 /* GameMode.swift */; };
 		C2B4917A2A4DF8D200EB5EB4 /* AgentDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B491792A4DF8D200EB5EB4 /* AgentDetailsViewController.swift */; };
 		C2FA76982A58872500F41912 /* MapDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2FA76972A58872500F41912 /* MapDetails.storyboard */; };
 /* End PBXBuildFile section */
@@ -110,8 +107,6 @@
 		C2079F6129197F91006BA81D /* AgentContent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AgentContent.storyboard; sourceTree = "<group>"; };
 		C2079F6329197FA5006BA81D /* WeaponContent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WeaponContent.storyboard; sourceTree = "<group>"; };
 		C2079F6729197FCD006BA81D /* MapContent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MapContent.storyboard; sourceTree = "<group>"; };
-		C2079F6929197FEA006BA81D /* Acknowledgments.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Acknowledgments.storyboard; sourceTree = "<group>"; };
-		C21ED833281B343700BCEC26 /* AcknowledgmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcknowledgmentsViewController.swift; sourceTree = "<group>"; };
 		C23542E6282229C400FE6E59 /* 1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1024.png; sourceTree = "<group>"; };
 		C23542EB2822336200FE6E59 /* IQTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTextView.swift; sourceTree = "<group>"; };
 		C23542EC2822336200FE6E59 /* IQKeyboardManager+Internal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQKeyboardManager+Internal.swift"; sourceTree = "<group>"; };
@@ -182,7 +177,6 @@
 		C2A15F9D27DD1CE700FB6952 /* Maps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maps.swift; sourceTree = "<group>"; };
 		C2A15F9F27DD1D7600FB6952 /* Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skins.swift; sourceTree = "<group>"; };
 		C2A15FA127DD1DF200FB6952 /* Weapons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapons.swift; sourceTree = "<group>"; };
-		C2A15FA327DD1E8400FB6952 /* GameMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMode.swift; sourceTree = "<group>"; };
 		C2B491792A4DF8D200EB5EB4 /* AgentDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDetailsViewController.swift; sourceTree = "<group>"; };
 		C2FA76972A58872500F41912 /* MapDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapDetails.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -225,15 +219,6 @@
 			path = "Reusable Views";
 			sourceTree = "<group>";
 		};
-		C20239292A4C9CAF00FC72A0 /* Acknowledgements */ = {
-			isa = PBXGroup;
-			children = (
-				C21ED833281B343700BCEC26 /* AcknowledgmentsViewController.swift */,
-				C2079F6929197FEA006BA81D /* Acknowledgments.storyboard */,
-			);
-			path = Acknowledgements;
-			sourceTree = "<group>";
-		};
 		C202392D2A4CC56700FC72A0 /* Agent Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,14 +237,6 @@
 				C289F1882A55D4C6007BF6F2 /* AgentAbilitiesTableViewCell.swift */,
 			);
 			path = Details;
-			sourceTree = "<group>";
-		};
-		C21ED838281B380000BCEC26 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				C20239292A4C9CAF00FC72A0 /* Acknowledgements */,
-			);
-			path = Settings;
 			sourceTree = "<group>";
 		};
 		C21ED839281B385300BCEC26 /* Lineup List */ = {
@@ -356,7 +333,6 @@
 				C29AE69827E986C4005CAD4E /* Agents */,
 				C29AE66A27E10269005CAD4E /* Maps */,
 				C29AE67127E11B11005CAD4E /* Weapons */,
-				C21ED838281B380000BCEC26 /* Settings */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -500,7 +476,6 @@
 				C2A15F9D27DD1CE700FB6952 /* Maps.swift */,
 				C2A15F9F27DD1D7600FB6952 /* Skins.swift */,
 				C2A15FA127DD1DF200FB6952 /* Weapons.swift */,
-				C2A15FA327DD1E8400FB6952 /* GameMode.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -610,7 +585,6 @@
 				C2079F6429197FA5006BA81D /* WeaponContent.storyboard in Resources */,
 				C2079F5A29197E95006BA81D /* AgentList.storyboard in Resources */,
 				C2FA76982A58872500F41912 /* MapDetails.storyboard in Resources */,
-				C2079F6A29197FEA006BA81D /* Acknowledgments.storyboard in Resources */,
 				C20239362A4CCC9400FC72A0 /* AgentDetails.storyboard in Resources */,
 				3E0CAD1127ED1D00000AF833 /* MapTableViewCell.xib in Resources */,
 			);
@@ -629,7 +603,6 @@
 				C23543122822336200FE6E59 /* IQKeyboardReturnKeyHandler.swift in Sources */,
 				C23543162822336200FE6E59 /* IQKeyboardManager+Toolbar.swift in Sources */,
 				C24FD75027F0D1A90032EB0D /* LineupListViewModel.swift in Sources */,
-				C2A15FA427DD1E8400FB6952 /* GameMode.swift in Sources */,
 				3E0CAD1627ED1FD3000AF833 /* GradientView.swift in Sources */,
 				C23543142822336200FE6E59 /* IQKeyboardManager+Debug.swift in Sources */,
 				3E0CAD1027ED1D00000AF833 /* MapTableViewCell.swift in Sources */,
@@ -686,7 +659,6 @@
 				C29AE6BC27EA3C64005CAD4E /* MapTableViewController.swift in Sources */,
 				C29AE6CA27EAAAC8005CAD4E /* LineUpViewModel.swift in Sources */,
 				C23543192822336200FE6E59 /* IQUITextFieldView+Additions.swift in Sources */,
-				C21ED834281B343700BCEC26 /* AcknowledgmentsViewController.swift in Sources */,
 				C289F1892A55D4C6007BF6F2 /* AgentAbilitiesTableViewCell.swift in Sources */,
 				C23543102822336200FE6E59 /* IQKeyboardManagerConstants.swift in Sources */,
 				C29AE6B727EA3B1A005CAD4E /* AgentListViewController.swift in Sources */,
