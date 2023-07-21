@@ -23,6 +23,7 @@
 		C2079F6829197FCD006BA81D /* MapContent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F6729197FCD006BA81D /* MapContent.storyboard */; };
 		C2220C6A2A68243E007D3195 /* LineupListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2220C692A68243E007D3195 /* LineupListTableViewController.swift */; };
 		C2220C6C2A68245B007D3195 /* LineupListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2220C6B2A68245B007D3195 /* LineupListTableViewCell.swift */; };
+		C2220C712A6B1B6B007D3195 /* ContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2220C702A6B1B6B007D3195 /* ContentCollectionViewCell.swift */; };
 		C23542E7282229C400FE6E59 /* 1024.png in Resources */ = {isa = PBXBuildFile; fileRef = C23542E6282229C400FE6E59 /* 1024.png */; };
 		C23543062822336200FE6E59 /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23542EB2822336200FE6E59 /* IQTextView.swift */; };
 		C23543072822336200FE6E59 /* IQKeyboardManager+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23542EC2822336200FE6E59 /* IQKeyboardManager+Internal.swift */; };
@@ -109,6 +110,7 @@
 		C2079F6729197FCD006BA81D /* MapContent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MapContent.storyboard; sourceTree = "<group>"; };
 		C2220C692A68243E007D3195 /* LineupListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineupListTableViewController.swift; sourceTree = "<group>"; };
 		C2220C6B2A68245B007D3195 /* LineupListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineupListTableViewCell.swift; sourceTree = "<group>"; };
+		C2220C702A6B1B6B007D3195 /* ContentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewCell.swift; sourceTree = "<group>"; };
 		C23542E6282229C400FE6E59 /* 1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1024.png; sourceTree = "<group>"; };
 		C23542EB2822336200FE6E59 /* IQTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTextView.swift; sourceTree = "<group>"; };
 		C23542EC2822336200FE6E59 /* IQKeyboardManager+Internal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQKeyboardManager+Internal.swift"; sourceTree = "<group>"; };
@@ -337,6 +339,7 @@
 			isa = PBXGroup;
 			children = (
 				C29AE66D27E1047E005CAD4E /* ContentViewController.swift */,
+				C2220C702A6B1B6B007D3195 /* ContentCollectionViewCell.swift */,
 				C2079F5F29197F47006BA81D /* Contents.storyboard */,
 				C29AE69827E986C4005CAD4E /* Agents */,
 				C29AE66A27E10269005CAD4E /* Maps */,
@@ -625,6 +628,7 @@
 				C23543072822336200FE6E59 /* IQKeyboardManager+Internal.swift in Sources */,
 				C235430C2822336200FE6E59 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
 				C29AE69127E3A050005CAD4E /* MapsDataProvider.swift in Sources */,
+				C2220C712A6B1B6B007D3195 /* ContentCollectionViewCell.swift in Sources */,
 				C235431B2822336200FE6E59 /* IQNSArray+Sort.swift in Sources */,
 				C29AE68727E245BF005CAD4E /* Network Error.swift in Sources */,
 				C29AE69A27E98717005CAD4E /* AgentsViewController.swift in Sources */,
