@@ -48,6 +48,11 @@ class LineUpViewController: UIViewController {
         agentImageView.layer.cornerRadius = agentImageView.frame.size.width / 2
     }
     
+    func deleteImage(at indexPath: IndexPath) {
+        viewModel.tempArray.remove(at: indexPath.item)
+        ImagesCollectionView.deleteItems(at: [indexPath])
+    }
+    
     //MARK: - Actions
     @IBAction func saveButtonTapped(_ sender: Any) {
         guard let instructions = instructionTextView.text,
@@ -86,6 +91,18 @@ extension LineUpViewController: UICollectionViewDataSource, UICollectionViewDele
         let cell = ImagesCollectionView.dequeueReusableCell(withReuseIdentifier: "overviewCell", for: indexPath) as! LineupCollectionViewCell
         let image = viewModel.tempArray[indexPath.row]
         cell.updateViews(image: image)
+        cell.deleteButtonAction = { [weak self] in
+            if let cellIndexPath = collectionView.indexPath(for: cell) {
+                let alertController = UIAlertController(title: "Delete Image", message: "Are you sure you want to remove this image?", preferredStyle: .alert)
+                let alertAction = UIAlertAction(title: "Yes", style: .default) { _ in
+                    self?.deleteImage(at: cellIndexPath)
+                }
+                let alertAction2 = UIAlertAction(title: "No", style: .cancel)
+                alertController.addAction(alertAction)
+                alertController.addAction(alertAction2)
+                self?.present(alertController, animated: true)
+            }
+        }
         return cell
     }
     
@@ -93,9 +110,6 @@ extension LineUpViewController: UICollectionViewDataSource, UICollectionViewDele
         let screenWidth = ImagesCollectionView.bounds.width
         let cellHeight = ImagesCollectionView.bounds.height
         return CGSize(width: screenWidth, height: cellHeight)
-    }
-    
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {

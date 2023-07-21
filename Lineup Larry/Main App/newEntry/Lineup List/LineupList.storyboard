@@ -26,7 +26,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iHi-x9-C2N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5277" y="912"/>
+            <point key="canvasLocation" x="6202.2900763358775" y="911.97183098591552"/>
         </scene>
         <!--Lineup List Table View Controller-->
         <scene sceneID="BiK-c6-odd">
@@ -144,7 +144,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bXn-vY-kzo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4689.3129770992364" y="911.97183098591552"/>
+            <point key="canvasLocation" x="5616.0305343511445" y="911.97183098591552"/>
         </scene>
     </scenes>
     <color key="tintColor" systemColor="systemRedColor"/>

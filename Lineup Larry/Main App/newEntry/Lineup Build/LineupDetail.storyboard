@@ -93,16 +93,34 @@
                                                                                 <constraint firstAttribute="width" constant="361" id="f3R-cB-uHz"/>
                                                                             </constraints>
                                                                         </imageView>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11j-Fa-HuM">
+                                                                            <rect key="frame" x="328" y="8" width="33" height="35"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="33" id="4iX-bI-Ods"/>
+                                                                                <constraint firstAttribute="height" constant="35" id="gY8-8U-DCe"/>
+                                                                            </constraints>
+                                                                            <color key="tintColor" red="1" green="0.22987544539999999" blue="0.1861986518" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <state key="normal" title="Button"/>
+                                                                            <buttonConfiguration key="configuration" style="plain" image="minus.circle.fill" catalog="system"/>
+                                                                            <connections>
+                                                                                <action selector="deleteImageButtonTapped:" destination="koC-g3-KD9" eventType="touchUpInside" id="ayg-S0-UbN"/>
+                                                                            </connections>
+                                                                        </button>
                                                                     </subviews>
                                                                     <constraints>
                                                                         <constraint firstItem="4f1-M7-deX" firstAttribute="top" secondItem="nJL-Db-vEc" secondAttribute="top" id="6mF-ZI-43c"/>
                                                                         <constraint firstAttribute="trailing" secondItem="4f1-M7-deX" secondAttribute="trailing" id="8cG-t9-MUh"/>
+                                                                        <constraint firstItem="4f1-M7-deX" firstAttribute="trailing" secondItem="11j-Fa-HuM" secondAttribute="trailing" id="9ZR-Fp-hfs"/>
+                                                                        <constraint firstItem="11j-Fa-HuM" firstAttribute="leading" secondItem="4f1-M7-deX" secondAttribute="leading" constant="328" id="Drg-ZW-kye"/>
+                                                                        <constraint firstItem="4f1-M7-deX" firstAttribute="bottom" secondItem="11j-Fa-HuM" secondAttribute="bottom" constant="205" id="HjP-dd-guH"/>
                                                                         <constraint firstItem="4f1-M7-deX" firstAttribute="leading" secondItem="nJL-Db-vEc" secondAttribute="leading" id="cmB-4d-TIt"/>
                                                                         <constraint firstAttribute="bottom" secondItem="4f1-M7-deX" secondAttribute="bottom" id="coY-ks-1eO"/>
+                                                                        <constraint firstItem="11j-Fa-HuM" firstAttribute="top" secondItem="4f1-M7-deX" secondAttribute="top" constant="8" id="tkA-Ma-FNY"/>
                                                                     </constraints>
                                                                 </collectionViewCellContentView>
                                                                 <size key="customSize" width="361" height="248"/>
                                                                 <connections>
+                                                                    <outlet property="deleteImageButton" destination="11j-Fa-HuM" id="FgI-bW-mf0"/>
                                                                     <outlet property="lineupImageView" destination="4f1-M7-deX" id="3aX-Cm-lEQ"/>
                                                                 </connections>
                                                             </collectionViewCell>
@@ -202,11 +220,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AQc-b2-8g0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4533.5877862595416" y="1505.6338028169014"/>
+            <point key="canvasLocation" x="6385.4961832061063" y="1505.6338028169014"/>
         </scene>
     </scenes>
     <color key="tintColor" systemColor="systemRedColor"/>
     <resources>
+        <image name="minus.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
