@@ -16,6 +16,8 @@ class LineupListTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var mapLabel: UILabel!
     @IBOutlet weak var agentImageView: MapImageView!
+    @IBOutlet weak var descriptionTextView: UITextView!
+    @IBOutlet weak var bottomView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,8 +33,19 @@ class LineupListTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
         titleLabel.text = lineup.title
         mapLabel.text = lineup.mapName
         agentImageView.setImage(using: lineup.agentImage)
+        descriptionTextView.text = lineup.instructions
+        descriptionTextView.layer.cornerRadius = 12
         agentImageView.layer.cornerRadius = agentImageView.frame.size.width / 2
+        minipulateTextField()
         imagesCollectionView.reloadData()
+    }
+    
+    func minipulateTextField() {
+        if descriptionTextView.text == "" {
+            bottomView.isHidden = true
+        } else {
+            bottomView.isHidden = false
+        }
     }
     
     
