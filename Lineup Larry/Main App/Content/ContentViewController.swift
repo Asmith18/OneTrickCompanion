@@ -61,15 +61,15 @@ class ContentViewController: UIViewController, UICollectionViewDelegate, UIColle
         case 0:
             let storyboard = UIStoryboard(name: "AgentContent", bundle: nil)
             guard let viewController = storyboard.instantiateViewController(withIdentifier: "AgentContent") as? AgentsViewController else { return }
-            self.navigationController?.pushViewController(viewController, animated: false)
+            self.navigationController?.pushViewController(viewController, animated: true)
         case 1:
             let storyboard = UIStoryboard(name: "MapContent", bundle: nil)
             guard let viewController = storyboard.instantiateViewController(withIdentifier: "MapContent") as? MapsViewController else { return }
-            self.navigationController?.pushViewController(viewController, animated: false)
+            self.navigationController?.pushViewController(viewController, animated: true)
         case 2:
             let storyboard = UIStoryboard(name: "WeaponContent", bundle: nil)
             guard let viewController = storyboard.instantiateViewController(withIdentifier: "WeaponContent") as? WeaponsViewController else { return }
-            self.navigationController?.pushViewController(viewController, animated: false)
+            self.navigationController?.pushViewController(viewController, animated: true)
         case 3:
             guard let url = URL(string: "https://www.termsfeed.com/live/8f3ca374-a82c-4d9e-a487-c5c35fd6e49a") else { return }
             let viewController = SFSafariViewController(url: url)
@@ -77,29 +77,33 @@ class ContentViewController: UIViewController, UICollectionViewDelegate, UIColle
         default:
             let storyboard = UIStoryboard(name: "Content", bundle: nil)
             guard let viewController = storyboard.instantiateViewController(withIdentifier: "content") as? ContentViewController else { return }
-            self.navigationController?.pushViewController(viewController, animated: false)
+            self.navigationController?.pushViewController(viewController, animated: true)
         }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        // Calculate the cell size with 2 cells per row and equal spacing between cells and edges
-        let spacing: CGFloat = 10 // You can adjust the spacing here as needed
-        let width = (collectionView.frame.width - 3 * spacing) / 2
+        let numberOfItemsPerRow: CGFloat = 2
+        let spacing: CGFloat = 10
+        
+        let totalSpacing = (numberOfItemsPerRow - 1) * spacing
+        let availableWidth = collectionView.bounds.width - totalSpacing - 32 // 16 leading + 16 trailing
+        let width = availableWidth / numberOfItemsPerRow
         let height = width // 1:1 aspect ratio
         
         return CGSize(width: width, height: height)
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        let spacing: CGFloat = 10
         return UIEdgeInsets(top: spacing, left: spacing, bottom: spacing, right: spacing)
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 30
+        return 20
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return spacing
+        return 10
     }
 }
 

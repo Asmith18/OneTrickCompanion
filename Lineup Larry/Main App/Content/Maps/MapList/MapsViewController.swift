@@ -25,6 +25,7 @@ class MapsViewController: UIViewController, UITableViewDataSource, UITableViewDe
         super.viewWillAppear(animated)
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+        navigationController?.navigationBar.barTintColor = UIColor(red: 50/255, green: 50/255, blue: 50/255, alpha: 0)
     }
     
     private func buildTableView() {
