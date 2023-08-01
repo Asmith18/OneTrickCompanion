@@ -37,11 +37,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="lineupCell" rowHeight="480" id="AJl-M8-qv8" customClass="LineupListTableViewCell" customModule="Lineup_Larry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="50" width="393" height="480"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="lineupCell" rowHeight="436" id="AJl-M8-qv8" customClass="LineupListTableViewCell" customModule="Lineup_Larry" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="393" height="436"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AJl-M8-qv8" id="Bag-eg-1AW">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="480"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="436"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="W37-a6-FlU">
@@ -89,7 +89,7 @@
                                             </cells>
                                         </collectionView>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BsA-Qt-Szp">
-                                            <rect key="frame" x="8" y="282" width="377" height="178"/>
+                                            <rect key="frame" x="8" y="282" width="377" height="137"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="agq-jL-4M9" userLabel="middleView">
                                                     <rect key="frame" x="0.0" y="0.0" width="377" height="50"/>
@@ -132,14 +132,14 @@
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gKW-RK-4mq" userLabel="BottomView">
-                                                    <rect key="frame" x="0.0" y="60" width="377" height="118"/>
+                                                    <rect key="frame" x="0.0" y="60" width="377" height="77"/>
                                                     <subviews>
                                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9vG-vG-W3C">
-                                                            <rect key="frame" x="0.0" y="0.0" width="377" height="118"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="377" height="77"/>
                                                             <color key="backgroundColor" red="0.1960422695" green="0.1960422695" blue="0.1960422695" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="377" id="XXG-Dt-rEX"/>
-                                                                <constraint firstAttribute="height" constant="118" id="ymo-wq-NsT"/>
+                                                                <constraint firstAttribute="height" constant="77" id="jof-oL-op7"/>
+                                                                <constraint firstAttribute="width" constant="377" id="oqv-0g-nNR"/>
                                                             </constraints>
                                                             <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -149,25 +149,25 @@
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstItem="9vG-vG-W3C" firstAttribute="top" secondItem="gKW-RK-4mq" secondAttribute="top" id="CKv-2r-gMJ"/>
-                                                        <constraint firstAttribute="bottom" secondItem="9vG-vG-W3C" secondAttribute="bottom" id="LYG-Rb-Jqg"/>
-                                                        <constraint firstAttribute="trailing" secondItem="9vG-vG-W3C" secondAttribute="trailing" id="hJg-N1-NCx"/>
-                                                        <constraint firstAttribute="width" constant="377" id="rRr-Ys-lyb"/>
-                                                        <constraint firstAttribute="height" constant="118" id="tPE-5z-eNQ"/>
-                                                        <constraint firstItem="9vG-vG-W3C" firstAttribute="leading" secondItem="gKW-RK-4mq" secondAttribute="leading" id="wdD-Un-3mH"/>
+                                                        <constraint firstItem="9vG-vG-W3C" firstAttribute="top" secondItem="gKW-RK-4mq" secondAttribute="top" id="4aS-DG-NUr"/>
+                                                        <constraint firstAttribute="height" constant="77" id="6RB-SC-oPJ"/>
+                                                        <constraint firstItem="9vG-vG-W3C" firstAttribute="leading" secondItem="gKW-RK-4mq" secondAttribute="leading" id="aZc-8e-94Q"/>
+                                                        <constraint firstAttribute="trailing" secondItem="9vG-vG-W3C" secondAttribute="trailing" id="iTj-OG-ITV"/>
+                                                        <constraint firstAttribute="bottom" secondItem="9vG-vG-W3C" secondAttribute="bottom" id="nxl-eC-Z5j"/>
+                                                        <constraint firstAttribute="width" constant="377" id="sFG-Bw-Ljs"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
                                         </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="BsA-Qt-Szp" firstAttribute="top" secondItem="W37-a6-FlU" secondAttribute="bottom" constant="17" id="CAP-ca-gi3"/>
-                                        <constraint firstAttribute="trailing" secondItem="BsA-Qt-Szp" secondAttribute="trailing" constant="8" id="UfL-FR-lPE"/>
-                                        <constraint firstItem="BsA-Qt-Szp" firstAttribute="leading" secondItem="Bag-eg-1AW" secondAttribute="leading" constant="8" id="ZUj-3S-KbW"/>
+                                        <constraint firstAttribute="bottom" secondItem="BsA-Qt-Szp" secondAttribute="bottom" constant="17" id="9Fd-e3-0jW"/>
+                                        <constraint firstItem="BsA-Qt-Szp" firstAttribute="top" secondItem="W37-a6-FlU" secondAttribute="bottom" constant="17" id="9zL-KH-qCd"/>
                                         <constraint firstItem="W37-a6-FlU" firstAttribute="top" secondItem="Bag-eg-1AW" secondAttribute="top" id="aTr-C5-Pej"/>
-                                        <constraint firstAttribute="bottom" secondItem="BsA-Qt-Szp" secondAttribute="bottom" constant="20" symbolic="YES" id="ard-eS-JRr"/>
+                                        <constraint firstItem="BsA-Qt-Szp" firstAttribute="leading" secondItem="Bag-eg-1AW" secondAttribute="leading" constant="8" id="dJ3-MR-cl6"/>
                                         <constraint firstAttribute="trailing" secondItem="W37-a6-FlU" secondAttribute="trailing" id="ll9-TT-8rl"/>
                                         <constraint firstItem="W37-a6-FlU" firstAttribute="leading" secondItem="Bag-eg-1AW" secondAttribute="leading" id="pI4-FH-xzM"/>
+                                        <constraint firstAttribute="trailing" secondItem="BsA-Qt-Szp" secondAttribute="trailing" constant="8" id="xjE-YX-jLW"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -205,7 +205,7 @@
     <resources>
         <image name="splash" width="1920" height="1080"/>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -37,7 +37,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3IJ-Le-KZB">
                                                     <rect key="frame" x="0.0" y="0.0" width="150" height="180"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stockGuns" translatesAutoresizingMaskIntoConstraints="NO" id="U1b-r7-7xi">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U1b-r7-7xi">
                                                             <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="U1b-r7-7xi" secondAttribute="height" multiplier="1:1" id="ghk-uV-hnX"/>
@@ -101,7 +101,6 @@
     </scenes>
     <color key="tintColor" systemColor="systemRedColor"/>
     <resources>
-        <image name="stockGuns" width="800" height="450"/>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

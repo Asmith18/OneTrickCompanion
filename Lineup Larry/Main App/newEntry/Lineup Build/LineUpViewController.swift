@@ -58,12 +58,19 @@ class LineUpViewController: UIViewController {
         guard let instructions = instructionTextView.text,
               let title = titleTextField.text else { return }
         
-        if title.isEmpty {
-            let alert = UIAlertController(title: "Error", message: "Please enter a title.", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-            present(alert, animated: true, completion: nil)
-            return
-        }
+        if title.isEmpty || viewModel.tempArray.isEmpty {
+                var message = ""
+                if title.isEmpty {
+                    message = "Please enter a title."
+                } else if viewModel.tempArray.isEmpty {
+                    message = "Please add an Image to save a lineup."
+                }
+                
+                let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                present(alert, animated: true, completion: nil)
+                return
+            }
         
         viewModel?.saveLineup(instructions: instructions, title: title)
         

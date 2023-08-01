@@ -45,6 +45,7 @@ class ContentViewController: UIViewController, UICollectionViewDelegate, UIColle
             cell.cellLabel.text = "Agents"
             cell.cellImageView.image = UIImage(named: "reyna")
             cell.cellImageView.layer.cornerRadius = 25
+            cell.cellImageView.clipsToBounds = true
         case 1:
             cell.cellImageView.layer.cornerRadius = 25
             cell.cellImageView.layer.borderWidth = 1
@@ -52,6 +53,7 @@ class ContentViewController: UIViewController, UICollectionViewDelegate, UIColle
             cell.cellLabel.text = "Maps"
             cell.cellImageView.image = UIImage(named: "splash")
             cell.cellImageView.layer.cornerRadius = 25
+            cell.cellImageView.clipsToBounds = true
         case 2:
             cell.cellImageView.layer.cornerRadius = 25
             cell.cellImageView.layer.borderWidth = 1
@@ -59,6 +61,7 @@ class ContentViewController: UIViewController, UICollectionViewDelegate, UIColle
             cell.cellLabel.text = "Guns"
             cell.cellImageView.image = UIImage(named: "reaver")
             cell.cellImageView.layer.cornerRadius = 25
+            cell.cellImageView.clipsToBounds = true
         case 3:
             cell.cellImageView.layer.cornerRadius = 25
             cell.cellImageView.layer.borderWidth = 1
@@ -66,6 +69,7 @@ class ContentViewController: UIViewController, UICollectionViewDelegate, UIColle
             cell.cellLabel.text = "TOS"
             cell.cellImageView.image = UIImage(named: "TOS")
             cell.cellImageView.layer.cornerRadius = 25
+            cell.cellImageView.clipsToBounds = true
         default:
             cell.cellImageView.image = UIImage(named: "TOS")
         }
