@@ -13,13 +13,14 @@ class ContentViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     @IBOutlet weak var contentCollectionView: UICollectionView!
     
-    let spacing: CGFloat = 10
+    let cellLabels = ["Agents", "Maps", "Guns", "TOS"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Contents"
         contentCollectionView.delegate = self
         contentCollectionView.dataSource = self
+        contentCollectionView?.collectionViewLayout = UICollectionViewFlowLayout()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -30,7 +31,7 @@ class ContentViewController: UIViewController, UICollectionViewDelegate, UIColle
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return cellLabels.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -38,20 +39,35 @@ class ContentViewController: UIViewController, UICollectionViewDelegate, UIColle
         
         switch indexPath.item {
         case 0:
+            cell.cellImageView.layer.cornerRadius = 25
+            cell.cellImageView.layer.borderWidth = 1
+            cell.cellImageView.layer.borderColor = UIColor.white.cgColor
             cell.cellLabel.text = "Agents"
-            cell.cellView.layer.cornerRadius = 25
+            cell.cellImageView.image = UIImage(named: "reyna")
+            cell.cellImageView.layer.cornerRadius = 25
         case 1:
+            cell.cellImageView.layer.cornerRadius = 25
+            cell.cellImageView.layer.borderWidth = 1
+            cell.cellImageView.layer.borderColor = UIColor.white.cgColor
             cell.cellLabel.text = "Maps"
-            cell.cellView.layer.cornerRadius = 25
+            cell.cellImageView.image = UIImage(named: "splash")
+            cell.cellImageView.layer.cornerRadius = 25
         case 2:
-            cell.cellLabel.text = "Weapons"
-            cell.cellView.layer.cornerRadius = 25
+            cell.cellImageView.layer.cornerRadius = 25
+            cell.cellImageView.layer.borderWidth = 1
+            cell.cellImageView.layer.borderColor = UIColor.white.cgColor
+            cell.cellLabel.text = "Guns"
+            cell.cellImageView.image = UIImage(named: "reaver")
+            cell.cellImageView.layer.cornerRadius = 25
         case 3:
+            cell.cellImageView.layer.cornerRadius = 25
+            cell.cellImageView.layer.borderWidth = 1
+            cell.cellImageView.layer.borderColor = UIColor.white.cgColor
             cell.cellLabel.text = "TOS"
-            cell.cellView.layer.cornerRadius = 25
+            cell.cellImageView.image = UIImage(named: "TOS")
+            cell.cellImageView.layer.cornerRadius = 25
         default:
-            cell.cellLabel.text = nil
-            cell.cellView.layer.cornerRadius = 25
+            cell.cellImageView.image = UIImage(named: "TOS")
         }
         return cell
     }
@@ -82,28 +98,16 @@ class ContentViewController: UIViewController, UICollectionViewDelegate, UIColle
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let numberOfItemsPerRow: CGFloat = 2
-        let spacing: CGFloat = 10
+        // Calculate the cell size based on the collection view's width
+        let numberOfItemsPerRow: CGFloat = 2 // Number of items per row in the 2x2 grid
+        let spacingBetweenItems: CGFloat = 25
+        let totalSpacing = (numberOfItemsPerRow - 1) * spacingBetweenItems
+        let width = (contentCollectionView.bounds.width - totalSpacing) / numberOfItemsPerRow
         
-        let totalSpacing = (numberOfItemsPerRow - 1) * spacing
-        let availableWidth = collectionView.bounds.width - totalSpacing - 32 // 16 leading + 16 trailing
-        let width = availableWidth / numberOfItemsPerRow
-        let height = width // 1:1 aspect ratio
+        // You can adjust the height as needed or use an aspect ratio based on the width
+        let height = width // Square cells in this example
         
         return CGSize(width: width, height: height)
-    }
-
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        let spacing: CGFloat = 10
-        return UIEdgeInsets(top: spacing, left: spacing, bottom: spacing, right: spacing)
-    }
-
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 20
-    }
-
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 10
     }
 }
 

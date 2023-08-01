@@ -10,5 +10,6 @@ import UIKit
 class ContentCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var cellView: UIView!
+    @IBOutlet weak var cellImageView: UIImageView!
     @IBOutlet weak var cellLabel: UILabel!
 }

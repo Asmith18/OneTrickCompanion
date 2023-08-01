@@ -253,13 +253,6 @@
 			path = "Lineup List";
 			sourceTree = "<group>";
 		};
-		C2220C6D2A6B0B2F007D3195 /* EditLineup */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = EditLineup;
-			sourceTree = "<group>";
-		};
 		C23542E92822336200FE6E59 /* IQKeyboardManagerSwift */ = {
 			isa = PBXGroup;
 			children = (
@@ -330,7 +323,6 @@
 				C29AE6B527EA3AE4005CAD4E /* AgentList */,
 				C29AE6BA27EA3C42005CAD4E /* MapList */,
 				C29AE6C627EAA884005CAD4E /* Lineup Build */,
-				C2220C6D2A6B0B2F007D3195 /* EditLineup */,
 			);
 			path = newEntry;
 			sourceTree = "<group>";

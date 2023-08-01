@@ -108,7 +108,7 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTA-UW-aY9">
-                                                            <rect key="frame" x="58" y="19" width="319" height="18"/>
+                                                            <rect key="frame" x="58" y="19" width="319" height="23"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -127,7 +127,7 @@
                                                         <constraint firstItem="HTA-UW-aY9" firstAttribute="leading" secondItem="QjE-pR-gnM" secondAttribute="trailing" constant="8" symbolic="YES" id="n7e-DM-HFM"/>
                                                         <constraint firstItem="P9n-h4-EGZ" firstAttribute="top" secondItem="agq-jL-4M9" secondAttribute="top" id="nvg-ih-02E"/>
                                                         <constraint firstAttribute="trailing" secondItem="P9n-h4-EGZ" secondAttribute="trailing" constant="8" id="pBQ-aB-4dI"/>
-                                                        <constraint firstAttribute="bottom" secondItem="HTA-UW-aY9" secondAttribute="bottom" constant="13" id="tQC-tJ-HY6"/>
+                                                        <constraint firstAttribute="bottom" secondItem="HTA-UW-aY9" secondAttribute="bottom" constant="8" id="tQC-tJ-HY6"/>
                                                         <constraint firstAttribute="trailing" secondItem="HTA-UW-aY9" secondAttribute="trailing" id="uVc-NW-50v"/>
                                                     </constraints>
                                                 </view>
@@ -205,7 +205,7 @@
     <resources>
         <image name="splash" width="1920" height="1080"/>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

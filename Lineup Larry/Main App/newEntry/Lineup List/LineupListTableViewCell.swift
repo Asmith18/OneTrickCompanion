@@ -33,6 +33,8 @@ class LineupListTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
         titleLabel.text = lineup.title
         mapLabel.text = lineup.mapName
         agentImageView.setImage(using: lineup.agentImage)
+        agentImageView.layer.borderWidth = 1
+        agentImageView.layer.borderColor = UIColor.gray.cgColor
         descriptionTextView.text = lineup.instructions
         descriptionTextView.layer.cornerRadius = 12
         agentImageView.layer.cornerRadius = agentImageView.frame.size.width / 2
