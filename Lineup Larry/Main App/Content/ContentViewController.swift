@@ -66,12 +66,12 @@ class ContentViewController: UIViewController, UICollectionViewDelegate, UIColle
             cell.cellImageView.layer.cornerRadius = 25
             cell.cellImageView.layer.borderWidth = 1
             cell.cellImageView.layer.borderColor = UIColor.white.cgColor
-            cell.cellLabel.text = "TOS"
-            cell.cellImageView.image = UIImage(named: "TOS")
+            cell.cellLabel.text = "Privacy Policy"
+            cell.cellImageView.image = UIImage(named: "privacypolicy")
             cell.cellImageView.layer.cornerRadius = 25
             cell.cellImageView.clipsToBounds = true
         default:
-            cell.cellImageView.image = UIImage(named: "TOS")
+            cell.cellImageView.image = UIImage(named: "privacypolicy")
         }
         return cell
     }

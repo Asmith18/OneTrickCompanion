@@ -48,6 +48,7 @@ class LineUpViewModel {
             try CoreDataStack.context.save()
             delegate?.overviewImagesHasdata()
         } catch {
+            delegate?.encountered(error)
             print(error)
         }
     }
