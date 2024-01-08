@@ -65,16 +65,32 @@
                                                         <constraint firstAttribute="width" constant="299" id="suM-rN-uYd"/>
                                                     </constraints>
                                                 </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kn1-bS-O8Z">
+                                                    <rect key="frame" x="316" y="0.0" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="H9d-71-u7x"/>
+                                                        <constraint firstAttribute="height" constant="30" id="XRz-U9-vY7"/>
+                                                    </constraints>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="minus.circle" catalog="system"/>
+                                                    <connections>
+                                                        <action selector="deleteImageButtonTapped:" destination="FJf-eD-eTG" eventType="touchUpInside" id="GZc-AN-hSd"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="01k-z4-yMS" firstAttribute="top" secondItem="axn-KY-1dy" secondAttribute="top" id="GUk-G6-9lW"/>
+                                                <constraint firstItem="Kn1-bS-O8Z" firstAttribute="trailing" secondItem="01k-z4-yMS" secondAttribute="trailing" id="IUV-em-nn6"/>
                                                 <constraint firstItem="01k-z4-yMS" firstAttribute="leading" secondItem="axn-KY-1dy" secondAttribute="leading" id="dBw-7O-WAn"/>
                                                 <constraint firstAttribute="bottom" secondItem="01k-z4-yMS" secondAttribute="bottom" id="ncv-za-q8R"/>
+                                                <constraint firstItem="Kn1-bS-O8Z" firstAttribute="top" secondItem="01k-z4-yMS" secondAttribute="top" id="pTy-NI-01N"/>
                                                 <constraint firstAttribute="trailing" secondItem="01k-z4-yMS" secondAttribute="trailing" id="piY-bR-MrX"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="346" height="171"/>
                                         <connections>
+                                            <outlet property="deleteImageButton" destination="Kn1-bS-O8Z" id="QoJ-Lj-FMw"/>
                                             <outlet property="lineupImageView" destination="01k-z4-yMS" id="3IO-91-sBQ"/>
                                         </connections>
                                     </collectionViewCell>
@@ -157,6 +173,7 @@
     <color key="tintColor" systemColor="systemRedColor"/>
     <resources>
         <image name="IMG-20210709-WA0395_copy_1600x900" width="1600" height="900"/>
+        <image name="minus.circle" catalog="system" width="128" height="123"/>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

@@ -16,7 +16,7 @@ class LineupCollectionViewCell: UICollectionViewCell {
     
     func updateViews(image: UIImage) {
         lineupImageView?.image = image
-//        deleteImageButton.setTitle("", for: .normal)
+        deleteImageButton.setTitle("", for: .normal)
         lineupImageView.contentMode = .scaleAspectFill
         lineupImageView.clipsToBounds = true
     }
