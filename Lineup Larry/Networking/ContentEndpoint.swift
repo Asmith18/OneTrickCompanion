@@ -12,7 +12,7 @@ extension URL {
     static let weaponBaseURL = URL(string: "https://valorant-api.com/v1/weapons")
     static let agentBaseURL = URL(string: "https://valorant-api.com/v1/agents?isPlayableCharacter=true")
     static let gameModeBaseURL = URL(string: "https://valorant-api.com/v1/gamemodes")
-    static let rankBaseURL = URL(string: "https://valorant-api.com/v1/competitivetiers")
+    static let leaderboardBaseURl = URL(string: "https://api.henrikdev.xyz/valorant/v1/leaderboard/na")
 }
 
 enum ContentEndpoint {
@@ -20,14 +20,14 @@ enum ContentEndpoint {
     case map
     case weapon
     case gamemode
-    case ranks
+    case leaderboard
     
     var url: URL? {
         guard let mapsBaseUrl = URL.mapsBaseURL else { return nil }
         guard let weaponBaseUrl = URL.weaponBaseURL else { return nil }
         guard let agentBaseUrl = URL.agentBaseURL else { return nil }
         guard let gameModeBaseUrl = URL.gameModeBaseURL else { return nil }
-        guard let rankBaseUrl = URL.rankBaseURL else { return nil }
+        guard let leaderboardBaseURL = URL.leaderboardBaseURl else { return nil }
         
         switch self {
         case .map:
@@ -38,8 +38,8 @@ enum ContentEndpoint {
             return agentBaseUrl
         case .gamemode:
             return gameModeBaseUrl
-        case .ranks:
-            return rankBaseUrl
+        case .leaderboard:
+            return leaderboardBaseURL
         }
     }
 }
