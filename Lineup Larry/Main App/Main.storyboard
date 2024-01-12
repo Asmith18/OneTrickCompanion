@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="157-fD-At4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="157-fD-At4">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -41,7 +41,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="5BG-4P-eZO" kind="relationship" relationship="viewControllers" id="feg-xT-rdm"/>
-                        <segue destination="nQP-dT-zU7" kind="relationship" relationship="viewControllers" id="QR7-Xa-kx1"/>
+                        <segue destination="SNy-x6-igR" kind="relationship" relationship="viewControllers" id="6Tc-rk-zoE"/>
+                        <segue destination="nQP-dT-zU7" kind="relationship" relationship="viewControllers" id="9xd-Fz-wdx"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="28O-Ta-40R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -87,10 +88,38 @@
             </objects>
             <point key="canvasLocation" x="1378" y="-800"/>
         </scene>
+        <!--Leaderboards-->
+        <scene sceneID="Z2i-Gp-pXU">
+            <objects>
+                <navigationController id="SNy-x6-igR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Leaderboards" image="list.number" catalog="system" id="Iao-n0-UU3"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ecF-jA-QD9">
+                        <rect key="frame" x="0.0" y="47" width="428" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="6NU-NC-jEk" kind="relationship" relationship="rootViewController" id="ffy-uh-IjD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1wG-SJ-wdt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="743" y="-75"/>
+        </scene>
+        <!--Leaderboard-->
+        <scene sceneID="DWR-U6-scM">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Leaderboard" storyboardName="Leaderboard" referencedIdentifier="Leaderboard" id="6NU-NC-jEk" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="iEn-y9-u8g"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XWC-ya-Ws9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1417" y="-75"/>
+        </scene>
     </scenes>
     <color key="tintColor" systemColor="systemRedColor"/>
     <resources>
         <image name="bookmark" catalog="system" width="110" height="128"/>
+        <image name="list.number" catalog="system" width="128" height="97"/>
         <image name="plus.circle" catalog="system" width="128" height="123"/>
         <image name="plus.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemRedColor">

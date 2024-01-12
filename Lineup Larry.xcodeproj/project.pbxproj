@@ -91,6 +91,8 @@
 		C2A15F9E27DD1CE700FB6952 /* Maps.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A15F9D27DD1CE700FB6952 /* Maps.swift */; };
 		C2A15FA027DD1D7600FB6952 /* Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A15F9F27DD1D7600FB6952 /* Skins.swift */; };
 		C2A15FA227DD1DF200FB6952 /* Weapons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A15FA127DD1DF200FB6952 /* Weapons.swift */; };
+		C2A6306B2B50E4FE005FCF67 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A6306A2B50E4FE005FCF67 /* LeaderboardViewController.swift */; };
+		C2A6306D2B50E58A005FCF67 /* LeaderboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A6306C2B50E58A005FCF67 /* LeaderboardTableViewCell.swift */; };
 		C2B4917A2A4DF8D200EB5EB4 /* AgentDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B491792A4DF8D200EB5EB4 /* AgentDetailsViewController.swift */; };
 		C2FA76982A58872500F41912 /* MapDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2FA76972A58872500F41912 /* MapDetails.storyboard */; };
 /* End PBXBuildFile section */
@@ -183,6 +185,8 @@
 		C2A15F9D27DD1CE700FB6952 /* Maps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maps.swift; sourceTree = "<group>"; };
 		C2A15F9F27DD1D7600FB6952 /* Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skins.swift; sourceTree = "<group>"; };
 		C2A15FA127DD1DF200FB6952 /* Weapons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapons.swift; sourceTree = "<group>"; };
+		C2A6306A2B50E4FE005FCF67 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
+		C2A6306C2B50E58A005FCF67 /* LeaderboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardTableViewCell.swift; sourceTree = "<group>"; };
 		C2B491792A4DF8D200EB5EB4 /* AgentDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDetailsViewController.swift; sourceTree = "<group>"; };
 		C2FA76972A58872500F41912 /* MapDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapDetails.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -334,6 +338,8 @@
 		C26156E52B4B6D4C00643A51 /* Leaderboard */ = {
 			isa = PBXGroup;
 			children = (
+				C2A6306A2B50E4FE005FCF67 /* LeaderboardViewController.swift */,
+				C2A6306C2B50E58A005FCF67 /* LeaderboardTableViewCell.swift */,
 				C26156E62B4B6D8600643A51 /* Leaderboard.storyboard */,
 			);
 			path = Leaderboard;
@@ -656,6 +662,7 @@
 				C29AE68927E245F3005CAD4E /* APIDataProvidable.swift in Sources */,
 				C20239332A4CC5C300FC72A0 /* AgentsTableViewCell.swift in Sources */,
 				C29AE69527E3D1DC005CAD4E /* WeaponsViewModel.swift in Sources */,
+				C2A6306D2B50E58A005FCF67 /* LeaderboardTableViewCell.swift in Sources */,
 				C24FD71327EEA1150032EB0D /* OneTrick.xcdatamodeld in Sources */,
 				C23543152822336200FE6E59 /* IQKeyboardManager+OrientationNotification.swift in Sources */,
 				C235431A2822336200FE6E59 /* IQUIView+Hierarchy.swift in Sources */,
@@ -682,6 +689,7 @@
 				C289F1892A55D4C6007BF6F2 /* AgentAbilitiesTableViewCell.swift in Sources */,
 				C23543102822336200FE6E59 /* IQKeyboardManagerConstants.swift in Sources */,
 				C29AE6B727EA3B1A005CAD4E /* AgentListViewController.swift in Sources */,
+				C2A6306B2B50E4FE005FCF67 /* LeaderboardViewController.swift in Sources */,
 				C24FD75727F146820032EB0D /* Lineup+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
