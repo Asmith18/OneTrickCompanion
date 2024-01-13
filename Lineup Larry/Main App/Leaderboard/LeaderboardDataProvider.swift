@@ -22,8 +22,9 @@ class LeaderboardDataProvider: APIDataProvidable, LeaderboardDataProvidable {
             case .success(let player):
                 let decoder = JSONDecoder()
                 do {
-                    let player = try decoder.decode([Player].self, from: player)
-                    completion(.success(player))
+                    let player = try decoder.decode([Player?].self, from: player)
+                    let validPlayers = player.compactMap({ $0 })
+                    completion(.success(validPlayers))
                 } catch {
                     completion(.failure(.couldNotUnwrap))
                 }

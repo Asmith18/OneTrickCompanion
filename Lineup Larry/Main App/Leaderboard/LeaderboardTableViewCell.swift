@@ -15,17 +15,22 @@ class LeaderboardTableViewCell: UITableViewCell {
     @IBOutlet weak var rankImageView: UIImageView!
     @IBOutlet weak var PlayerNameText: UILabel!
     @IBOutlet weak var gamesWonLabel: UILabel!
+    @IBOutlet weak var rankRatingLAbel: UILabel!
     
 
     func updateViews(player: Player) {
-        positionLabel.text = "\(player.leaderboardRank)"
+        positionLabel.text = "\(player.leaderboardRank ?? 0)"
         PlayerNameText.text = player.gameName
-        gamesWonLabel.text = "\(player.numberOfWins)"
-        if player.rankedRating == 27 {
+        gamesWonLabel.text = "\(player.numberOfWins ?? 0) Games Won"
+        rankRatingLAbel.text = "\(player.rankedRating)"
+        if player.competitiveTier == 27 {
             rankImageView.image = UIImage(named: "RadiantRank")
+        } else if player.competitiveTier == 26 {
+            rankImageView.image = UIImage(named: "Immortal3")
+        } else if player.competitiveTier == 25 {
+            rankImageView.image = UIImage(named: "Immortal2")
         } else {
-            rankImageView.image = UIImage(named: "RadiantRank")
+            rankImageView.image = UIImage(named: "Immortal1")
         }
     }
-
 }

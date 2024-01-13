@@ -22,6 +22,7 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
     
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
         navigationController?.navigationBar.barTintColor = UIColor(red: 50/255, green: 50/255, blue: 50/255, alpha: 0)
         LeaderboardTableView.separatorColor = .white
@@ -65,11 +66,15 @@ extension LeaderboardViewController: LeaderboardViewModelDelegate {
     }
     
     func encountered(_ error: Error) {
-        let alertController = UIAlertController(title: "Error", message: "\(error.localizedDescription)", preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "Close", style: .cancel))
-        alertController.addAction(UIAlertAction(title: "Retry", style: .default, handler: { [weak self] _ in
-            self?.viewModel.fetch()
-        }))
-        present(alertController, animated: true)
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else { return }
+            
+            let alertController = UIAlertController(title: "Error", message: "\(error.localizedDescription)", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "Close", style: .cancel))
+            alertController.addAction(UIAlertAction(title: "Retry", style: .default, handler: { [weak self] _ in
+                self?.viewModel.fetch()
+            }))
+            self.present(alertController, animated: true)
+        }
     }
 }

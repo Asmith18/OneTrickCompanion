@@ -24,14 +24,14 @@ class LeaderboardViewModel {
     }
     
     func fetch() {
-        dataProvider.fetch(from: .leaderboard) { result in
+        dataProvider.fetch(from: .leaderboard) { [weak self] result in
             switch result {
             case .success(let fetchedPlayers):
-                self.players = fetchedPlayers
-                self.delegate?.leaderboardHasData()
+                self?.players = fetchedPlayers
+                self?.delegate?.leaderboardHasData()
             case .failure(let error):
                 print(error)
-                self.delegate?.encountered(error)
+                self?.delegate?.encountered(error)
             }
         }
     }
