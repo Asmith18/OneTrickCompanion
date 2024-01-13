@@ -48,10 +48,10 @@ extension Lineup {
     @NSManaged public func replaceOverviewImages(at indexes: NSIndexSet, with values: [Lineup])
 
     @objc(addOverviewImagesObject:)
-    @NSManaged public func addToOverviewImages(_ value: Lineup)
+    @NSManaged public func addToOverviewImages(_ value: Data)
 
     @objc(removeOverviewImagesObject:)
-    @NSManaged public func removeFromOverviewImages(_ value: Lineup)
+    @NSManaged public func removeFromOverviewImages(_ value: Data)
 
     @objc(addOverviewImages:)
     @NSManaged public func addToOverviewImages(_ values: NSOrderedSet)

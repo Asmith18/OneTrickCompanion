@@ -9,19 +9,15 @@ import Foundation
 import CoreData
 import UIKit
 
-protocol LineupListViewModelDelegate: AnyObject {
-    func LineupsHasData()
-}
-
-class LineupListViewMdoel {
+class LineupListViewModel {
     
     var agent: AgentData?
+    var fetchedResultsController: NSFetchedResultsController<Lineup>
     
     private lazy var fetchRequest: NSFetchRequest<Lineup> = {
         let fetchRequest = NSFetchRequest<Lineup>(entityName: "Lineup")
         return fetchRequest
     }()
-    var fetchedResultsController: NSFetchedResultsController<Lineup>
     
     init() {
         let request: NSFetchRequest<Lineup> = Lineup.fetchRequest()

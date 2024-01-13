@@ -11,21 +11,18 @@
 		3E0CAD1127ED1D00000AF833 /* MapTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E0CAD0F27ED1D00000AF833 /* MapTableViewCell.xib */; };
 		3E0CAD1427ED1E3A000AF833 /* Valorant Font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E0CAD1327ED1E20000AF833 /* Valorant Font.ttf */; };
 		3E0CAD1627ED1FD3000AF833 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0CAD1527ED1FD3000AF833 /* GradientView.swift */; };
-		C202391D2A4BAECD00FC72A0 /* AgentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C202391C2A4BAECC00FC72A0 /* AgentTableViewCell.xib */; };
-		C20239212A4BB2BF00FC72A0 /* AgentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20239202A4BB2BF00FC72A0 /* AgentTableViewCell.swift */; };
+		C20239332A4CC5C300FC72A0 /* AgentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20239322A4CC5C300FC72A0 /* AgentsTableViewCell.swift */; };
+		C20239362A4CCC9400FC72A0 /* AgentDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C20239352A4CCC9400FC72A0 /* AgentDetails.storyboard */; };
 		C2079F5829197E2A006BA81D /* LineupList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F5729197E2A006BA81D /* LineupList.storyboard */; };
 		C2079F5A29197E95006BA81D /* AgentList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F5929197E95006BA81D /* AgentList.storyboard */; };
 		C2079F5C29197EBA006BA81D /* MapsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F5B29197EBA006BA81D /* MapsList.storyboard */; };
-		C2079F5E29197ED0006BA81D /* LineupDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F5D29197ED0006BA81D /* LineupDetail.storyboard */; };
 		C2079F6029197F47006BA81D /* Contents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F5F29197F47006BA81D /* Contents.storyboard */; };
 		C2079F6229197F91006BA81D /* AgentContent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F6129197F91006BA81D /* AgentContent.storyboard */; };
 		C2079F6429197FA5006BA81D /* WeaponContent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F6329197FA5006BA81D /* WeaponContent.storyboard */; };
-		C2079F6629197FBA006BA81D /* GameModeContents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F6529197FBA006BA81D /* GameModeContents.storyboard */; };
 		C2079F6829197FCD006BA81D /* MapContent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F6729197FCD006BA81D /* MapContent.storyboard */; };
-		C2079F6A29197FEA006BA81D /* Acknowledgments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F6929197FEA006BA81D /* Acknowledgments.storyboard */; };
-		C2079F6C29197FF7006BA81D /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2079F6B29197FF7006BA81D /* About.storyboard */; };
-		C21ED834281B343700BCEC26 /* AcknowledgmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21ED833281B343700BCEC26 /* AcknowledgmentsViewController.swift */; };
-		C21ED836281B359E00BCEC26 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21ED835281B359E00BCEC26 /* AboutViewController.swift */; };
+		C2220C6A2A68243E007D3195 /* LineupListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2220C692A68243E007D3195 /* LineupListTableViewController.swift */; };
+		C2220C6C2A68245B007D3195 /* LineupListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2220C6B2A68245B007D3195 /* LineupListTableViewCell.swift */; };
+		C2220C712A6B1B6B007D3195 /* ContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2220C702A6B1B6B007D3195 /* ContentCollectionViewCell.swift */; };
 		C23542E7282229C400FE6E59 /* 1024.png in Resources */ = {isa = PBXBuildFile; fileRef = C23542E6282229C400FE6E59 /* 1024.png */; };
 		C23543062822336200FE6E59 /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23542EB2822336200FE6E59 /* IQTextView.swift */; };
 		C23543072822336200FE6E59 /* IQKeyboardManager+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23542EC2822336200FE6E59 /* IQKeyboardManager+Internal.swift */; };
@@ -51,16 +48,20 @@
 		C235431B2822336200FE6E59 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23543042822336200FE6E59 /* IQNSArray+Sort.swift */; };
 		C235431C2822336200FE6E59 /* IQKeyboardManager+UITextFieldViewNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23543052822336200FE6E59 /* IQKeyboardManager+UITextFieldViewNotification.swift */; };
 		C24FD71327EEA1150032EB0D /* OneTrick.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C24FD71127EEA1150032EB0D /* OneTrick.xcdatamodeld */; };
-		C24FD73A27EEA7C70032EB0D /* LineupListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24FD73927EEA7C70032EB0D /* LineupListTableViewController.swift */; };
-		C24FD74427EF804C0032EB0D /* LineupListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24FD74327EF804C0032EB0D /* LineupListTableViewCell.swift */; };
 		C24FD75027F0D1A90032EB0D /* LineupListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24FD74F27F0D1A90032EB0D /* LineupListViewModel.swift */; };
 		C24FD75227F13DBB0032EB0D /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24FD75127F13DBB0032EB0D /* CoreDataStack.swift */; };
 		C24FD75427F13F5D0032EB0D /* Lineup+Convienence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24FD75327F13F5D0032EB0D /* Lineup+Convienence.swift */; };
 		C24FD75727F146820032EB0D /* Lineup+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24FD75527F146820032EB0D /* Lineup+CoreDataClass.swift */; };
 		C24FD75827F146820032EB0D /* Lineup+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24FD75627F146820032EB0D /* Lineup+CoreDataProperties.swift */; };
 		C25356D82923FACF00D68A79 /* LineupCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25356D72923FACF00D68A79 /* LineupCollectionViewCell.swift */; };
+		C25738EE2A5DFDAA0083320C /* UserImagesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25738ED2A5DFDAA0083320C /* UserImagesCollectionViewCell.swift */; };
+		C26156E42B4B6C5300643A51 /* Leaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26156E32B4B6C5300643A51 /* Leaderboard.swift */; };
+		C26156E72B4B6D8600643A51 /* Leaderboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C26156E62B4B6D8600643A51 /* Leaderboard.storyboard */; };
+		C26156EB2B4B829000643A51 /* LineupDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C26156EA2B4B828F00643A51 /* LineupDetail.storyboard */; };
+		C289F1852A55CCFE007BF6F2 /* AgentDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C289F1842A55CCFE007BF6F2 /* AgentDetailsViewModel.swift */; };
+		C289F1892A55D4C6007BF6F2 /* AgentAbilitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C289F1882A55D4C6007BF6F2 /* AgentAbilitiesTableViewCell.swift */; };
+		C289F18D2A560C68007BF6F2 /* AgentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C289F18C2A560C68007BF6F2 /* AgentTableViewCell.xib */; };
 		C29AE66E27E1047E005CAD4E /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE66D27E1047E005CAD4E /* ContentViewController.swift */; };
-		C29AE67027E109AB005CAD4E /* MapsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE66F27E109AB005CAD4E /* MapsTableViewCell.swift */; };
 		C29AE67727E11BAC005CAD4E /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE67627E11BAC005CAD4E /* MapsViewController.swift */; };
 		C29AE67D27E11E40005CAD4E /* WeaponsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE67C27E11E40005CAD4E /* WeaponsViewController.swift */; };
 		C29AE67F27E11E5A005CAD4E /* WeaponsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE67E27E11E5A005CAD4E /* WeaponsTableViewCell.swift */; };
@@ -73,12 +74,6 @@
 		C29AE69527E3D1DC005CAD4E /* WeaponsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE69427E3D1DC005CAD4E /* WeaponsViewModel.swift */; };
 		C29AE69727E3D2F7005CAD4E /* WeaponDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE69627E3D2F7005CAD4E /* WeaponDataProvider.swift */; };
 		C29AE69A27E98717005CAD4E /* AgentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE69927E98717005CAD4E /* AgentsViewController.swift */; };
-		C29AE69E27E98A4B005CAD4E /* AgentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE69D27E98A4B005CAD4E /* AgentViewModel.swift */; };
-		C29AE6A027E98AB7005CAD4E /* AgentDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE69F27E98AB7005CAD4E /* AgentDataProvider.swift */; };
-		C29AE6A427EA003B005CAD4E /* GameModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE6A327EA003B005CAD4E /* GameModeViewController.swift */; };
-		C29AE6A627EA005F005CAD4E /* GameModeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE6A527EA005F005CAD4E /* GameModeTableViewCell.swift */; };
-		C29AE6A827EA0070005CAD4E /* GameModeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE6A727EA0070005CAD4E /* GameModeViewModel.swift */; };
-		C29AE6AA27EA0080005CAD4E /* GameModeDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE6A927EA0080005CAD4E /* GameModeDataProvider.swift */; };
 		C29AE6B727EA3B1A005CAD4E /* AgentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE6B627EA3B1A005CAD4E /* AgentListViewController.swift */; };
 		C29AE6BC27EA3C64005CAD4E /* MapTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE6BB27EA3C64005CAD4E /* MapTableViewController.swift */; };
 		C29AE6BE27EA9ADC005CAD4E /* AgentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29AE6BD27EA9ADC005CAD4E /* AgentListViewModel.swift */; };
@@ -96,7 +91,12 @@
 		C2A15F9E27DD1CE700FB6952 /* Maps.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A15F9D27DD1CE700FB6952 /* Maps.swift */; };
 		C2A15FA027DD1D7600FB6952 /* Skins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A15F9F27DD1D7600FB6952 /* Skins.swift */; };
 		C2A15FA227DD1DF200FB6952 /* Weapons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A15FA127DD1DF200FB6952 /* Weapons.swift */; };
-		C2A15FA427DD1E8400FB6952 /* GameMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A15FA327DD1E8400FB6952 /* GameMode.swift */; };
+		C2A6306B2B50E4FE005FCF67 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A6306A2B50E4FE005FCF67 /* LeaderboardViewController.swift */; };
+		C2A6306D2B50E58A005FCF67 /* LeaderboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A6306C2B50E58A005FCF67 /* LeaderboardTableViewCell.swift */; };
+		C2A6306F2B50FB06005FCF67 /* LeaderboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A6306E2B50FB06005FCF67 /* LeaderboardViewModel.swift */; };
+		C2A630712B50FB1B005FCF67 /* LeaderboardDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A630702B50FB1B005FCF67 /* LeaderboardDataProvider.swift */; };
+		C2B4917A2A4DF8D200EB5EB4 /* AgentDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B491792A4DF8D200EB5EB4 /* AgentDetailsViewController.swift */; };
+		C2FA76982A58872500F41912 /* MapDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2FA76972A58872500F41912 /* MapDetails.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,21 +104,18 @@
 		3E0CAD0F27ED1D00000AF833 /* MapTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapTableViewCell.xib; sourceTree = "<group>"; };
 		3E0CAD1327ED1E20000AF833 /* Valorant Font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Valorant Font.ttf"; sourceTree = "<group>"; };
 		3E0CAD1527ED1FD3000AF833 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
-		C202391C2A4BAECC00FC72A0 /* AgentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AgentTableViewCell.xib; path = ../../../../../../.Trash/AgentTableViewCell.xib; sourceTree = "<group>"; };
-		C20239202A4BB2BF00FC72A0 /* AgentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AgentTableViewCell.swift; path = "Lineup Larry/Main App/Content/Agents/AgentTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		C20239322A4CC5C300FC72A0 /* AgentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsTableViewCell.swift; sourceTree = "<group>"; };
+		C20239352A4CCC9400FC72A0 /* AgentDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AgentDetails.storyboard; sourceTree = "<group>"; };
 		C2079F5729197E2A006BA81D /* LineupList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LineupList.storyboard; sourceTree = "<group>"; };
 		C2079F5929197E95006BA81D /* AgentList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AgentList.storyboard; sourceTree = "<group>"; };
 		C2079F5B29197EBA006BA81D /* MapsList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MapsList.storyboard; sourceTree = "<group>"; };
-		C2079F5D29197ED0006BA81D /* LineupDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LineupDetail.storyboard; sourceTree = "<group>"; };
 		C2079F5F29197F47006BA81D /* Contents.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Contents.storyboard; sourceTree = "<group>"; };
 		C2079F6129197F91006BA81D /* AgentContent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AgentContent.storyboard; sourceTree = "<group>"; };
 		C2079F6329197FA5006BA81D /* WeaponContent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WeaponContent.storyboard; sourceTree = "<group>"; };
-		C2079F6529197FBA006BA81D /* GameModeContents.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GameModeContents.storyboard; sourceTree = "<group>"; };
 		C2079F6729197FCD006BA81D /* MapContent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MapContent.storyboard; sourceTree = "<group>"; };
-		C2079F6929197FEA006BA81D /* Acknowledgments.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Acknowledgments.storyboard; sourceTree = "<group>"; };
-		C2079F6B29197FF7006BA81D /* About.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
-		C21ED833281B343700BCEC26 /* AcknowledgmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcknowledgmentsViewController.swift; sourceTree = "<group>"; };
-		C21ED835281B359E00BCEC26 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		C2220C692A68243E007D3195 /* LineupListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineupListTableViewController.swift; sourceTree = "<group>"; };
+		C2220C6B2A68245B007D3195 /* LineupListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineupListTableViewCell.swift; sourceTree = "<group>"; };
+		C2220C702A6B1B6B007D3195 /* ContentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewCell.swift; sourceTree = "<group>"; };
 		C23542E6282229C400FE6E59 /* 1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1024.png; sourceTree = "<group>"; };
 		C23542EB2822336200FE6E59 /* IQTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTextView.swift; sourceTree = "<group>"; };
 		C23542EC2822336200FE6E59 /* IQKeyboardManager+Internal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQKeyboardManager+Internal.swift"; sourceTree = "<group>"; };
@@ -145,16 +142,20 @@
 		C23543042822336200FE6E59 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQNSArray+Sort.swift"; sourceTree = "<group>"; };
 		C23543052822336200FE6E59 /* IQKeyboardManager+UITextFieldViewNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQKeyboardManager+UITextFieldViewNotification.swift"; sourceTree = "<group>"; };
 		C24FD71227EEA1150032EB0D /* OneTrick.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OneTrick.xcdatamodel; sourceTree = "<group>"; };
-		C24FD73927EEA7C70032EB0D /* LineupListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineupListTableViewController.swift; sourceTree = "<group>"; };
-		C24FD74327EF804C0032EB0D /* LineupListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineupListTableViewCell.swift; sourceTree = "<group>"; };
 		C24FD74F27F0D1A90032EB0D /* LineupListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineupListViewModel.swift; sourceTree = "<group>"; };
 		C24FD75127F13DBB0032EB0D /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		C24FD75327F13F5D0032EB0D /* Lineup+Convienence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lineup+Convienence.swift"; sourceTree = "<group>"; };
 		C24FD75527F146820032EB0D /* Lineup+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lineup+CoreDataClass.swift"; sourceTree = "<group>"; };
 		C24FD75627F146820032EB0D /* Lineup+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lineup+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C25356D72923FACF00D68A79 /* LineupCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineupCollectionViewCell.swift; sourceTree = "<group>"; };
+		C25738ED2A5DFDAA0083320C /* UserImagesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImagesCollectionViewCell.swift; sourceTree = "<group>"; };
+		C26156E32B4B6C5300643A51 /* Leaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leaderboard.swift; sourceTree = "<group>"; };
+		C26156E62B4B6D8600643A51 /* Leaderboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Leaderboard.storyboard; sourceTree = "<group>"; };
+		C26156EA2B4B828F00643A51 /* LineupDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LineupDetail.storyboard; sourceTree = "<group>"; };
+		C289F1842A55CCFE007BF6F2 /* AgentDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDetailsViewModel.swift; sourceTree = "<group>"; };
+		C289F1882A55D4C6007BF6F2 /* AgentAbilitiesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentAbilitiesTableViewCell.swift; sourceTree = "<group>"; };
+		C289F18C2A560C68007BF6F2 /* AgentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgentTableViewCell.xib; sourceTree = "<group>"; };
 		C29AE66D27E1047E005CAD4E /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
-		C29AE66F27E109AB005CAD4E /* MapsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsTableViewCell.swift; sourceTree = "<group>"; };
 		C29AE67627E11BAC005CAD4E /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		C29AE67C27E11E40005CAD4E /* WeaponsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsViewController.swift; sourceTree = "<group>"; };
 		C29AE67E27E11E5A005CAD4E /* WeaponsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsTableViewCell.swift; sourceTree = "<group>"; };
@@ -167,12 +168,6 @@
 		C29AE69427E3D1DC005CAD4E /* WeaponsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsViewModel.swift; sourceTree = "<group>"; };
 		C29AE69627E3D2F7005CAD4E /* WeaponDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponDataProvider.swift; sourceTree = "<group>"; };
 		C29AE69927E98717005CAD4E /* AgentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsViewController.swift; sourceTree = "<group>"; };
-		C29AE69D27E98A4B005CAD4E /* AgentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentViewModel.swift; sourceTree = "<group>"; };
-		C29AE69F27E98AB7005CAD4E /* AgentDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDataProvider.swift; sourceTree = "<group>"; };
-		C29AE6A327EA003B005CAD4E /* GameModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeViewController.swift; sourceTree = "<group>"; };
-		C29AE6A527EA005F005CAD4E /* GameModeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeTableViewCell.swift; sourceTree = "<group>"; };
-		C29AE6A727EA0070005CAD4E /* GameModeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeViewModel.swift; sourceTree = "<group>"; };
-		C29AE6A927EA0080005CAD4E /* GameModeDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeDataProvider.swift; sourceTree = "<group>"; };
 		C29AE6B627EA3B1A005CAD4E /* AgentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentListViewController.swift; sourceTree = "<group>"; };
 		C29AE6BB27EA3C64005CAD4E /* MapTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTableViewController.swift; sourceTree = "<group>"; };
 		C29AE6BD27EA9ADC005CAD4E /* AgentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentListViewModel.swift; sourceTree = "<group>"; };
@@ -192,7 +187,12 @@
 		C2A15F9D27DD1CE700FB6952 /* Maps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maps.swift; sourceTree = "<group>"; };
 		C2A15F9F27DD1D7600FB6952 /* Skins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skins.swift; sourceTree = "<group>"; };
 		C2A15FA127DD1DF200FB6952 /* Weapons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapons.swift; sourceTree = "<group>"; };
-		C2A15FA327DD1E8400FB6952 /* GameMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMode.swift; sourceTree = "<group>"; };
+		C2A6306A2B50E4FE005FCF67 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
+		C2A6306C2B50E58A005FCF67 /* LeaderboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardTableViewCell.swift; sourceTree = "<group>"; };
+		C2A6306E2B50FB06005FCF67 /* LeaderboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewModel.swift; sourceTree = "<group>"; };
+		C2A630702B50FB1B005FCF67 /* LeaderboardDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardDataProvider.swift; sourceTree = "<group>"; };
+		C2B491792A4DF8D200EB5EB4 /* AgentDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDetailsViewController.swift; sourceTree = "<group>"; };
+		C2FA76972A58872500F41912 /* MapDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapDetails.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,54 +226,39 @@
 		3E228ECD27ECEC9600671FA1 /* Reusable Views */ = {
 			isa = PBXGroup;
 			children = (
+				C202392D2A4CC56700FC72A0 /* Agent Cell */,
 				3E0CAD0D27ED1CF1000AF833 /* Map Cell */,
-				3E228ED227ECEE5B00671FA1 /* Agent Cell */,
 				3E0CAD1527ED1FD3000AF833 /* GradientView.swift */,
 			);
 			path = "Reusable Views";
 			sourceTree = "<group>";
 		};
-		3E228ED227ECEE5B00671FA1 /* Agent Cell */ = {
+		C202392D2A4CC56700FC72A0 /* Agent Cell */ = {
 			isa = PBXGroup;
 			children = (
-				C20239202A4BB2BF00FC72A0 /* AgentTableViewCell.swift */,
-				C202391C2A4BAECC00FC72A0 /* AgentTableViewCell.xib */,
+				C20239322A4CC5C300FC72A0 /* AgentsTableViewCell.swift */,
+				C289F18C2A560C68007BF6F2 /* AgentTableViewCell.xib */,
 			);
 			path = "Agent Cell";
 			sourceTree = "<group>";
 		};
-		C20239282A4C9C9F00FC72A0 /* About */ = {
+		C20239342A4CCC6500FC72A0 /* Details */ = {
 			isa = PBXGroup;
 			children = (
-				C21ED835281B359E00BCEC26 /* AboutViewController.swift */,
-				C2079F6B29197FF7006BA81D /* About.storyboard */,
+				C20239352A4CCC9400FC72A0 /* AgentDetails.storyboard */,
+				C2B491792A4DF8D200EB5EB4 /* AgentDetailsViewController.swift */,
+				C289F1842A55CCFE007BF6F2 /* AgentDetailsViewModel.swift */,
+				C289F1882A55D4C6007BF6F2 /* AgentAbilitiesTableViewCell.swift */,
 			);
-			path = About;
-			sourceTree = "<group>";
-		};
-		C20239292A4C9CAF00FC72A0 /* Acknowledgements */ = {
-			isa = PBXGroup;
-			children = (
-				C21ED833281B343700BCEC26 /* AcknowledgmentsViewController.swift */,
-				C2079F6929197FEA006BA81D /* Acknowledgments.storyboard */,
-			);
-			path = Acknowledgements;
-			sourceTree = "<group>";
-		};
-		C21ED838281B380000BCEC26 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				C20239282A4C9C9F00FC72A0 /* About */,
-				C20239292A4C9CAF00FC72A0 /* Acknowledgements */,
-			);
-			path = Settings;
+			path = Details;
 			sourceTree = "<group>";
 		};
 		C21ED839281B385300BCEC26 /* Lineup List */ = {
 			isa = PBXGroup;
 			children = (
-				C24FD73927EEA7C70032EB0D /* LineupListTableViewController.swift */,
-				C24FD74327EF804C0032EB0D /* LineupListTableViewCell.swift */,
+				C2220C692A68243E007D3195 /* LineupListTableViewController.swift */,
+				C2220C6B2A68245B007D3195 /* LineupListTableViewCell.swift */,
+				C25738ED2A5DFDAA0083320C /* UserImagesCollectionViewCell.swift */,
 				C24FD74F27F0D1A90032EB0D /* LineupListViewModel.swift */,
 				C2079F5729197E2A006BA81D /* LineupList.storyboard */,
 			);
@@ -354,16 +339,27 @@
 			path = newEntry;
 			sourceTree = "<group>";
 		};
+		C26156E52B4B6D4C00643A51 /* Leaderboard */ = {
+			isa = PBXGroup;
+			children = (
+				C2A6306A2B50E4FE005FCF67 /* LeaderboardViewController.swift */,
+				C2A6306C2B50E58A005FCF67 /* LeaderboardTableViewCell.swift */,
+				C2A6306E2B50FB06005FCF67 /* LeaderboardViewModel.swift */,
+				C2A630702B50FB1B005FCF67 /* LeaderboardDataProvider.swift */,
+				C26156E62B4B6D8600643A51 /* Leaderboard.storyboard */,
+			);
+			path = Leaderboard;
+			sourceTree = "<group>";
+		};
 		C29AE66927E10262005CAD4E /* Content */ = {
 			isa = PBXGroup;
 			children = (
 				C29AE66D27E1047E005CAD4E /* ContentViewController.swift */,
+				C2220C702A6B1B6B007D3195 /* ContentCollectionViewCell.swift */,
 				C2079F5F29197F47006BA81D /* Contents.storyboard */,
-				C21ED838281B380000BCEC26 /* Settings */,
+				C29AE69827E986C4005CAD4E /* Agents */,
 				C29AE66A27E10269005CAD4E /* Maps */,
 				C29AE67127E11B11005CAD4E /* Weapons */,
-				C29AE69827E986C4005CAD4E /* Agents */,
-				C29AE6A227E9FFE6005CAD4E /* GameMode */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -371,11 +367,8 @@
 		C29AE66A27E10269005CAD4E /* Maps */ = {
 			isa = PBXGroup;
 			children = (
-				C29AE67627E11BAC005CAD4E /* MapsViewController.swift */,
-				C29AE66F27E109AB005CAD4E /* MapsTableViewCell.swift */,
-				C29AE68327E24586005CAD4E /* MapsViewModel.swift */,
-				C29AE69027E3A050005CAD4E /* MapsDataProvider.swift */,
-				C2079F6729197FCD006BA81D /* MapContent.storyboard */,
+				C2FA76952A5886FF00F41912 /* MapList */,
+				C2FA76962A58871000F41912 /* MapDetails */,
 			);
 			path = Maps;
 			sourceTree = "<group>";
@@ -397,6 +390,7 @@
 			children = (
 				C24FD73827EEA79B0032EB0D /* newEntry */,
 				C29AE66927E10262005CAD4E /* Content */,
+				C26156E52B4B6D4C00643A51 /* Leaderboard */,
 			);
 			path = "Main App";
 			sourceTree = "<group>";
@@ -415,24 +409,10 @@
 		C29AE69827E986C4005CAD4E /* Agents */ = {
 			isa = PBXGroup;
 			children = (
-				C29AE69927E98717005CAD4E /* AgentsViewController.swift */,
-				C29AE69D27E98A4B005CAD4E /* AgentViewModel.swift */,
-				C29AE69F27E98AB7005CAD4E /* AgentDataProvider.swift */,
-				C2079F6129197F91006BA81D /* AgentContent.storyboard */,
+				C2B491782A4DF87C00EB5EB4 /* AgentList */,
+				C20239342A4CCC6500FC72A0 /* Details */,
 			);
 			path = Agents;
-			sourceTree = "<group>";
-		};
-		C29AE6A227E9FFE6005CAD4E /* GameMode */ = {
-			isa = PBXGroup;
-			children = (
-				C29AE6A327EA003B005CAD4E /* GameModeViewController.swift */,
-				C29AE6A527EA005F005CAD4E /* GameModeTableViewCell.swift */,
-				C29AE6A727EA0070005CAD4E /* GameModeViewModel.swift */,
-				C29AE6A927EA0080005CAD4E /* GameModeDataProvider.swift */,
-				C2079F6529197FBA006BA81D /* GameModeContents.storyboard */,
-			);
-			path = GameMode;
 			sourceTree = "<group>";
 		};
 		C29AE6B527EA3AE4005CAD4E /* AgentList */ = {
@@ -463,7 +443,7 @@
 				C29AE6C727EAA97A005CAD4E /* LineUpViewController.swift */,
 				C25356D72923FACF00D68A79 /* LineupCollectionViewCell.swift */,
 				C29AE6C927EAAAC8005CAD4E /* LineUpViewModel.swift */,
-				C2079F5D29197ED0006BA81D /* LineupDetail.storyboard */,
+				C26156EA2B4B828F00643A51 /* LineupDetail.storyboard */,
 			);
 			path = "Lineup Build";
 			sourceTree = "<group>";
@@ -524,9 +504,37 @@
 				C2A15F9D27DD1CE700FB6952 /* Maps.swift */,
 				C2A15F9F27DD1D7600FB6952 /* Skins.swift */,
 				C2A15FA127DD1DF200FB6952 /* Weapons.swift */,
-				C2A15FA327DD1E8400FB6952 /* GameMode.swift */,
+				C26156E32B4B6C5300643A51 /* Leaderboard.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C2B491782A4DF87C00EB5EB4 /* AgentList */ = {
+			isa = PBXGroup;
+			children = (
+				C29AE69927E98717005CAD4E /* AgentsViewController.swift */,
+				C2079F6129197F91006BA81D /* AgentContent.storyboard */,
+			);
+			path = AgentList;
+			sourceTree = "<group>";
+		};
+		C2FA76952A5886FF00F41912 /* MapList */ = {
+			isa = PBXGroup;
+			children = (
+				C29AE67627E11BAC005CAD4E /* MapsViewController.swift */,
+				C29AE68327E24586005CAD4E /* MapsViewModel.swift */,
+				C29AE69027E3A050005CAD4E /* MapsDataProvider.swift */,
+				C2079F6729197FCD006BA81D /* MapContent.storyboard */,
+			);
+			path = MapList;
+			sourceTree = "<group>";
+		};
+		C2FA76962A58871000F41912 /* MapDetails */ = {
+			isa = PBXGroup;
+			children = (
+				C2FA76972A58872500F41912 /* MapDetails.storyboard */,
+			);
+			path = MapDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -591,23 +599,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C26156E72B4B6D8600643A51 /* Leaderboard.storyboard in Resources */,
 				3E0CAD1427ED1E3A000AF833 /* Valorant Font.ttf in Resources */,
-				C202391D2A4BAECD00FC72A0 /* AgentTableViewCell.xib in Resources */,
 				C2079F5C29197EBA006BA81D /* MapsList.storyboard in Resources */,
-				C2079F5E29197ED0006BA81D /* LineupDetail.storyboard in Resources */,
 				C2A15F8D27D940F400FB6952 /* LaunchScreen.storyboard in Resources */,
 				C2079F6229197F91006BA81D /* AgentContent.storyboard in Resources */,
+				C289F18D2A560C68007BF6F2 /* AgentTableViewCell.xib in Resources */,
 				C2079F6829197FCD006BA81D /* MapContent.storyboard in Resources */,
+				C26156EB2B4B829000643A51 /* LineupDetail.storyboard in Resources */,
 				C2A15F8A27D940F400FB6952 /* Assets.xcassets in Resources */,
 				C23542E7282229C400FE6E59 /* 1024.png in Resources */,
 				C2A15F9927D96EEE00FB6952 /* Main.storyboard in Resources */,
 				C2079F5829197E2A006BA81D /* LineupList.storyboard in Resources */,
 				C2079F6029197F47006BA81D /* Contents.storyboard in Resources */,
 				C2079F6429197FA5006BA81D /* WeaponContent.storyboard in Resources */,
-				C2079F6629197FBA006BA81D /* GameModeContents.storyboard in Resources */,
-				C2079F6C29197FF7006BA81D /* About.storyboard in Resources */,
 				C2079F5A29197E95006BA81D /* AgentList.storyboard in Resources */,
-				C2079F6A29197FEA006BA81D /* Acknowledgments.storyboard in Resources */,
+				C2FA76982A58872500F41912 /* MapDetails.storyboard in Resources */,
+				C20239362A4CCC9400FC72A0 /* AgentDetails.storyboard in Resources */,
 				3E0CAD1127ED1D00000AF833 /* MapTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -620,30 +628,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				C29AE6C427EAA053005CAD4E /* MapDataProvider.swift in Sources */,
+				C2B4917A2A4DF8D200EB5EB4 /* AgentDetailsViewController.swift in Sources */,
 				C29AE69327E3BB32005CAD4E /* MapImageView.swift in Sources */,
 				C23543122822336200FE6E59 /* IQKeyboardReturnKeyHandler.swift in Sources */,
-				C29AE6A827EA0070005CAD4E /* GameModeViewModel.swift in Sources */,
 				C23543162822336200FE6E59 /* IQKeyboardManager+Toolbar.swift in Sources */,
 				C24FD75027F0D1A90032EB0D /* LineupListViewModel.swift in Sources */,
-				C2A15FA427DD1E8400FB6952 /* GameMode.swift in Sources */,
 				3E0CAD1627ED1FD3000AF833 /* GradientView.swift in Sources */,
 				C23543142822336200FE6E59 /* IQKeyboardManager+Debug.swift in Sources */,
 				3E0CAD1027ED1D00000AF833 /* MapTableViewCell.swift in Sources */,
 				C24FD75227F13DBB0032EB0D /* CoreDataStack.swift in Sources */,
-				C21ED836281B359E00BCEC26 /* AboutViewController.swift in Sources */,
+				C2A630712B50FB1B005FCF67 /* LeaderboardDataProvider.swift in Sources */,
+				C2220C6C2A68245B007D3195 /* LineupListTableViewCell.swift in Sources */,
 				C23543062822336200FE6E59 /* IQTextView.swift in Sources */,
 				C2A15F9C27DD1BB100FB6952 /* Agent.swift in Sources */,
 				C23543172822336200FE6E59 /* IQUIScrollView+Additions.swift in Sources */,
 				C29AE67727E11BAC005CAD4E /* MapsViewController.swift in Sources */,
-				C29AE6A427EA003B005CAD4E /* GameModeViewController.swift in Sources */,
 				C235430D2822336200FE6E59 /* IQInvocation.swift in Sources */,
 				C29AE6C227EAA029005CAD4E /* MapViewModel.swift in Sources */,
-				C29AE67027E109AB005CAD4E /* MapsTableViewCell.swift in Sources */,
 				C23543072822336200FE6E59 /* IQKeyboardManager+Internal.swift in Sources */,
-				C20239212A4BB2BF00FC72A0 /* AgentTableViewCell.swift in Sources */,
 				C235430C2822336200FE6E59 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
 				C29AE69127E3A050005CAD4E /* MapsDataProvider.swift in Sources */,
-				C29AE69E27E98A4B005CAD4E /* AgentViewModel.swift in Sources */,
+				C2220C712A6B1B6B007D3195 /* ContentCollectionViewCell.swift in Sources */,
 				C235431B2822336200FE6E59 /* IQNSArray+Sort.swift in Sources */,
 				C29AE68727E245BF005CAD4E /* Network Error.swift in Sources */,
 				C29AE69A27E98717005CAD4E /* AgentsViewController.swift in Sources */,
@@ -655,42 +660,45 @@
 				C235430F2822336200FE6E59 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
 				C29AE68427E24586005CAD4E /* MapsViewModel.swift in Sources */,
 				C29AE6C027EA9B1D005CAD4E /* AgentListDataProvider.swift in Sources */,
+				C25738EE2A5DFDAA0083320C /* UserImagesCollectionViewCell.swift in Sources */,
 				C235430E2822336200FE6E59 /* IQKeyboardManager+UIKeyboardNotification.swift in Sources */,
 				C24FD75427F13F5D0032EB0D /* Lineup+Convienence.swift in Sources */,
 				C2A15F9E27DD1CE700FB6952 /* Maps.swift in Sources */,
 				C23543112822336200FE6E59 /* IQKeyboardManager+Position.swift in Sources */,
 				C29AE6BE27EA9ADC005CAD4E /* AgentListViewModel.swift in Sources */,
 				C29AE68927E245F3005CAD4E /* APIDataProvidable.swift in Sources */,
+				C20239332A4CC5C300FC72A0 /* AgentsTableViewCell.swift in Sources */,
 				C29AE69527E3D1DC005CAD4E /* WeaponsViewModel.swift in Sources */,
+				C2A6306D2B50E58A005FCF67 /* LeaderboardTableViewCell.swift in Sources */,
 				C24FD71327EEA1150032EB0D /* OneTrick.xcdatamodeld in Sources */,
-				C24FD73A27EEA7C70032EB0D /* LineupListTableViewController.swift in Sources */,
 				C23543152822336200FE6E59 /* IQKeyboardManager+OrientationNotification.swift in Sources */,
 				C235431A2822336200FE6E59 /* IQUIView+Hierarchy.swift in Sources */,
 				C23543132822336200FE6E59 /* IQKeyboardManager.swift in Sources */,
+				C26156E42B4B6C5300643A51 /* Leaderboard.swift in Sources */,
 				C24FD75827F146820032EB0D /* Lineup+CoreDataProperties.swift in Sources */,
 				C29AE68B27E24835005CAD4E /* ContentEndpoint.swift in Sources */,
 				C29AE66E27E1047E005CAD4E /* ContentViewController.swift in Sources */,
 				C2A15FA227DD1DF200FB6952 /* Weapons.swift in Sources */,
 				C29AE6C827EAA97A005CAD4E /* LineUpViewController.swift in Sources */,
 				C235431C2822336200FE6E59 /* IQKeyboardManager+UITextFieldViewNotification.swift in Sources */,
+				C289F1852A55CCFE007BF6F2 /* AgentDetailsViewModel.swift in Sources */,
 				C23543092822336200FE6E59 /* IQTitleBarButtonItem.swift in Sources */,
+				C2220C6A2A68243E007D3195 /* LineupListTableViewController.swift in Sources */,
 				C29AE69727E3D2F7005CAD4E /* WeaponDataProvider.swift in Sources */,
 				C235430A2822336200FE6E59 /* IQBarButtonItem.swift in Sources */,
+				C2A6306F2B50FB06005FCF67 /* LeaderboardViewModel.swift in Sources */,
 				C2A15FA027DD1D7600FB6952 /* Skins.swift in Sources */,
 				C25356D82923FACF00D68A79 /* LineupCollectionViewCell.swift in Sources */,
 				C23543082822336200FE6E59 /* IQPreviousNextView.swift in Sources */,
 				C2A15F8327D940F300FB6952 /* SceneDelegate.swift in Sources */,
-				C24FD74427EF804C0032EB0D /* LineupListTableViewCell.swift in Sources */,
 				C29AE6BC27EA3C64005CAD4E /* MapTableViewController.swift in Sources */,
-				C29AE6A627EA005F005CAD4E /* GameModeTableViewCell.swift in Sources */,
 				C29AE6CA27EAAAC8005CAD4E /* LineUpViewModel.swift in Sources */,
 				C23543192822336200FE6E59 /* IQUITextFieldView+Additions.swift in Sources */,
-				C29AE6AA27EA0080005CAD4E /* GameModeDataProvider.swift in Sources */,
-				C21ED834281B343700BCEC26 /* AcknowledgmentsViewController.swift in Sources */,
+				C289F1892A55D4C6007BF6F2 /* AgentAbilitiesTableViewCell.swift in Sources */,
 				C23543102822336200FE6E59 /* IQKeyboardManagerConstants.swift in Sources */,
 				C29AE6B727EA3B1A005CAD4E /* AgentListViewController.swift in Sources */,
+				C2A6306B2B50E4FE005FCF67 /* LeaderboardViewController.swift in Sources */,
 				C24FD75727F146820032EB0D /* Lineup+CoreDataClass.swift in Sources */,
-				C29AE6A027E98AB7005CAD4E /* AgentDataProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

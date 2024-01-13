@@ -9,15 +9,15 @@ import UIKit
 import CoreData
 
 
-class LineupListTableViewController: UITableViewController {
+class LineupListTableViewController: UITableViewController, NSFetchedResultsControllerDelegate {
 
-    var viewModel: LineupListViewMdoel!
+    var viewModel: LineupListViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Lineups"
         tableView.frame = view.bounds
-        viewModel = LineupListViewMdoel()
+        viewModel = LineupListViewModel()
         viewModel.fetchedResultsController.delegate = self
     }
     
@@ -39,10 +39,9 @@ class LineupListTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "lineupCell", for: indexPath) as? LineupListTableViewCell else { return UITableViewCell()}
         let lineup = viewModel.fetchedResultsController.object(at: indexPath)
-        cell.updateViews(lineup: lineup)
+        cell.configure(with: lineup)
         cell.selectionStyle = .none
         cell.setNeedsUpdateConstraints() 
         return cell
@@ -66,19 +65,7 @@ class LineupListTableViewController: UITableViewController {
             destination.viewModel = viewModel
         }
     }
-}
-
-extension LineupListTableViewController: LineupListViewModelDelegate {
-
-    func LineupsHasData() {
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-        }
-    }
-}
-
-extension LineupListTableViewController: NSFetchedResultsControllerDelegate {
-    // Conform to the NSFetchedResultsControllerDelegate
+    
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         tableView.beginUpdates()
     }
@@ -87,7 +74,6 @@ extension LineupListTableViewController: NSFetchedResultsControllerDelegate {
         tableView.endUpdates()
     }
 
-    //sets behavior for cells
     func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
 
         switch type{
@@ -109,7 +95,6 @@ extension LineupListTableViewController: NSFetchedResultsControllerDelegate {
         }
     }
 
-    //additional behavior for cells
     func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange sectionInfo: NSFetchedResultsSectionInfo, atSectionIndex sectionIndex: Int, for type: NSFetchedResultsChangeType) {
 
         switch type {

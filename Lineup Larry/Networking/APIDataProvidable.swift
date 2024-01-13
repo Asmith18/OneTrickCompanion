@@ -23,6 +23,6 @@ extension APIDataProvidable {
                 return
             }
             completion(.success(data))
-        }.resume()
+        }.resume()  
     }
 }

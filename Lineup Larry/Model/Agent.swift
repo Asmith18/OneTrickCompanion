@@ -32,7 +32,7 @@ class AgentData: Decodable {
     
     let displayName: String?
     let displayIcon: String?
-    let displayIconSmall: String
+    let displayIconSmall: String?
     let role: AgentRole?
     let abilities: [AgentAbilities]
     let description: String?
@@ -48,8 +48,8 @@ class AgentRole: Decodable {
         self.description = description
     }
     
-    let displayName: String
-    let displayIcon: String
+    let displayName: String?
+    let displayIcon: String?
     let description: String?
 }
 

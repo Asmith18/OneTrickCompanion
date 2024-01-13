@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="157-fD-At4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="157-fD-At4">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -41,7 +41,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="5BG-4P-eZO" kind="relationship" relationship="viewControllers" id="feg-xT-rdm"/>
-                        <segue destination="nQP-dT-zU7" kind="relationship" relationship="viewControllers" id="QR7-Xa-kx1"/>
+                        <segue destination="SNy-x6-igR" kind="relationship" relationship="viewControllers" id="6Tc-rk-zoE"/>
+                        <segue destination="nQP-dT-zU7" kind="relationship" relationship="viewControllers" id="9xd-Fz-wdx"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="28O-Ta-40R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -75,31 +76,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="luU-tm-LXE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-193" y="349"/>
-        </scene>
-        <!--AgentList-->
-        <scene sceneID="GwY-SY-pie">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="AgentList" storyboardName="AgentList" referencedIdentifier="AgentList" id="n1c-4Y-c7Q" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qIq-fs-glO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-194" y="395"/>
-        </scene>
-        <!--MapsList-->
-        <scene sceneID="NYt-3X-QiR">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="MapsList" storyboardName="MapsList" referencedIdentifier="MapsList" id="uAH-eD-aGl" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4rt-mk-AIg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-196" y="442"/>
-        </scene>
-        <!--LineupDetail-->
-        <scene sceneID="e3Q-Cb-z1a">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="LineupDetail" storyboardName="LineupDetail" referencedIdentifier="LineupDetail" id="9mb-tF-p81" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sN2-1r-khb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-196" y="489"/>
+            <point key="canvasLocation" x="-194" y="345"/>
         </scene>
         <!--Contents-->
         <scene sceneID="yvN-Xn-4uk">
@@ -111,58 +88,38 @@
             </objects>
             <point key="canvasLocation" x="1378" y="-800"/>
         </scene>
-        <!--AgentContent-->
-        <scene sceneID="bAQ-Ac-fXK">
+        <!--Leaderboards-->
+        <scene sceneID="Z2i-Gp-pXU">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="AgentContent" storyboardName="AgentContent" referencedIdentifier="AgentContent" id="wNI-Wf-xsy" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="npM-qE-vwd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController id="SNy-x6-igR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Leaderboards" image="list.number" catalog="system" id="Iao-n0-UU3"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ecF-jA-QD9">
+                        <rect key="frame" x="0.0" y="47" width="428" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="6NU-NC-jEk" kind="relationship" relationship="rootViewController" id="ffy-uh-IjD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1wG-SJ-wdt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1620" y="-789"/>
+            <point key="canvasLocation" x="743" y="-75"/>
         </scene>
-        <!--WeaponContent-->
-        <scene sceneID="PgO-cG-Q0P">
+        <!--Leaderboard-->
+        <scene sceneID="DWR-U6-scM">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="WeaponContent" storyboardName="WeaponContent" referencedIdentifier="WeaponContent" id="nkh-GV-g4F" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="F7O-DF-Kd6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardIdentifier="Leaderboard" storyboardName="Leaderboard" referencedIdentifier="Leaderboard" id="6NU-NC-jEk" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="iEn-y9-u8g"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XWC-ya-Ws9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1618" y="-757"/>
-        </scene>
-        <!--GameModeContents-->
-        <scene sceneID="Ubi-17-W4b">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="GameModeContents" storyboardName="GameModeContents" referencedIdentifier="GameModeContents" id="jLT-vJ-u5b" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Jld-Jp-nEs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1618" y="-720"/>
-        </scene>
-        <!--MapContent-->
-        <scene sceneID="Mxq-Tj-BUq">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="MapContent" storyboardName="MapContent" referencedIdentifier="MapContent" id="RCZ-hc-Hod" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Fic-Kh-c1x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1620" y="-881"/>
-        </scene>
-        <!--Acknowledgments-->
-        <scene sceneID="oG6-Pn-ZMG">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Acknowledgments" storyboardName="Acknowledgments" referencedIdentifier="Acknowledgments" id="aUr-5i-QMQ" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SNF-RX-IkX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1619" y="-823"/>
-        </scene>
-        <!--About-->
-        <scene sceneID="bJG-c8-Qdz">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="About" storyboardName="About" referencedIdentifier="About" id="Yax-Ca-OC1" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Kky-MT-8cB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1620" y="-853"/>
+            <point key="canvasLocation" x="1417" y="-75"/>
         </scene>
     </scenes>
     <color key="tintColor" systemColor="systemRedColor"/>
     <resources>
         <image name="bookmark" catalog="system" width="110" height="128"/>
+        <image name="list.number" catalog="system" width="128" height="97"/>
         <image name="plus.circle" catalog="system" width="128" height="123"/>
         <image name="plus.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemRedColor">
