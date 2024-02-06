@@ -389,8 +389,8 @@
 			isa = PBXGroup;
 			children = (
 				C24FD73827EEA79B0032EB0D /* newEntry */,
-				C29AE66927E10262005CAD4E /* Content */,
 				C26156E52B4B6D4C00643A51 /* Leaderboard */,
+				C29AE66927E10262005CAD4E /* Content */,
 			);
 			path = "Main App";
 			sourceTree = "<group>";

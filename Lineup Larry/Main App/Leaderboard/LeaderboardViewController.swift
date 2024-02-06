@@ -47,7 +47,7 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "Leaderboard", for: indexPath) as? LeaderboardTableViewCell else { return UITableViewCell() }
         let fetchedPlayer = viewModel.players[indexPath.row]
-        cell.updateViews(player: fetchedPlayer)
+        cell.updateViews(for: fetchedPlayer)
         return cell
     }
     
