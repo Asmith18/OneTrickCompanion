@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -20,9 +20,17 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="793"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.1960422695" green="0.1960422695" blue="0.1960422695" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" id="nIH-9N-g2M">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="Y6W-OH-hqX" id="oBl-NR-B0C"/>
+                                    </connections>
+                                </searchBar>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Leaderboard" rowHeight="75" id="EBQ-P2-75s" customClass="LeaderboardTableViewCell" customModule="Lineup_Larry" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="75"/>
+                                        <rect key="frame" x="0.0" y="94" width="393" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EBQ-P2-75s" id="4ql-Ay-U9a">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="75"/>
@@ -81,7 +89,7 @@
                                                                 <constraint firstAttribute="height" constant="40" id="7L0-g7-7u9"/>
                                                                 <constraint firstAttribute="width" constant="76" id="Xng-UC-QKM"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="10"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="8"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -116,17 +124,10 @@
                         <color key="backgroundColor" red="0.1960422695" green="0.1960422695" blue="0.1960422695" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.1960422695" green="0.1960422695" blue="0.1960422695" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Leaderboards" largeTitleDisplayMode="always" id="qNi-ee-ia5">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="search" id="lAL-3I-Mhn">
-                            <color key="tintColor" red="1" green="0.22987544539999999" blue="0.1861986518" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <action selector="searchButtonTapped:" destination="Y6W-OH-hqX" id="WXV-Lp-Etv"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Leaderboards" largeTitleDisplayMode="always" id="qNi-ee-ia5"/>
                     <connections>
                         <outlet property="LeaderboardTableView" destination="iOb-36-d5W" id="KeO-kw-0hL"/>
-                        <outlet property="searchButton" destination="lAL-3I-Mhn" id="g8V-kX-Juj"/>
+                        <outlet property="searchBar" destination="nIH-9N-g2M" id="IRD-zQ-coU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -141,7 +142,7 @@
                     <nil key="highlightedColor"/>
                 </label>
             </objects>
-            <point key="canvasLocation" x="1979.3893129770991" y="-34.507042253521128"/>
+            <point key="canvasLocation" x="2906.1068702290077" y="-34.507042253521128"/>
         </scene>
     </scenes>
 </document>

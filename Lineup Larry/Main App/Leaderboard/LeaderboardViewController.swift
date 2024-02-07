@@ -7,17 +7,19 @@
 
 import UIKit
 
-class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     
     var viewModel: LeaderboardViewModel!
+    var filteredPlayers: [Player] = []
 
     @IBOutlet weak var LeaderboardTableView: UITableView!
-    @IBOutlet weak var searchButton: UIBarButtonItem!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel = LeaderboardViewModel(delegate: self)
         setupTableView()
+        viewModel = LeaderboardViewModel(delegate: self)
+        searchBar.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -33,11 +35,15 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
         self.LeaderboardTableView.dataSource = self
     }
     
-    @IBAction func searchButtonTapped(_ sender: Any) {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        filteredPlayers = searchText.isEmpty ? viewModel.players : viewModel.players.filter({ player in
+            player.gameName?.range(of: searchText, options: .caseInsensitive) != nil
+        })
+        LeaderboardTableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.players.count
+        return filteredPlayers.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -46,8 +52,9 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "Leaderboard", for: indexPath) as? LeaderboardTableViewCell else { return UITableViewCell() }
-        let fetchedPlayer = viewModel.players[indexPath.row]
+        let fetchedPlayer = filteredPlayers[indexPath.row]
         cell.updateViews(for: fetchedPlayer)
+        cell.selectionStyle = .none
         return cell
     }
     
@@ -60,6 +67,7 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
 
 extension LeaderboardViewController: LeaderboardViewModelDelegate {
     func leaderboardHasData() {
+        self.filteredPlayers = self.viewModel.players
         DispatchQueue.main.async {
             self.LeaderboardTableView.reloadData()
         }
