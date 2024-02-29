@@ -11,16 +11,19 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
     
     var viewModel: LeaderboardViewModel!
     var filteredPlayers: [Player] = []
-
+    
     @IBOutlet weak var LeaderboardTableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var searchButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
         viewModel = LeaderboardViewModel(delegate: self)
         searchBar.delegate = self
+        setupSearchBar()
     }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.prefersLargeTitles = true
@@ -35,11 +38,43 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
         self.LeaderboardTableView.dataSource = self
     }
     
+    func setupSearchBar() {
+        if let textField = searchBar.value(forKey: "searchField") as? UITextField {
+            // Set placeholder text color
+            let attributes: [NSAttributedString.Key: UIColor] = [.foregroundColor: UIColor.white]
+            textField.attributedPlaceholder = NSAttributedString(string: "Search Player...", attributes: attributes)
+            
+            // Set text color
+            textField.textColor = UIColor.white
+            
+            // Set cursor color
+            textField.tintColor = UIColor.white
+            
+            // Change the magnifying glass icon color
+            if let leftView = textField.leftView as? UIImageView {
+                leftView.image = leftView.image?.withRenderingMode(.alwaysTemplate)
+                leftView.tintColor = UIColor.white
+            }
+            
+            if let clearButton = textField.value(forKey: "clearButton") as? UIButton {
+                clearButton.setImage(clearButton.imageView?.image?.withRenderingMode(.alwaysTemplate), for: .normal)
+                clearButton.tintColor = UIColor.white
+            }
+        }
+    }
+    
+    @IBAction func searchButtontapped(_ sender: Any) {
+        LeaderboardTableView.tableHeaderView = searchBar
+    }
+    
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         filteredPlayers = searchText.isEmpty ? viewModel.players : viewModel.players.filter({ player in
             player.gameName?.range(of: searchText, options: .caseInsensitive) != nil
         })
         LeaderboardTableView.reloadData()
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -61,8 +96,8 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     }
-
-
+    
+    
 }
 
 extension LeaderboardViewController: LeaderboardViewModelDelegate {
