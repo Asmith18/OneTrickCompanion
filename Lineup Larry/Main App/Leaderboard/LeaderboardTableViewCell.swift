@@ -9,8 +9,6 @@ import UIKit
 
 class LeaderboardTableViewCell: UITableViewCell {
     
-    var player: Player?
-    
     @IBOutlet weak var positionLabel: UILabel!
     @IBOutlet weak var rankImageView: UIImageView!
     @IBOutlet weak var PlayerNameText: UILabel!

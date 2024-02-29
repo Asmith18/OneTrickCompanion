@@ -6,15 +6,16 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     
     var viewModel: LeaderboardViewModel!
     var filteredPlayers: [Player] = []
+    var isSearchBarVisible = false
     
     @IBOutlet weak var LeaderboardTableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
-    @IBOutlet weak var searchButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +23,8 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
         viewModel = LeaderboardViewModel(delegate: self)
         searchBar.delegate = self
         setupSearchBar()
+        IQKeyboardManager.shared.enable = true
     }
-    
     
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.prefersLargeTitles = true
@@ -40,17 +41,13 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
     
     func setupSearchBar() {
         if let textField = searchBar.value(forKey: "searchField") as? UITextField {
-            // Set placeholder text color
             let attributes: [NSAttributedString.Key: UIColor] = [.foregroundColor: UIColor.white]
             textField.attributedPlaceholder = NSAttributedString(string: "Search Player...", attributes: attributes)
             
-            // Set text color
             textField.textColor = UIColor.white
             
-            // Set cursor color
             textField.tintColor = UIColor.white
             
-            // Change the magnifying glass icon color
             if let leftView = textField.leftView as? UIImageView {
                 leftView.image = leftView.image?.withRenderingMode(.alwaysTemplate)
                 leftView.tintColor = UIColor.white
@@ -64,7 +61,16 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     @IBAction func searchButtontapped(_ sender: Any) {
-        LeaderboardTableView.tableHeaderView = searchBar
+        isSearchBarVisible.toggle()
+        searchBar.isHidden = !isSearchBarVisible
+        
+        if isSearchBarVisible {
+            searchBar.becomeFirstResponder()
+        } else {
+            searchBar.resignFirstResponder()
+            searchBar.text = ""
+            searchBar(searchBar, textDidChange: "")
+        }
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
@@ -75,6 +81,7 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -92,12 +99,6 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
         cell.selectionStyle = .none
         return cell
     }
-    
-    // MARK: - Navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    }
-    
-    
 }
 
 extension LeaderboardViewController: LeaderboardViewModelDelegate {
