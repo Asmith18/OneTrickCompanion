@@ -37,6 +37,7 @@
 		C26156EB2B4B829000643A51 /* LineupDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C26156EA2B4B828F00643A51 /* LineupDetail.storyboard */; };
 		C27E13902B9118C400BF7F6C /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C27E138F2B9118C400BF7F6C /* IQKeyboardManagerSwift */; };
 		C27E13922B91199900BF7F6C /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C27E13912B91199900BF7F6C /* IQKeyboardManagerSwift */; };
+		C27E13942B913B5900BF7F6C /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C27E13932B913B5900BF7F6C /* IQKeyboardManagerSwift */; };
 		C289F1852A55CCFE007BF6F2 /* AgentDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C289F1842A55CCFE007BF6F2 /* AgentDetailsViewModel.swift */; };
 		C289F1892A55D4C6007BF6F2 /* AgentAbilitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C289F1882A55D4C6007BF6F2 /* AgentAbilitiesTableViewCell.swift */; };
 		C289F18D2A560C68007BF6F2 /* AgentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C289F18C2A560C68007BF6F2 /* AgentTableViewCell.xib */; };
@@ -157,6 +158,7 @@
 			files = (
 				C27E13902B9118C400BF7F6C /* IQKeyboardManagerSwift in Frameworks */,
 				C27E13922B91199900BF7F6C /* IQKeyboardManagerSwift in Frameworks */,
+				C27E13942B913B5900BF7F6C /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +451,7 @@
 			packageProductDependencies = (
 				C27E138F2B9118C400BF7F6C /* IQKeyboardManagerSwift */,
 				C27E13912B91199900BF7F6C /* IQKeyboardManagerSwift */,
+				C27E13932B913B5900BF7F6C /* IQKeyboardManagerSwift */,
 			);
 			productName = "One Trick Companion";
 			productReference = C2A15F7D27D940F300FB6952 /* Lineup Larry.app */;
@@ -812,6 +815,10 @@
 		C27E13912B91199900BF7F6C /* IQKeyboardManagerSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C27E138E2B9118C400BF7F6C /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		C27E13932B913B5900BF7F6C /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
 			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
