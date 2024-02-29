@@ -60,19 +60,6 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
         }
     }
     
-    @IBAction func searchButtontapped(_ sender: Any) {
-        isSearchBarVisible.toggle()
-        searchBar.isHidden = !isSearchBarVisible
-        
-        if isSearchBarVisible {
-            searchBar.becomeFirstResponder()
-        } else {
-            searchBar.resignFirstResponder()
-            searchBar.text = ""
-            searchBar(searchBar, textDidChange: "")
-        }
-    }
-    
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         filteredPlayers = searchText.isEmpty ? viewModel.players : viewModel.players.filter({ player in
             player.gameName?.range(of: searchText, options: .caseInsensitive) != nil
