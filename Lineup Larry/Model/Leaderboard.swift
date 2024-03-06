@@ -7,6 +7,10 @@
 
 import Foundation
 
+struct Leaderboard: Decodable {
+    let players: [Player]
+}
+
 struct Player: Decodable {
     let playerCardID: String?
     let titleID: String?

@@ -14,7 +14,7 @@ protocol LeaderboardViewModelDelegate: AnyObject {
 
 class LeaderboardViewModel {
     
-    var players: [Player] = []
+    var player: [Player] = []
     var dataProvider = LeaderboardDataProvider()
     weak var delegate: LeaderboardViewModelDelegate?
     
@@ -27,7 +27,7 @@ class LeaderboardViewModel {
         dataProvider.fetch(from: .leaderboard) { [weak self] result in
             switch result {
             case .success(let fetchedPlayers):
-                self?.players = fetchedPlayers
+                self?.player = fetchedPlayers.players
                 self?.delegate?.leaderboardHasData()
             case .failure(let error):
                 print(error)

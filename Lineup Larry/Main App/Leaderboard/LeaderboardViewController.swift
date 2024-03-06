@@ -88,7 +88,7 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        filteredPlayers = searchText.isEmpty ? viewModel.players : viewModel.players.filter({ player in
+        filteredPlayers = searchText.isEmpty ? viewModel.player : viewModel.player.filter({ player in
             player.gameName?.range(of: searchText, options: .caseInsensitive) != nil
         })
         LeaderboardTableView.reloadData()
@@ -117,7 +117,7 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
 
 extension LeaderboardViewController: LeaderboardViewModelDelegate {
     func leaderboardHasData() {
-        self.filteredPlayers = self.viewModel.players
+        self.filteredPlayers = self.viewModel.player
         DispatchQueue.main.async {
             self.LeaderboardTableView.reloadData()
             self.loadingIndicator.isHidden = true
