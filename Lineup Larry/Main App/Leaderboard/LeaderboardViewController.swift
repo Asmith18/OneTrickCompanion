@@ -6,13 +6,11 @@
 //
 
 import UIKit
-import IQKeyboardManagerSwift
 
 class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     
     var viewModel: LeaderboardViewModel!
     var filteredPlayers: [Player] = []
-    var isSearchBarVisible = false
     
     @IBOutlet weak var LeaderboardTableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
@@ -23,7 +21,6 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
         viewModel = LeaderboardViewModel(delegate: self)
         searchBar.delegate = self
         setupSearchBar()
-        IQKeyboardManager.shared.enable = true
     }
     
     override func viewWillAppear(_ animated: Bool) {

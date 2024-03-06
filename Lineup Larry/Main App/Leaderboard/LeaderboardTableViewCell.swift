@@ -17,17 +17,13 @@ class LeaderboardTableViewCell: UITableViewCell {
     
     
     func updateViews(for player: Player) {
-        // Ensure all required properties are available
         guard let position = player.leaderboardRank,
               let gamesWon = player.numberOfWins,
               let rankRating = player.rankedRating else {
-            return // Exit if any of these properties are nil
+            return
         }
-
-        // Check if playerName exists and is not empty, otherwise use "Secret Agent"
         let playerName = player.gameName?.isEmpty ?? true ? "Secret Agent" : player.gameName!
-        
-        // Update UI elements directly with unwrapped values
+    
         PlayerNameText.text = "\(playerName)"
         positionLabel.text = "\(position)"
         gamesWonLabel.text = "\(gamesWon) Games Won"
@@ -36,7 +32,6 @@ class LeaderboardTableViewCell: UITableViewCell {
     }
     
     func updateRankRatingLogo(for player: Player) {
-        // Simplify rank image assignment using a switch statement
         let imageName: String
         switch player.competitiveTier {
         case 27:
@@ -48,7 +43,6 @@ class LeaderboardTableViewCell: UITableViewCell {
         default:
             imageName = "Immortal1"
         }
-        
         rankImageView.image = UIImage(named: imageName)
     }
 }
