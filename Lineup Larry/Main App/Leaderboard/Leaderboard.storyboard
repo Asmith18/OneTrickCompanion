@@ -133,6 +133,12 @@
                                     <constraint firstAttribute="height" constant="50" id="q4M-Ta-ylr"/>
                                 </constraints>
                             </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Data to Display" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXI-p8-jwZ">
+                                <rect key="frame" x="112.33333333333333" y="414" width="168.66666666666669" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" red="0.1960422695" green="0.1960422695" blue="0.1960422695" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -140,15 +146,18 @@
                         <constraints>
                             <constraint firstItem="dAo-tm-wyL" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="0ha-na-SfD"/>
                             <constraint firstItem="iOb-36-d5W" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="4qe-hj-Roq"/>
+                            <constraint firstItem="yXI-p8-jwZ" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="BDy-cT-C9s"/>
                             <constraint firstItem="iOb-36-d5W" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="BcB-Ir-N6j"/>
                             <constraint firstItem="dAo-tm-wyL" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="OA7-Hi-Y2A"/>
                             <constraint firstItem="iOb-36-d5W" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="RU5-R3-zgy"/>
+                            <constraint firstItem="yXI-p8-jwZ" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="XuJ-rC-1np"/>
                             <constraint firstAttribute="bottom" secondItem="iOb-36-d5W" secondAttribute="bottom" id="yLI-2h-7H7"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Leaderboards" largeTitleDisplayMode="always" id="qNi-ee-ia5"/>
                     <connections>
                         <outlet property="LeaderboardTableView" destination="iOb-36-d5W" id="KeO-kw-0hL"/>
+                        <outlet property="errorLabel" destination="yXI-p8-jwZ" id="4nc-Cf-dRB"/>
                         <outlet property="loadingIndicator" destination="dAo-tm-wyL" id="3Qn-Gs-eFC"/>
                         <outlet property="searchBar" destination="nIH-9N-g2M" id="IRD-zQ-coU"/>
                     </connections>

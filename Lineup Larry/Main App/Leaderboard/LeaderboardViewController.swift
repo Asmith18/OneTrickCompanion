@@ -15,6 +15,7 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
     @IBOutlet weak var LeaderboardTableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var errorLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +39,7 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
         self.LeaderboardTableView.dataSource = self
         loadingIndicator.color = .white
         loadingIndicator.startAnimating()
+        errorLabel.isHidden = true
     }
     
     func doneButton() {
@@ -127,7 +129,10 @@ extension LeaderboardViewController: LeaderboardViewModelDelegate {
             guard let self = self else { return }
             
             let alertController = UIAlertController(title: "Error", message: "\(error.localizedDescription)", preferredStyle: .alert)
-            alertController.addAction(UIAlertAction(title: "Close", style: .cancel))
+            alertController.addAction(UIAlertAction(title: "Close", style: .default, handler: { _ in
+                self.loadingIndicator.isHidden = true
+                self.errorLabel.isHidden = false
+            }))
             alertController.addAction(UIAlertAction(title: "Retry", style: .default, handler: { [weak self] _ in
                 self?.viewModel.fetch()
             }))
