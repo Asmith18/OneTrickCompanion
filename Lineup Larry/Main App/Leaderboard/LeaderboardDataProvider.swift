@@ -8,11 +8,11 @@
 import Foundation
 
 protocol LeaderboardDataProvidable {
-    func fetch(from endpoint: ContentEndpoint, completion: @escaping (Result<[Player], NetworkError>) -> Void)
+    func fetch(from endpoint: ContentEndpoint, completion: @escaping (Result<Leaderboard, NetworkError>) -> Void)
 }
     
 class LeaderboardDataProvider: APIDataProvidable, LeaderboardDataProvidable {
-    func fetch(from endpoint: ContentEndpoint, completion: @escaping (Result<[Player], NetworkError>) -> Void) {
+    func fetch(from endpoint: ContentEndpoint, completion: @escaping (Result<Leaderboard, NetworkError>) -> Void) {
         guard let url = endpoint.url else {
             completion(.failure(.badURL))
             return
@@ -22,9 +22,8 @@ class LeaderboardDataProvider: APIDataProvidable, LeaderboardDataProvidable {
             case .success(let player):
                 let decoder = JSONDecoder()
                 do {
-                    let player = try decoder.decode([Player?].self, from: player)
-                    let validPlayers = player.compactMap({ $0 })
-                    completion(.success(validPlayers))
+                    let player = try decoder.decode(Leaderboard.self, from: player)
+                    completion(.success(player))
                 } catch {
                     completion(.failure(.couldNotUnwrap))
                 }

@@ -12,7 +12,7 @@ extension URL {
     static let weaponBaseURL = URL(string: "https://valorant-api.com/v1/weapons")
     static let agentBaseURL = URL(string: "https://valorant-api.com/v1/agents?isPlayableCharacter=true")
     static let gameModeBaseURL = URL(string: "https://valorant-api.com/v1/gamemodes")
-    static let leaderboardBaseURl = URL(string: "https://api.henrikdev.xyz/valorant/v1/leaderboard/na")
+    static let leaderboardBaseURl = URL(string: "https://api.henrikdev.xyz/valorant/v2/leaderboard/na")
 }
 
 enum ContentEndpoint {

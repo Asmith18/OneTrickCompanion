@@ -7,6 +7,10 @@
 
 import Foundation
 
+struct Leaderboard: Decodable {
+    let players: [Player]
+}
+
 struct Player: Decodable {
     let playerCardID: String?
     let titleID: String?
@@ -15,8 +19,8 @@ struct Player: Decodable {
     let puuid: String?
     let gameName: String?
     let tagLine: String?
-    let leaderboardRank: Int
-    let rankedRating: Int
-    let numberOfWins: Int
-    let competitiveTier: Int
+    let leaderboardRank: Int?
+    let rankedRating: Int?
+    let numberOfWins: Int?
+    let competitiveTier: Int?
 }
