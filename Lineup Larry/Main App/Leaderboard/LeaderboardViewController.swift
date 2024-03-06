@@ -18,10 +18,11 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupTableView()
         viewModel = LeaderboardViewModel(delegate: self)
         searchBar.delegate = self
+        setupTableView()
         setupSearchBar()
+        doneButton()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -37,6 +38,30 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
         self.LeaderboardTableView.dataSource = self
         loadingIndicator.color = .white
         loadingIndicator.startAnimating()
+    }
+    
+    func doneButton() {
+        let toolbar = UIToolbar()
+
+        // Custom view/button configuration
+        let customButton = UIButton(type: .system)
+        customButton.setTitle("Done", for: .normal)
+        customButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20) // Make font bold and adjust size
+        customButton.addTarget(self, action: #selector(self.doneClicked), for: .touchUpInside)
+        customButton.sizeToFit()
+
+        let doneButton = UIBarButtonItem(customView: customButton)
+
+        // Create a flexible space item to push the button to the left
+        let flexibleSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+
+        toolbar.setItems([doneButton, flexibleSpace], animated: false)
+        toolbar.sizeToFit()
+        searchBar.inputAccessoryView = toolbar
+    }
+    
+    @objc func doneClicked() {
+        view.endEditing(true)
     }
     
     func setupSearchBar() {
