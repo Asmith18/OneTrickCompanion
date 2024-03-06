@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -124,13 +125,23 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="dAo-tm-wyL">
+                                <rect key="frame" x="171.66666666666666" y="401" width="50" height="50"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="fB5-1V-33U"/>
+                                    <constraint firstAttribute="height" constant="50" id="q4M-Ta-ylr"/>
+                                </constraints>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" red="0.1960422695" green="0.1960422695" blue="0.1960422695" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.1960422695" green="0.1960422695" blue="0.1960422695" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="dAo-tm-wyL" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="0ha-na-SfD"/>
                             <constraint firstItem="iOb-36-d5W" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="4qe-hj-Roq"/>
                             <constraint firstItem="iOb-36-d5W" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="BcB-Ir-N6j"/>
+                            <constraint firstItem="dAo-tm-wyL" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="OA7-Hi-Y2A"/>
                             <constraint firstItem="iOb-36-d5W" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="RU5-R3-zgy"/>
                             <constraint firstAttribute="bottom" secondItem="iOb-36-d5W" secondAttribute="bottom" id="yLI-2h-7H7"/>
                         </constraints>
@@ -138,6 +149,7 @@
                     <navigationItem key="navigationItem" title="Leaderboards" largeTitleDisplayMode="always" id="qNi-ee-ia5"/>
                     <connections>
                         <outlet property="LeaderboardTableView" destination="iOb-36-d5W" id="KeO-kw-0hL"/>
+                        <outlet property="loadingIndicator" destination="dAo-tm-wyL" id="3Qn-Gs-eFC"/>
                         <outlet property="searchBar" destination="nIH-9N-g2M" id="IRD-zQ-coU"/>
                     </connections>
                 </viewController>
@@ -156,4 +168,9 @@
             <point key="canvasLocation" x="3832.8244274809158" y="-34.507042253521128"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

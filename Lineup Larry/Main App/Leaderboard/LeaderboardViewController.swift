@@ -14,6 +14,7 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
     
     @IBOutlet weak var LeaderboardTableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +35,8 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
     private func setupTableView() {
         self.LeaderboardTableView.delegate = self
         self.LeaderboardTableView.dataSource = self
+        loadingIndicator.color = .white
+        loadingIndicator.startAnimating()
     }
     
     func setupSearchBar() {
@@ -90,6 +93,7 @@ extension LeaderboardViewController: LeaderboardViewModelDelegate {
         self.filteredPlayers = self.viewModel.players
         DispatchQueue.main.async {
             self.LeaderboardTableView.reloadData()
+            self.loadingIndicator.isHidden = true
         }
     }
     
