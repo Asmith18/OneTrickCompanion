@@ -55,15 +55,17 @@ class AgentRole: Decodable {
 
 class AgentAbilities: Decodable {
     
-    init(slot: String?, displayName: String?, description: String?, displayIcon: String?) {
+    init(slot: String?, displayName: String?, description: String?, displayIcon: String?, isExpanded: Bool? = false) {
         self.slot = slot
         self.displayName = displayName
         self.description = description
         self.displayIcon = displayIcon
+        self.isExpanded = isExpanded
     }
     
     let slot: String?
     let displayName: String?
     let description: String?
     let displayIcon: String?
+    var isExpanded: Bool?
 }

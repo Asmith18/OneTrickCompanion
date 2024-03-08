@@ -38,15 +38,30 @@ class AgentDetailsViewController: UIViewController, UITableViewDelegate, UITable
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "abilities", for: indexPath) as? AgentAbilitiesTableViewCell,
-              let result = viewModel.agent?.abilities[indexPath.row] else { return UITableViewCell() }
-        cell.updateViews(ability: result)
+              let ability = viewModel.agent?.abilities[indexPath.row] else { return UITableViewCell() }
+        cell.updateViews(ability: ability)
         cell.selectionStyle = .none
         cell.setNeedsUpdateConstraints()
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let isExpanded = viewModel.agent?.abilities[indexPath.row].isExpanded {
+            viewModel.agent?.abilities[indexPath.row].isExpanded = !isExpanded
+        } else {
+            viewModel.agent?.abilities[indexPath.row].isExpanded = true
+        }
+        abillitiesTableView.beginUpdates()
+        abillitiesTableView.reloadRows(at: [indexPath], with: .automatic)
+        abillitiesTableView.endUpdates()
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 70
+        if let isExpanded = viewModel.agent?.abilities[indexPath.row].isExpanded, isExpanded {
+            return 250
+        } else {
+            return 70
+        }
     }
 }
 
