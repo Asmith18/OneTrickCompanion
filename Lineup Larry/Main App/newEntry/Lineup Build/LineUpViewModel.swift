@@ -52,4 +52,13 @@ class LineUpViewModel {
             print(error)
         }
     }
+    
+    func deleteLineup(lineup: Lineup) {
+        CoreDataStack.context.delete(lineup)
+        do {
+           try CoreDataStack.context.save()
+        } catch {
+            print("failed to save data")
+        }
+    }
 }
