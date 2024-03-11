@@ -79,6 +79,22 @@ class LineUpViewController: UIViewController {
         }
     }
     
+    @IBAction func cancelButtonTapped(_ sender: Any) {
+        let alertController = UIAlertController(title: "Delete Submission?", message: "Are you sure you want to delete this Entry?", preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "Yes", style: .default) { _ in
+            if let lineup = self.viewModel.lineup {
+                self.viewModel.deleteLineup(lineup: lineup)
+                self.navigationController?.popViewController(animated: true)
+            } else {
+                self.navigationController?.popToRootViewController(animated: true)
+            }
+        }
+        let alertAction2 = UIAlertAction(title: "No", style: .cancel)
+        alertController.addAction(alertAction)
+        alertController.addAction(alertAction2)
+        self.present(alertController, animated: true)
+    }
+    
     @IBAction func addImagesButtontapped(_ sender: Any) {
         let vc = UIImagePickerController()
         vc.sourceType = .photoLibrary
