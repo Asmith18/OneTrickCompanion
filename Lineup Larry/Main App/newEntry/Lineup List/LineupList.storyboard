@@ -91,8 +91,11 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BsA-Qt-Szp">
                                             <rect key="frame" x="8" y="282" width="377" height="137"/>
                                             <subviews>
+                                                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" hidesForSinglePage="YES" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="5JJ-8s-sth">
+                                                    <rect key="frame" x="0.0" y="0.0" width="377" height="0.0"/>
+                                                </pageControl>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="agq-jL-4M9" userLabel="middleView">
-                                                    <rect key="frame" x="0.0" y="0.0" width="377" height="50"/>
+                                                    <rect key="frame" x="0.0" y="10" width="377" height="50"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P9n-h4-EGZ">
                                                             <rect key="frame" x="58" y="0.0" width="311" height="22"/>
@@ -132,10 +135,10 @@
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gKW-RK-4mq" userLabel="BottomView">
-                                                    <rect key="frame" x="0.0" y="60" width="377" height="77"/>
+                                                    <rect key="frame" x="0.0" y="70" width="377" height="67"/>
                                                     <subviews>
                                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9vG-vG-W3C">
-                                                            <rect key="frame" x="0.0" y="0.0" width="377" height="77"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="377" height="67"/>
                                                             <color key="backgroundColor" red="0.1960422695" green="0.1960422695" blue="0.1960422695" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="77" id="jof-oL-op7"/>
@@ -177,6 +180,7 @@
                                     <outlet property="descriptionTextView" destination="9vG-vG-W3C" id="1f2-k5-Rtr"/>
                                     <outlet property="imagesCollectionView" destination="W37-a6-FlU" id="ECp-NU-qsx"/>
                                     <outlet property="mapLabel" destination="HTA-UW-aY9" id="95V-Ep-sTo"/>
+                                    <outlet property="pageControl" destination="5JJ-8s-sth" id="bdd-m1-KNB"/>
                                     <outlet property="titleLabel" destination="P9n-h4-EGZ" id="HxF-0o-fJm"/>
                                     <segue destination="usB-jt-yao" kind="show" identifier="toeditSegue" id="k8h-ij-avF"/>
                                 </connections>
