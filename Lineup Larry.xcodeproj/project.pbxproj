@@ -76,7 +76,6 @@
 		C2A6306F2B50FB06005FCF67 /* LeaderboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A6306E2B50FB06005FCF67 /* LeaderboardViewModel.swift */; };
 		C2A630712B50FB1B005FCF67 /* LeaderboardDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A630702B50FB1B005FCF67 /* LeaderboardDataProvider.swift */; };
 		C2B4917A2A4DF8D200EB5EB4 /* AgentDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B491792A4DF8D200EB5EB4 /* AgentDetailsViewController.swift */; };
-		C2FA76982A58872500F41912 /* MapDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2FA76972A58872500F41912 /* MapDetails.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -148,7 +147,6 @@
 		C2A6306E2B50FB06005FCF67 /* LeaderboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewModel.swift; sourceTree = "<group>"; };
 		C2A630702B50FB1B005FCF67 /* LeaderboardDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardDataProvider.swift; sourceTree = "<group>"; };
 		C2B491792A4DF8D200EB5EB4 /* AgentDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDetailsViewController.swift; sourceTree = "<group>"; };
-		C2FA76972A58872500F41912 /* MapDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapDetails.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,7 +262,6 @@
 			isa = PBXGroup;
 			children = (
 				C2FA76952A5886FF00F41912 /* MapList */,
-				C2FA76962A58871000F41912 /* MapDetails */,
 			);
 			path = Maps;
 			sourceTree = "<group>";
@@ -424,14 +421,6 @@
 			path = MapList;
 			sourceTree = "<group>";
 		};
-		C2FA76962A58871000F41912 /* MapDetails */ = {
-			isa = PBXGroup;
-			children = (
-				C2FA76972A58872500F41912 /* MapDetails.storyboard */,
-			);
-			path = MapDetails;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -513,7 +502,6 @@
 				C2079F6029197F47006BA81D /* Contents.storyboard in Resources */,
 				C2079F6429197FA5006BA81D /* WeaponContent.storyboard in Resources */,
 				C2079F5A29197E95006BA81D /* AgentList.storyboard in Resources */,
-				C2FA76982A58872500F41912 /* MapDetails.storyboard in Resources */,
 				C20239362A4CCC9400FC72A0 /* AgentDetails.storyboard in Resources */,
 				3E0CAD1127ED1D00000AF833 /* MapTableViewCell.xib in Resources */,
 			);
