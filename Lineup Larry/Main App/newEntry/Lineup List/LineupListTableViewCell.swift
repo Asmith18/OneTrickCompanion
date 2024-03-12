@@ -18,6 +18,7 @@ class LineupListTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
     @IBOutlet weak var agentImageView: MapImageView!
     @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var bottomView: UIView!
+    @IBOutlet weak var pageControl: UIPageControl!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -57,12 +58,13 @@ class LineupListTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "overviewImages", for: indexPath) as? UserImagesCollectionViewCell else {
-            return UICollectionViewCell()
-        }
+            return UICollectionViewCell() }
         let imageData = lineup.overviewImages[indexPath.row]
         if let image = UIImage(data: imageData) {
             cell.overviewImages.image = image
         }
+        let imageCount = lineup.overviewImages.count
+        pageControl.numberOfPages = imageCount
         return cell
     }
     
@@ -71,6 +73,10 @@ class LineupListTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
         let screenWidth = UIScreen.main.bounds.width
         let cellHeight = imagesCollectionView.bounds.height
         return CGSize(width: screenWidth, height: cellHeight)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        self.pageControl.currentPage = indexPath.row
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
