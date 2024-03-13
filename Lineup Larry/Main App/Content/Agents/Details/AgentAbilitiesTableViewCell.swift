@@ -11,7 +11,7 @@ class AgentAbilitiesTableViewCell: UITableViewCell {
     
     @IBOutlet weak var abilitiesImageView: MapImageView!
     @IBOutlet weak var abilitiesNameLabel: UILabel!
-    private var descriptionLabel: UILabel?
+    var descriptionLabel: UILabel?
     @IBOutlet weak var dropDownImage: MapImageView!
     
     override func awakeFromNib() {
@@ -22,6 +22,7 @@ class AgentAbilitiesTableViewCell: UITableViewCell {
     private func setupDescriptionLabel() {
         let label = UILabel()
         label.textColor = .white
+        label.font = UIFont.systemFont(ofSize: 14)
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(label)

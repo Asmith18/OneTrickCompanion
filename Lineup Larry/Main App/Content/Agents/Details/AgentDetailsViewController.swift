@@ -11,6 +11,7 @@ import Foundation
 class AgentDetailsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var viewModel: AgentDetailsViewModel!
+    var cell: AgentAbilitiesTableViewCell!
     
     @IBOutlet weak var agentImageView: MapImageView!
     @IBOutlet weak var abillitiesTableView: UITableView!
@@ -30,6 +31,8 @@ class AgentDetailsViewController: UIViewController, UITableViewDelegate, UITable
         agentImageView.setImage(using: agent.fullPortrait)
         detailsTextView.text = agent.description
         detailsTextView.isEditable = false
+        abillitiesTableView.estimatedRowHeight = 100
+        abillitiesTableView.rowHeight = UITableView.automaticDimension
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -56,9 +59,23 @@ class AgentDetailsViewController: UIViewController, UITableViewDelegate, UITable
         abillitiesTableView.endUpdates()
     }
     
+    func heightForDescription(text: String, font: UIFont, width: CGFloat) -> CGFloat {
+        let nsText = NSString(string: text)
+        let maxSize = CGSize(width: width, height: CGFloat.greatestFiniteMagnitude)
+        let options = NSStringDrawingOptions.usesLineFragmentOrigin
+        let attributes = [NSAttributedString.Key.font: font]
+        let boundingRect = nsText.boundingRect(with: maxSize, options: options, attributes: attributes, context: nil)
+
+        return ceil(boundingRect.height)
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if let isExpanded = viewModel.agent?.abilities[indexPath.row].isExpanded, isExpanded {
-            return 250
+        guard let ability = viewModel.agent?.abilities[indexPath.row] else { return 70 }
+        if let isExpanded = ability.isExpanded, isExpanded {
+            let padding: CGFloat = 16 + 16 + 32
+            let labelWidth = tableView.frame.width - 32
+            let descriptionHeight = heightForDescription(text: ability.description ?? "", font: .systemFont(ofSize: 17), width: labelWidth)
+            return descriptionHeight + padding
         } else {
             return 70
         }
